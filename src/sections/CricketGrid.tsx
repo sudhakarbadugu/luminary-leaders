@@ -68,7 +68,7 @@ export default function CricketGrid() {
   const hasActive = eraFilter !== 'All' || roleFilter !== 'All' || searchQuery;
 
   return (
-    <section ref={sectionRef} id="cricket" style={{ position: 'relative', zIndex: 2, background: '#f1f1ee', padding: '140px 40px', borderTop: '1px solid #e5e5e0' }}>
+    <section ref={sectionRef} id="cricket" style={{ position: 'relative', zIndex: 2, background: '#f1f1ee', padding: 'clamp(80px, 10vw, 140px) clamp(20px, 4vw, 40px)', borderTop: '1px solid #e5e5e0' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: 48 }}>
           <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: getCategoryStyle('cricketer').accent, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8, justifyContent: 'center' }}><Trophy size={14} /> THE GENTLEMEN'S GAME</div>

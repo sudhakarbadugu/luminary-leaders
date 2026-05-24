@@ -62,7 +62,7 @@ export default function Blog() {
         position: 'relative',
         zIndex: 2,
         background: '#f1f1ee',
-        padding: '140px 40px',
+        padding: 'clamp(80px, 10vw, 140px) clamp(20px, 4vw, 40px)',
         borderTop: '1px solid #e5e5e0',
       }}
     >
@@ -84,10 +84,11 @@ export default function Blog() {
           </div>
           <div
             style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr auto',
-              gap: 40,
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: 24,
               alignItems: 'end',
+              justifyContent: 'space-between',
             }}
           >
             <div>
@@ -154,11 +155,12 @@ export default function Blog() {
             onClick={() => navigate(`/blog/${blogArticles[0].slug}`)}
             onMouseEnter={() => setHoveredId(blogArticles[0].id)}
             onMouseLeave={() => setHoveredId(null)}
+            className="card-bg"
             style={{
               opacity: 0,
               cursor: 'pointer',
               display: 'grid',
-              gridTemplateColumns: '1.2fr 1fr',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
               gap: 0,
               background: '#fff',
               borderRadius: 16,
@@ -318,7 +320,7 @@ export default function Blog() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
             gap: 32,
           }}
         >
@@ -330,6 +332,7 @@ export default function Blog() {
                 onClick={() => navigate(`/blog/${article.slug}`)}
                 onMouseEnter={() => setHoveredId(article.id)}
                 onMouseLeave={() => setHoveredId(null)}
+                className="card-bg"
                 style={{
                   opacity: 0,
                   cursor: 'pointer',

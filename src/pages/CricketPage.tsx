@@ -56,9 +56,9 @@ export default function CricketPage() {
   const relatedCricketers = cricketers.filter(c => bio.relatedIds.includes(c.id));
 
   return (
-    <div style={{ background: '#f1f1ee', minHeight: '100vh' }}>
+    <div className="page-container" style={{ background: "#f1f1ee", minHeight: "100vh" }}>
       {/* Hero */}
-      <div style={{ background: getGradient(cricketer.id), padding: '120px 40px 80px', position: 'relative', overflow: 'hidden' }}>
+      <div style={{ background: getGradient(cricketer.id), padding: 'clamp(80px, 10vw, 120px) clamp(20px, 4vw, 40px) clamp(40px, 6vw, 80px)', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.05, backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.4) 1px, transparent 0)', backgroundSize: '32px 32px' }} />
         <div style={{ maxWidth: 800, margin: '0 auto', position: 'relative' }}>
           <button onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'rgba(255,255,255,0.7)', background: 'none', border: 'none', cursor: 'pointer', fontFamily: "'Inter', sans-serif", fontSize: 13, marginBottom: 40, padding: 0 }}
@@ -85,7 +85,7 @@ export default function CricketPage() {
           </div>
 
           {/* Action buttons */}
-          <div style={{ display: 'flex', gap: 12, marginBottom: 24 }}>
+          <div style={{ display: 'flex', gap: 12, marginBottom: 24, flexWrap: 'wrap' }}>
             <BookmarkButton id={cricketer.id} category="cricketer" name={cricketer.name} nickname={cricketer.nickname} size={20} />
             <CompareToggleButton item={{ id: cricketer.id, name: cricketer.name, nickname: cricketer.nickname, category: 'cricketer', field: cricketer.role, nationality: cricketer.nationality, born: cricketer.born, era: cricketer.era, image: cricketer.image }} />
             <ShareButton url={`https://3drrx75zxkbas.kimi.page/cricketer/${cricketer.id}`} title={cricketer.name} quote={cricketerBioData[cricketer.id]?.quotes?.[0]} />
@@ -101,21 +101,21 @@ export default function CricketPage() {
       </div>
 
       {/* Content */}
-      <div ref={contentRef} style={{ maxWidth: 720, margin: '0 auto', padding: '80px 40px' }}>
+      <div ref={contentRef} style={{ maxWidth: 720, margin: '0 auto', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
         {/* Info Cards */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16, marginBottom: 48 }}>
-          <div style={{ background: '#fff', borderRadius: 12, padding: '24px', border: '1px solid #e5e5e0' }}>
+          <div className="card-bg" style={{ background: "#fff", borderRadius: 12, padding: '24px', border: '1px solid #e5e5e0' }}>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 1.5, color: '#968671', marginBottom: 8 }}><Award size={12} style={{ display: 'inline', marginRight: 6 }} />Role</div>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: '#282b2f' }}>{cricketer.role}</div>
           </div>
-          <div style={{ background: '#fff', borderRadius: 12, padding: '24px', border: '1px solid #e5e5e0' }}>
+          <div className="card-bg" style={{ background: "#fff", borderRadius: 12, padding: '24px', border: '1px solid #e5e5e0' }}>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 1.5, color: '#968671', marginBottom: 8 }}><Target size={12} style={{ display: 'inline', marginRight: 6 }} />Era</div>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: '#282b2f' }}>{cricketer.era}</div>
           </div>
         </div>
 
         {/* Bio */}
-             <AudioNarration text={fullBioText} title={`Listen to ${name}'s story`} />
+             <AudioNarration text={fullBioText} title={`Listen to ${cricketer.name}'s story`} />
 
            {bio.bio.split('\n\n').map((paragraph, i) => (
           <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 0 : 28 }}>{paragraph}</p>
@@ -127,7 +127,7 @@ export default function CricketPage() {
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>Key Achievements</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {bio.keyAchievements.map((achievement, i) => (
-                <div key={i} style={{ background: '#fff', borderRadius: 10, padding: '20px 24px', border: '1px solid #e5e5e0', borderLeft: '4px solid #ffcc00', display: 'flex', alignItems: 'center', gap: 16 }}>
+                <div key={i} className="card-bg" style={{ background: "#fff", borderRadius: 10, padding: "20px 24px", border: "1px solid #e5e5e0", borderLeft: "4px solid #ffcc00", display: 'flex', alignItems: 'center', gap: 16 }}>
                   <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 600, color: '#ffcc00', minWidth: 56 }}>{achievement.year}</div>
                   <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: '#282b2f' }}>{achievement.event}</div>
                 </div>
@@ -155,7 +155,7 @@ export default function CricketPage() {
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>Related Cricketers</div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 16 }}>
               {relatedCricketers.map(rc => (
-                <div key={rc.id} onClick={() => navigate(`/cricketer/${rc.id}`)} style={{ cursor: 'pointer', background: '#fff', borderRadius: 10, padding: '20px', border: '1px solid #e5e5e0', transition: 'box-shadow 0.3s, transform 0.3s' }}
+                <div key={rc.id} onClick={() => navigate(`/cricketer/${rc.id}`)} className="card-bg" style={{ cursor: "pointer", background: "#fff", borderRadius: 10, padding: '20px', border: '1px solid #e5e5e0', transition: 'box-shadow 0.3s, transform 0.3s' }}
                   onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.08)'; e.currentTarget.style.transform = 'translateY(-3px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'translateY(0)'; }}>
                   <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: '#282b2f' }}>{rc.name}</div>

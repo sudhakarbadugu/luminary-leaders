@@ -55,7 +55,7 @@ export default function About() {
         position: 'relative',
         zIndex: 2,
         background: '#f1f1ee',
-        padding: '140px 40px',
+        padding: 'clamp(80px, 10vw, 140px) clamp(20px, 4vw, 40px)',
       }}
     >
       <div
@@ -63,8 +63,8 @@ export default function About() {
           maxWidth: 1200,
           margin: '0 auto',
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: 80,
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gap: 48,
           alignItems: 'center',
         }}
       >

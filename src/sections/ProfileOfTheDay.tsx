@@ -87,7 +87,7 @@ export default function ProfileOfTheDay() {
   const dateStr = `${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
 
   return (
-    <section style={{ position: 'relative', zIndex: 2, background: '#282b2f', padding: '80px 40px' }}>
+    <section style={{ position: 'relative', zIndex: 2, background: '#282b2f', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 32 }}>

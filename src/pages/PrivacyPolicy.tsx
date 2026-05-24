@@ -5,9 +5,9 @@ export default function PrivacyPolicy() {
   const navigate = useNavigate();
 
   return (
-    <div style={{ background: '#f1f1ee', minHeight: '100vh' }}>
+    <div className="page-container" style={{ background: "#f1f1ee", minHeight: "100vh" }}>
       {/* Header */}
-      <div style={{ background: '#282b2f', padding: '80px 40px 60px', position: 'relative', overflow: 'hidden' }}>
+      <div className="dark-hero" style={{ background: "#282b2f", padding: 'clamp(60px, 8vw, 80px) clamp(20px, 4vw, 40px) clamp(40px, 5vw, 60px)', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.05, backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.4) 1px, transparent 0)', backgroundSize: '32px 32px' }} />
         <div style={{ maxWidth: 800, margin: '0 auto', position: 'relative' }}>
           <button onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'rgba(255,255,255,0.7)', background: 'none', border: 'none', cursor: 'pointer', fontFamily: "'Inter', sans-serif", fontSize: 13, marginBottom: 32, padding: 0 }}
@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
       </div>
 
       {/* Content */}
-      <div style={{ maxWidth: 720, margin: '0 auto', padding: '80px 40px' }}>
+      <div style={{ maxWidth: 720, margin: '0 auto', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
 
         {/* Important Notice Box */}
         <div style={{ background: 'rgba(255,204,0,0.08)', border: '1px solid rgba(255,204,0,0.2)', borderRadius: 12, padding: '24px 28px', marginBottom: 48 }}>
@@ -94,7 +94,7 @@ export default function PrivacyPolicy() {
         </Section>
 
         {/* Bottom disclaimer */}
-        <div style={{ marginTop: 60, padding: '24px 28px', background: '#fff', borderRadius: 12, border: '1px solid #e5e5e0' }}>
+        <div className="card-bg" style={{ marginTop: 60, padding: "24px 28px", background: "#fff", borderRadius: 12, border: '1px solid #e5e5e0' }}>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, lineHeight: 1.7, color: '#968671', margin: 0, textAlign: 'center' }}>
             By using The Luminary Archive, you acknowledge that the content is provided <strong>"as is"</strong> for informational and educational purposes, and you agree to verify any critical information through independent primary sources.
           </p>

@@ -62,13 +62,14 @@ export default function LeaderPage() {
     .filter(Boolean);
 
   return (
-    <div style={{ background: '#f1f1ee', minHeight: '100vh' }}>
+    <div className="page-container" style={{ background: "#f1f1ee", minHeight: "100vh" }}>
       {/* Hero Section */}
       <div
+        className="dark-hero"
         style={{
           background: '#282b2f',
           color: '#f1f1ee',
-          padding: '120px 40px 80px',
+          padding: 'clamp(80px, 10vw, 120px) clamp(20px, 4vw, 40px) clamp(40px, 6vw, 80px)',
           position: 'relative',
         }}
       >
@@ -94,7 +95,7 @@ export default function LeaderPage() {
             <ArrowLeft size={16} /> Back to Legends
           </button>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: 60, alignItems: 'start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 40, alignItems: 'start' }}>
             {/* Portrait */}
             <div
               style={{
@@ -167,7 +168,7 @@ export default function LeaderPage() {
       </div>
 
       {/* Bio Content */}
-      <div style={{ maxWidth: 800, margin: '0 auto', padding: '80px 40px' }}>
+      <div style={{ maxWidth: 800, margin: '0 auto', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
         <AudioNarration text={fullBioText} title={`Listen to ${bio.name}'s story`} />
 
         <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>
@@ -184,7 +185,7 @@ export default function LeaderPage() {
               In Their Words
             </div>
             {bio.quotes.slice(1).map((quote, i) => (
-              <div key={i} style={{ background: '#fff', borderRadius: 12, padding: '32px 28px', marginBottom: 16, border: '1px solid #e5e5e0' }}>
+              <div key={i} className="card-bg" style={{ background: "#fff", borderRadius: 12, padding: "32px 28px", marginBottom: 16, border: "1px solid #e5e5e0" }}>
                 <Quote size={18} style={{ color: '#ffcc00', marginBottom: 12 }} />
                 <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 20, fontStyle: 'italic', lineHeight: 1.5, color: '#282b2f' }}>
                   {quote}

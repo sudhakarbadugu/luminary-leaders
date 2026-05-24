@@ -5,8 +5,8 @@ export default function TermsOfUse() {
   const navigate = useNavigate();
 
   return (
-    <div style={{ background: '#f1f1ee', minHeight: '100vh' }}>
-      <div style={{ background: '#282b2f', padding: '80px 40px 60px', position: 'relative', overflow: 'hidden' }}>
+    <div className="page-container" style={{ background: "#f1f1ee", minHeight: "100vh" }}>
+      <div className="dark-hero" style={{ background: "#282b2f", padding: 'clamp(60px, 8vw, 80px) clamp(20px, 4vw, 40px) clamp(40px, 5vw, 60px)', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.05, backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.4) 1px, transparent 0)', backgroundSize: '32px 32px' }} />
         <div style={{ maxWidth: 800, margin: '0 auto', position: 'relative' }}>
           <button onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'rgba(255,255,255,0.7)', background: 'none', border: 'none', cursor: 'pointer', fontFamily: "'Inter', sans-serif", fontSize: 13, marginBottom: 32, padding: 0 }}
@@ -16,7 +16,7 @@ export default function TermsOfUse() {
         </div>
       </div>
 
-      <div style={{ maxWidth: 720, margin: '0 auto', padding: '80px 40px' }}>
+      <div style={{ maxWidth: 720, margin: '0 auto', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
 
         <Section icon={<FileText size={16} />} title="Acceptance of Terms">
           <p>By accessing and using The Luminary Archive, you accept and agree to be bound by these Terms of Use and our Privacy Policy. If you do not agree with any part of these terms, please discontinue use of this platform immediately.</p>

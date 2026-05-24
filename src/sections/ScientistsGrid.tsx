@@ -68,7 +68,7 @@ export default function ScientistsGrid() {
   const hasActive = eraFilter !== 'All' || fieldFilter !== 'All' || searchQuery;
 
   return (
-    <section ref={sectionRef} id="scientists" style={{ position: 'relative', zIndex: 2, background: '#f1f1ee', padding: '140px 40px', borderTop: '1px solid #e5e5e0' }}>
+    <section ref={sectionRef} id="scientists" style={{ position: 'relative', zIndex: 2, background: '#f1f1ee', padding: 'clamp(80px, 10vw, 140px) clamp(20px, 4vw, 40px)', borderTop: '1px solid #e5e5e0' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: 48 }}>
           <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: getCategoryStyle('scientist').accent, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8, justifyContent: 'center' }}><FlaskConical size={14} /> THE PIONEERS</div>

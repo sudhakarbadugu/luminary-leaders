@@ -11,6 +11,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfUse from './pages/TermsOfUse';
 import CompareFloatingBar from './components/CompareFloatingBar';
 import OfflineBanner from './components/OfflineBanner';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/terms" element={<TermsOfUse />} />
       </Routes>
       <CompareFloatingBar />
+      <ScrollToTopButton />
       <OfflineBanner />
     </>
   );

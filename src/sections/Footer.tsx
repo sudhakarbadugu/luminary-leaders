@@ -31,7 +31,7 @@ export default function Footer() {
         position: 'relative',
         zIndex: 2,
         background: '#1e2023',
-        padding: '80px 40px 40px',
+        padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px) clamp(20px, 3vw, 40px)',
       }}
     >
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>

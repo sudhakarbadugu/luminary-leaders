@@ -64,7 +64,7 @@ export default function Newsletter() {
         position: 'relative',
         zIndex: 2,
         background: '#282b2f',
-        padding: '120px 40px',
+        padding: 'clamp(60px, 8vw, 120px) clamp(20px, 4vw, 40px)',
       }}
     >
       <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }} ref={formRef}>

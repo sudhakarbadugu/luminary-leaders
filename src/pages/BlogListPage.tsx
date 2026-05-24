@@ -29,9 +29,10 @@ export default function BlogListPage() {
   }, []);
 
   return (
-    <div style={{ background: '#f1f1ee', minHeight: '100vh' }}>
+    <div className="page-container" style={{ background: "#f1f1ee", minHeight: "100vh" }}>
       {/* Header */}
       <div
+        className="dark-hero"
         style={{
           background: '#282b2f',
           color: '#f1f1ee',
@@ -101,11 +102,11 @@ export default function BlogListPage() {
       </div>
 
       {/* Articles Grid */}
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '80px 40px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
             gap: 32,
           }}
         >
@@ -114,6 +115,7 @@ export default function BlogListPage() {
               key={article.id}
               ref={el => { if (el) cardsRef.current[idx] = el; }}
               onClick={() => navigate(`/blog/${article.slug}`)}
+              className="card-bg"
               style={{
                 opacity: 0,
                 cursor: 'pointer',

@@ -35,7 +35,7 @@ export default function Bookmarks() {
   }, [bookmarks]);
 
   return (
-    <section ref={sectionRef} id="bookmarks" style={{ position: 'relative', zIndex: 2, background: '#f1f1ee', padding: '100px 40px', borderTop: '1px solid #e5e5e0' }}>
+    <section ref={sectionRef} id="bookmarks" style={{ position: 'relative', zIndex: 2, background: '#f1f1ee', padding: 'clamp(60px, 8vw, 100px) clamp(20px, 4vw, 40px)', borderTop: '1px solid #e5e5e0' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 32 }}>
           <BookmarkIcon size={20} style={{ color: '#ffcc00' }} />
@@ -52,7 +52,7 @@ export default function Bookmarks() {
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginBottom: 20 }}>{bookmarks.length} saved</div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16 }}>
               {bookmarks.map((b, idx) => (
-                <div key={`${b.category}-${b.id}`} ref={el => { if (el) cardsRef.current[idx] = el; }} style={{ opacity: 0, background: '#fff', borderRadius: 10, padding: '20px', border: '1px solid #e5e5e0', display: 'flex', alignItems: 'center', gap: 16, cursor: 'pointer', transition: 'box-shadow 0.3s' }}
+                <div key={`${b.category}-${b.id}`} ref={el => { if (el) cardsRef.current[idx] = el; }} className="card-bg" style={{ opacity: 0, background: "#fff", borderRadius: 10, padding: '20px', border: '1px solid #e5e5e0', display: 'flex', alignItems: 'center', gap: 16, cursor: 'pointer', transition: 'box-shadow 0.3s' }}
                   onClick={() => navigate(`${getCategoryRoute(b.category)}/${b.id}`)}
                   onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.06)'; }}
                   onMouseLeave={e => { e.currentTarget.style.boxShadow = 'none'; }}>

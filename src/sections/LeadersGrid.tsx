@@ -190,7 +190,7 @@ export default function LeadersGrid() {
         position: 'relative',
         zIndex: 2,
         background: '#f1f1ee',
-        padding: '140px 40px',
+        padding: 'clamp(80px, 10vw, 140px) clamp(20px, 4vw, 40px)',
       }}
     >
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
@@ -352,6 +352,7 @@ export default function LeadersGrid() {
         {/* Expandable Filter Panel */}
         {isFilterOpen && (
           <div
+            className="card-bg"
             style={{
               maxWidth: 800,
               margin: '0 auto 40px',

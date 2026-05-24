@@ -46,14 +46,95 @@ html.dark section[id] {
   border-color: var(--border-color) !important;
 }
 
-html.dark div[style*="background: '#fff'"],
-html.dark div[style*="background: '#ffffff'"],
-html.dark div[style*="background: '#f1f1ee'"] {
+/* Page container backgrounds */
+html.dark .page-container,
+html.dark div[style*="background: #f1f1ee"],
+html.dark div[style*="background-color: #f1f1ee"],
+html.dark div[style*="background: rgb(241, 241, 238)"],
+html.dark div[style*="background-color: rgb(241, 241, 238)"] {
   background: var(--bg-secondary) !important;
 }
 
-html.dark section[style*="background: '#282b2f'"] {
+/* Card backgrounds */
+html.dark .card-bg,
+html.dark div[style*="background: #fff"],
+html.dark div[style*="background-color: #fff"],
+html.dark div[style*="background: #ffffff"],
+html.dark div[style*="background-color: #ffffff"],
+html.dark div[style*="background: rgb(255, 255, 255)"],
+html.dark div[style*="background-color: rgb(255, 255, 255)"] {
+  background: var(--bg-secondary) !important;
+}
+
+/* Dark hero sections */
+html.dark .dark-hero,
+html.dark section[style*="background: #282b2f"],
+html.dark section[style*="background: rgb(40, 43, 47)"],
+html.dark div[style*="background: #282b2f"],
+html.dark div[style*="background: rgb(40, 43, 47)"] {
   background: #111111 !important;
+}
+
+/* Text color overrides inside sections */
+html.dark section[id] [style^="color: #282b2f"],
+html.dark section[id] [style*=";color: #282b2f"],
+html.dark section[id] [style*=" color: #282b2f"],
+html.dark section[id] [style^="color: rgb(40, 43, 47)"],
+html.dark section[id] [style*=";color: rgb(40, 43, 47)"],
+html.dark section[id] [style*=" color: rgb(40, 43, 47)"] {
+  color: var(--text-primary) !important;
+}
+
+html.dark section[id] [style^="color: #968671"],
+html.dark section[id] [style*=";color: #968671"],
+html.dark section[id] [style*=" color: #968671"],
+html.dark section[id] [style^="color: rgb(150, 134, 113)"],
+html.dark section[id] [style*=";color: rgb(150, 134, 113)"],
+html.dark section[id] [style*=" color: rgb(150, 134, 113)"] {
+  color: var(--text-secondary) !important;
+}
+
+/* Text color overrides inside page containers */
+html.dark .page-container [style^="color: #282b2f"],
+html.dark .page-container [style*=";color: #282b2f"],
+html.dark .page-container [style*=" color: #282b2f"],
+html.dark .page-container [style^="color: rgb(40, 43, 47)"],
+html.dark .page-container [style*=";color: rgb(40, 43, 47)"],
+html.dark .page-container [style*=" color: rgb(40, 43, 47)"] {
+  color: var(--text-primary) !important;
+}
+
+html.dark .page-container [style^="color: #968671"],
+html.dark .page-container [style*=";color: #968671"],
+html.dark .page-container [style*=" color: #968671"],
+html.dark .page-container [style^="color: rgb(150, 134, 113)"],
+html.dark .page-container [style*=";color: rgb(150, 134, 113)"],
+html.dark .page-container [style*=" color: rgb(150, 134, 113)"] {
+  color: var(--text-secondary) !important;
+}
+
+/* Keep dark text on yellow buttons */
+html.dark section[id] [style*="background: #ffcc00"][style*="color: #282b2f"],
+html.dark section[id] [style*="background: rgb(255, 204, 0)"][style*="color: rgb(40, 43, 47)"],
+html.dark .page-container [style*="background: #ffcc00"][style*="color: #282b2f"],
+html.dark .page-container [style*="background: rgb(255, 204, 0)"][style*="color: rgb(40, 43, 47)"] {
+  color: #282b2f !important;
+}
+
+/* Light text on dark backgrounds */
+html.dark .dark-hero [style^="color: #f1f1ee"],
+html.dark .dark-hero [style*=";color: #f1f1ee"],
+html.dark .dark-hero [style*=" color: #f1f1ee"],
+html.dark .dark-hero [style^="color: rgb(241, 241, 238)"],
+html.dark .dark-hero [style*=";color: rgb(241, 241, 238)"],
+html.dark .dark-hero [style*=" color: rgb(241, 241, 238)"],
+html.dark div[style*="background: #282b2f"] [style^="color: #f1f1ee"],
+html.dark div[style*="background: #282b2f"] [style*=";color: #f1f1ee"],
+html.dark div[style*="background: #282b2f"] [style*=" color: #f1f1ee"],
+html.dark div[style*="background: rgb(40, 43, 47)"] [style^="color: rgb(241, 241, 238)"],
+html.dark div[style*="background: rgb(40, 43, 47)"] [style*=";color: rgb(241, 241, 238)"],
+html.dark div[style*="background: rgb(40, 43, 47)"] [style*=" color: rgb(241, 241, 238)"] {
+  color: var(--text-primary) !important;
 }
 
 html.dark input,
@@ -62,14 +143,6 @@ html.dark textarea {
   background: var(--input-bg) !important;
   color: var(--text-primary) !important;
   border-color: var(--border-color) !important;
-}
-
-html.dark div[style*="background: '#282b2f'"] div[style*="color: '#f1f1ee'"] {
-  color: var(--text-primary) !important;
-}
-
-html.dark div[style*="background: '#282b2f'"] p[style*="color: '#f1f1ee'"] {
-  color: var(--text-primary) !important;
 }
 
 html.dark .compare-modal-inner {

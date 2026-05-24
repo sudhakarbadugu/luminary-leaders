@@ -57,12 +57,12 @@ export default function BlogPage() {
   const leader = leaders.find(l => l.id === article.featuredLeaderId);
 
   return (
-    <div style={{ background: '#f1f1ee', minHeight: '100vh' }}>
+    <div className="page-container" style={{ background: "#f1f1ee", minHeight: "100vh" }}>
       {/* Hero */}
       <div
         style={{
           background: `linear-gradient(135deg, ${article.coverGradient[0]}, ${article.coverGradient[1]})`,
-          padding: '120px 40px 80px',
+          padding: 'clamp(80px, 10vw, 120px) clamp(20px, 4vw, 40px) clamp(40px, 6vw, 80px)',
           position: 'relative',
           overflow: 'hidden',
         }}
@@ -179,9 +179,10 @@ export default function BlogPage() {
       </div>
 
       {/* Article Content */}
-      <div ref={contentRef} style={{ maxWidth: 720, margin: '0 auto', padding: '80px 40px' }}>
+      <div ref={contentRef} style={{ maxWidth: 720, margin: '0 auto', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
         {/* Excerpt box */}
         <div
+          className="card-bg"
           style={{
             background: '#fff',
             borderRadius: 12,
@@ -271,6 +272,7 @@ export default function BlogPage() {
                 <div
                   key={ra.id}
                   onClick={() => navigate(`/blog/${ra.slug}`)}
+                  className="card-bg"
                   style={{
                     cursor: 'pointer',
                     background: '#fff',
