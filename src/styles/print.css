@@ -1,0 +1,111 @@
+/* ===== PRINT STYLES ===== */
+
+@media print {
+  /* Hide interactive/non-essential elements */
+  nav,
+  button,
+  .compare-floating-bar,
+  [role="dialog"],
+  .no-print,
+  iframe,
+  canvas {
+    display: none !important;
+  }
+
+  /* Ensure content is visible */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Hero section styling for print */
+  div[style*="padding: '120px 40px 80px'"] {
+    padding: 40px 0 !important;
+    background: #282b2f !important;
+    color: #fff !important;
+    page-break-inside: avoid;
+  }
+
+  /* Main content area */
+  div[style*="maxWidth: 720"] {
+    max-width: 100% !important;
+    padding: 24px 0 !important;
+  }
+
+  /* Typography for print */
+  h1 {
+    font-size: 24pt !important;
+    color: #fff !important;
+    page-break-after: avoid;
+  }
+
+  p {
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Quote blocks */
+  div[style*="borderLeft: '4px solid #ffcc00'"],
+  div[style*="borderLeft: '3px solid #ffcc00'"] {
+    border-left: 4px solid #ffcc00 !important;
+    page-break-inside: avoid;
+  }
+
+  /* Info cards grid */
+  div[style*="gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))'"] {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* Related items */
+  div[style*="Related"] {
+    page-break-before: auto;
+  }
+
+  /* Ensure URLs don't break weirdly */
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+
+  /* Page breaks */
+  section {
+    page-break-inside: avoid;
+  }
+
+  /* Footer - show minimal */
+  footer {
+    border-top: 1px solid #ccc;
+    margin-top: 24px;
+    padding-top: 12px;
+    font-size: 9pt;
+    color: #666;
+  }
+
+  /* Hide action buttons */
+  div:has(> button[title="Remove from collection"]),
+  div:has(> button[title="Add to collection"]),
+  div:has(> button[title="Remove from comparison"]),
+  div:has(> button[title="Add to comparison"]),
+  div:has(> button[title="Share"]),
+  div:has(> button[title="Print this page"]) {
+    display: none !important;
+  }
+
+  /* Profile image styling */
+  img {
+    max-width: 200px !important;
+    border-radius: 50% !important;
+  }
+}

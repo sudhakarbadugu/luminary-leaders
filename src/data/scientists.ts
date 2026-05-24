@@ -1,0 +1,78 @@
+export interface Scientist {
+  id: number;
+  name: string;
+  nickname: string;
+  field: string;
+  nationality: string;
+  born: string;
+  died?: string;
+  era: string;
+  image?: string;
+}
+
+export const scientistCategories = [
+  { name: "Physics", count: 14 },
+  { name: "Mathematics", count: 6 },
+  { name: "Biology", count: 8 },
+  { name: "Chemistry", count: 7 },
+  { name: "Computer Science", count: 8 },
+  { name: "AI & ML", count: 7 },
+  { name: "Economics", count: 4 },
+  { name: "Other", count: 6 },
+];
+
+export const scientists: Scientist[] = [
+  // Foundational Giants (1-15)
+  { id: 1, name: "Isaac Newton", nickname: "The Father of Physics", field: "Physics & Mathematics", nationality: "British", born: "1643", died: "1727", era: "Foundational Giants" },
+  { id: 2, name: "Albert Einstein", nickname: "The Mind of the Century", field: "Physics", nationality: "German-American", born: "1879", died: "1955", era: "Foundational Giants", image: "/images/scientists/albert-einstein.jpg" },
+  { id: 3, name: "Galileo Galilei", nickname: "The Father of Modern Science", field: "Astronomy & Physics", nationality: "Italian", born: "1564", died: "1642", era: "Foundational Giants" },
+  { id: 4, name: "Charles Darwin", nickname: "The Naturalist", field: "Biology", nationality: "British", born: "1809", died: "1882", era: "Foundational Giants" },
+  { id: 5, name: "Marie Curie", nickname: "The Radiant Pioneer", field: "Physics & Chemistry", nationality: "Polish-French", born: "1867", died: "1934", era: "Foundational Giants", image: "/images/scientists/marie-curie.jpg" },
+  { id: 6, name: "Nikola Tesla", nickname: "The Wizard of Electricity", field: "Electrical Engineering", nationality: "Serbian-American", born: "1856", died: "1943", era: "Foundational Giants", image: "/images/scientists/nikola-tesla.jpg" },
+  { id: 7, name: "James Clerk Maxwell", nickname: "The Unifier", field: "Physics", nationality: "British", born: "1831", died: "1879", era: "Foundational Giants" },
+  { id: 8, name: "Archimedes", nickname: "The Sage of Syracuse", field: "Mathematics & Physics", nationality: "Greek", born: "287 BC", died: "212 BC", era: "Foundational Giants" },
+  { id: 9, name: "Louis Pasteur", nickname: "The Microbe Hunter", field: "Biology & Chemistry", nationality: "French", born: "1822", died: "1895", era: "Foundational Giants" },
+  { id: 10, name: "Michael Faraday", nickname: "The Experimental Genius", field: "Physics & Chemistry", nationality: "British", born: "1791", died: "1867", era: "Foundational Giants" },
+  { id: 11, name: "Dmitri Mendeleev", nickname: "The Architect of Elements", field: "Chemistry", nationality: "Russian", born: "1834", died: "1907", era: "Foundational Giants" },
+  { id: 12, name: "Gregor Mendel", nickname: "The Father of Genetics", field: "Biology", nationality: "Austrian", born: "1822", died: "1884", era: "Foundational Giants" },
+  { id: 13, name: "Alan Turing", nickname: "The Codebreaker", field: "Computer Science", nationality: "British", born: "1912", died: "1954", era: "Foundational Giants", image: "/images/scientists/alan-turing.jpg" },
+  { id: 14, name: "Stephen Hawking", nickname: "The Cosmic Explorer", field: "Physics", nationality: "British", born: "1942", died: "2018", era: "Foundational Giants", image: "/images/scientists/stephen-hawking.jpg" },
+  { id: 15, name: "Richard Feynman", nickname: "The Great Explainer", field: "Physics", nationality: "American", born: "1918", died: "1988", era: "Foundational Giants" },
+  // Revolutionary Thinkers (16-30)
+  { id: 16, name: "Niels Bohr", nickname: "The Atomic Architect", field: "Physics", nationality: "Danish", born: "1885", died: "1962", era: "Revolutionary Thinkers" },
+  { id: 17, name: "Werner Heisenberg", nickname: "The Uncertainty", field: "Physics", nationality: "German", born: "1901", died: "1976", era: "Revolutionary Thinkers" },
+  { id: 18, name: "Rosalind Franklin", nickname: "The Dark Lady of DNA", field: "Chemistry & Biology", nationality: "British", born: "1920", died: "1958", era: "Revolutionary Thinkers", image: "/images/scientists/rosalind-franklin.jpg" },
+  { id: 19, name: "Ada Lovelace", nickname: "The Enchantress of Number", field: "Mathematics & Computing", nationality: "British", born: "1815", died: "1852", era: "Revolutionary Thinkers" },
+  { id: 20, name: "Johannes Kepler", nickname: "The Laws of the Cosmos", field: "Astronomy", nationality: "German", born: "1571", died: "1630", era: "Revolutionary Thinkers" },
+  { id: 21, name: "Carl Linnaeus", nickname: "The Name Giver", field: "Biology", nationality: "Swedish", born: "1707", died: "1778", era: "Revolutionary Thinkers" },
+  { id: 22, name: "Max Planck", nickname: "The Quantum Pioneer", field: "Physics", nationality: "German", born: "1858", died: "1947", era: "Revolutionary Thinkers" },
+  { id: 23, name: "Ibn al-Haytham", nickname: "The Father of Optics", field: "Optics & Physics", nationality: "Iraqi", born: "965", died: "1040", era: "Revolutionary Thinkers" },
+  { id: 24, name: "Al-Khwarizmi", nickname: "The Father of Algebra", field: "Mathematics", nationality: "Persian", born: "780", died: "850", era: "Revolutionary Thinkers" },
+  { id: 25, name: "Aristotle", nickname: "The First Teacher", field: "Philosophy & Science", nationality: "Greek", born: "384 BC", died: "322 BC", era: "Revolutionary Thinkers" },
+  { id: 26, name: "Jane Goodall", nickname: "The Chimpanzee Guardian", field: "Primatology", nationality: "British", born: "1934", era: "Revolutionary Thinkers" },
+  { id: 27, name: "Katherine Johnson", nickname: "The Human Computer", field: "Mathematics", nationality: "American", born: "1918", died: "2020", era: "Revolutionary Thinkers", image: "/images/scientists/katherine-johnson.jpg" },
+  { id: 28, name: "Chien-Shiung Wu", nickname: "The First Lady of Physics", field: "Physics", nationality: "Chinese-American", born: "1912", died: "1997", era: "Revolutionary Thinkers" },
+  { id: 29, name: "Hypatia", nickname: "The Martyr of Knowledge", field: "Mathematics & Astronomy", nationality: "Egyptian", born: "355", died: "415", era: "Revolutionary Thinkers" },
+  { id: 30, name: "Tim Berners-Lee", nickname: "The Web Weaver", field: "Computer Science", nationality: "British", born: "1955", era: "Modern Influencers" },
+  // Modern Influencers (31-50)
+  { id: 31, name: "Demis Hassabis", nickname: "The AI Architect", field: "AI & Neuroscience", nationality: "British", born: "1976", era: "Modern Influencers" },
+  { id: 32, name: "John Jumper", nickname: "The Protein Decoder", field: "AI", nationality: "American", born: "1984", era: "Modern Influencers" },
+  { id: 33, name: "David Baker", nickname: "The Protein Designer", field: "Biochemistry", nationality: "American", born: "1962", era: "Modern Influencers" },
+  { id: 34, name: "Geoffrey Hinton", nickname: "The Godfather of Deep Learning", field: "AI & Computer Science", nationality: "British-Canadian", born: "1947", era: "Modern Influencers" },
+  { id: 35, name: "Jennifer Doudna", nickname: "The Gene Editor", field: "Biochemistry", nationality: "American", born: "1964", era: "Modern Influencers" },
+  { id: 36, name: "Emmanuelle Charpentier", nickname: "The CRISPR Pioneer", field: "Microbiology", nationality: "French", born: "1968", era: "Modern Influencers" },
+  { id: 37, name: "Eric Lander", nickname: "The Genome Mapper", field: "Genomics", nationality: "American", born: "1957", era: "Modern Influencers" },
+  { id: 38, name: "Robert Langer", nickname: "The Bioengineer", field: "Biomedical Engineering", nationality: "American", born: "1948", era: "Modern Influencers" },
+  { id: 39, name: "Walter Willett", nickname: "The Nutrition Oracle", field: "Epidemiology", nationality: "American", born: "1945", era: "Modern Influencers" },
+  { id: 40, name: "Ronald C. Kessler", nickname: "The Mind Researcher", field: "Psychiatry", nationality: "American", born: "1947", era: "Modern Influencers" },
+  { id: 41, name: "Zhong Lin Wang", nickname: "The Nano Energy Pioneer", field: "Nanotechnology", nationality: "Chinese-American", born: "1961", era: "Modern Influencers" },
+  { id: 42, name: "Svante Pääbo", nickname: "The Ancient DNA Hunter", field: "Genetics", nationality: "Swedish", born: "1955", era: "Modern Influencers" },
+  { id: 43, name: "Daron Acemoglu", nickname: "The Institutions Scholar", field: "Economics", nationality: "Turkish-American", born: "1967", era: "Modern Influencers" },
+  { id: 44, name: "Yoshua Bengio", nickname: "The Deep Learning Pioneer", field: "AI", nationality: "Canadian", born: "1964", era: "Modern Influencers" },
+  { id: 45, name: "Yann LeCun", nickname: "The CNN Architect", field: "AI", nationality: "French-American", born: "1960", era: "Modern Influencers" },
+  { id: 46, name: "Andrew Ng", nickname: "The AI Educator", field: "AI & Machine Learning", nationality: "American", born: "1976", era: "Modern Influencers" },
+  { id: 47, name: "Fei-Fei Li", nickname: "The Visionary of AI", field: "Computer Vision & AI", nationality: "Chinese-American", born: "1976", era: "Modern Influencers" },
+  { id: 48, name: "Vint Cerf", nickname: "The Father of the Internet", field: "Computer Science", nationality: "American", born: "1943", era: "Modern Influencers" },
+  { id: 49, name: "James Robinson", nickname: "The Political Economist", field: "Economics", nationality: "British-American", born: "1960", era: "Modern Influencers" },
+  { id: 50, name: "Simon Johnson", nickname: "The Crisis Analyst", field: "Economics", nationality: "British-American", born: "1963", era: "Modern Influencers" },
+];

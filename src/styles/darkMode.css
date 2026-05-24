@@ -1,0 +1,77 @@
+/* ===== DARK MODE VARIABLES ===== */
+
+:root {
+  --bg-primary: #f1f1ee;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f1f1ee;
+  --text-primary: #282b2f;
+  --text-secondary: #968671;
+  --text-inverse: #f1f1ee;
+  --border-color: #e5e5e0;
+  --hero-gradient-overlay: rgba(241, 241, 238, 0.55);
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --nav-bg: rgba(241, 241, 238, 0.9);
+  --floating-bar-bg: #282b2f;
+  --floating-bar-text: #f1f1ee;
+}
+
+html.dark {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #242424;
+  --bg-tertiary: #1f1f1f;
+  --text-primary: #e8e6e3;
+  --text-secondary: #9a9590;
+  --text-inverse: #1a1a1a;
+  --border-color: #3a3a3a;
+  --hero-gradient-overlay: rgba(26, 26, 26, 0.55);
+  --card-bg: #2a2a2a;
+  --input-bg: #2a2a2a;
+  --nav-bg: rgba(26, 26, 26, 0.95);
+  --floating-bar-bg: #333333;
+  --floating-bar-text: #e8e6e3;
+}
+
+/* Smooth theme transition */
+html.dark,
+html.dark body,
+html.dark section,
+html.dark div {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Override specific sections for dark mode */
+html.dark section[id] {
+  background: var(--bg-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+html.dark div[style*="background: '#fff'"],
+html.dark div[style*="background: '#ffffff'"],
+html.dark div[style*="background: '#f1f1ee'"] {
+  background: var(--bg-secondary) !important;
+}
+
+html.dark section[style*="background: '#282b2f'"] {
+  background: #111111 !important;
+}
+
+html.dark input,
+html.dark select,
+html.dark textarea {
+  background: var(--input-bg) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+html.dark div[style*="background: '#282b2f'"] div[style*="color: '#f1f1ee'"] {
+  color: var(--text-primary) !important;
+}
+
+html.dark div[style*="background: '#282b2f'"] p[style*="color: '#f1f1ee'"] {
+  color: var(--text-primary) !important;
+}
+
+html.dark .compare-modal-inner {
+  background: var(--bg-secondary) !important;
+}
