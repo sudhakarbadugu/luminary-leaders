@@ -5,6 +5,28 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          bg: '#f1f1ee',
+          'bg-dark': '#1a1a1a',
+          card: '#ffffff',
+          'card-dark': '#242424',
+          'card-alt-dark': '#2a2a2a',
+          dark: '#282b2f',
+          'dark-hero': '#111111',
+          accent: '#ffcc00',
+          text: '#282b2f',
+          'text-dark': '#e8e6e3',
+          muted: '#968671',
+          'muted-dark': '#9a9590',
+          inverse: '#f1f1ee',
+          border: '#e5e5e0',
+          'border-dark': '#3a3a3a',
+          'input-dark': '#2a2a2a',
+          'nav-bg': 'rgba(241,241,238,0.92)',
+          'nav-bg-dark': 'rgba(26,26,26,0.95)',
+          'float-bg': '#282b2f',
+          'float-bg-dark': '#333333',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

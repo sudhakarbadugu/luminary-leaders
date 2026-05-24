@@ -102,7 +102,7 @@ export default function SportsGrid() {
 
         {/* Grid */}
         {displayed.length > 0 ? (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 48, marginBottom: 64 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))', gap: 48, marginBottom: 64 }}>
             {displayed.map((athlete, idx) => (
               <div key={athlete.id} ref={el => { if (el) cardsRef.current[idx] = el; }} onClick={() => navigate(`/athlete/${athlete.id}`)} style={{ opacity: 0, cursor: 'pointer' }}>
                 <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', position: 'relative', background: athlete.image ? undefined : getGradient(athlete.id) }}>

@@ -62,7 +62,7 @@ export default function CompareModal({ onClose }: { onClose: () => void }) {
         </div>
 
         {/* Comparison Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: `repeat(auto-fit, minmax(260px, 1fr))`, gap: 0 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: `repeat(auto-fit, minmax(min(260px, 100%), 1fr))`, gap: 0 }}>
           {items.map(item => {
             const { route, bio, style } = getItemData(item);
             const achievements = bio.keyAchievements || [];

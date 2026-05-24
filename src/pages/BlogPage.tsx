@@ -267,7 +267,7 @@ export default function BlogPage() {
             >
               More Stories
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 24 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(260px, 100%), 1fr))', gap: 24 }}>
               {relatedArticles.map(ra => (
                 <div
                   key={ra.id}

@@ -35,37 +35,40 @@ export default function Bookmarks() {
   }, [bookmarks]);
 
   return (
-    <section ref={sectionRef} id="bookmarks" style={{ position: 'relative', zIndex: 2, background: '#f1f1ee', padding: 'clamp(60px, 8vw, 100px) clamp(20px, 4vw, 40px)', borderTop: '1px solid #e5e5e0' }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 32 }}>
-          <BookmarkIcon size={20} style={{ color: '#ffcc00' }} />
-          <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671' }}>YOUR COLLECTION</div>
+    <section ref={sectionRef} id="bookmarks" className="relative z-[2] bg-brand-bg border-t border-brand-border dark:bg-brand-bg-dark dark:border-brand-border-dark" style={{ padding: 'clamp(60px, 8vw, 100px) clamp(20px, 4vw, 40px)' }}>
+      <div className="max-w-[1200px] mx-auto">
+        <div className="flex items-center gap-3 mb-8">
+          <BookmarkIcon size={20} className="text-brand-accent" />
+          <div className="font-inter text-[11px] font-medium tracking-widest uppercase text-brand-muted dark:text-brand-muted-dark">YOUR COLLECTION</div>
         </div>
 
         {bookmarks.length === 0 ? (
-          <div style={{ textAlign: 'center', padding: '60px 20px', color: '#968671', fontFamily: "'Inter', sans-serif" }}>
-            <BookmarkX size={40} style={{ margin: '0 auto 16px', opacity: 0.3 }} />
-            <p style={{ fontSize: 16 }}>No bookmarks yet. Click the bookmark icon on any profile to save it here.</p>
+          <div className="text-center py-[60px] px-5 text-brand-muted dark:text-brand-muted-dark font-inter">
+            <BookmarkX size={40} className="mx-auto mb-4 opacity-30" />
+            <p className="text-base">No bookmarks yet. Click the bookmark icon on any profile to save it here.</p>
           </div>
         ) : (
           <>
-            <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginBottom: 20 }}>{bookmarks.length} saved</div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 16 }}>
+            <div className="font-inter text-[13px] text-brand-muted dark:text-brand-muted-dark mb-5">{bookmarks.length} saved</div>
+            <div className="grid gap-4" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(min(260px, 100%), 1fr))' }}>
               {bookmarks.map((b, idx) => (
-                <div key={`${b.category}-${b.id}`} ref={el => { if (el) cardsRef.current[idx] = el; }} className="card-bg" style={{ opacity: 0, background: "#fff", borderRadius: 10, padding: '20px', border: '1px solid #e5e5e0', display: 'flex', alignItems: 'center', gap: 16, cursor: 'pointer', transition: 'box-shadow 0.3s' }}
+                <div
+                  key={`${b.category}-${b.id}`}
+                  ref={el => { if (el) cardsRef.current[idx] = el; }}
+                  className="flex items-center gap-4 rounded-[10px] border border-brand-border bg-white dark:bg-brand-card-dark dark:border-brand-border-dark p-5 cursor-pointer transition-shadow duration-300 hover:shadow-md"
+                  style={{ opacity: 0 }}
                   onClick={() => navigate(`${getCategoryRoute(b.category)}/${b.id}`)}
-                  onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.06)'; }}
-                  onMouseLeave={e => { e.currentTarget.style.boxShadow = 'none'; }}>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: '#282b2f' }}>{b.name}</div>
-                    <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: '#968671', marginTop: 2 }}>{b.nickname}</div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 8 }}>
-                      <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 10, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 1, color: '#ffcc00', background: '#282b2f', padding: '2px 8px', borderRadius: 99 }}>{getCategoryLabel(b.category)}</span>
+                >
+                  <div className="flex-1 min-w-0">
+                    <div className="font-inter text-sm font-medium text-brand-dark dark:text-brand-text-dark">{b.name}</div>
+                    <div className="font-inter text-xs text-brand-muted dark:text-brand-muted-dark mt-0.5">{b.nickname}</div>
+                    <div className="flex items-center gap-1.5 mt-2">
+                      <span className="font-inter text-[10px] font-medium tracking-wider uppercase bg-brand-dark text-brand-accent px-2 py-0.5 rounded-full">{getCategoryLabel(b.category)}</span>
                     </div>
                   </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
-                    <ArrowRight size={14} style={{ color: '#968671' }} />
-                    <button onClick={e => { e.stopPropagation(); handleRemove(b); }} style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#968671', padding: 4 }} title="Remove">
+                  <div className="flex flex-col items-center gap-2">
+                    <ArrowRight size={14} className="text-brand-muted dark:text-brand-muted-dark" />
+                    <button onClick={e => { e.stopPropagation(); handleRemove(b); }} className="border-none bg-transparent p-1 text-brand-muted dark:text-brand-muted-dark cursor-pointer" title="Remove">
                       <BookmarkX size={16} />
                     </button>
                   </div>

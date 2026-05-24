@@ -95,7 +95,7 @@ export default function LeaderPage() {
             <ArrowLeft size={16} /> Back to Legends
           </button>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 40, alignItems: 'start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', gap: 40, alignItems: 'start' }}>
             {/* Portrait */}
             <div
               style={{
@@ -204,7 +204,7 @@ export default function LeaderPage() {
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>
               Related Legends
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 24 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(200px, 100%), 1fr))', gap: 24 }}>
               {relatedLeaders.map(related => related && (
                 <div
                   key={related.id}

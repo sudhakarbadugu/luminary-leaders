@@ -50,97 +50,32 @@ export default function Hero({ lenisRef }: HeroProps) {
 
   return (
     <section
-      style={{
-        position: 'relative',
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'flex-start',
-        padding: '0 clamp(20px, 4vw, 40px)',
-        zIndex: 1,
-      }}
+      className="relative z-[1] flex items-start min-h-screen px-5 md:px-10"
     >
-      <div
-        style={{
-          maxWidth: 1200,
-          width: '100%',
-          margin: '0 auto',
-          paddingTop: 64,
-        }}
-      >
+      <div className="max-w-[1200px] w-full mx-auto pt-16">
         <div
           ref={labelRef}
-          style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: 11,
-            fontWeight: 500,
-            textTransform: 'uppercase',
-            letterSpacing: 2,
-            color: '#968671',
-            marginBottom: 32,
-            opacity: 0,
-            transform: 'translateY(20px)',
-          }}
+          className="font-inter text-[11px] font-medium tracking-widest uppercase text-brand-muted dark:text-brand-muted-dark mb-8 opacity-0 translate-y-5"
         >
           A DIGITAL ARCHIVE
         </div>
         <h1
           ref={headlineRef}
-          style={{
-            fontFamily: "'Instrument Serif', serif",
-            fontSize: 'clamp(36px, 5vw, 72px)',
-            fontWeight: 400,
-            color: '#282b2f',
-            maxWidth: 700,
-            lineHeight: 1.1,
-            opacity: 0,
-            transform: 'translateY(30px)',
-          }}
+          className="font-instrument text-clamp-hero font-normal text-brand-dark dark:text-brand-text-dark max-w-[700px] leading-tight opacity-0 translate-y-[30px]"
+          style={{ fontSize: 'clamp(36px, 5vw, 72px)' }}
         >
           The Visionaries Who Shaped Our World
         </h1>
         <p
           ref={subtitleRef}
-          style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: 18,
-            fontWeight: 400,
-            color: '#968671',
-            maxWidth: 480,
-            marginTop: 24,
-            lineHeight: 1.6,
-            opacity: 0,
-            transform: 'translateY(20px)',
-          }}
+          className="font-inter text-lg font-normal text-brand-muted dark:text-brand-muted-dark max-w-[480px] mt-6 leading-relaxed opacity-0 translate-y-5"
         >
           303 stories of visionaries across technology, markets, sports, cricket, and science — the people who shaped our world.
         </p>
         <button
           ref={ctaRef}
           onClick={scrollToLegends}
-          style={{
-            marginTop: 48,
-            border: '1px solid #282b2f',
-            borderRadius: 99,
-            padding: '14px 36px',
-            background: 'transparent',
-            color: '#282b2f',
-            fontFamily: "'Inter', sans-serif",
-            fontSize: 13,
-            fontWeight: 500,
-            cursor: 'pointer',
-            transition: 'all 0.3s ease',
-            opacity: 0,
-            transform: 'translateY(20px)',
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = '#282b2f';
-            e.currentTarget.style.color = '#f1f1ee';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = 'transparent';
-            e.currentTarget.style.color = '#282b2f';
-          }}
+          className="mt-12 rounded-full border border-brand-dark bg-transparent text-brand-dark dark:text-brand-text-dark dark:border-brand-text-dark px-9 py-3.5 font-inter text-[13px] font-medium cursor-pointer transition-all duration-300 hover:bg-brand-dark hover:text-brand-inverse dark:hover:bg-brand-text-dark dark:hover:text-brand-bg opacity-0 translate-y-5"
         >
           Explore the Legends
         </button>

@@ -27,32 +27,11 @@ export default function ScrollToTopButton() {
       onClick={scrollToTop}
       aria-label="Scroll to top"
       title="Scroll to top"
+      className="fixed right-4 bottom-4 z-[210] flex items-center justify-center w-11 h-11 rounded-full border border-brand-dark/10 bg-brand-accent text-brand-dark shadow-lg transition-all duration-200 hover:shadow-xl"
       style={{
-        position: 'fixed',
-        right: 16,
-        bottom: 16,
-        zIndex: 210,
-        width: 44,
-        height: 44,
-        borderRadius: '50%',
-        border: '1px solid rgba(40, 43, 47, 0.12)',
-        background: '#ffcc00',
-        color: '#282b2f',
-        boxShadow: '0 8px 24px rgba(0,0,0,0.18)',
-        cursor: 'pointer',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translateY(0)' : 'translateY(12px)',
         pointerEvents: isVisible ? 'auto' : 'none',
-        transition: 'opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease',
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.boxShadow = '0 10px 30px rgba(0,0,0,0.24)';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.18)';
       }}
     >
       <ArrowUp size={20} strokeWidth={2.2} />

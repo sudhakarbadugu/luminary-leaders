@@ -8,35 +8,12 @@ export default function DarkModeToggle() {
     <button
       onClick={toggle}
       title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: 36,
-        height: 36,
-        borderRadius: '50%',
-        border: '1px solid #e5e5e0',
-        background: isDark ? '#ffcc00' : 'transparent',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-      }}
-      onMouseEnter={e => {
-        if (!isDark) {
-          e.currentTarget.style.background = '#282b2f';
-          e.currentTarget.style.borderColor = '#282b2f';
-        }
-      }}
-      onMouseLeave={e => {
-        if (!isDark) {
-          e.currentTarget.style.background = 'transparent';
-          e.currentTarget.style.borderColor = '#e5e5e0';
-        }
-      }}
+      className="flex items-center justify-center w-9 h-9 rounded-full border cursor-pointer transition-all duration-300 border-brand-border bg-transparent hover:bg-brand-dark hover:border-brand-dark dark:border-brand-border-dark dark:bg-brand-accent dark:hover:bg-brand-accent"
     >
       {isDark ? (
         <Sun size={16} color="#282b2f" />
       ) : (
-        <Moon size={16} color="#282b2f" />
+        <Moon size={16} className="text-brand-dark dark:text-brand-text-dark" />
       )}
     </button>
   );

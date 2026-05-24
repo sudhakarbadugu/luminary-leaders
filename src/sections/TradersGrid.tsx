@@ -108,7 +108,7 @@ export default function TradersGrid() {
 
         {/* Filter Panel */}
         {isFilterOpen && (
-          <div className="card-bg" style={{ maxWidth: 800, margin: "0 auto 40px", padding: "28px 32px", background: "#fff", borderRadius: 16, border: '1px solid #e5e5e0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 20, boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}>
+          <div className="card-bg" style={{ maxWidth: 800, margin: "0 auto 40px", padding: "28px 32px", background: "#fff", borderRadius: 16, border: '1px solid #e5e5e0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(200px, 100%), 1fr))', gap: 20, boxShadow: '0 4px 24px rgba(0,0,0,0.06)' }}>
             <div>
               <label style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 1.5, color: '#968671', marginBottom: 8, display: 'flex', alignItems: 'center', gap: 6 }}><TrendingUp size={12} /> Market</label>
               <select value={marketFilter} onChange={e => { setMarketFilter(e.target.value); setVisibleCount(24); }} style={{ width: '100%', padding: '10px 14px', borderRadius: 8, border: '1px solid #e5e5e0', background: '#f1f1ee', fontFamily: "'Inter', sans-serif", fontSize: 14, color: '#282b2f', outline: 'none', cursor: 'pointer', appearance: 'none', backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23968671' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 12px center', paddingRight: 32 }}>
@@ -141,7 +141,7 @@ export default function TradersGrid() {
 
         {/* Grid */}
         {displayed.length > 0 ? (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 48, marginBottom: 64 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))', gap: 48, marginBottom: 64 }}>
             {displayed.map((trader, idx) => (
               <div key={trader.id} ref={el => { if (el) cardsRef.current[idx] = el; }} onClick={() => navigate(`/trader/${trader.id}`)} style={{ opacity: 0, cursor: 'pointer' }}>
                 <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', position: 'relative', background: trader.image ? undefined : getGradient(trader.id) }}>

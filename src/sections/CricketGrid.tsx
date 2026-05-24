@@ -102,7 +102,7 @@ export default function CricketGrid() {
 
         {/* Grid */}
         {displayed.length > 0 ? (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 48, marginBottom: 64 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))', gap: 48, marginBottom: 64 }}>
             {displayed.map((cricketer, idx) => (
               <div key={cricketer.id} ref={el => { if (el) cardsRef.current[idx] = el; }} onClick={() => navigate(`/cricketer/${cricketer.id}`)} style={{ opacity: 0, cursor: 'pointer' }}>
                 <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', position: 'relative', background: cricketer.image ? undefined : getGradient(cricketer.id) }}>

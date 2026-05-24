@@ -50,45 +50,19 @@ export default function Stats() {
   return (
     <section
       ref={sectionRef}
-      style={{
-        position: 'relative',
-        zIndex: 2,
-        background: '#f1f1ee',
-        padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)',
-        borderTop: '1px solid #e5e5e0',
-        borderBottom: '1px solid #e5e5e0',
-      }}
+      className="relative z-[2] bg-brand-bg border-t border-b border-brand-border dark:bg-brand-bg-dark dark:border-brand-border-dark"
+      style={{ padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}
     >
       <div
-        style={{
-          maxWidth: 1200,
-          margin: '0 auto',
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-          gap: 48,
-          textAlign: 'center',
-        }}
+        className="max-w-[1200px] mx-auto text-center grid gap-12"
+        style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(200px, 100%), 1fr))' }}
       >
         {stats.map((stat, idx) => (
           <div key={stat.label}>
-            <div
-              style={{
-                fontFamily: "'Instrument Serif', serif",
-                fontSize: 'clamp(40px, 5vw, 64px)',
-                color: '#282b2f',
-                lineHeight: 1,
-              }}
-            >
+            <div className="font-instrument text-brand-dark dark:text-brand-text-dark leading-none" style={{ fontSize: 'clamp(40px, 5vw, 64px)' }}>
               {displayValues[idx]}
             </div>
-            <div
-              style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: 13,
-                color: '#968671',
-                marginTop: 8,
-              }}
-            >
+            <div className="font-inter text-[13px] text-brand-muted dark:text-brand-muted-dark mt-2">
               {stat.label}
             </div>
           </div>

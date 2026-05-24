@@ -18,51 +18,23 @@ export default function CompareFloatingBar() {
 
   return (
     <>
-      <div style={{
-        position: 'fixed',
-        bottom: 24,
-        left: '50%',
-        transform: 'translateX(-50%)',
-        zIndex: 200,
-        background: '#282b2f',
-        borderRadius: 12,
-        padding: '12px 20px',
-        display: 'flex',
-        alignItems: 'center',
-        gap: 16,
-        boxShadow: '0 8px 32px rgba(0,0,0,0.25)',
-        maxWidth: '90vw',
-      }}>
-        <Users size={16} style={{ color: '#ffcc00', flexShrink: 0 }} />
-        <div style={{ display: 'flex', gap: 8, overflow: 'auto', maxWidth: 300 }}>
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[200] flex items-center gap-4 max-w-[90vw] rounded-xl bg-brand-dark px-5 py-3 shadow-2xl dark:bg-brand-float-bg-dark">
+        <Users size={16} className="text-brand-accent shrink-0" />
+        <div className="flex gap-2 max-w-[300px] overflow-auto">
           {items.map(item => (
-            <span key={`${item.category}-${item.id}`} style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, color: '#f1f1ee', background: 'rgba(255,255,255,0.1)', padding: '3px 10px', borderRadius: 99, whiteSpace: 'nowrap' }}>{item.name}</span>
+            <span key={`${item.category}-${item.id}`} className="whitespace-nowrap rounded-full bg-white/10 px-2.5 py-0.5 font-inter text-[11px] text-brand-inverse dark:text-brand-text-dark">{item.name}</span>
           ))}
         </div>
         <button
           onClick={() => setModalOpen(true)}
           disabled={items.length < 2}
-          style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: 12,
-            fontWeight: 600,
-            padding: '6px 16px',
-            borderRadius: 99,
-            border: 'none',
-            background: items.length >= 2 ? '#ffcc00' : 'rgba(255,255,255,0.1)',
-            color: items.length >= 2 ? '#282b2f' : '#968671',
-            cursor: items.length >= 2 ? 'pointer' : 'not-allowed',
-            display: 'flex',
-            alignItems: 'center',
-            gap: 6,
-            flexShrink: 0,
-          }}
+          className="flex items-center gap-1.5 shrink-0 rounded-full border-none px-4 py-1.5 font-inter text-xs font-semibold transition-colors bg-brand-accent text-brand-dark disabled:bg-white/10 disabled:text-brand-muted disabled:cursor-not-allowed"
         >
           <GitCompare size={14} /> Compare
         </button>
         <button
           onClick={() => { clearCompare(); setItems([]); }}
-          style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#968671', padding: 4, flexShrink: 0 }}
+          className="shrink-0 border-none bg-transparent p-1 text-brand-muted cursor-pointer"
         >
           <X size={16} />
         </button>

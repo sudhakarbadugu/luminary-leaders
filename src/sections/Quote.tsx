@@ -33,49 +33,18 @@ export default function Quote() {
   return (
     <section
       ref={sectionRef}
-      style={{
-        position: 'relative',
-        zIndex: 2,
-        background: '#f1f1ee',
-        padding: 'clamp(80px, 10vw, 140px) clamp(20px, 4vw, 40px)',
-      }}
+      className="relative z-[2] bg-brand-bg dark:bg-brand-bg-dark"
+      style={{ padding: 'clamp(80px, 10vw, 140px) clamp(20px, 4vw, 40px)' }}
     >
       <div
         ref={quoteRef}
-        style={{
-          maxWidth: 800,
-          margin: '0 auto',
-          textAlign: 'center',
-          opacity: 0,
-        }}
+        className="max-w-[800px] mx-auto text-center opacity-0"
       >
-        <div
-          style={{
-            width: 40,
-            height: 2,
-            background: '#ffcc00',
-            margin: '0 auto 32px',
-          }}
-        />
-        <blockquote
-          style={{
-            fontFamily: "'Instrument Serif', serif",
-            fontSize: 'clamp(24px, 3vw, 40px)',
-            fontStyle: 'italic',
-            color: '#282b2f',
-            lineHeight: 1.4,
-          }}
-        >
+        <div className="w-10 h-0.5 bg-brand-accent mx-auto mb-8" />
+        <blockquote className="font-instrument italic text-brand-dark dark:text-brand-text-dark leading-snug" style={{ fontSize: 'clamp(24px, 3vw, 40px)' }}>
           "The people who are crazy enough to think they can change the world are the ones who do."
         </blockquote>
-        <div
-          style={{
-            fontFamily: "'Inter', sans-serif",
-            fontSize: 14,
-            color: '#968671',
-            marginTop: 32,
-          }}
-        >
+        <div className="font-inter text-sm text-brand-muted dark:text-brand-muted-dark mt-8">
           -- Steve Jobs, 1997
         </div>
       </div>

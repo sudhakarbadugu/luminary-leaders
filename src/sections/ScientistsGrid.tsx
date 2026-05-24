@@ -98,7 +98,7 @@ export default function ScientistsGrid() {
         <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginBottom: 24, textAlign: 'center' }}>Showing {displayed.length} of {filtered.length} scientists</div>
 
         {displayed.length > 0 ? (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 48, marginBottom: 64 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))', gap: 48, marginBottom: 64 }}>
             {displayed.map((scientist, idx) => (
               <div key={scientist.id} ref={el => { if (el) cardsRef.current[idx] = el; }} onClick={() => navigate(`/scientist/${scientist.id}`)} style={{ opacity: 0, cursor: 'pointer' }}>
                 <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', position: 'relative', background: scientist.image ? undefined : getGradient(scientist.id) }}>

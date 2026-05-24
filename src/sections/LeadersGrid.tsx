@@ -361,7 +361,7 @@ export default function LeadersGrid() {
               borderRadius: 16,
               border: '1px solid #e5e5e0',
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(200px, 100%), 1fr))',
               gap: 20,
               boxShadow: '0 4px 24px rgba(0,0,0,0.06)',
             }}
@@ -644,7 +644,7 @@ export default function LeadersGrid() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))',
               gap: 48,
               marginBottom: 64,
             }}

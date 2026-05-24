@@ -105,7 +105,7 @@ export default function SportsPersonPage() {
       {/* Content */}
       <div ref={contentRef} style={{ maxWidth: 720, margin: '0 auto', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
         {/* Info Cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16, marginBottom: 48 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(200px, 100%), 1fr))', gap: 16, marginBottom: 48 }}>
           <div className="card-bg" style={{ background: "#fff", borderRadius: 12, padding: '24px', border: '1px solid #e5e5e0' }}>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 1.5, color: '#968671', marginBottom: 8 }}><Medal size={12} style={{ display: 'inline', marginRight: 6 }} />Sport</div>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 500, color: '#282b2f' }}>{athlete.sport}</div>
@@ -155,7 +155,7 @@ export default function SportsPersonPage() {
         {relatedAthletes.length > 0 && (
           <div style={{ marginTop: 80 }}>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>Related Athletes</div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 16 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(200px, 100%), 1fr))', gap: 16 }}>
               {relatedAthletes.map(ra => (
                 <div key={ra.id} onClick={() => navigate(`/athlete/${ra.id}`)} className="card-bg" style={{ cursor: "pointer", background: "#fff", borderRadius: 10, padding: '20px', border: '1px solid #e5e5e0', transition: 'box-shadow 0.3s, transform 0.3s' }}
                   onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.08)'; e.currentTarget.style.transform = 'translateY(-3px)'; }}

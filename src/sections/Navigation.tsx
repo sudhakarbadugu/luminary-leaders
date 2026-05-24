@@ -30,84 +30,32 @@ export default function Navigation({ lenisRef }: NavigationProps) {
   ];
 
   return (
-    <nav
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        height: 64,
-        background: 'rgba(241,241,238,0.92)',
-        backdropFilter: 'blur(10px)',
-        WebkitBackdropFilter: 'blur(10px)',
-        borderBottom: '1px solid #e5e5e0',
-        zIndex: 100,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: isMobile ? '0 20px' : '0 40px',
-      }}
-    >
+    <nav className="fixed inset-x-0 top-0 z-[100] flex items-center justify-between border-b border-brand-border bg-brand-nav-bg backdrop-blur-[10px] dark:bg-brand-nav-bg-dark dark:border-brand-border-dark h-16 px-5 md:px-10">
       <a
         href="/"
-        style={{
-          fontFamily: "'Inter', sans-serif",
-          fontWeight: 500,
-          fontSize: 13,
-          letterSpacing: 2,
-          textTransform: 'uppercase' as const,
-          color: '#282b2f',
-          textDecoration: 'none',
-          transition: 'color 0.2s ease',
-          flexShrink: 0,
-        }}
-        onMouseEnter={e => { e.currentTarget.style.color = '#ffcc00'; }}
-        onMouseLeave={e => { e.currentTarget.style.color = '#282b2f'; }}
+        className="font-inter text-[13px] font-medium tracking-widest uppercase text-brand-dark dark:text-brand-text-dark no-underline transition-colors duration-200 hover:text-brand-accent shrink-0"
       >
         LUMINARY
       </a>
 
       {isMobile ? (
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div className="flex items-center gap-3">
           <DarkModeToggle />
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            style={{
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              color: '#282b2f',
-              padding: 4,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
+            className="flex items-center justify-center border-none bg-transparent p-1 text-brand-dark dark:text-brand-text-dark cursor-pointer"
             aria-label="Toggle menu"
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       ) : (
-        <div style={{ display: 'flex', gap: 24, alignItems: 'center' }}>
+        <div className="flex items-center gap-6">
           {links.map((link) => (
             <button
               key={link.label}
               onClick={() => scrollTo(link.target)}
-              style={{
-                fontFamily: "'Inter', sans-serif",
-                fontWeight: 400,
-                fontSize: 13,
-                letterSpacing: 0.5,
-                color: '#282b2f',
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                padding: 0,
-                transition: 'color 0.2s ease',
-                whiteSpace: 'nowrap',
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.color = '#ffcc00'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.color = '#282b2f'; }}
+              className="border-none bg-transparent p-0 font-inter text-[13px] tracking-wide text-brand-dark dark:text-brand-text-dark cursor-pointer transition-colors duration-200 hover:text-brand-accent whitespace-nowrap"
             >
               {link.label}
             </button>
@@ -118,42 +66,12 @@ export default function Navigation({ lenisRef }: NavigationProps) {
 
       {/* Mobile Menu Dropdown */}
       {isMobile && menuOpen && (
-        <div
-          style={{
-            position: 'absolute',
-            top: 64,
-            left: 0,
-            right: 0,
-            background: 'rgba(241,241,238,0.98)',
-            backdropFilter: 'blur(10px)',
-            WebkitBackdropFilter: 'blur(10px)',
-            borderBottom: '1px solid #e5e5e0',
-            padding: '16px 20px 24px',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 16,
-            zIndex: 99,
-          }}
-        >
+        <div className="absolute inset-x-0 top-16 z-[99] flex flex-col gap-4 border-b border-brand-border bg-brand-nav-bg/[0.98] backdrop-blur-[10px] px-5 pt-4 pb-6 dark:bg-brand-nav-bg-dark dark:border-brand-border-dark">
           {links.map((link) => (
             <button
               key={link.label}
               onClick={() => scrollTo(link.target)}
-              style={{
-                fontFamily: "'Inter', sans-serif",
-                fontWeight: 400,
-                fontSize: 15,
-                letterSpacing: 0.5,
-                color: '#282b2f',
-                background: 'none',
-                border: 'none',
-                cursor: 'pointer',
-                padding: '8px 0',
-                transition: 'color 0.2s ease',
-                textAlign: 'left',
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.color = '#ffcc00'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.color = '#282b2f'; }}
+              className="border-none bg-transparent p-0 pb-2 font-inter text-[15px] tracking-wide text-brand-dark dark:text-brand-text-dark cursor-pointer text-left transition-colors duration-200 hover:text-brand-accent"
             >
               {link.label}
             </button>

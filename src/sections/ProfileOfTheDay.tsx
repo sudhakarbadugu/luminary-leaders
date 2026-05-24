@@ -97,7 +97,7 @@ export default function ProfileOfTheDay() {
           </span>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 48, alignItems: 'center' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(300px, 100%), 1fr))', gap: 48, alignItems: 'center' }}>
           {/* Left: Image */}
           <div
             onClick={() => navigate(route)}

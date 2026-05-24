@@ -17,23 +17,7 @@ export default function OfflineBanner() {
 
   return (
     <div
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 9999,
-        background: '#282b2f',
-        color: '#f1f1ee',
-        padding: '10px 20px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: 10,
-        fontFamily: "'Inter', sans-serif",
-        fontSize: 13,
-        fontWeight: 500,
-      }}
+      className="fixed inset-x-0 top-0 z-[9999] flex items-center justify-center gap-2.5 bg-brand-dark text-brand-inverse px-5 py-2.5 font-inter text-[13px] font-medium"
     >
       <WifiOff size={14} color="#ffcc00" />
       <span>You are offline. Saved profiles are available for reading.</span>
