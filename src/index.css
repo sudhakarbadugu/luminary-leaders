@@ -48,7 +48,6 @@
   }
   html {
     scroll-behavior: auto;
-    overflow-x: hidden;
   }
 }
 
@@ -87,12 +86,14 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
-/* Prevent horizontal overflow on mobile */
+/* Prevent horizontal overflow on mobile.
+   Only on body/#root — NOT html, because overflow-x:hidden
+   on html can clip position:fixed elements on some mobile browsers. */
 body {
   overflow-x: hidden;
 }
 
-/* Ensure #root doesn't add horizontal overflow */
 #root {
   overflow-x: hidden;
+  max-width: 100vw;
 }
