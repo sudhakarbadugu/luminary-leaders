@@ -71,6 +71,35 @@ Run linting:
 npm run lint
 ```
 
+## Deployment
+
+### Option 1: Static Hosting
+
+Use any static hosting provider that supports single page apps.
+
+```bash
+npm run build
+```
+
+Deploy the generated `dist/` folder. Because this app uses `BrowserRouter`, configure the host to route unknown paths back to `index.html`.
+
+### Option 2: Netlify (Drag & Drop - Easiest)
+
+Why: zero config, just drag a folder.
+
+Steps:
+
+1. Run `npm run build` locally.
+2. Go to `app.netlify.com`.
+3. Drag your `dist/` folder onto the page.
+4. Get a free `.netlify.app` URL instantly.
+
+For auto-deploy from GitHub:
+
+1. Connect your GitHub repo.
+2. Set the build command to `npm run build`.
+3. Set the publish directory to `dist`.
+
 ## Project Structure
 
 ```text
