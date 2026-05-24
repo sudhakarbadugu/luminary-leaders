@@ -48,6 +48,7 @@
   }
   html {
     scroll-behavior: auto;
+    overflow-x: hidden;
   }
 }
 
@@ -84,4 +85,14 @@ html.lenis, html.lenis body {
 }
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
+}
+
+/* Prevent horizontal overflow on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure #root doesn't add horizontal overflow */
+#root {
+  overflow-x: hidden;
 }
