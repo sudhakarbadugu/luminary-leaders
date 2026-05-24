@@ -1,73 +1,97 @@
-# React + TypeScript + Vite
+# Luminary Leaders
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Luminary Leaders is a React and TypeScript digital archive of influential people across technology, markets, sports, cricket, and science. The app presents biography pages, curated story sections, comparison tools, bookmarks, dark mode, print/share actions, and offline support through a service worker.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Home page with animated sections for leaders, traders, athletes, cricketers, scientists, blogs, methodology, stats, and bookmarks.
+- Individual profile pages for technology leaders, traders, sports people, cricketers, and scientists.
+- Search, filtering, bookmarking, and profile comparison flows.
+- Blog listing and article pages.
+- PWA manifest and service worker for installable/offline-friendly behavior.
+- Dark mode, print styles, share actions, audio narration support, and an offline banner.
+- Smooth scrolling and animation using Lenis, GSAP, and a particle canvas background.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- Radix UI primitives
+- Lucide React icons
+- GSAP and Lenis
+- Three.js
 
-## Expanding the ESLint configuration
+## Routes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Route | Purpose |
+| --- | --- |
+| `/` | Main archive landing page |
+| `/leader/:id` | Technology and business leader profile |
+| `/trader/:id` | Trader and investor profile |
+| `/athlete/:id` | Sports person profile |
+| `/cricketer/:id` | Cricketer profile |
+| `/scientist/:id` | Scientist profile |
+| `/blog` | Blog index |
+| `/blog/:slug` | Blog article |
+| `/privacy` | Privacy policy |
+| `/terms` | Terms of use |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Install dependencies:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Start the development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+Run linting:
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```text
+public/
+  icons/             PWA icons
+  images/            Profile and section imagery
+  manifest.json      PWA manifest
+  sw.js              Service worker
+src/
+  components/        Shared UI and feature components
+  components/ui/     Radix-based UI primitives
+  data/              Biography, profile, and blog datasets
+  hooks/             Dark mode and responsive hooks
+  pages/             Route-level pages
+  sections/          Home page sections
+  styles/            Dark mode and print CSS
+  utils/             Bookmarks, comparison, PWA, and helper utilities
+```
+
+## Notes
+
+- The app uses `BrowserRouter`, so production hosting should serve `index.html` for unknown routes.
+- PWA behavior is registered from `src/main.tsx` and backed by `public/sw.js`.
+- Profile content and category data are stored locally under `src/data`.
