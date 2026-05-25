@@ -4,14 +4,74 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+interface FormErrors {
+  name?: string;
+  email?: string;
+  nominee?: string;
+  reason?: string;
+  general?: string;
+}
+
+const ILLEGAL_PATTERNS = [
+  /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
+  /<\/?[a-z][\s\S]*?>/gi,
+  /javascript:/gi,
+  /on\w+\s*=/gi,
+  /DROP\s+TABLE|DELETE\s+FROM|INSERT\s+INTO|SELECT\s+.*\s+FROM|UNION\s+SELECT|--|;--/gi,
+  /\\x00|\\0|%00|\0/g,
+  /\{\{.*?\}\}|\$\{.*?\}/g,
+];
+
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const NAME_REGEX = /^[a-zA-Z\s\-'\.]+$/;
+
+function sanitizeInput(value: string): string {
+  return value.replace(/[<>\"'%;()&+]/g, '');
+}
+
+function validateField(key: string, value: string): string | undefined {
+  const trimmed = value.trim();
+
+  if (!trimmed) return 'This field is required.';
+
+  for (const pattern of ILLEGAL_PATTERNS) {
+    if (pattern.test(trimmed)) {
+      return 'Invalid characters detected.';
+    }
+  }
+
+  switch (key) {
+    case 'name':
+      if (trimmed.length < 2) return 'Name must be at least 2 characters.';
+      if (trimmed.length > 100) return 'Name must be under 100 characters.';
+      if (!NAME_REGEX.test(trimmed)) return 'Name can only contain letters, spaces, hyphens, and apostrophes.';
+      break;
+    case 'email':
+      if (trimmed.length > 254) return 'Email is too long.';
+      if (!EMAIL_REGEX.test(trimmed)) return 'Please enter a valid email address.';
+      break;
+    case 'nominee':
+      if (trimmed.length < 2) return 'Nominee name must be at least 2 characters.';
+      if (trimmed.length > 100) return 'Nominee name must be under 100 characters.';
+      if (!NAME_REGEX.test(trimmed)) return 'Name can only contain letters, spaces, hyphens, and apostrophes.';
+      break;
+    case 'reason':
+      if (trimmed.length < 10) return 'Message must be at least 10 characters.';
+      if (trimmed.length > 1000) return 'Message must be under 1000 characters.';
+      break;
+  }
+
+  return undefined;
+}
+
 export default function Submit() {
   const sectionRef = useRef<HTMLElement>(null);
   const formRef = useRef<HTMLDivElement>(null);
   const infoRef = useRef<HTMLDivElement>(null);
   const [formData, setFormData] = useState({ name: '', email: '', nominee: '', reason: '' });
+  const [errors, setErrors] = useState<FormErrors>({});
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -51,10 +111,34 @@ export default function Submit() {
     return () => ctx.revert();
   }, []);
 
+  const handleChange = (key: keyof typeof formData, value: string) => {
+    const sanitized = key === 'email' ? value.trim() : sanitizeInput(value);
+    setFormData(prev => ({ ...prev, [key]: sanitized }));
+    if (errors[key]) {
+      setErrors(prev => {
+        const next = { ...prev };
+        delete next[key];
+        return next;
+      });
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const newErrors: FormErrors = {};
+    (Object.keys(formData) as Array<keyof typeof formData>).forEach(key => {
+      const err = validateField(key, formData[key]);
+      if (err) newErrors[key] = err;
+    });
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
     setSubmitting(true);
-    setError(null);
+    setErrors({});
 
     try {
       const response = await fetch('https://fwdastx0oj.execute-api.ap-south-1.amazonaws.com/production/nominate', {
@@ -64,10 +148,10 @@ export default function Submit() {
           'x-api-key': '1vFnkDsFsu7CbassjiTyN5WmqDXPbbnV6KGfeq9H',
         },
         body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          nomineeName: formData.nominee,
-          message: formData.reason,
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          nomineeName: formData.nominee.trim(),
+          message: formData.reason.trim(),
         }),
       });
 
@@ -78,18 +162,19 @@ export default function Submit() {
       setSubmitted(true);
       setFormData({ name: '', email: '', nominee: '', reason: '' });
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.');
+      setErrors({
+        general: err instanceof Error ? err.message : 'Something went wrong. Please try again.',
+      });
     } finally {
       setSubmitting(false);
     }
   };
 
-  const inputStyle: React.CSSProperties = {
+  const inputBaseStyle: React.CSSProperties = {
     width: '100%',
     borderTop: 'none',
     borderLeft: 'none',
     borderRight: 'none',
-    borderBottom: '1px solid #282b2f',
     background: 'transparent',
     padding: '14px 0',
     fontFamily: "'Inter', sans-serif",
@@ -97,7 +182,44 @@ export default function Submit() {
     color: '#282b2f',
     outline: 'none',
     transition: 'border-color 0.3s ease',
-    marginBottom: 24,
+  };
+
+  const renderField = (
+    key: keyof typeof formData,
+    placeholder: string,
+    type: 'text' | 'email' = 'text',
+    isTextarea = false
+  ) => {
+    const hasError = !!errors[key];
+    const fieldStyle: React.CSSProperties = {
+      ...inputBaseStyle,
+      borderBottom: hasError ? '1px solid #ef4444' : '1px solid #282b2f',
+      marginBottom: hasError ? 4 : 24,
+    };
+
+    const inputProps = {
+      type: isTextarea ? undefined : type,
+      placeholder,
+      value: formData[key],
+      onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => handleChange(key, e.target.value),
+      style: isTextarea ? { ...fieldStyle, resize: 'vertical', minHeight: 100 } as React.CSSProperties : fieldStyle,
+      required: false,
+    };
+
+    return (
+      <div key={key}>
+        {isTextarea ? (
+          <textarea {...inputProps} />
+        ) : (
+          <input {...inputProps} />
+        )}
+        {hasError && (
+          <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: '#ef4444', marginBottom: 16 }}>
+            {errors[key]}
+          </div>
+        )}
+      </div>
+    );
   };
 
   return (
@@ -162,44 +284,26 @@ export default function Submit() {
               </div>
             </div>
           ) : (
-            <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={e => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                style={inputStyle}
-                required
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={e => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                style={inputStyle}
-                required
-              />
-              <input
-                type="text"
-                placeholder="Nominee Name"
-                value={formData.nominee}
-                onChange={e => setFormData(prev => ({ ...prev, nominee: e.target.value }))}
-                style={inputStyle}
-                required
-              />
-              <textarea
-                placeholder="Why should this person be included?"
-                value={formData.reason}
-                onChange={e => setFormData(prev => ({ ...prev, reason: e.target.value }))}
-                style={{
-                  ...inputStyle,
-                  resize: 'vertical',
-                  minHeight: 100,
-                  borderBottom: '1px solid #282b2f',
-                }}
-                required
-              />
-              {error && (
+            <form onSubmit={handleSubmit} noValidate>
+              {renderField('name', 'Your Name')}
+              {renderField('email', 'Your Email', 'email')}
+              {renderField('nominee', 'Nominee Name')}
+              {renderField('reason', 'Why should this person be included?', 'text', true)}
+              {formData.reason && (
+                <div
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: 11,
+                    color: formData.reason.length > 1000 ? '#ef4444' : '#968671',
+                    textAlign: 'right',
+                    marginTop: -16,
+                    marginBottom: 16,
+                  }}
+                >
+                  {formData.reason.length} / 1000
+                </div>
+              )}
+              {errors.general && (
                 <div
                   style={{
                     padding: '12px 16px',
@@ -211,7 +315,7 @@ export default function Submit() {
                     color: '#ef4444',
                   }}
                 >
-                  {error}
+                  {errors.general}
                 </div>
               )}
               <button
