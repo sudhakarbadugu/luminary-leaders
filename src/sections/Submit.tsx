@@ -10,6 +10,8 @@ export default function Submit() {
   const infoRef = useRef<HTMLDivElement>(null);
   const [formData, setFormData] = useState({ name: '', email: '', nominee: '', reason: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -49,10 +51,37 @@ export default function Submit() {
     return () => ctx.revert();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    setSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await fetch('https://fwdastx0oj.execute-api.ap-south-1.amazonaws.com/production/nominate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': '1vFnkDsFsu7CbassjiTyN5WmqDXPbbnV6KGfeq9H',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          nomineeName: formData.nominee,
+          message: formData.reason,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit nomination. Please try again.');
+      }
+
+      setSubmitted(true);
+      setFormData({ name: '', email: '', nominee: '', reason: '' });
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const inputStyle: React.CSSProperties = {
@@ -170,10 +199,26 @@ export default function Submit() {
                 }}
                 required
               />
+              {error && (
+                <div
+                  style={{
+                    padding: '12px 16px',
+                    background: 'rgba(239,68,68,0.1)',
+                    borderRadius: 8,
+                    marginBottom: 16,
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: 14,
+                    color: '#ef4444',
+                  }}
+                >
+                  {error}
+                </div>
+              )}
               <button
                 type="submit"
+                disabled={submitting}
                 style={{
-                  background: '#282b2f',
+                  background: submitting ? '#6b7280' : '#282b2f',
                   color: '#f1f1ee',
                   borderRadius: 99,
                   padding: '16px 48px',
@@ -181,20 +226,24 @@ export default function Submit() {
                   fontSize: 13,
                   fontWeight: 500,
                   border: 'none',
-                  cursor: 'pointer',
+                  cursor: submitting ? 'not-allowed' : 'pointer',
                   transition: 'all 0.3s ease',
                   marginTop: 32,
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = '#ffcc00';
-                  e.currentTarget.style.color = '#282b2f';
+                  if (!submitting) {
+                    e.currentTarget.style.background = '#ffcc00';
+                    e.currentTarget.style.color = '#282b2f';
+                  }
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = '#282b2f';
-                  e.currentTarget.style.color = '#f1f1ee';
+                  if (!submitting) {
+                    e.currentTarget.style.background = '#282b2f';
+                    e.currentTarget.style.color = '#f1f1ee';
+                  }
                 }}
               >
-                Submit Nomination
+                {submitting ? 'Submitting...' : 'Submit Nomination'}
               </button>
             </form>
           )}
