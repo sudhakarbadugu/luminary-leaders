@@ -70,8 +70,8 @@ export default function Submit() {
   const infoRef = useRef<HTMLDivElement>(null);
   const [formData, setFormData] = useState({ name: '', email: '', nominee: '', reason: '' });
   const [errors, setErrors] = useState<FormErrors>({});
-  const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -181,11 +181,18 @@ export default function Submit() {
         throw new Error('Failed to submit nomination. Please try again.');
       }
 
-      setSubmitted(true);
-      setFormData({ name: '', email: '', nominee: '', reason: '' });
+      setSuccess(true);
+      setTimeout(() => {
+        setSuccess(false);
+        setFormData({ name: '', email: '', nominee: '', reason: '' });
+      }, 2000);
     } catch (err) {
+      const message = err instanceof Error ? err.message : 'Something went wrong. Please try again.';
+      // CORS errors show as "Failed to fetch" even when API returns 200
       setErrors({
-        general: err instanceof Error ? err.message : 'Something went wrong. Please try again.',
+        general: message === 'Failed to fetch'
+          ? 'Network error. If the issue persists, please check CORS settings on the API.'
+          : message,
       });
     } finally {
       setSubmitting(false);
@@ -290,24 +297,7 @@ export default function Submit() {
           >
             Nominate a Legend
           </h2>
-          {submitted ? (
-            <div
-              style={{
-                padding: 40,
-                background: 'rgba(255,204,0,0.1)',
-                borderRadius: 12,
-                textAlign: 'center',
-              }}
-            >
-              <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 18, fontWeight: 500, color: '#282b2f' }}>
-                Thank you for your nomination!
-              </div>
-              <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: '#968671', marginTop: 8 }}>
-                We will review it against our methodology.
-              </div>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} noValidate>
+          <form onSubmit={handleSubmit} noValidate>
               {renderField('name', 'Your Name')}
               {renderField('email', 'Your Email', 'email')}
               {renderField('nominee', 'Nominee Name')}
@@ -343,9 +333,9 @@ export default function Submit() {
               )}
               <button
                 type="submit"
-                disabled={submitting}
+                disabled={submitting || success}
                 style={{
-                  background: submitting ? '#6b7280' : '#282b2f',
+                  background: success ? '#22c55e' : submitting ? '#6b7280' : '#282b2f',
                   color: '#f1f1ee',
                   borderRadius: 99,
                   padding: '16px 48px',
@@ -353,28 +343,27 @@ export default function Submit() {
                   fontSize: 13,
                   fontWeight: 500,
                   border: 'none',
-                  cursor: submitting ? 'not-allowed' : 'pointer',
+                  cursor: submitting || success ? 'not-allowed' : 'pointer',
                   transition: 'all 0.3s ease',
                   marginTop: 32,
                   opacity: isFormValid ? 1 : 0.5,
                 }}
                 onMouseEnter={(e) => {
-                  if (!submitting) {
+                  if (!submitting && !success) {
                     e.currentTarget.style.background = '#ffcc00';
                     e.currentTarget.style.color = '#282b2f';
                   }
                 }}
                 onMouseLeave={(e) => {
-                  if (!submitting) {
+                  if (!submitting && !success) {
                     e.currentTarget.style.background = '#282b2f';
                     e.currentTarget.style.color = '#f1f1ee';
                   }
                 }}
               >
-                {submitting ? 'Submitting...' : 'Submit Nomination'}
+                {success ? 'Submitted ✓' : submitting ? 'Submitting...' : 'Submit Nomination'}
               </button>
             </form>
-          )}
         </div>
         <div ref={infoRef} style={{ opacity: 0 }}>
           <h3
