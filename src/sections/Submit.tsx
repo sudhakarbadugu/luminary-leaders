@@ -188,11 +188,9 @@ export default function Submit() {
       }, 2000);
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Something went wrong. Please try again.';
-      // CORS errors show as "Failed to fetch" even when API returns 200
+      console.error('[Nominate] Submit failed:', err);
       setErrors({
-        general: message === 'Failed to fetch'
-          ? 'Network error. If the issue persists, please check CORS settings on the API.'
-          : message,
+        general: message,
       });
     } finally {
       setSubmitting(false);
