@@ -123,6 +123,10 @@ export default function Submit() {
     }
   };
 
+  const isFormValid = (Object.keys(formData) as Array<keyof typeof formData>).every(
+    key => !validateField(key, formData[key])
+  );
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -320,9 +324,9 @@ export default function Submit() {
               )}
               <button
                 type="submit"
-                disabled={submitting}
+                disabled={submitting || !isFormValid}
                 style={{
-                  background: submitting ? '#6b7280' : '#282b2f',
+                  background: submitting || !isFormValid ? '#6b7280' : '#282b2f',
                   color: '#f1f1ee',
                   borderRadius: 99,
                   padding: '16px 48px',
@@ -335,13 +339,13 @@ export default function Submit() {
                   marginTop: 32,
                 }}
                 onMouseEnter={(e) => {
-                  if (!submitting) {
+                  if (!submitting && isFormValid) {
                     e.currentTarget.style.background = '#ffcc00';
                     e.currentTarget.style.color = '#282b2f';
                   }
                 }}
                 onMouseLeave={(e) => {
-                  if (!submitting) {
+                  if (!submitting && isFormValid) {
                     e.currentTarget.style.background = '#282b2f';
                     e.currentTarget.style.color = '#f1f1ee';
                   }
