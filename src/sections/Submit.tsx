@@ -115,12 +115,30 @@ export default function Submit() {
     const sanitized = key === 'email' ? value.trim() : sanitizeInput(value);
     setFormData(prev => ({ ...prev, [key]: sanitized }));
     if (errors[key]) {
+      const err = validateField(key, sanitized);
       setErrors(prev => {
         const next = { ...prev };
-        delete next[key];
+        if (err) {
+          next[key] = err;
+        } else {
+          delete next[key];
+        }
         return next;
       });
     }
+  };
+
+  const handleBlur = (key: keyof typeof formData) => {
+    const err = validateField(key, formData[key]);
+    setErrors(prev => {
+      const next = { ...prev };
+      if (err) {
+        next[key] = err;
+      } else {
+        delete next[key];
+      }
+      return next;
+    });
   };
 
   const isFormValid = (Object.keys(formData) as Array<keyof typeof formData>).every(
@@ -206,6 +224,7 @@ export default function Submit() {
       placeholder,
       value: formData[key],
       onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => handleChange(key, e.target.value),
+      onBlur: () => handleBlur(key),
       style: isTextarea ? { ...fieldStyle, resize: 'vertical', minHeight: 100 } as React.CSSProperties : fieldStyle,
       required: false,
     };
@@ -324,9 +343,9 @@ export default function Submit() {
               )}
               <button
                 type="submit"
-                disabled={submitting || !isFormValid}
+                disabled={submitting}
                 style={{
-                  background: submitting || !isFormValid ? '#6b7280' : '#282b2f',
+                  background: submitting ? '#6b7280' : '#282b2f',
                   color: '#f1f1ee',
                   borderRadius: 99,
                   padding: '16px 48px',
@@ -337,15 +356,16 @@ export default function Submit() {
                   cursor: submitting ? 'not-allowed' : 'pointer',
                   transition: 'all 0.3s ease',
                   marginTop: 32,
+                  opacity: isFormValid ? 1 : 0.5,
                 }}
                 onMouseEnter={(e) => {
-                  if (!submitting && isFormValid) {
+                  if (!submitting) {
                     e.currentTarget.style.background = '#ffcc00';
                     e.currentTarget.style.color = '#282b2f';
                   }
                 }}
                 onMouseLeave={(e) => {
-                  if (!submitting && isFormValid) {
+                  if (!submitting) {
                     e.currentTarget.style.background = '#282b2f';
                     e.currentTarget.style.color = '#f1f1ee';
                   }
