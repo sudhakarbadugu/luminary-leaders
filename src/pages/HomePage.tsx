@@ -70,7 +70,7 @@ export default function HomePage() {
           position: 'fixed',
           inset: 0,
           zIndex: 0,
-          background: 'radial-gradient(ellipse at center, rgba(241,241,238,0.55) 0%, rgba(241,241,238,0.15) 100%)',
+          background: 'radial-gradient(ellipse at center, var(--hero-gradient-overlay) 0%, transparent 100%)',
           pointerEvents: 'none',
         }}
       />
