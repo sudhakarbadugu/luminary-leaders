@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { traders } from '../data/traders';
+import { traders, traderBioData } from '../data';
 import { Search, X, TrendingUp, Layers } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -159,6 +159,23 @@ export default function TradersGrid() {
                 </div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, fontWeight: 500, color: '#282b2f', marginTop: 16 }}>{trader.name}</div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginTop: 4 }}>{trader.nickname}</div>
+                
+                {/* Visual badges row */}
+                <div style={{ display: 'flex', gap: 6, marginTop: 8, flexWrap: 'wrap' }}>
+                  {trader.nationality && (
+                    <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#f1f1ee', color: '#968671', fontWeight: 500, letterSpacing: 0.3 }}>
+                      {trader.nationality}
+                    </span>
+                  )}
+                  {traderBioData[trader.id]?.born && (
+                    <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#282b2f10', color: '#282b2f', fontWeight: 500, letterSpacing: 0.3 }}>
+                      {traderBioData[trader.id]?.born}
+                    </span>
+                  )}
+                  <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#e6510020', color: '#e65100', fontWeight: 500, letterSpacing: 0.3 }}>
+                    {trader.era}
+                  </span>
+                </div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: '#968671', opacity: 0.7, marginTop: 2 }}>{trader.strategy}</div>
                 <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginTop: 8 }}>
                   {trader.markets.slice(0, 3).map(m => <span key={m} style={{ fontFamily: "'Inter', sans-serif", fontSize: 10, padding: '2px 8px', borderRadius: 99, border: '1px solid #e5e5e0', color: '#968671' }}>{m}</span>)}

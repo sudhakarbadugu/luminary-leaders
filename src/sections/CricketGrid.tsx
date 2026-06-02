@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { cricketers } from '../data/cricket';
+import { cricketers, cricketerBioData } from '../data';
 import { Search, X, Trophy } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -120,6 +120,23 @@ export default function CricketGrid() {
                 </div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, fontWeight: 500, color: '#282b2f', marginTop: 16 }}>{cricketer.name}</div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginTop: 4 }}>{cricketer.nickname}</div>
+                
+                {/* Visual badges row */}
+                <div style={{ display: 'flex', gap: 6, marginTop: 8, flexWrap: 'wrap' }}>
+                  {cricketer.nationality && (
+                    <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#f1f1ee', color: '#968671', fontWeight: 500, letterSpacing: 0.3 }}>
+                      {cricketer.nationality}
+                    </span>
+                  )}
+                  {cricketerBioData[cricketer.id]?.born && (
+                    <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#282b2f10', color: '#282b2f', fontWeight: 500, letterSpacing: 0.3 }}>
+                      {cricketerBioData[cricketer.id]?.born}
+                    </span>
+                  )}
+                  <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#1976d220', color: '#1976d2', fontWeight: 500, letterSpacing: 0.3 }}>
+                    {cricketer.era}
+                  </span>
+                </div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: '#968671', opacity: 0.7, marginTop: 2 }}>{cricketer.nationality}</div>
               </div>
             ))}

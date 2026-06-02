@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { scientists } from '../data/scientists';
+import { scientists, scientistBioData } from '../data';
 import { Search, X, FlaskConical } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -116,7 +116,24 @@ export default function ScientistsGrid() {
                 </div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, fontWeight: 500, color: '#282b2f', marginTop: 16 }}>{scientist.name}</div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginTop: 4 }}>{scientist.nickname}</div>
-                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: '#968671', opacity: 0.7, marginTop: 2 }}>{scientist.nationality}</div>
+                
+                {/* Visual badges row */}
+                <div style={{ display: 'flex', gap: 6, marginTop: 8, flexWrap: 'wrap' }}>
+                  {scientist.nationality && (
+                    <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#f1f1ee', color: '#968671', fontWeight: 500, letterSpacing: 0.3 }}>
+                      {scientist.nationality}
+                    </span>
+                  )}
+                  {scientistBioData[scientist.id]?.born && (
+                    <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#282b2f10', color: '#282b2f', fontWeight: 500, letterSpacing: 0.3 }}>
+                      {scientistBioData[scientist.id]?.born}
+                    </span>
+                  )}
+                  <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#7b1fa220', color: '#7b1fa2', fontWeight: 500, letterSpacing: 0.3 }}>
+                    {scientist.era}
+                  </span>
+                </div>
+                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: '#968671', opacity: 0.7, marginTop: 2 }}>{scientist.field}</div>
               </div>
             ))}
           </div>

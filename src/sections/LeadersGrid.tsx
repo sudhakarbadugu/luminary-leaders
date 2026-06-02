@@ -2,8 +2,7 @@ import { useEffect, useRef, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { leaders } from '../data/leaders';
-import { bioData } from '../data/bios';
+import { leaders, bioData } from '../data';
 import { Search, X, Globe, Building2, Layers, Zap } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -49,7 +48,8 @@ export default function LeadersGrid() {
   const nationalities = useMemo(() => {
     const set = new Set<string>();
     Object.values(bioData).forEach(bio => {
-      if (bio.nationality) set.add(bio.nationality);
+      const b = bio as { nationality?: string };
+      if (b.nationality) set.add(b.nationality);
     });
     return ['All', ...Array.from(set).sort()];
   }, []);
@@ -721,6 +721,7 @@ export default function LeadersGrid() {
                     <CompareToggleButton item={{ id: leader.id, name: leader.name, nickname: leader.role, category: 'leader', field: leader.role, nationality: getNationality(leader.id) || '', born: '', era: leader.era, image: leader.image }} />
                   </div>
                 </div>
+                {/* Card info with badges */}
                 <div
                   style={{
                     fontFamily: "'Inter', sans-serif",
@@ -738,7 +739,49 @@ export default function LeadersGrid() {
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginTop: 4 }}>
                   {leader.role}
                 </div>
-                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: '#968671', opacity: 0.7, marginTop: 2 }}>
+                
+                {/* Visual badges row */}
+                <div style={{ display: 'flex', gap: 6, marginTop: 8, flexWrap: 'wrap' }}>
+                  {getNationality(leader.id) && (
+                    <span style={{
+                      fontSize: 11,
+                      padding: '3px 10px',
+                      borderRadius: 99,
+                      background: '#f1f1ee',
+                      color: '#968671',
+                      fontWeight: 500,
+                      letterSpacing: 0.3,
+                    }}>
+                      {getNationality(leader.id)}
+                    </span>
+                  )}
+                  {bioData[leader.id]?.born && (
+                    <span style={{
+                      fontSize: 11,
+                      padding: '3px 10px',
+                      borderRadius: 99,
+                      background: '#282b2f10',
+                      color: '#282b2f',
+                      fontWeight: 500,
+                      letterSpacing: 0.3,
+                    }}>
+                      {bioData[leader.id]?.born}
+                    </span>
+                  )}
+                  <span style={{
+                    fontSize: 11,
+                    padding: '3px 10px',
+                    borderRadius: 99,
+                    background: '#ffcc0020',
+                    color: '#b8860b',
+                    fontWeight: 500,
+                    letterSpacing: 0.3,
+                  }}>
+                    {leader.era}
+                  </span>
+                </div>
+                
+                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: '#968671', opacity: 0.7, marginTop: 4 }}>
                   {leader.company}
                 </div>
               </div>

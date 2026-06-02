@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import DarkModeToggle from '../components/DarkModeToggle';
+import UniversalSearch from '../components/UniversalSearch';
 import { useIsMobile } from '../hooks/useMediaQuery';
 
 interface NavigationProps {
@@ -40,6 +41,7 @@ export default function Navigation({ lenisRef }: NavigationProps) {
 
       {isMobile ? (
         <div className="flex items-center gap-3">
+          <UniversalSearch />
           <DarkModeToggle />
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -51,6 +53,7 @@ export default function Navigation({ lenisRef }: NavigationProps) {
         </div>
       ) : (
         <div className="flex items-center gap-6">
+          <UniversalSearch />
           {links.map((link) => (
             <button
               key={link.label}

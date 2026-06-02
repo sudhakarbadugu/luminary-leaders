@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { athletes } from '../data/sports';
+import { athletes, athleteBioData } from '../data';
 import { Search, X, Trophy } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -120,7 +120,23 @@ export default function SportsGrid() {
                 </div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, fontWeight: 500, color: '#282b2f', marginTop: 16 }}>{athlete.name}</div>
                 <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginTop: 4 }}>{athlete.nickname}</div>
-                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: '#968671', opacity: 0.7, marginTop: 2 }}>{athlete.nationality}</div>
+                
+                {/* Visual badges row */}
+                <div style={{ display: 'flex', gap: 6, marginTop: 8, flexWrap: 'wrap' }}>
+                  {athlete.nationality && (
+                    <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#f1f1ee', color: '#968671', fontWeight: 500, letterSpacing: 0.3 }}>
+                      {athlete.nationality}
+                    </span>
+                  )}
+                  {athleteBioData[athlete.id]?.born && (
+                    <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#282b2f10', color: '#282b2f', fontWeight: 500, letterSpacing: 0.3 }}>
+                      {athleteBioData[athlete.id]?.born}
+                    </span>
+                  )}
+                  <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#2e7d3220', color: '#2e7d32', fontWeight: 500, letterSpacing: 0.3 }}>
+                    {athlete.sport}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
