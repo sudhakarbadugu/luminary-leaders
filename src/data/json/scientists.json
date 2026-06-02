@@ -271,7 +271,8 @@
       ]
     },
     "image": "/images/scientists/al-khwarizmi.jpg",
-    "category": "scientists"
+    "category": "scientists",
+    "born": "c. 780"
   },
   {
     "id": 4,
@@ -927,7 +928,8 @@
       ]
     },
     "image": "/images/scientists/archimedes.jpg",
-    "category": "scientists"
+    "category": "scientists",
+    "born": "c. 287 BC"
   },
   {
     "id": 11,
@@ -1005,7 +1007,8 @@
       ]
     },
     "image": "/images/scientists/aristotle.jpg",
-    "category": "scientists"
+    "category": "scientists",
+    "born": "384 BC"
   },
   {
     "id": 12,
@@ -1597,7 +1600,8 @@
       ]
     },
     "image": "/images/scientists/demis-hassabis.jpg",
-    "category": "scientists"
+    "category": "scientists",
+    "born": "July 27, 1976"
   },
   {
     "id": 20,
@@ -2491,7 +2495,9 @@
       "legacy": {}
     },
     "image": "/images/scientists/grace-hopper.jpg",
-    "category": "scientists"
+    "category": "scientists",
+    "born": "December 9, 1906",
+    "died": "January 1, 1992"
   },
   {
     "id": 31,
@@ -2517,7 +2523,9 @@
       "legacy": {}
     },
     "image": "/images/scientists/isaac-newton.jpg",
-    "category": "scientists"
+    "category": "scientists",
+    "born": "January 4, 1643",
+    "died": "March 31, 1727"
   },
   {
     "id": 32,
@@ -3017,7 +3025,9 @@
       "legacy": {}
     },
     "image": "/images/scientists/nikola-tesla.jpg",
-    "category": "scientists"
+    "category": "scientists",
+    "born": "July 10, 1856",
+    "died": "January 7, 1943"
   },
   {
     "id": 38,
@@ -3162,7 +3172,9 @@
       "legacy": {}
     },
     "image": "/images/scientists/richard-feynman.jpg",
-    "category": "scientists"
+    "category": "scientists",
+    "born": "May 11, 1918",
+    "died": "February 15, 1988"
   },
   {
     "id": 40,
@@ -3289,7 +3301,9 @@
       ]
     },
     "image": "/images/scientists/stephen-hawking.jpg",
-    "category": "scientists"
+    "category": "scientists",
+    "born": "January 8, 1942",
+    "died": "March 14, 2018"
   },
   {
     "id": 42,

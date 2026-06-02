@@ -1,8 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router';
-import { athletes } from '../data/sports';
-import { athleteBioData } from '../data/sportsBios';
-import { getJsonBioByName } from '../data/dataLoader';
+import { athletes, athleteBioData } from '../data';
 import { ArrowLeft, Calendar, Clock, DollarSign, Trophy, Globe, Quote, Award, Medal } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';

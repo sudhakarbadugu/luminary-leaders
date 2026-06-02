@@ -3427,7 +3427,8 @@
       ]
     },
     "image": "/images/traders/larry-hite.jpg",
-    "category": "traders"
+    "category": "traders",
+    "born": "1942"
   },
   {
     "id": 39,
@@ -4037,7 +4038,8 @@
       "deathDate": "2023"
     },
     "image": "/images/traders/michael-marcus.jpg",
-    "category": "traders"
+    "category": "traders",
+    "born": "1947"
   },
   {
     "id": 47,
@@ -4546,7 +4548,8 @@
       }
     ],
     "image": "/images/traders/paul-rotter.jpg",
-    "category": "traders"
+    "category": "traders",
+    "born": "1967"
   },
   {
     "id": 53,
@@ -5986,7 +5989,8 @@
       ]
     },
     "image": "/images/traders/vijay-kedia.jpg",
-    "category": "traders"
+    "category": "traders",
+    "born": "1963"
   },
   {
     "id": 71,
