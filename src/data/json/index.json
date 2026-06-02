@@ -1,0 +1,1746 @@
+{
+  "total": 289,
+  "categories": {
+    "leaders": 143,
+    "traders": 74,
+    "sports": 26,
+    "cricket": 5,
+    "scientists": 41
+  },
+  "items": [
+    {
+      "slug": "aaron-levie",
+      "category": "leaders",
+      "name": "Aaron Levie",
+      "born": "December 27, 1984"
+    },
+    {
+      "slug": "abraham-lincoln",
+      "category": "leaders",
+      "name": "Abraham Lincoln",
+      "born": ""
+    },
+    {
+      "slug": "ada-lovelace",
+      "category": "scientists",
+      "name": "Ada Lovelace",
+      "born": ""
+    },
+    {
+      "slug": "adam-gilchrist",
+      "category": "cricket",
+      "name": "Adam Gilchrist",
+      "born": "November 14, 1971"
+    },
+    {
+      "slug": "adam-grant",
+      "category": "sports",
+      "name": "Adam Grant",
+      "born": ""
+    },
+    {
+      "slug": "adam-neumann",
+      "category": "leaders",
+      "name": "Adam Neumann",
+      "born": ""
+    },
+    {
+      "slug": "akio-kitaro",
+      "category": "leaders",
+      "name": "Akio Kitaro",
+      "born": ""
+    },
+    {
+      "slug": "akio-morita",
+      "category": "leaders",
+      "name": "Akio Morita",
+      "born": ""
+    },
+    {
+      "slug": "al-khwarizmi",
+      "category": "scientists",
+      "name": "Al-Khwarizmi",
+      "born": ""
+    },
+    {
+      "slug": "alan-turing",
+      "category": "scientists",
+      "name": "Alan Turing",
+      "born": ""
+    },
+    {
+      "slug": "alastair-cook",
+      "category": "cricket",
+      "name": "Alastair Cook",
+      "born": ""
+    },
+    {
+      "slug": "albert-einstein",
+      "category": "scientists",
+      "name": "Albert Einstein",
+      "born": ""
+    },
+    {
+      "slug": "alexander-osterwalder",
+      "category": "leaders",
+      "name": "Alexander Osterwalder",
+      "born": ""
+    },
+    {
+      "slug": "alfred-lin",
+      "category": "traders",
+      "name": "Alfred Lin",
+      "born": ""
+    },
+    {
+      "slug": "allyson-felix",
+      "category": "sports",
+      "name": "Allyson Felix",
+      "born": "November 18, 1985"
+    },
+    {
+      "slug": "amancio-ortega",
+      "category": "leaders",
+      "name": "Amancio Ortega",
+      "born": ""
+    },
+    {
+      "slug": "andrej-karpathy",
+      "category": "leaders",
+      "name": "Andrej Karpathy",
+      "born": ""
+    },
+    {
+      "slug": "andrew-carnegie",
+      "category": "leaders",
+      "name": "Andrew Carnegie",
+      "born": ""
+    },
+    {
+      "slug": "andrew-mccollum",
+      "category": "scientists",
+      "name": "Andrew McCollum",
+      "born": ""
+    },
+    {
+      "slug": "andrew-ng",
+      "category": "scientists",
+      "name": "Andrew Ng",
+      "born": ""
+    },
+    {
+      "slug": "andy-grove",
+      "category": "scientists",
+      "name": "Andy Grove",
+      "born": "September 2, 1936"
+    },
+    {
+      "slug": "andy-krieger",
+      "category": "traders",
+      "name": "Andy Krieger",
+      "born": ""
+    },
+    {
+      "slug": "angela-ahrendts",
+      "category": "leaders",
+      "name": "Angela Ahrendts",
+      "born": "June 12, 1960"
+    },
+    {
+      "slug": "anil-kumble",
+      "category": "cricket",
+      "name": "Anil Kumble",
+      "born": "October 17, 1970"
+    },
+    {
+      "slug": "anthony-albanese",
+      "category": "leaders",
+      "name": "Anthony Albanese",
+      "born": ""
+    },
+    {
+      "slug": "anthony-fauci",
+      "category": "leaders",
+      "name": "Anthony Fauci",
+      "born": "December 24, 1940"
+    },
+    {
+      "slug": "antonio-guterres",
+      "category": "leaders",
+      "name": "António Guterres",
+      "born": ""
+    },
+    {
+      "slug": "archimedes",
+      "category": "scientists",
+      "name": "Archimedes",
+      "born": ""
+    },
+    {
+      "slug": "aristotle",
+      "category": "scientists",
+      "name": "Aristotle",
+      "born": ""
+    },
+    {
+      "slug": "ash-maurya",
+      "category": "leaders",
+      "name": "Ash Maurya",
+      "born": ""
+    },
+    {
+      "slug": "atul-gawande",
+      "category": "leaders",
+      "name": "Atul Gawande",
+      "born": "November 11, 1965"
+    },
+    {
+      "slug": "ayrton-senna",
+      "category": "sports",
+      "name": "Ayrton Senna",
+      "born": "March 21, 1960"
+    },
+    {
+      "slug": "babar-azam",
+      "category": "cricket",
+      "name": "Babar Azam",
+      "born": "October 15, 1994"
+    },
+    {
+      "slug": "babe-ruth",
+      "category": "sports",
+      "name": "Babe Ruth",
+      "born": "February 6, 1895"
+    },
+    {
+      "slug": "barack-obama",
+      "category": "leaders",
+      "name": "Barack Obama",
+      "born": ""
+    },
+    {
+      "slug": "ben-horowitz",
+      "category": "leaders",
+      "name": "Ben Horowitz",
+      "born": "June 13, 1966"
+    },
+    {
+      "slug": "benjamin-franklin",
+      "category": "scientists",
+      "name": "Benjamin Franklin",
+      "born": "January 17, 1706"
+    },
+    {
+      "slug": "benjamin-graham",
+      "category": "traders",
+      "name": "Benjamin Graham",
+      "born": "May 9, 1894"
+    },
+    {
+      "slug": "benjamin-netanyahu",
+      "category": "leaders",
+      "name": "Benjamin Netanyahu",
+      "born": ""
+    },
+    {
+      "slug": "bernard-arnault",
+      "category": "leaders",
+      "name": "Bernard Arnault",
+      "born": ""
+    },
+    {
+      "slug": "bernard-baruch",
+      "category": "traders",
+      "name": "Bernard Baruch",
+      "born": "August 19, 1870"
+    },
+    {
+      "slug": "bernie-sanders",
+      "category": "leaders",
+      "name": "Bernie Sanders",
+      "born": ""
+    },
+    {
+      "slug": "bill-ackman",
+      "category": "traders",
+      "name": "Bill Ackman",
+      "born": "May 11, 1966"
+    },
+    {
+      "slug": "bill-bowerman",
+      "category": "sports",
+      "name": "Bill Bowerman",
+      "born": "February 19, 1911"
+    },
+    {
+      "slug": "bill-dunn",
+      "category": "traders",
+      "name": "Bill Dunn",
+      "born": ""
+    },
+    {
+      "slug": "bill-gates",
+      "category": "leaders",
+      "name": "Bill Gates",
+      "born": "October 28, 1955"
+    },
+    {
+      "slug": "bill-miller",
+      "category": "traders",
+      "name": "Bill Miller",
+      "born": "January 14, 1948"
+    },
+    {
+      "slug": "biz-stone",
+      "category": "traders",
+      "name": "Biz Stone",
+      "born": ""
+    },
+    {
+      "slug": "bjarne-stroustrup",
+      "category": "leaders",
+      "name": "Bjarne Stroustrup",
+      "born": ""
+    },
+    {
+      "slug": "bob-dylan",
+      "category": "scientists",
+      "name": "Bob Dylan",
+      "born": ""
+    },
+    {
+      "slug": "bob-iger",
+      "category": "leaders",
+      "name": "Bob Iger",
+      "born": ""
+    },
+    {
+      "slug": "brad-feld",
+      "category": "traders",
+      "name": "Brad Feld",
+      "born": ""
+    },
+    {
+      "slug": "brene-brown",
+      "category": "leaders",
+      "name": "Brené Brown",
+      "born": ""
+    },
+    {
+      "slug": "brian-armstrong",
+      "category": "scientists",
+      "name": "Brian Armstrong",
+      "born": "January 25, 1983"
+    },
+    {
+      "slug": "brian-chesky",
+      "category": "leaders",
+      "name": "Brian Chesky",
+      "born": "August 24, 1981"
+    },
+    {
+      "slug": "brian-halligan",
+      "category": "leaders",
+      "name": "Brian Halligan",
+      "born": ""
+    },
+    {
+      "slug": "bruce-kovner",
+      "category": "traders",
+      "name": "Bruce Kovner",
+      "born": ""
+    },
+    {
+      "slug": "bruce-lee",
+      "category": "sports",
+      "name": "Bruce Lee",
+      "born": "November 27, 1940"
+    },
+    {
+      "slug": "byron-wien",
+      "category": "traders",
+      "name": "Byron Wien",
+      "born": ""
+    },
+    {
+      "slug": "cameron-winklevoss",
+      "category": "sports",
+      "name": "Cameron Winklevoss",
+      "born": "August 21, 1981"
+    },
+    {
+      "slug": "carl-icahn",
+      "category": "traders",
+      "name": "Carl Icahn",
+      "born": "February 16, 1936"
+    },
+    {
+      "slug": "carlos-slim",
+      "category": "leaders",
+      "name": "Carlos Slim",
+      "born": ""
+    },
+    {
+      "slug": "cathie-wood",
+      "category": "traders",
+      "name": "Cathie Wood",
+      "born": ""
+    },
+    {
+      "slug": "charles-darwin",
+      "category": "scientists",
+      "name": "Charles Darwin",
+      "born": "February 12, 1809"
+    },
+    {
+      "slug": "charlie-munger",
+      "category": "traders",
+      "name": "Charlie Munger",
+      "born": "January 1, 1924"
+    },
+    {
+      "slug": "chris-hughes",
+      "category": "leaders",
+      "name": "Chris Hughes",
+      "born": "November 26, 1983"
+    },
+    {
+      "slug": "chris-rock",
+      "category": "leaders",
+      "name": "Chris Rock",
+      "born": "February 7, 1965"
+    },
+    {
+      "slug": "chris-sacca",
+      "category": "traders",
+      "name": "Chris Sacca",
+      "born": "May 12, 1975"
+    },
+    {
+      "slug": "christopher-nolan",
+      "category": "scientists",
+      "name": "Christopher Nolan",
+      "born": "July 30, 1970"
+    },
+    {
+      "slug": "claude-shannon",
+      "category": "scientists",
+      "name": "Claude Shannon",
+      "born": ""
+    },
+    {
+      "slug": "cornelius-vanderbilt",
+      "category": "leaders",
+      "name": "Cornelius Vanderbilt",
+      "born": ""
+    },
+    {
+      "slug": "cristiano-ronaldo",
+      "category": "sports",
+      "name": "Cristiano Ronaldo",
+      "born": "February 5, 1985"
+    },
+    {
+      "slug": "cv-raman",
+      "category": "scientists",
+      "name": "C.V. Raman",
+      "born": "November 7, 1888"
+    },
+    {
+      "slug": "dara-khosrowshahi",
+      "category": "traders",
+      "name": "Dara Khosrowshahi",
+      "born": "May 28, 1969"
+    },
+    {
+      "slug": "dario-amodei",
+      "category": "leaders",
+      "name": "Dario Amodei",
+      "born": ""
+    },
+    {
+      "slug": "david-attenborough",
+      "category": "leaders",
+      "name": "David Attenborough",
+      "born": ""
+    },
+    {
+      "slug": "david-cohen",
+      "category": "leaders",
+      "name": "David Cohen",
+      "born": ""
+    },
+    {
+      "slug": "david-geffen",
+      "category": "leaders",
+      "name": "David Geffen",
+      "born": ""
+    },
+    {
+      "slug": "david-rubenstein",
+      "category": "traders",
+      "name": "David Rubenstein",
+      "born": "August 11, 1949"
+    },
+    {
+      "slug": "david-swensen",
+      "category": "traders",
+      "name": "David Swensen",
+      "born": ""
+    },
+    {
+      "slug": "david-tepper",
+      "category": "traders",
+      "name": "David Tepper",
+      "born": ""
+    },
+    {
+      "slug": "david-zaslav",
+      "category": "leaders",
+      "name": "David Zaslav",
+      "born": ""
+    },
+    {
+      "slug": "demis-hassabis",
+      "category": "scientists",
+      "name": "Demis Hassabis",
+      "born": ""
+    },
+    {
+      "slug": "dennis-ritchie",
+      "category": "leaders",
+      "name": "Dennis Ritchie",
+      "born": "September 9, 1941"
+    },
+    {
+      "slug": "dharmesh-shah",
+      "category": "scientists",
+      "name": "Dharmesh Shah",
+      "born": ""
+    },
+    {
+      "slug": "diego-maradona",
+      "category": "sports",
+      "name": "Diego Maradona",
+      "born": "October 30, 1960"
+    },
+    {
+      "slug": "donald-trump",
+      "category": "leaders",
+      "name": "Donald Trump",
+      "born": ""
+    },
+    {
+      "slug": "douglas-engelbart",
+      "category": "scientists",
+      "name": "Douglas Engelbart",
+      "born": "January 30, 1925"
+    },
+    {
+      "slug": "drew-houston",
+      "category": "scientists",
+      "name": "Drew Houston",
+      "born": "March 4, 1983"
+    },
+    {
+      "slug": "drew-weissman",
+      "category": "scientists",
+      "name": "Drew Weissman",
+      "born": ""
+    },
+    {
+      "slug": "dustin-moskovitz",
+      "category": "leaders",
+      "name": "Dustin Moskovitz",
+      "born": ""
+    },
+    {
+      "slug": "ed-catmull",
+      "category": "scientists",
+      "name": "Ed Catmull",
+      "born": ""
+    },
+    {
+      "slug": "ed-seykota",
+      "category": "traders",
+      "name": "Ed Seykota",
+      "born": "August 7, 1946"
+    },
+    {
+      "slug": "eduardo-saverin",
+      "category": "traders",
+      "name": "Eduardo Saverin",
+      "born": "March 19, 1982"
+    },
+    {
+      "slug": "elizabeth-warren",
+      "category": "leaders",
+      "name": "Elizabeth Warren",
+      "born": ""
+    },
+    {
+      "slug": "elon-musk",
+      "category": "leaders",
+      "name": "Elon Musk",
+      "born": "June 28, 1971"
+    },
+    {
+      "slug": "elvis-presley",
+      "category": "leaders",
+      "name": "Elvis Presley",
+      "born": ""
+    },
+    {
+      "slug": "emmanuel-macron",
+      "category": "leaders",
+      "name": "Emmanuel Macron",
+      "born": ""
+    },
+    {
+      "slug": "emmanuelle-charpentier",
+      "category": "scientists",
+      "name": "Emmanuelle Charpentier",
+      "born": "December 11, 1968"
+    },
+    {
+      "slug": "eric-ries",
+      "category": "leaders",
+      "name": "Eric Ries",
+      "born": ""
+    },
+    {
+      "slug": "ernest-hemingway",
+      "category": "scientists",
+      "name": "Ernest Hemingway",
+      "born": ""
+    },
+    {
+      "slug": "evan-williams",
+      "category": "leaders",
+      "name": "Evan Williams",
+      "born": "March 31, 1972"
+    },
+    {
+      "slug": "fei-fei-li",
+      "category": "leaders",
+      "name": "Fei-Fei Li",
+      "born": ""
+    },
+    {
+      "slug": "francois-pinault",
+      "category": "leaders",
+      "name": "François Pinault",
+      "born": ""
+    },
+    {
+      "slug": "fred-ehrsam",
+      "category": "traders",
+      "name": "Fred Ehrsam",
+      "born": ""
+    },
+    {
+      "slug": "fred-wilson",
+      "category": "traders",
+      "name": "Fred Wilson",
+      "born": ""
+    },
+    {
+      "slug": "fumio-kishida",
+      "category": "leaders",
+      "name": "Fumio Kishida",
+      "born": ""
+    },
+    {
+      "slug": "garrett-camp",
+      "category": "leaders",
+      "name": "Garrett Camp",
+      "born": "October 4, 1978"
+    },
+    {
+      "slug": "gautam-adani",
+      "category": "traders",
+      "name": "Gautam Adani",
+      "born": "June 24, 1962"
+    },
+    {
+      "slug": "geoffrey-hinton",
+      "category": "scientists",
+      "name": "Geoffrey Hinton",
+      "born": ""
+    },
+    {
+      "slug": "george-soros",
+      "category": "traders",
+      "name": "George Soros",
+      "born": ""
+    },
+    {
+      "slug": "gordon-moore",
+      "category": "scientists",
+      "name": "Gordon Moore",
+      "born": "January 3, 1929"
+    },
+    {
+      "slug": "grace-hopper",
+      "category": "scientists",
+      "name": "Grace Hopper",
+      "born": ""
+    },
+    {
+      "slug": "greta-thunberg",
+      "category": "leaders",
+      "name": "Greta Thunberg",
+      "born": ""
+    },
+    {
+      "slug": "guido-van-rossum",
+      "category": "leaders",
+      "name": "Guido van Rossum",
+      "born": ""
+    },
+    {
+      "slug": "henry-ford-ii",
+      "category": "leaders",
+      "name": "Henry Ford II",
+      "born": ""
+    },
+    {
+      "slug": "henry-ford",
+      "category": "leaders",
+      "name": "Henry Ford",
+      "born": ""
+    },
+    {
+      "slug": "henry-kravis",
+      "category": "leaders",
+      "name": "Henry Kravis",
+      "born": "January 6, 1944"
+    },
+    {
+      "slug": "hillary-clinton",
+      "category": "leaders",
+      "name": "Hillary Clinton",
+      "born": ""
+    },
+    {
+      "slug": "howard-schultz",
+      "category": "leaders",
+      "name": "Howard Schultz",
+      "born": "July 19, 1953"
+    },
+    {
+      "slug": "ian-botham",
+      "category": "cricket",
+      "name": "Ian Botham",
+      "born": "November 24, 1955"
+    },
+    {
+      "slug": "ilya-sutskever",
+      "category": "leaders",
+      "name": "Ilya Sutskever",
+      "born": ""
+    },
+    {
+      "slug": "ingvar-kamprad",
+      "category": "leaders",
+      "name": "Ingvar Kamprad",
+      "born": ""
+    },
+    {
+      "slug": "isaac-newton",
+      "category": "scientists",
+      "name": "Isaac Newton",
+      "born": ""
+    },
+    {
+      "slug": "jacinda-ardern",
+      "category": "leaders",
+      "name": "Jacinda Ardern",
+      "born": ""
+    },
+    {
+      "slug": "jack-dorsey",
+      "category": "traders",
+      "name": "Jack Dorsey",
+      "born": "November 19, 1976"
+    },
+    {
+      "slug": "jack-ma",
+      "category": "leaders",
+      "name": "Jack Ma",
+      "born": ""
+    },
+    {
+      "slug": "jack-welch",
+      "category": "leaders",
+      "name": "Jack Welch",
+      "born": ""
+    },
+    {
+      "slug": "james-clear",
+      "category": "leaders",
+      "name": "James Clear",
+      "born": ""
+    },
+    {
+      "slug": "james-gosling",
+      "category": "leaders",
+      "name": "James Gosling",
+      "born": ""
+    },
+    {
+      "slug": "jane-goodall",
+      "category": "leaders",
+      "name": "Jane Goodall",
+      "born": ""
+    },
+    {
+      "slug": "jeff-bezos",
+      "category": "traders",
+      "name": "Jeff Bezos",
+      "born": "January 12, 1964"
+    },
+    {
+      "slug": "jennifer-doudna",
+      "category": "scientists",
+      "name": "Jennifer Doudna",
+      "born": "February 19, 1964"
+    },
+    {
+      "slug": "jensen-huang",
+      "category": "leaders",
+      "name": "Jensen Huang",
+      "born": ""
+    },
+    {
+      "slug": "jesse-livermore",
+      "category": "traders",
+      "name": "Jesse Livermore",
+      "born": "July 26, 1877"
+    },
+    {
+      "slug": "jessica-livingston",
+      "category": "leaders",
+      "name": "Jessica Livingston",
+      "born": ""
+    },
+    {
+      "slug": "jim-rogers",
+      "category": "traders",
+      "name": "Jim Rogers",
+      "born": "October 19, 1942"
+    },
+    {
+      "slug": "jim-simons",
+      "category": "traders",
+      "name": "Jim Simons",
+      "born": "April 25, 1938"
+    },
+    {
+      "slug": "joe-biden",
+      "category": "leaders",
+      "name": "Joe Biden",
+      "born": ""
+    },
+    {
+      "slug": "joe-gebbia",
+      "category": "leaders",
+      "name": "Joe Gebbia",
+      "born": ""
+    },
+    {
+      "slug": "john-bogle",
+      "category": "traders",
+      "name": "John \"Jack\" Bogle",
+      "born": "May 8, 1929"
+    },
+    {
+      "slug": "john-collison",
+      "category": "leaders",
+      "name": "John Collison",
+      "born": ""
+    },
+    {
+      "slug": "john-d-rockefeller",
+      "category": "leaders",
+      "name": "John D. Rockefeller",
+      "born": ""
+    },
+    {
+      "slug": "john-lasseter",
+      "category": "leaders",
+      "name": "John Lasseter",
+      "born": "January 12, 1957"
+    },
+    {
+      "slug": "john-neff",
+      "category": "traders",
+      "name": "John Neff",
+      "born": ""
+    },
+    {
+      "slug": "john-paulson",
+      "category": "traders",
+      "name": "John Paulson",
+      "born": "December 14, 1955"
+    },
+    {
+      "slug": "john-templeton",
+      "category": "traders",
+      "name": "John Templeton",
+      "born": "November 29, 1912"
+    },
+    {
+      "slug": "john-w-henry",
+      "category": "traders",
+      "name": "John W. Henry",
+      "born": "September 13, 1949"
+    },
+    {
+      "slug": "justin-trudeau",
+      "category": "leaders",
+      "name": "Justin Trudeau",
+      "born": ""
+    },
+    {
+      "slug": "karl-albrecht",
+      "category": "leaders",
+      "name": "Karl Albrecht",
+      "born": ""
+    },
+    {
+      "slug": "katalin-kariko",
+      "category": "scientists",
+      "name": "Katalin Karikó",
+      "born": "January 17, 1955"
+    },
+    {
+      "slug": "keir-starmer",
+      "category": "leaders",
+      "name": "Keir Starmer",
+      "born": ""
+    },
+    {
+      "slug": "keith-rabois",
+      "category": "leaders",
+      "name": "Keith Rabois",
+      "born": ""
+    },
+    {
+      "slug": "ken-griffin",
+      "category": "traders",
+      "name": "Ken Griffin",
+      "born": "October 15, 1968"
+    },
+    {
+      "slug": "kevin-systrom",
+      "category": "leaders",
+      "name": "Kevin Systrom",
+      "born": "December 30, 1983"
+    },
+    {
+      "slug": "kobe-bryant",
+      "category": "sports",
+      "name": "Kobe Bryant",
+      "born": "August 23, 1978"
+    },
+    {
+      "slug": "konosuke-matsushita",
+      "category": "leaders",
+      "name": "Konosuke Matsushita",
+      "born": ""
+    },
+    {
+      "slug": "kristalina-georgieva",
+      "category": "leaders",
+      "name": "Kristalina Georgieva",
+      "born": ""
+    },
+    {
+      "slug": "kylian-mbappe",
+      "category": "sports",
+      "name": "Kylian Mbappé",
+      "born": "December 20, 1998"
+    },
+    {
+      "slug": "larry-ellison",
+      "category": "leaders",
+      "name": "Larry Ellison",
+      "born": ""
+    },
+    {
+      "slug": "larry-hite",
+      "category": "traders",
+      "name": "Larry Hite",
+      "born": ""
+    },
+    {
+      "slug": "larry-page",
+      "category": "leaders",
+      "name": "Larry Page",
+      "born": ""
+    },
+    {
+      "slug": "lebron-james",
+      "category": "sports",
+      "name": "LeBron James",
+      "born": "December 30, 1984"
+    },
+    {
+      "slug": "leon-cooperman",
+      "category": "traders",
+      "name": "Leon Cooperman",
+      "born": "April 25, 1943"
+    },
+    {
+      "slug": "leonardo-da-vinci",
+      "category": "leaders",
+      "name": "Leonardo da Vinci",
+      "born": ""
+    },
+    {
+      "slug": "li-ka-shing",
+      "category": "leaders",
+      "name": "Li Ka-shing",
+      "born": ""
+    },
+    {
+      "slug": "linda-bradford-raschke",
+      "category": "traders",
+      "name": "Linda Bradford Raschke",
+      "born": ""
+    },
+    {
+      "slug": "linus-torvalds",
+      "category": "leaders",
+      "name": "Linus Torvalds",
+      "born": ""
+    },
+    {
+      "slug": "lionel-messi",
+      "category": "sports",
+      "name": "Lionel Messi",
+      "born": "June 24, 1987"
+    },
+    {
+      "slug": "lisa-su",
+      "category": "leaders",
+      "name": "Lisa Su",
+      "born": ""
+    },
+    {
+      "slug": "luminary-leaders-list",
+      "category": "traders",
+      "name": "Luminary Leaders",
+      "born": ""
+    },
+    {
+      "slug": "mahatma-gandhi",
+      "category": "leaders",
+      "name": "Mahatma Gandhi",
+      "born": ""
+    },
+    {
+      "slug": "malala-yousafzai",
+      "category": "leaders",
+      "name": "Malala Yousafzai",
+      "born": ""
+    },
+    {
+      "slug": "malcolm-gladwell",
+      "category": "leaders",
+      "name": "Malcolm Gladwell",
+      "born": ""
+    },
+    {
+      "slug": "marc-andreessen",
+      "category": "traders",
+      "name": "Marc Andreessen",
+      "born": "July 9, 1971"
+    },
+    {
+      "slug": "marie-curie",
+      "category": "scientists",
+      "name": "Marie Curie",
+      "born": "November 7, 1867"
+    },
+    {
+      "slug": "mario-gabelli",
+      "category": "traders",
+      "name": "Mario Gabelli",
+      "born": "June 19, 1942"
+    },
+    {
+      "slug": "marissa-mayer",
+      "category": "leaders",
+      "name": "Marissa Mayer",
+      "born": ""
+    },
+    {
+      "slug": "mark-andreessen",
+      "category": "leaders",
+      "name": "Mark Andreessen",
+      "born": ""
+    },
+    {
+      "slug": "mark-minervini",
+      "category": "traders",
+      "name": "Mark Minervini",
+      "born": ""
+    },
+    {
+      "slug": "mark-zuckerberg",
+      "category": "leaders",
+      "name": "Mark Zuckerberg",
+      "born": "May 14, 1984"
+    },
+    {
+      "slug": "martin-luther-king-jr",
+      "category": "leaders",
+      "name": "Martin Luther King Jr.",
+      "born": ""
+    },
+    {
+      "slug": "marty-schwartz",
+      "category": "traders",
+      "name": "Marty Schwartz",
+      "born": ""
+    },
+    {
+      "slug": "mary-meeker",
+      "category": "leaders",
+      "name": "Mary Meeker",
+      "born": ""
+    },
+    {
+      "slug": "masayoshi-son",
+      "category": "traders",
+      "name": "Masayoshi Son",
+      "born": ""
+    },
+    {
+      "slug": "michael-dell",
+      "category": "leaders",
+      "name": "Michael Dell",
+      "born": "February 23, 1965"
+    },
+    {
+      "slug": "michael-jordan",
+      "category": "sports",
+      "name": "Michael Jordan",
+      "born": "February 17, 1963"
+    },
+    {
+      "slug": "michael-marcus",
+      "category": "traders",
+      "name": "Michael Marcus",
+      "born": ""
+    },
+    {
+      "slug": "michael-moritz",
+      "category": "traders",
+      "name": "Michael Moritz",
+      "born": "September 12, 1954"
+    },
+    {
+      "slug": "michael-phelps",
+      "category": "sports",
+      "name": "Michael Phelps",
+      "born": "June 30, 1985"
+    },
+    {
+      "slug": "michael-steinhardt",
+      "category": "traders",
+      "name": "Michael Steinhardt",
+      "born": ""
+    },
+    {
+      "slug": "mike-krieger",
+      "category": "leaders",
+      "name": "Mike Krieger",
+      "born": "March 4, 1986"
+    },
+    {
+      "slug": "mikhail-prokhorov",
+      "category": "leaders",
+      "name": "Mikhail Prokhorov",
+      "born": ""
+    },
+    {
+      "slug": "mitch-mcconnell",
+      "category": "leaders",
+      "name": "Mitch McConnell",
+      "born": ""
+    },
+    {
+      "slug": "mohamed-el-erian",
+      "category": "traders",
+      "name": "Mohamed El-Erian",
+      "born": "August 19, 1958"
+    },
+    {
+      "slug": "muhammad-ali",
+      "category": "sports",
+      "name": "Muhammad Ali",
+      "born": "January 17, 1942"
+    },
+    {
+      "slug": "mukesh-ambani",
+      "category": "leaders",
+      "name": "Mukesh Ambani",
+      "born": "April 19, 1957"
+    },
+    {
+      "slug": "nancy-pelosi",
+      "category": "leaders",
+      "name": "Nancy Pelosi",
+      "born": ""
+    },
+    {
+      "slug": "narendra-modi",
+      "category": "leaders",
+      "name": "Narendra Modi",
+      "born": ""
+    },
+    {
+      "slug": "nathan-blecharczyk",
+      "category": "scientists",
+      "name": "Nathan Blecharczyk",
+      "born": ""
+    },
+    {
+      "slug": "naval-ravikant",
+      "category": "leaders",
+      "name": "Naval Ravikant",
+      "born": ""
+    },
+    {
+      "slug": "neil-degrasse-tyson",
+      "category": "scientists",
+      "name": "Neil deGrasse Tyson",
+      "born": "October 5, 1958"
+    },
+    {
+      "slug": "nelson-mandela",
+      "category": "leaders",
+      "name": "Nelson Mandela",
+      "born": ""
+    },
+    {
+      "slug": "neymar",
+      "category": "sports",
+      "name": "Neymar",
+      "born": "February 5, 1992"
+    },
+    {
+      "slug": "nicolas-darvas",
+      "category": "traders",
+      "name": "Nicolas Darvas",
+      "born": ""
+    },
+    {
+      "slug": "nikola-tesla",
+      "category": "scientists",
+      "name": "Nikola Tesla",
+      "born": ""
+    },
+    {
+      "slug": "noah-glass",
+      "category": "leaders",
+      "name": "Noah Glass",
+      "born": ""
+    },
+    {
+      "slug": "olaf-scholz",
+      "category": "leaders",
+      "name": "Olaf Scholz",
+      "born": ""
+    },
+    {
+      "slug": "oprah-winfrey",
+      "category": "leaders",
+      "name": "Oprah Winfrey",
+      "born": ""
+    },
+    {
+      "slug": "pablo-picasso",
+      "category": "leaders",
+      "name": "Pablo Picasso",
+      "born": ""
+    },
+    {
+      "slug": "pat-gelsinger",
+      "category": "leaders",
+      "name": "Pat Gelsinger",
+      "born": ""
+    },
+    {
+      "slug": "patrick-collison",
+      "category": "leaders",
+      "name": "Patrick Collison",
+      "born": "September 9, 1988"
+    },
+    {
+      "slug": "paul-allen",
+      "category": "traders",
+      "name": "Paul Allen",
+      "born": "January 21, 1953"
+    },
+    {
+      "slug": "paul-graham",
+      "category": "leaders",
+      "name": "Paul Graham",
+      "born": ""
+    },
+    {
+      "slug": "paul-rotter",
+      "category": "traders",
+      "name": "Paul Rotter",
+      "born": ""
+    },
+    {
+      "slug": "paul-tudor-jones",
+      "category": "traders",
+      "name": "Paul Tudor Jones",
+      "born": "September 28, 1954"
+    },
+    {
+      "slug": "pele",
+      "category": "sports",
+      "name": "Pelé",
+      "born": "October 23, 1940"
+    },
+    {
+      "slug": "pete-docter",
+      "category": "leaders",
+      "name": "Pete Docter",
+      "born": "October 10, 1968"
+    },
+    {
+      "slug": "peter-drucker",
+      "category": "leaders",
+      "name": "Peter Drucker",
+      "born": ""
+    },
+    {
+      "slug": "peter-fenton",
+      "category": "traders",
+      "name": "Peter Fenton",
+      "born": ""
+    },
+    {
+      "slug": "peter-lynch",
+      "category": "traders",
+      "name": "Peter Lynch",
+      "born": "January 19, 1944"
+    },
+    {
+      "slug": "peter-schiff",
+      "category": "traders",
+      "name": "Peter Schiff",
+      "born": "March 23, 1963"
+    },
+    {
+      "slug": "peter-thiel",
+      "category": "traders",
+      "name": "Peter Thiel",
+      "born": ""
+    },
+    {
+      "slug": "phil-knight",
+      "category": "sports",
+      "name": "Phil Knight",
+      "born": "February 24, 1938"
+    },
+    {
+      "slug": "prem-watsa",
+      "category": "traders",
+      "name": "Prem Watsa",
+      "born": "August 5, 1950"
+    },
+    {
+      "slug": "rakesh-jhunjhunwala",
+      "category": "traders",
+      "name": "Rakesh Jhunjhunwala",
+      "born": "July 5, 1960"
+    },
+    {
+      "slug": "ray-dalio",
+      "category": "traders",
+      "name": "Ray Dalio",
+      "born": "August 8, 1949"
+    },
+    {
+      "slug": "reed-hastings",
+      "category": "scientists",
+      "name": "Reed Hastings",
+      "born": "October 8, 1960"
+    },
+    {
+      "slug": "reid-hoffman",
+      "category": "leaders",
+      "name": "Reid Hoffman",
+      "born": ""
+    },
+    {
+      "slug": "richard-branson",
+      "category": "leaders",
+      "name": "Richard Branson",
+      "born": "July 18, 1950"
+    },
+    {
+      "slug": "richard-dennis",
+      "category": "traders",
+      "name": "Richard Dennis",
+      "born": ""
+    },
+    {
+      "slug": "richard-feynman",
+      "category": "scientists",
+      "name": "Richard Feynman",
+      "born": ""
+    },
+    {
+      "slug": "richard-stallman",
+      "category": "leaders",
+      "name": "Richard Stallman",
+      "born": ""
+    },
+    {
+      "slug": "rishi-sunak",
+      "category": "leaders",
+      "name": "Rishi Sunak",
+      "born": ""
+    },
+    {
+      "slug": "robert-kiyosaki",
+      "category": "traders",
+      "name": "Robert Kiyosaki",
+      "born": "April 8, 1947"
+    },
+    {
+      "slug": "robert-shiller",
+      "category": "scientists",
+      "name": "Robert Shiller",
+      "born": "March 29, 1946"
+    },
+    {
+      "slug": "roger-federer",
+      "category": "sports",
+      "name": "Roger Federer",
+      "born": "August 8, 1981"
+    },
+    {
+      "slug": "rupert-murdoch",
+      "category": "leaders",
+      "name": "Rupert Murdoch",
+      "born": ""
+    },
+    {
+      "slug": "ruth-porat",
+      "category": "traders",
+      "name": "Ruth Porat",
+      "born": ""
+    },
+    {
+      "slug": "ryan-holiday",
+      "category": "leaders",
+      "name": "Ryan Holiday",
+      "born": ""
+    },
+    {
+      "slug": "sam-altman",
+      "category": "leaders",
+      "name": "Sam Altman",
+      "born": ""
+    },
+    {
+      "slug": "sam-walton",
+      "category": "leaders",
+      "name": "Sam Walton",
+      "born": ""
+    },
+    {
+      "slug": "sanna-marin",
+      "category": "leaders",
+      "name": "Sanna Marin",
+      "born": ""
+    },
+    {
+      "slug": "satya-nadella",
+      "category": "leaders",
+      "name": "Satya Nadella",
+      "born": ""
+    },
+    {
+      "slug": "sean-parker",
+      "category": "traders",
+      "name": "Sean Parker",
+      "born": "December 3, 1979"
+    },
+    {
+      "slug": "serena-williams",
+      "category": "sports",
+      "name": "Serena Williams",
+      "born": "September 26, 1981"
+    },
+    {
+      "slug": "sergey-brin",
+      "category": "leaders",
+      "name": "Sergey Brin",
+      "born": ""
+    },
+    {
+      "slug": "seth-klarman",
+      "category": "traders",
+      "name": "Seth Klarman",
+      "born": ""
+    },
+    {
+      "slug": "sheryl-sandberg",
+      "category": "leaders",
+      "name": "Sheryl Sandberg",
+      "born": ""
+    },
+    {
+      "slug": "simon-sinek",
+      "category": "leaders",
+      "name": "Simon Sinek",
+      "born": "October 9, 1973"
+    },
+    {
+      "slug": "simone-biles",
+      "category": "sports",
+      "name": "Simone Biles",
+      "born": "March 14, 1997"
+    },
+    {
+      "slug": "stanley-druckenmiller",
+      "category": "traders",
+      "name": "Stanley Druckenmiller",
+      "born": "June 14, 1953"
+    },
+    {
+      "slug": "stephen-hawking",
+      "category": "scientists",
+      "name": "Stephen Hawking",
+      "born": ""
+    },
+    {
+      "slug": "stephen-schwarzman",
+      "category": "traders",
+      "name": "Stephen Schwarzman",
+      "born": "February 14, 1947"
+    },
+    {
+      "slug": "steve-ballmer",
+      "category": "leaders",
+      "name": "Steve Ballmer",
+      "born": "March 24, 1956"
+    },
+    {
+      "slug": "steve-blank",
+      "category": "leaders",
+      "name": "Steve Blank",
+      "born": ""
+    },
+    {
+      "slug": "steve-jobs",
+      "category": "leaders",
+      "name": "Steve Jobs",
+      "born": ""
+    },
+    {
+      "slug": "steve-prefontaine",
+      "category": "sports",
+      "name": "Steve Prefontaine",
+      "born": "January 25, 1951"
+    },
+    {
+      "slug": "steve-wozniak",
+      "category": "scientists",
+      "name": "Steve Wozniak",
+      "born": "August 11, 1950"
+    },
+    {
+      "slug": "stewart-butterfield",
+      "category": "leaders",
+      "name": "Stewart Butterfield",
+      "born": "March 21, 1973"
+    },
+    {
+      "slug": "sumner-redstone",
+      "category": "leaders",
+      "name": "Sumner Redstone",
+      "born": ""
+    },
+    {
+      "slug": "sundar-pichai",
+      "category": "leaders",
+      "name": "Sundar Pichai",
+      "born": ""
+    },
+    {
+      "slug": "susan-wojcicki",
+      "category": "leaders",
+      "name": "Susan Wojcicki",
+      "born": ""
+    },
+    {
+      "slug": "ted-turner",
+      "category": "leaders",
+      "name": "Ted Turner",
+      "born": ""
+    },
+    {
+      "slug": "the-beatles",
+      "category": "leaders",
+      "name": "The Beatles",
+      "born": ""
+    },
+    {
+      "slug": "theo-albrecht",
+      "category": "traders",
+      "name": "Theo Albrecht",
+      "born": ""
+    },
+    {
+      "slug": "thomas-edison",
+      "category": "leaders",
+      "name": "Thomas Edison",
+      "born": ""
+    },
+    {
+      "slug": "thomas-h-lee",
+      "category": "leaders",
+      "name": "Thomas H. Lee",
+      "born": ""
+    },
+    {
+      "slug": "tiger-woods",
+      "category": "sports",
+      "name": "Tiger Woods",
+      "born": "December 30, 1975"
+    },
+    {
+      "slug": "tim-cook",
+      "category": "leaders",
+      "name": "Tim Cook",
+      "born": ""
+    },
+    {
+      "slug": "tim-ferriss",
+      "category": "leaders",
+      "name": "Tim Ferriss",
+      "born": ""
+    },
+    {
+      "slug": "travis-kalanick",
+      "category": "traders",
+      "name": "Travis Kalanick",
+      "born": "August 18, 1976"
+    },
+    {
+      "slug": "usain-bolt",
+      "category": "sports",
+      "name": "Usain Bolt",
+      "born": "August 21, 1986"
+    },
+    {
+      "slug": "vijay-kedia",
+      "category": "traders",
+      "name": "Vijay Kedia",
+      "born": ""
+    },
+    {
+      "slug": "vincent-van-gogh",
+      "category": "leaders",
+      "name": "Vincent van Gogh",
+      "born": ""
+    },
+    {
+      "slug": "vinod-khosla",
+      "category": "traders",
+      "name": "Vinod Khosla",
+      "born": "January 28, 1955"
+    },
+    {
+      "slug": "vitalik-buterin",
+      "category": "leaders",
+      "name": "Vitalik Buterin",
+      "born": "January 31, 1994"
+    },
+    {
+      "slug": "vladimir-putin",
+      "category": "leaders",
+      "name": "Vladimir Putin",
+      "born": ""
+    },
+    {
+      "slug": "volodymyr-zelenskyy",
+      "category": "leaders",
+      "name": "Volodymyr Zelenskyy",
+      "born": ""
+    },
+    {
+      "slug": "walt-disney",
+      "category": "leaders",
+      "name": "Walt Disney",
+      "born": ""
+    },
+    {
+      "slug": "walter-schloss",
+      "category": "traders",
+      "name": "Walter Schloss",
+      "born": ""
+    },
+    {
+      "slug": "warren-buffett",
+      "category": "traders",
+      "name": "Warren Buffett",
+      "born": "August 30, 1930"
+    },
+    {
+      "slug": "whitney-wolfe-herd",
+      "category": "leaders",
+      "name": "Whitney Wolfe Herd",
+      "born": ""
+    },
+    {
+      "slug": "william-oneil",
+      "category": "traders",
+      "name": "William O'Neil",
+      "born": "March 25, 1933"
+    },
+    {
+      "slug": "william-shakespeare",
+      "category": "leaders",
+      "name": "William Shakespeare",
+      "born": ""
+    },
+    {
+      "slug": "xi-jinping",
+      "category": "leaders",
+      "name": "Xi Jinping",
+      "born": ""
+    },
+    {
+      "slug": "yann-lecun",
+      "category": "scientists",
+      "name": "Yann LeCun",
+      "born": ""
+    },
+    {
+      "slug": "yoshua-bengio",
+      "category": "scientists",
+      "name": "Yoshua Bengio",
+      "born": "March 5, 1964"
+    },
+    {
+      "slug": "zinedine-zidane",
+      "category": "sports",
+      "name": "Zinedine Zidane",
+      "born": "June 23, 1972"
+    }
+  ]
+}
