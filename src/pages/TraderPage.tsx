@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { traders, traderBioData } from '../data';
+import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, DollarSign, TrendingUp, Globe, Quote, Target } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -9,6 +10,10 @@ import PrintButton from '../components/PrintButton';
 import gsap from 'gsap';
 import { getReadingTime } from '../utils/readingTime';
 import AudioNarration from '../components/AudioNarration';
+import Timeline from '../components/Timeline';
+import StatCards from '../components/StatCards';
+import QuoteCards from '../components/QuoteCards';
+import ActionableSteps from '../components/ActionableSteps';
 
 const GRADIENT_COLORS = [
   ['#1a472a', '#2e7d32'], ['#0d47a1', '#1976d2'], ['#b71c1c', '#d32f2f'],
@@ -28,6 +33,7 @@ export default function TraderPage() {
   const traderId = parseInt(id || '1');
   const trader = traders.find(t => t.id === traderId);
   const bio = traderBioData[traderId];
+  const jsonEntry = trader ? jsonLoader.getJsonBioByName(trader.name) : undefined;
 
   const readingTime = bio ? getReadingTime(bio.bio) : 1;
   const fullBioText = bio?.bio || '';
@@ -110,6 +116,22 @@ export default function TraderPage() {
            {bio.bio.split('\n\n').map((paragraph, i) => (
           <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 0 : 28 }}>{paragraph}</p>
         ))}
+
+        {/* Visual Components - Rich Data */}
+        {jsonEntry && (
+          <>
+            <StatCards 
+              born={jsonEntry.born} 
+              died={jsonEntry.died} 
+              nationality={jsonEntry.nationality} 
+              stats={jsonEntry.stats}
+              color="#ffcc00"
+            />
+            <Timeline milestones={jsonEntry.milestones || []} color="#ffcc00" />
+            <QuoteCards quotes={jsonEntry.quotes || []} color="#ffcc00" authorName={jsonEntry.name} />
+            <ActionableSteps steps={jsonEntry.actionableSteps || []} color="#ffcc00" />
+          </>
+        )}
 
         {/* Key Trades */}
         {bio.keyTrades.length > 0 && (

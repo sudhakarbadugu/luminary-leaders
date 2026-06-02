@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { bioData, leaders } from '../data';
+import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, MapPin, Quote, Users } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -8,6 +9,10 @@ import ShareButton from '../components/ShareButton';
 import PrintButton from '../components/PrintButton';
 import { getReadingTime } from '../utils/readingTime';
 import AudioNarration from '../components/AudioNarration';
+import Timeline from '../components/Timeline';
+import StatCards from '../components/StatCards';
+import QuoteCards from '../components/QuoteCards';
+import ActionableSteps from '../components/ActionableSteps';
 
 const GRADIENT_COLORS = [
   ['#2c3e50', '#3498db'],
@@ -35,6 +40,9 @@ export default function LeaderPage() {
   const leaderId = parseInt(id || '0', 10);
   const bio = bioData[leaderId];
   const leader = leaders.find(l => l.id === leaderId);
+
+  // Get JSON data for visual components
+  const jsonEntry = leader ? jsonLoader.getJsonBioByName(leader.name) : undefined;
 
   const readingTime = bio ? getReadingTime(bio.bio) : 1;
   const fullBioText = bio?.bio || '';
@@ -176,6 +184,22 @@ export default function LeaderPage() {
         {bio.bio.split('\n\n').map((paragraph, i) => (
           <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, lineHeight: 1.8, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 40 : 28 }}>{paragraph}</p>
         ))}
+
+        {/* Visual Components - Rich Data */}
+        {jsonEntry && (
+          <>
+            <StatCards 
+              born={jsonEntry.born} 
+              died={jsonEntry.died} 
+              nationality={jsonEntry.nationality} 
+              stats={jsonEntry.stats}
+              color="#ffcc00"
+            />
+            <Timeline milestones={jsonEntry.milestones || []} color="#ffcc00" />
+            <QuoteCards quotes={jsonEntry.quotes || []} color="#ffcc00" authorName={jsonEntry.name} />
+            <ActionableSteps steps={jsonEntry.actionableSteps || []} color="#ffcc00" />
+          </>
+        )}
 
         {/* Additional Quotes */}
         {(bio.quotes?.length ?? 0) > 1 && (

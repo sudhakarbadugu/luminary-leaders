@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { athletes, athleteBioData } from '../data';
+import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, DollarSign, Trophy, Globe, Quote, Award, Medal } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -9,6 +10,10 @@ import PrintButton from '../components/PrintButton';
 import gsap from 'gsap';
 import { getReadingTime } from '../utils/readingTime';
 import AudioNarration from '../components/AudioNarration';
+import Timeline from '../components/Timeline';
+import StatCards from '../components/StatCards';
+import QuoteCards from '../components/QuoteCards';
+import ActionableSteps from '../components/ActionableSteps';
 
 const GRADIENT_COLORS = [
   ['#1a472a', '#2e7d32'], ['#0d47a1', '#1976d2'], ['#b71c1c', '#d32f2f'],
@@ -29,20 +34,11 @@ export default function SportsPersonPage() {
   const contentRef = useRef<HTMLDivElement>(null);
   const athleteId = parseInt(id || '1');
   const athlete = athletes.find(a => a.id === athleteId);
-  const tsBio = athleteBioData[athleteId];
+  const bio = athleteBioData[athleteId];
+  const jsonEntry = athlete ? jsonLoader.getJsonBioByName(athlete.name) : undefined;
 
-  // Try to get full bio from JSON (MD source) by athlete name
-  const jsonEntry = athlete ? getJsonBioByName(athlete.name) : undefined;
-  const bio = jsonEntry ? {
-    name: jsonEntry.name,
-    bio: jsonEntry.bio,
-    quotes: (jsonEntry.quotes?.length ?? 0) > 0 ? jsonEntry.quotes : (tsBio?.quotes || []),
-    keyAchievements: tsBio?.keyAchievements || (jsonEntry.milestones ?? []).map(m => ({ year: m.year, event: m.event })),
-    relatedIds: tsBio?.relatedIds || [],
-  } : tsBio;
-
+  const readingTime = bio ? getReadingTime(bio.bio) : 1;
   const fullBioText = bio?.bio || '';
-  const readingTime = getReadingTime(fullBioText);
   useEffect(() => { window.scrollTo(0, 0); }, [id]);
 
   useEffect(() => {
@@ -131,6 +127,22 @@ export default function SportsPersonPage() {
            {bio.bio.split('\n\n').map((paragraph, i) => (
           <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 0 : 28 }}>{paragraph}</p>
         ))}
+
+        {/* Visual Components - Rich Data */}
+        {jsonEntry && (
+          <>
+            <StatCards 
+              born={jsonEntry.born} 
+              died={jsonEntry.died} 
+              nationality={jsonEntry.nationality} 
+              stats={jsonEntry.stats}
+              color="#2e7d32"
+            />
+            <Timeline milestones={jsonEntry.milestones || []} color="#2e7d32" />
+            <QuoteCards quotes={jsonEntry.quotes || []} color="#2e7d32" authorName={jsonEntry.name} />
+            <ActionableSteps steps={jsonEntry.actionableSteps || []} color="#2e7d32" />
+          </>
+        )}
 
         {/* Key Achievements */}
         {bio.keyAchievements.length > 0 && (
