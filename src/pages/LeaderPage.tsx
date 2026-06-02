@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { bioData } from '../data/bios';
 import { leaders } from '../data/leaders';
+import { getJsonBioByName } from '../data/dataLoader';
 import { ArrowLeft, Calendar, Clock, MapPin, Quote, Users } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -34,11 +35,28 @@ export default function LeaderPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const leaderId = parseInt(id || '0', 10);
-  const bio = bioData[leaderId];
-
-  const readingTime = bio ? getReadingTime(bio.bio) : 1;
-  const fullBioText = bio?.bio || '';
+  const tsBio = bioData[leaderId];
   const leader = leaders.find(l => l.id === leaderId);
+
+  // Try to get full bio from JSON (MD source) by leader name
+  const jsonEntry = leader ? getJsonBioByName(leader.name) : undefined;
+  // Build a unified bio object: prefer JSON data when available, fall back to TS data
+  const bio = jsonEntry ? {
+    name: jsonEntry.name,
+    role: leader?.role || jsonEntry.role || jsonEntry.subtitle,
+    company: leader?.company || jsonEntry.company || '',
+    era: jsonEntry.era || leader?.era || '',
+    nationality: jsonEntry.nationality || tsBio?.nationality || '',
+    born: jsonEntry.born || tsBio?.born || '',
+    died: jsonEntry.died || tsBio?.died || '',
+    bio: jsonEntry.bio,
+    quotes: jsonEntry.quotes.length > 0 ? jsonEntry.quotes : (tsBio?.quotes || []),
+    milestones: jsonEntry.milestones,
+    relatedIds: tsBio?.relatedIds || [],
+  } : tsBio;
+
+  const fullBioText = bio?.bio || '';
+  const readingTime = getReadingTime(fullBioText);
 
   useEffect(() => {
     window.scrollTo(0, 0);

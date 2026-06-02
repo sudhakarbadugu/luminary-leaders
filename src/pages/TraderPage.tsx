@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { traders } from '../data/traders';
 import { traderBioData } from '../data/traderBios';
+import { getJsonBioByName } from '../data/dataLoader';
 import { ArrowLeft, Calendar, Clock, DollarSign, TrendingUp, Globe, Quote, Target } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -28,10 +29,20 @@ export default function TraderPage() {
   const contentRef = useRef<HTMLDivElement>(null);
   const traderId = parseInt(id || '1');
   const trader = traders.find(t => t.id === traderId);
-  const bio = traderBioData[traderId];
+  const tsBio = traderBioData[traderId];
 
-  const readingTime = bio ? getReadingTime(bio.bio) : 1;
+  // Try to get full bio from JSON (MD source) by trader name
+  const jsonEntry = trader ? getJsonBioByName(trader.name) : undefined;
+  const bio = jsonEntry ? {
+    name: jsonEntry.name,
+    bio: jsonEntry.bio,
+    quotes: jsonEntry.quotes.length > 0 ? jsonEntry.quotes : (tsBio?.quotes || []),
+    keyTrades: tsBio?.keyTrades || jsonEntry.milestones.map(m => ({ year: m.year, event: m.event })),
+    relatedIds: tsBio?.relatedIds || [],
+  } : tsBio;
+
   const fullBioText = bio?.bio || '';
+  const readingTime = getReadingTime(fullBioText);
   useEffect(() => { window.scrollTo(0, 0); }, [id]);
 
   useEffect(() => {

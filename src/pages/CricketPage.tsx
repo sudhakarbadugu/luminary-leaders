@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { cricketers } from '../data/cricket';
 import { cricketerBioData } from '../data/cricketBios';
+import { getJsonBioByName } from '../data/dataLoader';
 import { ArrowLeft, Calendar, Clock, Globe, Quote, Award, Target } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -30,10 +31,20 @@ export default function CricketPage() {
   const contentRef = useRef<HTMLDivElement>(null);
   const cricketerId = parseInt(id || '1');
   const cricketer = cricketers.find(c => c.id === cricketerId);
-  const bio = cricketerBioData[cricketerId];
+  const tsBio = cricketerBioData[cricketerId];
 
-  const readingTime = bio ? getReadingTime(bio.bio) : 1;
+  // Try to get full bio from JSON (MD source) by cricketer name
+  const jsonEntry = cricketer ? getJsonBioByName(cricketer.name) : undefined;
+  const bio = jsonEntry ? {
+    name: jsonEntry.name,
+    bio: jsonEntry.bio,
+    quotes: jsonEntry.quotes.length > 0 ? jsonEntry.quotes : (tsBio?.quotes || []),
+    keyAchievements: tsBio?.keyAchievements || jsonEntry.milestones.map(m => ({ year: m.year, event: m.event })),
+    relatedIds: tsBio?.relatedIds || [],
+  } : tsBio;
+
   const fullBioText = bio?.bio || '';
+  const readingTime = getReadingTime(fullBioText);
   useEffect(() => { window.scrollTo(0, 0); }, [id]);
 
   useEffect(() => {

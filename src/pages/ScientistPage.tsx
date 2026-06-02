@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { scientists } from '../data/scientists';
 import { scientistBioData } from '../data/scientistBios';
+import { getJsonBioByName } from '../data/dataLoader';
 import { ArrowLeft, Calendar, Clock, Globe, Quote, Award, FlaskConical } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
@@ -30,10 +31,20 @@ export default function ScientistPage() {
   const contentRef = useRef<HTMLDivElement>(null);
   const scientistId = parseInt(id || '1');
   const scientist = scientists.find(s => s.id === scientistId);
-  const bio = scientistBioData[scientistId];
+  const tsBio = scientistBioData[scientistId];
 
-  const readingTime = bio ? getReadingTime(bio.bio) : 1;
+  // Try to get full bio from JSON (MD source) by scientist name
+  const jsonEntry = scientist ? getJsonBioByName(scientist.name) : undefined;
+  const bio = jsonEntry ? {
+    name: jsonEntry.name,
+    bio: jsonEntry.bio,
+    quotes: jsonEntry.quotes.length > 0 ? jsonEntry.quotes : (tsBio?.quotes || []),
+    keyAchievements: tsBio?.keyAchievements || jsonEntry.milestones.map(m => ({ year: m.year, event: m.event })),
+    relatedIds: tsBio?.relatedIds || [],
+  } : tsBio;
+
   const fullBioText = bio?.bio || '';
+  const readingTime = getReadingTime(fullBioText);
   useEffect(() => { window.scrollTo(0, 0); }, [id]);
 
   useEffect(() => {
