@@ -1,0 +1,342 @@
+# Luminary Leaders - Complete List
+# Total Leaders: 321
+# Source: https://luminary-leaders.netlify.app
+
+## Technology & Business
+
+- Aaron Levie
+- Ada Lovelace
+- Alan Turing
+- Andrej Karpathy
+- Andrew Ng
+- Andy Grove
+- Andy Krieger
+- Angela Ahrendts
+- Arlan Hamilton
+- Bill Ackman
+- Bill Gates
+- Bob Kahn
+- Brewster Kahle
+- Brian Acton & Jan Koum
+- Brian Chesky
+- Cheng Wei (Will)
+- Claude Shannon
+- Craig Newmark
+- Daniel Dines
+- Daniel Ek
+- Daphne Koller
+- Dario & Daniela Amodei
+- David Baker
+- David Tepper
+- Demis Hassabis
+- Dennis Ritchie
+- Douglas Engelbart
+- Drew Houston
+- Elon Musk
+- Eric Lander
+- Evan Spiegel
+- Fei-Fei Li
+- Geoffrey Hinton
+- Ginni Rometty
+- Gordon Moore
+- Grace Hopper
+- Guilherme Benchimol
+- Hermann Hauser
+- Ilya Sutskever
+- Iyinoluwa Aboyeji
+- Jack Dorsey
+- Jack Ma
+- Jeff Bezos
+- Jennifer Doudna
+- Jensen Huang
+- Jimmy Wales
+- John von Neumann
+- Jony Ive
+- Ken Tropin
+- Kevin Systrom & Mike Krieger
+- Kimberly Bryant
+- Kiran Mazumdar-Shaw
+- Larry Hite
+- Larry Page
+- Leda Braga
+- Lei Jun
+- Linus Torvalds
+- Lisa Su
+- Marc Andreessen
+- Marc Benioff
+- Marcos Galperin
+- Marissa Mayer
+- Mark Zuckerberg
+- Masayoshi Son
+- Max Levchin
+- Meg Whitman
+- Michael Dell
+- Miki Kuusi
+- Mitch Kapor
+- Niklas Zennstrom
+- Patrick & John Collison
+- Paul Allen
+- Pierre Omidyar
+- Pony Ma
+- Ray Ozzie
+- Reed Hastings
+- Reid Hoffman
+- Reshma Saujani
+- Ritesh Agarwal
+- Robin Li
+- Ronald C. Kessler
+- Ryan Hoover
+- Safra Catz
+- Sal Khan
+- Sam Altman
+- Sara Blakely
+- Satya Nadella
+- Sebastian Thrun
+- Sergey Brin
+- Sheryl Sandberg
+- Simon Johnson
+- Sophia Amoruso
+- Steve Jobs
+- Steve Wozniak
+- Steven Cohen
+- Strive Masiyiwa
+- Sundar Pichai
+- Susan Wojcicki
+- Taavet Hinrikus
+- Tim Berners-Lee
+- Tim Cook
+- Tom Baldwin
+- Tony Fadell
+- Travis Kalanick
+- Tristan Harris
+- Ursula Burns
+- Vijay Kedia
+- Vint Cerf
+- Warren Buffett
+- Whitney Wolfe Herd
+- Yann LeCun
+- Yoshua Bengio
+- Zhong Lin Wang
+
+## Investors & Traders
+
+- Benjamin Graham
+- Bernard Baruch
+- Bill Dunn
+- Bill Lipschutz
+- Bruce Kovner
+- CANSLIM Creator
+- Carl Icahn
+- Chris Camillo
+- Cliff Asness
+- Colm O'Shea
+- Daron Acemoglu
+- David Harding
+- Ed Seykota
+- Edward Thorp
+- Father of Trend Following
+- Father of Value Investing
+- George Soros
+- Gerald Loeb
+- Godfather of Managed Futures
+- India's Big Bull
+- Jesse Livermore
+- Jim Rogers
+- Jim Simons
+- Joe Lewis
+- John Paulson
+- John W. Henry
+- Ken Tropin
+- Leda Braga
+- Legend of Fidelity
+- Linda Bradford Raschke
+- Man Who Broke the Bank of England
+- Mark Minervini
+- Marty Schwartz
+- Master of Time & Price
+- Michael Marcus
+- Michael Steinhardt
+- Money
+- Nick Leeson
+- Nicolas Darvas
+- Paul Tudor Jones
+- Peter Lynch
+- Peter Schiff
+- Peter Thiel
+- Porinju Veliyath
+- Radhakishan Damani
+- Rakesh Jhunjhunwala
+- Ray Dalio
+- Richard Dennis
+- Richard Donchian
+- Stanley Druckenmiller
+- Sultan of Currencies
+- Tony Saliba
+- W.D. Gann
+- Walter Willett
+- William O'Neil
+
+## Sports
+
+- AB de Villiers
+- Adam Gilchrist
+- Alastair Cook
+- Allyson Felix
+- Anil Kumble
+- Ayrton Senna
+- Babar Azam
+- Babe Ruth
+- Beefy
+- Ben Stokes
+- Big Bird
+- Bo Jackson
+- Bobby Orr
+- Bones
+- Brian Lara
+- Broady
+- Byju Raveendran
+- CR7
+- Captain Cool
+- Carl Lewis
+- Chris Evert
+- Cristiano Ronaldo
+- Curtly Ambrose
+- Dale Steyn
+- Dennis Lillee
+- Dhyan Chand
+- Diana Taurasi
+- Eddy Merckx
+- Floyd Mayweather
+- Garry Sobers
+- Gilly
+- Glenn McGrath
+- Hardik Pandya
+- His Airness
+- Ian Botham
+- Imran Khan
+- Inzamam-ul-Haq
+- Inzy
+- Iron Mike
+- Jack Nicklaus
+- Jacques Kallis
+- James Anderson
+- Jasprit Bumrah
+- Javed Miandad
+- Jerry Rice
+- Jesse Owens
+- Jim Thorpe
+- Joe Root
+- Joel Garner
+- Jon Jones
+- Jumbo
+- KG
+- Kagiso Rabada
+- Kapil Dev
+- Katie Ledecky
+- King James
+- Kumar Sangakkara
+- La Pulga
+- LeBron James
+- Lewis Hamilton
+- Lightning Bolt
+- Lin Dan
+- MS Dhoni
+- Ma Long
+- Mahela Jayawardene
+- Malcolm Marshall
+- Mark Spitz
+- Marta
+- Martina Navratilova
+- Master Blaster
+- Michael Jordan
+- Michael Phelps
+- Mike Tyson
+- Mitchell Starc
+- Mr. 360
+- Muhammad Ali
+- Muttiah Muralitharan
+- Nadia Comaneci
+- Novak Djokovic
+- Pat Cummins
+- Patrick Mahomes
+- Pele
+- Pele in Skirts
+- Peyton Manning
+- Pigeon
+- Pit Bull
+- Punter
+- R Ashwin
+- Rafael Nadal
+- Rahul Dravid
+- Ravindra Jadeja
+- Ricky Ponting
+- Roger Federer
+- Sachin Tendulkar
+- Sanath Jayasuriya
+- Serena Williams
+- Shane Warne
+- Shoaib Akhtar
+- Shohei Ohtani
+- Shotime
+- Sid the Kid
+- Sidney Crosby
+- Simone Biles
+- Sir Jadeja
+- Sourav Ganguly
+- Stephen Curry
+- Steve Smith
+- Stuart Broad
+- Sunil Gavaskar
+- Super Dan
+- Tiger Woods
+- Tom Brady
+- Usain Bolt
+- Virat Kohli
+- Viv Richards
+- W.G. Grace
+- Waqar Younis
+- Wasim Akram
+- Wayne Gretzky
+- Wilt Chamberlain
+- Wilt the Stilt
+- Yashasvi Jaiswal
+- Yuvraj Singh
+
+## Scientists & Academics
+
+- Al-Khwarizmi
+- Alan Turing
+- Albert Einstein
+- Archimedes
+- Aristotle
+- Carl Linnaeus
+- Charles Darwin
+- Chien-Shiung Wu
+- Dennis Ritchie
+- Dmitri Mendeleev
+- Emmanuelle Charpentier
+- Galileo Galilei
+- Gregor Mendel
+- Hypatia
+- Ibn al-Haytham
+- Isaac Newton
+- James Clerk Maxwell
+- James Robinson
+- Jane Goodall
+- Johannes Kepler
+- John Jumper
+- Katherine Johnson
+- Ken Thompson
+- Louis Pasteur
+- Marie Curie
+- Max Planck
+- Michael Faraday
+- Niels Bohr
+- Nikola Tesla
+- Noam Shazeer
+- Richard Feynman
+- Robert Langer
+- Rosalind Franklin
+- Stephen Hawking
+- Svante Pääbo
+- Werner Heisenberg

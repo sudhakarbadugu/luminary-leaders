@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const MD_DIR = '/root/Projects/leaders-biography';
-const OUT_DIR = '/root/Projects/luminary-leaders/src/data/json';
+const MD_DIR = path.join(__dirname, '..', 'md');
+const OUT_DIR = __dirname;
 
 if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
 
@@ -242,7 +242,7 @@ function parseMd(content) {
 }
 
 // Main processing
-const files = fs.readdirSync(MD_DIR).filter(f => f.endsWith('.md') && !f.endsWith('-2.md') && f !== 'luminary-leaders-list.md');
+const files = fs.readdirSync(MD_DIR).filter(f => f.endsWith('.md') && !f.endsWith('-2.md') && f !== 'README.md' && f !== 'luminary-leaders-list.md');
 const categories = { leaders: [], traders: [], sports: [], cricket: [], scientists: [] };
 const summary = [];
 
