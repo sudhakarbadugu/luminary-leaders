@@ -5,7 +5,7 @@ import UniversalSearch from '../components/UniversalSearch';
 import { useIsMobile } from '../hooks/useMediaQuery';
 
 interface NavigationProps {
-  lenisRef: React.MutableRefObject<any>;
+  lenisRef: React.MutableRefObject<{ scrollTo: (target: string, options?: { duration?: number }) => void } | null>;
 }
 
 export default function Navigation({ lenisRef }: NavigationProps) {

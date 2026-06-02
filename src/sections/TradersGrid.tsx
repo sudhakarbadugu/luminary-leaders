@@ -7,28 +7,11 @@ import { Search, X, TrendingUp, Layers } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
 import { getCategoryStyle } from '../utils/categoryStyles';
+import { getInitials, getGradient, SECTION_GRADIENT_COLORS } from '../utils/visual';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const GRADIENT_COLORS = [
-  ['#1a472a', '#2e7d32'],
-  ['#0d47a1', '#1976d2'],
-  ['#b71c1c', '#d32f2f'],
-  ['#4a148c', '#7b1fa2'],
-  ['#e65100', '#f57c00'],
-  ['#1b5e20', '#388e3c'],
-  ['#006064', '#0097a7'],
-  ['#311b92', '#5e35b1'],
-];
 
-function getInitials(name: string): string {
-  return name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
-}
-
-function getGradient(id: number): string {
-  const colors = GRADIENT_COLORS[id % GRADIENT_COLORS.length];
-  return `linear-gradient(135deg, ${colors[0]}, ${colors[1]})`;
-}
 
 export default function TradersGrid() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -144,7 +127,7 @@ export default function TradersGrid() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))', gap: 48, marginBottom: 64 }}>
             {displayed.map((trader, idx) => (
               <div key={trader.id} ref={el => { if (el) cardsRef.current[idx] = el; }} onClick={() => navigate(`/trader/${trader.id}`)} style={{ opacity: 0, cursor: 'pointer' }}>
-                <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', position: 'relative', background: trader.image ? undefined : getGradient(trader.id) }}>
+                <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', position: 'relative', background: trader.image ? undefined : getGradient(SECTION_GRADIENT_COLORS, trader.id) }}>
                   {trader.image ? (
                     <img src={trader.image} alt={trader.name} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }} onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.03)'; }} onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)'; }} />
                   ) : (

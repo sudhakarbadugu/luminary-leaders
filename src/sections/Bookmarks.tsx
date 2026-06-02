@@ -10,12 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Bookmarks() {
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
-  const [bookmarks, setBookmarks] = useState<Bookmark[]>([]);
+  const [bookmarks, setBookmarks] = useState<Bookmark[]>(() => getBookmarks());
   const navigate = useNavigate();
-
-  useEffect(() => {
-    setBookmarks(getBookmarks());
-  }, []);
 
   const handleRemove = (b: Bookmark) => {
     removeBookmark(b.id, b.category);

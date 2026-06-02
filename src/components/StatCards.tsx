@@ -1,4 +1,4 @@
-import { Calendar, Globe, GraduationCap, DollarSign, Briefcase, Trophy } from 'lucide-react';
+import { Calendar, Globe, GraduationCap, DollarSign, Briefcase } from 'lucide-react';
 
 interface Stats {
   netWorth?: string;

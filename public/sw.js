@@ -3,7 +3,6 @@ const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/favicon.ico',
 ];
 
 // Install: cache static assets

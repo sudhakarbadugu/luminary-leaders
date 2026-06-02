@@ -1,34 +1,15 @@
 import { useEffect, useRef, useState, useMemo } from 'react';
-import { useNavigate } from 'react-router';
+
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { leaders, bioData } from '../data';
 import { Search, X, Globe, Building2, Layers, Zap } from 'lucide-react';
-import BookmarkButton from '../components/BookmarkButton';
-import CompareToggleButton from '../components/CompareToggleButton';
+import LeaderCard from '../components/LeaderCard';
 import { getCategoryStyle } from '../utils/categoryStyles';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const GRADIENT_COLORS = [
-  ['#2c3e50', '#3498db'],
-  ['#8e44ad', '#e74c3c'],
-  ['#16a085', '#f39c12'],
-  ['#d35400', '#c0392b'],
-  ['#27ae60', '#2980b9'],
-  ['#6c3483', '#1a5276'],
-  ['#784212', '#1b4f72'],
-  ['#145a32', '#7d3c98'],
-];
 
-function getInitials(name: string): string {
-  return name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
-}
-
-function getGradient(id: number): string {
-  const colors = GRADIENT_COLORS[id % GRADIENT_COLORS.length];
-  return `linear-gradient(135deg, ${colors[0]}, ${colors[1]})`;
-}
 
 export default function LeadersGrid() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -40,7 +21,6 @@ export default function LeadersGrid() {
   const [companyFilter, setCompanyFilter] = useState('All');
   const [fieldFilter, setFieldFilter] = useState('All');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const navigate = useNavigate();
 
   const eras = ['All', ...new Set(leaders.map(l => l.era))];
 
@@ -653,137 +633,9 @@ export default function LeadersGrid() {
               <div
                 key={leader.id}
                 ref={el => { if (el) cardsRef.current[idx] = el; }}
-                onClick={() => navigate(`/leader/${leader.id}`)}
                 style={{ opacity: 0, cursor: 'pointer' }}
               >
-                <div
-                  style={{
-                    aspectRatio: '3/4',
-                    borderRadius: 8,
-                    overflow: 'hidden',
-                    position: 'relative',
-                    background: leader.image ? undefined : getGradient(leader.id),
-                  }}
-                >
-                  {leader.image ? (
-                    <img
-                      src={leader.image}
-                      alt={leader.name}
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        transition: 'transform 0.4s ease',
-                      }}
-                      onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.03)'; }}
-                      onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
-                    />
-                  ) : (
-                    <div
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        color: '#fff',
-                        fontFamily: "'Instrument Serif', serif",
-                        fontSize: 48,
-                      }}
-                    >
-                      {getInitials(leader.name)}
-                    </div>
-                  )}
-                  {/* Nationality badge */}
-                  {getNationality(leader.id) && (
-                    <div
-                      style={{
-                        position: 'absolute',
-                        top: 12,
-                        left: 12,
-                        background: 'rgba(40, 43, 47, 0.85)',
-                        backdropFilter: 'blur(4px)',
-                        color: '#f1f1ee',
-                        fontFamily: "'Inter', sans-serif",
-                        fontSize: 11,
-                        fontWeight: 500,
-                        padding: '4px 10px',
-                        borderRadius: 99,
-                        letterSpacing: 0.5,
-                      }}
-                    >
-                      {getNationality(leader.id)}
-                    </div>
-                  )}
-                  {/* Action buttons */}
-                  <div style={{ position: 'absolute', bottom: 12, right: 12, display: 'flex', gap: 6 }}>
-                    <BookmarkButton id={leader.id} category="leader" name={leader.name} nickname={leader.role} />
-                    <CompareToggleButton item={{ id: leader.id, name: leader.name, nickname: leader.role, category: 'leader', field: leader.role, nationality: getNationality(leader.id) || '', born: '', era: leader.era, image: leader.image }} />
-                  </div>
-                </div>
-                {/* Card info with badges */}
-                <div
-                  style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: 16,
-                    fontWeight: 500,
-                    color: '#282b2f',
-                    marginTop: 16,
-                    transition: 'color 0.2s ease',
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.color = '#ffcc00'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.color = '#282b2f'; }}
-                >
-                  {leader.name}
-                </div>
-                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginTop: 4 }}>
-                  {leader.role}
-                </div>
-                
-                {/* Visual badges row */}
-                <div style={{ display: 'flex', gap: 6, marginTop: 8, flexWrap: 'wrap' }}>
-                  {getNationality(leader.id) && (
-                    <span style={{
-                      fontSize: 11,
-                      padding: '3px 10px',
-                      borderRadius: 99,
-                      background: '#f1f1ee',
-                      color: '#968671',
-                      fontWeight: 500,
-                      letterSpacing: 0.3,
-                    }}>
-                      {getNationality(leader.id)}
-                    </span>
-                  )}
-                  {bioData[leader.id]?.born && (
-                    <span style={{
-                      fontSize: 11,
-                      padding: '3px 10px',
-                      borderRadius: 99,
-                      background: '#282b2f10',
-                      color: '#282b2f',
-                      fontWeight: 500,
-                      letterSpacing: 0.3,
-                    }}>
-                      {bioData[leader.id]?.born}
-                    </span>
-                  )}
-                  <span style={{
-                    fontSize: 11,
-                    padding: '3px 10px',
-                    borderRadius: 99,
-                    background: '#ffcc0020',
-                    color: '#b8860b',
-                    fontWeight: 500,
-                    letterSpacing: 0.3,
-                  }}>
-                    {leader.era}
-                  </span>
-                </div>
-                
-                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: '#968671', opacity: 0.7, marginTop: 4 }}>
-                  {leader.company}
-                </div>
+                <LeaderCard leader={leader} getNationality={getNationality} />
               </div>
             ))}
           </div>

@@ -16,6 +16,27 @@ import ShareButton from '../components/ShareButton';
 import PrintButton from '../components/PrintButton';
 import { Sparkles, ArrowRight, Quote } from 'lucide-react';
 
+interface ProfileItem {
+  id: number;
+  name: string;
+  nickname: string;
+  role: string;
+  nationality: string;
+  born: string;
+  era: string;
+  image?: string;
+  [key: string]: unknown;
+}
+
+interface BioEntry {
+  nationality?: string;
+  born?: string;
+  era?: string;
+  bio?: string;
+  quotes?: string[];
+  [key: string]: unknown;
+}
+
 interface FeaturedProfile {
   id: number;
   category: 'leader' | 'trader' | 'athlete' | 'cricketer' | 'scientist';
@@ -30,7 +51,7 @@ interface FeaturedProfile {
   quote: string;
 }
 
-const allProfiles: { items: any[]; category: FeaturedProfile['category']; fieldKey: string; bioData: Record<number, any> }[] = [
+const allProfiles: { items: ProfileItem[]; category: FeaturedProfile['category']; fieldKey: string; bioData: Record<number, BioEntry> }[] = [
   { items: leaders, category: 'leader', fieldKey: 'role', bioData: bioData },
   { items: traders, category: 'trader', fieldKey: 'strategy', bioData: traderBioData },
   { items: athletes, category: 'athlete', fieldKey: 'sport', bioData: athleteBioData },
@@ -49,7 +70,7 @@ function getFeaturedProfile(): FeaturedProfile {
   const dayOfYear = getDayOfYear();
 
   // Collect all profiles into a flat array
-  const flat: { item: any; category: FeaturedProfile['category']; fieldKey: string; bioData: Record<number, any> }[] = [];
+  const flat: { item: ProfileItem; category: FeaturedProfile['category']; fieldKey: string; bioData: Record<number, BioEntry> }[] = [];
   for (const group of allProfiles) {
     for (const item of group.items) {
       flat.push({ item, category: group.category, fieldKey: group.fieldKey, bioData: group.bioData });
@@ -67,7 +88,7 @@ function getFeaturedProfile(): FeaturedProfile {
     name: selected.item.name,
     nickname: selected.item.nickname,
     image: selected.item.image,
-    field: (selected.item as any)[selected.fieldKey] || '',
+    field: String((selected.item as Record<string, unknown>)[selected.fieldKey] ?? ''),
     nationality: bio?.nationality || selected.item.nationality || '',
     born: bio?.born || selected.item.born || '',
     era: bio?.era || selected.item.era || '',

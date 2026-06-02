@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { scientists, scientistBioData } from '../data';
 import { jsonLoader } from '../data';
-import { ArrowLeft, Calendar, Clock, Globe, Quote, Award, FlaskConical } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Globe, Quote, FlaskConical } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
 import ShareButton from '../components/ShareButton';
@@ -13,20 +13,7 @@ import AudioNarration from '../components/AudioNarration';
 import Timeline from '../components/Timeline';
 import StatCards from '../components/StatCards';
 import QuoteCards from '../components/QuoteCards';
-import ActionableSteps from '../components/ActionableSteps';
-
-const GRADIENT_COLORS = [
-  ['#1a237e', '#3949ab'], ['#004d40', '#00796b'], ['#b71c1c', '#d32f2f'],
-  ['#4a148c', '#7b1fa2'], ['#e65100', '#f57c00'], ['#1b5e20', '#388e3c'],
-  ['#006064', '#0097a7'], ['#311b92', '#5e35b1'], ['#880e4f', '#c2185b'],
-  ['#3e2723', '#5d4037'], ['#263238', '#455a64'], ['#01579b', '#0288d1'],
-  ['#bf360c', '#e64a19'], ['#33691e', '#558b2f'], ['#4e342e', '#6d4c41'],
-];
-
-function getGradient(id: number): string {
-  const colors = GRADIENT_COLORS[id % GRADIENT_COLORS.length];
-  return `linear-gradient(135deg, ${colors[0]}, ${colors[1]})`;
-}
+import { getGradient, SCIENTIST_GRADIENT_COLORS } from '../utils/visual';
 
 export default function ScientistPage() {
   const { id } = useParams<{ id: string }>();
@@ -79,7 +66,7 @@ export default function ScientistPage() {
           </button>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(260px, 100%), 1fr))', gap: 40, alignItems: 'start' }}>
-            <div style={{ aspectRatio: '3/4', borderRadius: 12, overflow: 'hidden', background: scientist.image ? undefined : getGradient(scientist.id), flexShrink: 0 }}>
+            <div style={{ aspectRatio: '3/4', borderRadius: 12, overflow: 'hidden', background: scientist.image ? undefined : getGradient(SCIENTIST_GRADIENT_COLORS, scientist.id), flexShrink: 0 }}>
               {scientist.image ? (
                 <img src={scientist.image} alt={scientist.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               ) : (

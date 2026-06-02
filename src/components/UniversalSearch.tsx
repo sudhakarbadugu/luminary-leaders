@@ -2,6 +2,7 @@ import { useState, useMemo, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { Search, X, Users, TrendingUp, Trophy, FlaskConical, Crosshair, ArrowRight } from 'lucide-react';
 import { leaders, traders, athletes, cricketers, scientists, bioData, traderBioData, athleteBioData, cricketerBioData, scientistBioData } from '../data';
+import { getInitials } from '../utils/visual';
 
 interface SearchResult {
   id: number;
@@ -23,9 +24,6 @@ const CATEGORY_CONFIG = {
   scientist: { label: 'Scientist', icon: FlaskConical, color: '#7b1fa2', route: 'scientist' },
 };
 
-function getInitials(name: string): string {
-  return name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
-}
 
 export default function UniversalSearch() {
   const [query, setQuery] = useState('');
@@ -37,7 +35,7 @@ export default function UniversalSearch() {
   const allFigures = useMemo(() => {
     const results: SearchResult[] = [];
     
-    leaders.forEach((l, i) => {
+    leaders.forEach((l) => {
       const bio = bioData[l.id];
       results.push({
         id: l.id,
@@ -52,7 +50,7 @@ export default function UniversalSearch() {
       });
     });
     
-    traders.forEach((t, i) => {
+    traders.forEach((t) => {
       const bio = traderBioData[t.id];
       results.push({
         id: t.id,
@@ -67,7 +65,7 @@ export default function UniversalSearch() {
       });
     });
     
-    athletes.forEach((a, i) => {
+    athletes.forEach((a) => {
       const bio = athleteBioData[a.id];
       results.push({
         id: a.id,
@@ -82,7 +80,7 @@ export default function UniversalSearch() {
       });
     });
     
-    cricketers.forEach((c, i) => {
+    cricketers.forEach((c) => {
       const bio = cricketerBioData[c.id];
       results.push({
         id: c.id,
@@ -97,7 +95,7 @@ export default function UniversalSearch() {
       });
     });
     
-    scientists.forEach((s, i) => {
+    scientists.forEach((s) => {
       const bio = scientistBioData[s.id];
       results.push({
         id: s.id,

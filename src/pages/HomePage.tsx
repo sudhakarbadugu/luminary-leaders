@@ -37,7 +37,7 @@ export default function HomePage() {
     });
     lenisRef.current = lenis;
 
-    lenis.on('scroll', (e: any) => {
+    lenis.on('scroll', (e: { scroll: number; velocity: number; direction: number }) => {
       scrollY.current = e.scroll;
       scrollSpeed.current = e.velocity;
       scrollDirection.current = e.direction === 1 ? 1 : -1;

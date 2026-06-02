@@ -23,10 +23,10 @@ const ILLEGAL_PATTERNS = [
 ];
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const NAME_REGEX = /^[a-zA-Z\s\-'\.]+$/;
+const NAME_REGEX = /^[a-zA-Z\s\-'.]+$/;
 
 function sanitizeInput(value: string): string {
-  return value.replace(/[<>\"'%;()&+]/g, '');
+  return value.replace(/[<>"'%;()&+]/g, '');
 }
 
 function validateField(key: string, value: string): string | undefined {

@@ -13,26 +13,9 @@ import Timeline from '../components/Timeline';
 import StatCards from '../components/StatCards';
 import QuoteCards from '../components/QuoteCards';
 import ActionableSteps from '../components/ActionableSteps';
+import { getInitials, getGradient, SECTION_GRADIENT_COLORS } from '../utils/visual';
 
-const GRADIENT_COLORS = [
-  ['#2c3e50', '#3498db'],
-  ['#8e44ad', '#e74c3c'],
-  ['#16a085', '#f39c12'],
-  ['#d35400', '#c0392b'],
-  ['#27ae60', '#2980b9'],
-  ['#6c3483', '#1a5276'],
-  ['#784212', '#1b4f72'],
-  ['#145a32', '#7d3c98'],
-];
 
-function getGradient(id: number): string {
-  const colors = GRADIENT_COLORS[id % GRADIENT_COLORS.length];
-  return `linear-gradient(135deg, ${colors[0]}, ${colors[1]})`;
-}
-
-function getInitials(name: string): string {
-  return name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
-}
 
 export default function LeaderPage() {
   const { id } = useParams<{ id: string }>();
@@ -109,7 +92,7 @@ export default function LeaderPage() {
                 aspectRatio: '3/4',
                 borderRadius: 12,
                 overflow: 'hidden',
-                background: leader.image ? undefined : getGradient(leader.id),
+                background: leader.image ? undefined : getGradient(SECTION_GRADIENT_COLORS, leader.id),
                 flexShrink: 0,
               }}
             >
@@ -236,7 +219,7 @@ export default function LeaderPage() {
                   onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; }}
                   onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; }}
                 >
-                  <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', background: related.image ? undefined : getGradient(related.id) }}>
+                  <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', background: related.image ? undefined : getGradient(SECTION_GRADIENT_COLORS, related.id) }}>
                     {related.image ? (
                       <img src={related.image} alt={related.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     ) : (

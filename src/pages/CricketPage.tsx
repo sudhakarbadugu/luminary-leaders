@@ -10,31 +10,8 @@ import PrintButton from '../components/PrintButton';
 import gsap from 'gsap';
 import { getReadingTime } from '../utils/readingTime';
 import AudioNarration from '../components/AudioNarration';
-import Timeline from '../components/Timeline';
-import StatCards from '../components/StatCards';
-import QuoteCards from '../components/QuoteCards';
-import ActionableSteps from '../components/ActionableSteps';
-import ActionableSteps from '../components/ActionableSteps';
-import BookmarkButton from '../components/BookmarkButton';
-import CompareToggleButton from '../components/CompareToggleButton';
-import ShareButton from '../components/ShareButton';
-import PrintButton from '../components/PrintButton';
-import gsap from 'gsap';
-import { getReadingTime } from '../utils/readingTime';
-import AudioNarration from '../components/AudioNarration';
 
-const GRADIENT_COLORS = [
-  ['#1a472a', '#2e7d32'], ['#0d47a1', '#1976d2'], ['#b71c1c', '#d32f2f'],
-  ['#4a148c', '#7b1fa2'], ['#e65100', '#f57c00'], ['#1b5e20', '#388e3c'],
-  ['#006064', '#0097a7'], ['#311b92', '#5e35b1'], ['#880e4f', '#c2185b'],
-  ['#3e2723', '#5d4037'], ['#263238', '#455a64'], ['#01579b', '#0288d1'],
-  ['#bf360c', '#e64a19'], ['#33691e', '#558b2f'], ['#4e342e', '#6d4c41'],
-];
-
-function getGradient(id: number): string {
-  const colors = GRADIENT_COLORS[id % GRADIENT_COLORS.length];
-  return `linear-gradient(135deg, ${colors[0]}, ${colors[1]})`;
-}
+import { getGradient, TRADER_GRADIENT_COLORS } from '../utils/visual';
 
 export default function CricketPage() {
   const { id } = useParams<{ id: string }>();
@@ -45,7 +22,7 @@ export default function CricketPage() {
   const tsBio = cricketerBioData[cricketerId];
 
   // Try to get full bio from JSON (MD source) by cricketer name
-  const jsonEntry = cricketer ? getJsonBioByName(cricketer.name) : undefined;
+  const jsonEntry = cricketer ? jsonLoader.getJsonBioByName(cricketer.name) : undefined;
   const bio = jsonEntry ? {
     name: jsonEntry.name,
     bio: jsonEntry.bio,
@@ -80,7 +57,7 @@ export default function CricketPage() {
   return (
     <div className="page-container" style={{ background: "#f1f1ee", minHeight: "100vh" }}>
       {/* Hero */}
-      <div style={{ background: getGradient(cricketer.id), padding: 'clamp(80px, 10vw, 120px) clamp(20px, 4vw, 40px) clamp(40px, 6vw, 80px)', position: 'relative', overflow: 'hidden' }}>
+      <div style={{ background: getGradient(TRADER_GRADIENT_COLORS, cricketer.id), padding: 'clamp(80px, 10vw, 120px) clamp(20px, 4vw, 40px) clamp(40px, 6vw, 80px)', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.05, backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.4) 1px, transparent 0)', backgroundSize: '32px 32px' }} />
         <div style={{ maxWidth: 800, margin: '0 auto', position: 'relative' }}>
           <button onClick={() => navigate('/')} style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'rgba(255,255,255,0.7)', background: 'none', border: 'none', cursor: 'pointer', fontFamily: "'Inter', sans-serif", fontSize: 13, marginBottom: 40, padding: 0 }}

@@ -12,70 +12,36 @@ import * as json from './dataLoader';
 
 /** Legacy adapter: enriches old TS data with new JSON data */
 
-// Leader bios: merge old TS bio with new JSON content
-export const enrichedBioData = bioData.map((bio, i) => {
-  const leader = leaders[i];
-  if (!leader) return bio;
-  const jsonEntry = json.getJsonBioByName(leader.name);
-  if (!jsonEntry) return bio;
-  return {
-    ...bio,
-    bio: jsonEntry.bio || bio.bio,
-    quotes: (jsonEntry.quotes?.length ?? 0) > 0 ? jsonEntry.quotes : bio.quotes,
-  };
-});
+function enrichRecord<T extends { id: number; bio: string; quotes?: string[] }>(
+  record: Record<number, T>,
+  people: { id: number; name: string }[]
+): Record<number, T> {
+  const result: Record<number, T> = {};
+  for (const bio of Object.values(record)) {
+    const person = people.find(p => p.id === bio.id);
+    if (!person) {
+      result[bio.id] = bio;
+      continue;
+    }
+    const jsonEntry = json.getJsonBioByName(person.name);
+    if (!jsonEntry) {
+      result[bio.id] = bio;
+      continue;
+    }
+    result[bio.id] = {
+      ...bio,
+      bio: jsonEntry.bio || bio.bio,
+      quotes: (jsonEntry.quotes?.length ?? 0) > 0 ? jsonEntry.quotes : bio.quotes,
+    };
+  }
+  return result;
+}
 
-// Trader bios: merge old TS bio with new JSON content
-export const enrichedTraderBioData = traderBioData.map((bio, i) => {
-  const trader = traders[i];
-  if (!trader) return bio;
-  const jsonEntry = json.getJsonBioByName(trader.name);
-  if (!jsonEntry) return bio;
-  return {
-    ...bio,
-    bio: jsonEntry.bio || bio.bio,
-    quotes: (jsonEntry.quotes?.length ?? 0) > 0 ? jsonEntry.quotes : bio.quotes,
-  };
-});
-
-// Athlete bios: merge old TS bio with new JSON content
-export const enrichedAthleteBioData = athleteBioData.map((bio, i) => {
-  const athlete = athletes[i];
-  if (!athlete) return bio;
-  const jsonEntry = json.getJsonBioByName(athlete.name);
-  if (!jsonEntry) return bio;
-  return {
-    ...bio,
-    bio: jsonEntry.bio || bio.bio,
-    quotes: (jsonEntry.quotes?.length ?? 0) > 0 ? jsonEntry.quotes : bio.quotes,
-  };
-});
-
-// Cricketer bios: merge old TS bio with new JSON content
-export const enrichedCricketerBioData = cricketerBioData.map((bio, i) => {
-  const cricketer = cricketers[i];
-  if (!cricketer) return bio;
-  const jsonEntry = json.getJsonBioByName(cricketer.name);
-  if (!jsonEntry) return bio;
-  return {
-    ...bio,
-    bio: jsonEntry.bio || bio.bio,
-    quotes: (jsonEntry.quotes?.length ?? 0) > 0 ? jsonEntry.quotes : bio.quotes,
-  };
-});
-
-// Scientist bios: merge old TS bio with new JSON content
-export const enrichedScientistBioData = scientistBioData.map((bio, i) => {
-  const scientist = scientists[i];
-  if (!scientist) return bio;
-  const jsonEntry = json.getJsonBioByName(scientist.name);
-  if (!jsonEntry) return bio;
-  return {
-    ...bio,
-    bio: jsonEntry.bio || bio.bio,
-    quotes: (jsonEntry.quotes?.length ?? 0) > 0 ? jsonEntry.quotes : bio.quotes,
-  };
-});
+export const enrichedBioData = enrichRecord(bioData, leaders);
+export const enrichedTraderBioData = enrichRecord(traderBioData, traders);
+export const enrichedAthleteBioData = enrichRecord(athleteBioData, athletes);
+export const enrichedCricketerBioData = enrichRecord(cricketerBioData, cricketers);
+export const enrichedScientistBioData = enrichRecord(scientistBioData, scientists);
 
 // Export all enriched data
 export { leaders, traders, athletes, cricketers, scientists };

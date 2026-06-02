@@ -6,6 +6,7 @@ import './styles/darkMode.css'
 import { DarkModeProvider } from './hooks/useDarkMode'
 import { registerServiceWorker } from './utils/pwa'
 import App from './App.tsx'
+import ErrorBoundary from './components/ErrorBoundary'
 
 // Register PWA service worker for offline support
 registerServiceWorker()
@@ -13,7 +14,9 @@ registerServiceWorker()
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <DarkModeProvider>
-      <App />
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
     </DarkModeProvider>
   </BrowserRouter>,
 )

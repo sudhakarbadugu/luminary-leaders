@@ -7,25 +7,9 @@ import { Search, X, FlaskConical } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
 import { getCategoryStyle } from '../utils/categoryStyles';
+import { getInitials, getGradient, SCIENTIST_GRADIENT_COLORS } from '../utils/visual';
 
 gsap.registerPlugin(ScrollTrigger);
-
-const GRADIENT_COLORS = [
-  ['#1a472a', '#2e7d32'], ['#0d47a1', '#1976d2'], ['#b71c1c', '#d32f2f'],
-  ['#4a148c', '#7b1fa2'], ['#e65100', '#f57c00'], ['#1b5e20', '#388e3c'],
-  ['#006064', '#0097a7'], ['#311b92', '#5e35b1'], ['#880e4f', '#c2185b'],
-  ['#3e2723', '#5d4037'], ['#263238', '#455a64'], ['#01579b', '#0288d1'],
-  ['#bf360c', '#e64a19'], ['#33691e', '#558b2f'], ['#4e342e', '#6d4c41'],
-];
-
-function getInitials(name: string): string {
-  return name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
-}
-
-function getGradient(id: number): string {
-  const colors = GRADIENT_COLORS[id % GRADIENT_COLORS.length];
-  return `linear-gradient(135deg, ${colors[0]}, ${colors[1]})`;
-}
 
 export default function ScientistsGrid() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -101,7 +85,7 @@ export default function ScientistsGrid() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))', gap: 48, marginBottom: 64 }}>
             {displayed.map((scientist, idx) => (
               <div key={scientist.id} ref={el => { if (el) cardsRef.current[idx] = el; }} onClick={() => navigate(`/scientist/${scientist.id}`)} style={{ opacity: 0, cursor: 'pointer' }}>
-                <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', position: 'relative', background: scientist.image ? undefined : getGradient(scientist.id) }}>
+                <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', position: 'relative', background: scientist.image ? undefined : getGradient(SCIENTIST_GRADIENT_COLORS, scientist.id) }}>
                   {scientist.image ? (
                     <img src={scientist.image} alt={scientist.name} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }} onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.03)'; }} onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)'; }} />
                   ) : (

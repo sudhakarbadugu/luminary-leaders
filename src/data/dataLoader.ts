@@ -1,15 +1,15 @@
 /** Data loader for JSON-based leader data */
-// @ts-ignore - Vite handles JSON imports
+// @ts-expect-error - Vite handles JSON imports
 import leadersData from './json/leaders.json';
-// @ts-ignore
+// @ts-expect-error - Vite handles JSON imports
 import tradersData from './json/traders.json';
-// @ts-ignore
+// @ts-expect-error - Vite handles JSON imports
 import sportsData from './json/sports.json';
-// @ts-ignore
+// @ts-expect-error - Vite handles JSON imports
 import cricketData from './json/cricket.json';
-// @ts-ignore
+// @ts-expect-error - Vite handles JSON imports
 import scientistsData from './json/scientists.json';
-// @ts-ignore
+// @ts-expect-error - Vite handles JSON imports
 import indexData from './json/index.json';
 
 // Rich entry type from JSON (enhanced with full MD content)

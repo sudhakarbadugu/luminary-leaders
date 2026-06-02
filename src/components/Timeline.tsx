@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Calendar, TrendingUp, Award } from 'lucide-react';
+import { Calendar, TrendingUp } from 'lucide-react';
 
 interface Milestone {
   year: string;

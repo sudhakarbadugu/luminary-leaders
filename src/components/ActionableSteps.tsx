@@ -1,4 +1,4 @@
-import { Target, CheckCircle } from 'lucide-react';
+import { Target } from 'lucide-react';
 
 interface Step {
   title: string;

@@ -9,13 +9,13 @@ interface Props {
 export default function AudioNarration({ text, title }: Props) {
   const [speaking, setSpeaking] = useState(false);
   const [paused, setPaused] = useState(false);
-  const [supported, setSupported] = useState(true);
+  const [supported] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    return 'speechSynthesis' in window;
+  });
   const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
 
   useEffect(() => {
-    if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-      setSupported(false);
-    }
     return () => {
       if (window.speechSynthesis) {
         window.speechSynthesis.cancel();

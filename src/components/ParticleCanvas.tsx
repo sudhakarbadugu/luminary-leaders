@@ -34,7 +34,7 @@ const seededRandom = (seed: number) => {
   return ((seed * 9301 + 49297) % 233280) / 233280;
 };
 
-export default function ParticleCanvas({ scrollY, scrollSpeed: _scrollSpeed, scrollDirection: _scrollDirection }: ParticleCanvasProps) {
+export default function ParticleCanvas({ scrollY }: ParticleCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -58,7 +58,7 @@ export default function ParticleCanvas({ scrollY, scrollSpeed: _scrollSpeed, scr
     const PARTICLES_PER_IMAGE = Math.floor(PARTICLE_COUNT / IMAGE_PATHS.length);
     const ACTUAL_COUNT = PARTICLES_PER_IMAGE * IMAGE_PATHS.length;
 
-    const positions = new Float32Array(ACTUAL_COUNT * 2);
+    const positions = new Float32Array(ACTUAL_COUNT * 3);
     const uvs = new Float32Array(ACTUAL_COUNT * 2);
     const sizes = new Float32Array(ACTUAL_COUNT);
     const speeds = new Float32Array(ACTUAL_COUNT);
@@ -80,8 +80,9 @@ export default function ParticleCanvas({ scrollY, scrollSpeed: _scrollSpeed, scr
         const x = (rand1 - 0.5) * 2.8;
         const y = (rand2 - 0.5) * 2.8;
 
-        positions[idx * 2] = x;
-        positions[idx * 2 + 1] = y;
+        positions[idx * 3] = x;
+        positions[idx * 3 + 1] = y;
+        positions[idx * 3 + 2] = 0;
         initialPositions[idx * 2] = x;
         initialPositions[idx * 2 + 1] = y;
         uvs[idx * 2] = rand3;
@@ -102,7 +103,7 @@ export default function ParticleCanvas({ scrollY, scrollSpeed: _scrollSpeed, scr
     }
 
     const geometry = new THREE.BufferGeometry();
-    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 2));
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
     geometry.setAttribute('aInitialPosition', new THREE.BufferAttribute(initialPositions, 2));
     geometry.setAttribute('aUv', new THREE.BufferAttribute(uvs, 2));
     geometry.setAttribute('aSize', new THREE.BufferAttribute(sizes, 1));
@@ -204,12 +205,12 @@ export default function ParticleCanvas({ scrollY, scrollSpeed: _scrollSpeed, scr
     const onAllTexturesLoaded = () => {
       material.uniforms.uTextures.value = textures;
 
-      const clock = new THREE.Clock();
+      const startTime = performance.now();
       let enterProgress = 0;
 
       const animate = () => {
         animationId = requestAnimationFrame(animate);
-        const elapsed = clock.getElapsedTime();
+        const elapsed = (performance.now() - startTime) / 1000;
         material.uniforms.uTime.value = elapsed;
         material.uniforms.uScrollY.value = scrollY.current;
 
@@ -252,7 +253,7 @@ export default function ParticleCanvas({ scrollY, scrollSpeed: _scrollSpeed, scr
       geometry.dispose();
       material.dispose();
     };
-  }, []);
+  }, [scrollY]);
 
   return (
     <canvas

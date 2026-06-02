@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 interface HeroProps {
-  lenisRef: React.MutableRefObject<any>;
+  lenisRef: React.MutableRefObject<{ scrollTo: (target: string, options?: { duration?: number }) => void } | null>;
 }
 
 export default function Hero({ lenisRef }: HeroProps) {
