@@ -1,8 +1,8 @@
 {
-  "total": 289,
+  "total": 288,
   "categories": {
     "leaders": 143,
-    "traders": 74,
+    "traders": 73,
     "sports": 26,
     "cricket": 5,
     "scientists": 41
@@ -1026,12 +1026,6 @@
       "slug": "lisa-su",
       "category": "leaders",
       "name": "Lisa Su",
-      "born": ""
-    },
-    {
-      "slug": "luminary-leaders-list",
-      "category": "traders",
-      "name": "Luminary Leaders",
       "born": ""
     },
     {

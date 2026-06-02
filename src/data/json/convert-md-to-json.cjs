@@ -162,12 +162,17 @@ function parseMd(content) {
   const name = h1Match ? h1Match[1].trim() : 'Unknown';
   const subtitle = h1Match && h1Match[2] ? h1Match[2].trim() : '';
   
-  // Extract sections
+  // Extract sections (handle both \n\n and single \n after section header)
   const sections = {};
-  const sectionRegex = /##\s+(\d+)\.\s+(.+?)\n\n([\s\S]*?)(?=\n##\s+\d+\.|\n---\s*$|$)/g;
+  // First try with blank line after header (full bios)
+  const sectionRegex = /##\s+(\d+)\.\s+(.+?)\n+([\s\S]*?)(?=\n##\s+\d+\.|\n---\s*$|$)/g;
   let m;
   while ((m = sectionRegex.exec(content)) !== null) {
-    sections[m[2].trim().toUpperCase()] = m[3].trim();
+    const sectionName = m[2].trim().toUpperCase();
+    let body = m[3].trim();
+    // Stop at --- separator if present
+    if (body.endsWith('---')) body = body.slice(0, -3).trim();
+    sections[sectionName] = body;
   }
   
   // Build structured bio
@@ -185,15 +190,35 @@ function parseMd(content) {
   const quoteMatches = phil.match(/"([^"]+)"/g);
   if (quoteMatches) quoteMatches.forEach(q => quotes.push(q.replace(/"/g, '')));
   
-  // Extract milestones from TEST section
+  // Extract milestones from TEST section and LEGACY
   const milestones = [];
-  const test = sections['THE TEST'] || sections['THE TEST — THE BREAKTHROUGH MOMENT'] || '';
-  const milestoneMatches = test.match(/\*\*(\d{4}[^*]*)\*\*:\s*([^\n]+)/g);
+  const test = sections['THE TEST'] || sections['THE TEST — THE BREAKTHROUGH MOMENT'] || sections['THE TEST — THE BREAKTHROUGH'] || '';
+  const legacy = sections['THE LEGACY'] || sections['THE LEGACY — THE FOOTPRINT'] || sections['THE LEGACY'] || '';
+  const combined = test + '\n' + legacy;
+  
+  // First try **YYYY**: event format
+  const milestoneMatches = combined.match(/\*\*(\d{4}[^*]*)\*\*[:\s—\-]+([^\n]+)/g);
   if (milestoneMatches) {
     milestoneMatches.forEach(mm => {
-      const parts = mm.match(/\*\*(\d{4}[^*]*)\*\*:\s*([^\n]+)/);
-      if (parts) milestones.push({ year: parts[1].trim(), event: parts[2].trim() });
+      const parts = mm.match(/\*\*(\d{4}[^*]*)\*\*[:\s—\-]+([^\n]+)/);
+      if (parts) {
+        const yearMatch = parts[1].match(/(\d{4})/);
+        if (yearMatch) milestones.push({ year: yearMatch[1], event: parts[2].trim() });
+      }
     });
+  }
+  
+  // If no structured milestones, extract year+sentence from narrative
+  if (milestones.length === 0) {
+    const sentences = combined.split(/(?<=[.!?])\s+/);
+    sentences.forEach(s => {
+      const yearMatch = s.match(/\b(1[0-9]{3}|20[0-9]{2})\b/);
+      if (yearMatch && s.length < 250 && s.length > 20) {
+        milestones.push({ year: yearMatch[1], event: s.trim() });
+      }
+    });
+    // Cap to top 8 most informative
+    milestones.splice(8);
   }
   
   // Extract dates
@@ -217,7 +242,7 @@ function parseMd(content) {
 }
 
 // Main processing
-const files = fs.readdirSync(MD_DIR).filter(f => f.endsWith('.md') && !f.endsWith('-2.md'));
+const files = fs.readdirSync(MD_DIR).filter(f => f.endsWith('.md') && !f.endsWith('-2.md') && f !== 'luminary-leaders-list.md');
 const categories = { leaders: [], traders: [], sports: [], cricket: [], scientists: [] };
 const summary = [];
 

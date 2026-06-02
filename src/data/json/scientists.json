@@ -4,8 +4,10 @@
     "name": "Ada Lovelace",
     "slug": "ada-lovelace",
     "subtitle": "First computer programmer",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nShe wrote first algorithm. She was Byron's daughter. She says: 'The Analytical Engine has no pretensions to originate anything.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nAda Lovelace started their journey. First computer programmer, Byron's daughter, algorithm.\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nAda Lovelace faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nAda Lovelace's method focused on programming.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nAda Lovelace's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Programming:**\n\"I am more than ever now the bride of science.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nAda Lovelace left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the programming philosophy\n2. Learn from Ada Lovelace's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/ada-lovelace.md*",
+    "quotes": [
+      "I am more than ever now the bride of science."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -52,8 +54,10 @@
     "name": "Alan Turing",
     "slug": "alan-turing",
     "subtitle": "Father of computer science",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nHe broke Enigma code. He invented Turing machine. He says: 'Sometimes it is the people no one can imagine anything of who do the things no one can imagine.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nAlan Turing started their journey. Father of computer science, codebreaker, Turing machine.\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nAlan Turing faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nAlan Turing's method focused on imagination.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nAlan Turing's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Imagination:**\n\"Sometimes it is the people no one can imagine anything of who do the things no one can imagine.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nAlan Turing left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the imagination philosophy\n2. Learn from Alan Turing's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/alan-turing.md*",
+    "quotes": [
+      "Sometimes it is the people no one can imagine anything of who do the things no one can imagine."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -74,8 +78,10 @@
     "name": "Albert Einstein",
     "slug": "albert-einstein",
     "subtitle": "German physicist",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nHe developed the Theory of Relativity. He won the Nobel Prize in 1921. He fled Nazi Germany. He says: 'Imagination is more important than knowledge.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nAlbert Einstein was born. German physicist, Theory of Relativity, Nobel Prize 1921, E=mc²\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nAlbert Einstein faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nAlbert Einstein's method focused on imagination.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nAlbert Einstein's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Imagination:**\n\"Imagination is more important than knowledge.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nAlbert Einstein left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the imagination philosophy\n2. Learn from Albert Einstein's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/albert-einstein.md*",
+    "quotes": [
+      "Imagination is more important than knowledge."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -153,7 +159,12 @@
       "The competitor that you should be worried about is not the one that is similar to you. The competitor that you should worry about is the one that takes your business by taking a different path.",
       "Don't be too quick to adopt others' views. Think for yourself."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "1998",
+        "event": "By the time Grove stepped down as CEO in 1998, Intel was the most valuable semiconductor company in the world."
+      }
+    ],
     "born": "September 2, 1936",
     "died": "March 21, 2016",
     "nationality": "",
@@ -235,7 +246,16 @@
       "Tell me and I forget, teach me and I may remember, involve me and I learn.",
       "When you're finished changing, you're finished."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "1752",
+        "event": "### The Kite Experiment (1752)\n\nThe most famous moment in Franklin's scientific career was the kite experiment."
+      },
+      {
+        "year": "1778",
+        "event": "### The French Alliance (1778)\n\nFranklin's diplomatic achievement was essential to the American Revolution."
+      }
+    ],
     "born": "January 17, 1706",
     "died": "April 17, 1790",
     "nationality": "",
@@ -255,8 +275,10 @@
     "name": "Bob Dylan",
     "slug": "bob-dylan",
     "subtitle": "American singer-songwriter",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nHe won Nobel Prize in Literature. He wrote Blowin' in the Wind. He says: 'A person is a success if they get up in the morning and get to bed at night.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nBob Dylan was born. American singer-songwriter, Nobel Prize in Literature 2016.\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nBob Dylan faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nBob Dylan's method focused on success.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nBob Dylan's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Success:**\n\"A person is a success if they get up in the morning and get to bed at night.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nBob Dylan left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the success philosophy\n2. Learn from Bob Dylan's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/bob-dylan.md*",
+    "quotes": [
+      "A person is a success if they get up in the morning and get to bed at night."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -310,7 +332,12 @@
       "I have called this principle, by which each slight variation, if useful, is preserved, by the term Natural Selection.",
       "Ignorance more frequently begets confidence than does knowledge."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "1859",
+        "event": "The \"Origin\" publication in 1859 was the breakthrough."
+      }
+    ],
     "born": "February 12, 1809",
     "died": "April 19, 1882",
     "nationality": "",
@@ -356,8 +383,10 @@
     "name": "Claude Shannon",
     "slug": "claude-shannon",
     "subtitle": "Information theory",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nHe founded information theory. He invented digital communication. He says: 'Information is the resolution of uncertainty.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nClaude Shannon started their journey. Information theory, father of digital communication.\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nClaude Shannon faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nClaude Shannon's method focused on information.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nClaude Shannon's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Information:**\n\"Information is the resolution of uncertainty.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nClaude Shannon left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the information philosophy\n2. Learn from Claude Shannon's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/claude-shannon.md*",
+    "quotes": [
+      "Information is the resolution of uncertainty."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -384,7 +413,16 @@
       "Ask the right questions, and nature will open her doors to you.",
       "The essence of scientific spirit is to think beyond the textbooks."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "1928",
+        "event": "February 28, 1928—the observation of the Raman Effect—was the breakthrough."
+      },
+      {
+        "year": "1921",
+        "event": "It was the result of years of work on light scattering, beginning with his observations on the ship in 1921."
+      }
+    ],
     "born": "November 7, 1888",
     "died": "November 21, 1970",
     "nationality": "",
@@ -404,8 +442,10 @@
     "name": "Demis Hassabis",
     "slug": "demis-hassabis",
     "subtitle": "DeepMind founder",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nHe founded DeepMind. He created AlphaGo. He says: 'We want to solve intelligence.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nDemis Hassabis started their journey. DeepMind founder, AlphaGo, AGI.\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nDemis Hassabis faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nDemis Hassabis's method focused on intelligence.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nDemis Hassabis's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Intelligence:**\n\"We want to solve intelligence.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nDemis Hassabis left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the intelligence philosophy\n2. Learn from Demis Hassabis's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/demis-hassabis.md*",
+    "quotes": [
+      "We want to solve intelligence."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -457,7 +497,16 @@
       "The digital revolution is far more significant than the invention of writing or even of printing.",
       "If you have a good idea, you should do it, even if you can't convince others that it's good."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "1970",
+        "event": "Xerox PARC, founded in 1970, hired many of Engelbart's researchers."
+      },
+      {
+        "year": "1979",
+        "event": "Steve Jobs visited PARC in 1979, saw the Alto, and incorporated the ideas into the Apple Lisa and Macintosh."
+      }
+    ],
     "born": "January 30, 1925",
     "died": "July 2, 2013",
     "nationality": "",
@@ -576,8 +625,10 @@
     "name": "Ernest Hemingway",
     "slug": "ernest-hemingway",
     "subtitle": "American writer",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nHe won the Nobel Prize in Literature. He wrote The Old Man and the Sea. He says: 'Write one true sentence.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nErnest Hemingway was born. American writer, The Old Man and the Sea, Nobel Prize.\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nErnest Hemingway faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nErnest Hemingway's method focused on truth.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nErnest Hemingway's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Truth:**\n\"Write one true sentence. Write the truest sentence that you know.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nErnest Hemingway left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the truth philosophy\n2. Learn from Ernest Hemingway's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/ernest-hemingway.md*",
+    "quotes": [
+      "Write one true sentence. Write the truest sentence that you know."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -598,8 +649,10 @@
     "name": "Geoffrey Hinton",
     "slug": "geoffrey-hinton",
     "subtitle": "Deep learning pioneer",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nHe pioneered deep learning. He won Turing Award. He says: 'We're at the dawn of a new era.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nGeoffrey Hinton started their journey. Deep learning pioneer, Godfather of AI, backpropagation.\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nGeoffrey Hinton faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nGeoffrey Hinton's method focused on deep learning.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nGeoffrey Hinton's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Deep Learning:**\n\"We're at the dawn of a new era.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nGeoffrey Hinton left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the deep learning philosophy\n2. Learn from Geoffrey Hinton's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/geoffrey-hinton.md*",
+    "quotes": [
+      "We're at the dawn of a new era."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -625,7 +678,12 @@
       "The technology you have at any given time is going to look pretty primitive in 20 years.",
       "With the cost of the equipment you need to get into this business, you'd better find a way to make the technology work."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "1965",
+        "event": "The 1965 paper was the breakthrough."
+      }
+    ],
     "born": "January 3, 1929",
     "died": "March 24, 2023",
     "nationality": "",
@@ -645,8 +703,10 @@
     "name": "Grace Hopper",
     "slug": "grace-hopper",
     "subtitle": "Computer scientist",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nShe invented COBOL. She was Navy admiral. She says: 'The most damaging phrase in the language is: It's always been done that way.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nGrace Hopper started their journey. Computer scientist, COBOL, Navy admiral.\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nGrace Hopper faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nGrace Hopper's method focused on innovation.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nGrace Hopper's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Innovation:**\n\"The most damaging phrase in the language is: It's always been done that way.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nGrace Hopper left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the innovation philosophy\n2. Learn from Grace Hopper's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/grace-hopper.md*",
+    "quotes": [
+      "The most damaging phrase in the language is: It's always been done that way."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -667,8 +727,10 @@
     "name": "Isaac Newton",
     "slug": "isaac-newton",
     "subtitle": "English physicist",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nHe discovered gravity. He invented calculus. He wrote Principia. He says: 'If I have seen further, it is by standing on the shoulders of giants.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nIsaac Newton was born. English physicist, gravity, calculus, Principia\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nIsaac Newton faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nIsaac Newton's method focused on discovery.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nIsaac Newton's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Discovery:**\n\"If I have seen further, it is by standing on the shoulders of giants.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nIsaac Newton left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the discovery philosophy\n2. Learn from Isaac Newton's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/isaac-newton.md*",
+    "quotes": [
+      "If I have seen further, it is by standing on the shoulders of giants."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -817,8 +879,10 @@
     "name": "Nikola Tesla",
     "slug": "nikola-tesla",
     "subtitle": "Serbian-American inventor",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nHe invented AC electricity. He worked for Edison then quit. He died penniless. He says: 'I don't care that they stole my idea, I care that they don't have any of their own.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nNikola Tesla was born. Serbian-American inventor, AC electricity, wireless transmission\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nNikola Tesla faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nNikola Tesla's method focused on vision.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nNikola Tesla's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Vision:**\n\"The present is theirs; the future, for which I really worked, is mine.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nNikola Tesla left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the vision philosophy\n2. Learn from Nikola Tesla's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/nikola-tesla.md*",
+    "quotes": [
+      "The present is theirs; the future, for which I really worked, is mine."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -866,8 +930,10 @@
     "name": "Richard Feynman",
     "slug": "richard-feynman",
     "subtitle": "Nobel physicist",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nHe won Nobel Prize. He played bongos. He says: 'I think it's much more interesting to live not knowing than to have answers.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nRichard Feynman started their journey. Nobel physicist, quantum electrodynamics, bongo player.\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nRichard Feynman faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nRichard Feynman's method focused on curiosity.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nRichard Feynman's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Curiosity:**\n\"I think it's much more interesting to live not knowing than to have answers.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nRichard Feynman left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the curiosity philosophy\n2. Learn from Richard Feynman's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/richard-feynman.md*",
+    "quotes": [
+      "I think it's much more interesting to live not knowing than to have answers."
+    ],
     "milestones": [],
     "born": "",
     "died": "",
@@ -892,7 +958,16 @@
     "quotes": [
       "The price of stocks is not just the present value of future earnings, it's also the present value of stories."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "2000",
+        "event": "Shiller warned about stocks in 2000."
+      },
+      {
+        "year": "2005",
+        "event": "He warned about housing in 2005."
+      }
+    ],
     "born": "March 29, 1946",
     "died": "",
     "nationality": "",
@@ -912,8 +987,10 @@
     "name": "Stephen Hawking",
     "slug": "stephen-hawking",
     "subtitle": "Theoretical physicist",
-    "bio": "",
-    "quotes": [],
+    "bio": "**THE HOOK**\n\nHe wrote A Brief History of Time. He had ALS for 55 years. He says: 'However difficult life may seem, there is always something you can do.'\n\n---\n\n**ORIGIN — THE \"BEFORE\" (THE RELATABILITY ENGINE)**\n\nStephen Hawking started their journey. Theoretical physicist, black holes, A Brief History of Time.\n\n---\n\n**THE FIRE — FAILURES, ROCK-BOTTOM & TURNING POINTS**\n\nStephen Hawking faced failures and turning points.\n\n---\n\n**THE GRIND — THE INVISIBLE YEARS (THE METHOD)**\n\nStephen Hawking's method focused on perseverance.\n\n---\n\n**THE TEST — THE BREAKTHROUGH MOMENT**\n\nStephen Hawking's breakthrough defined the legacy.\n\n---\n\n**THE PHILOSOPHY — STEALABLE WISDOM**\n\n**On Perseverance:**\n\"However difficult life may seem, there is always something you can do.\"\n\n---\n\n**THE LEGACY — PURPOSE BEYOND PROFIT + HUMAN SIDE**\n\nStephen Hawking left a lasting impact.\n\n---\n\n**FINAL MOTIVATION & PERSONAL APPLICATION GUIDE**\n\n**5 Actionable Steps This Week:**\n1. Apply the perseverance philosophy\n2. Learn from Stephen Hawking's method\n3. Persevere through failures\n4. Think long-term\n5. Build something meaningful\n\n---\n\n*Profile saved to: /root/Projects/leaders-biography/stephen-hawking.md*",
+    "quotes": [
+      "However difficult life may seem, there is always something you can do."
+    ],
     "milestones": [],
     "born": "",
     "died": "",

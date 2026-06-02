@@ -62,7 +62,16 @@
       "I am not designed to come second or third. I am designed to win.",
       "And suddenly I realized I was no longer driving the car consciously. I was kind of driving it by instinct, only I was in a different dimension."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "1985",
+        "event": "There are several candidates, but Estoril 1985 stands out."
+      },
+      {
+        "year": "1985",
+        "event": "Senna's first Formula 1 victory came at the Portuguese Grand Prix in 1985, in torrential rain."
+      }
+    ],
     "born": "March 21, 1960",
     "died": "May 1, 1994",
     "nationality": "",
@@ -89,7 +98,32 @@
       "I swing big, with everything I've got. I hit big or I miss big.",
       "The way a team plays as a whole determines its success. You may have the greatest bunch of individual stars in the world, but if they don't play together, the club won't be worth a dime."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "1918",
+        "event": "In 1918 and 1919, he hit 11 and 29 home runs, respectively."
+      },
+      {
+        "year": "1919",
+        "event": "The 1919 total of 29 broke the single-season record."
+      },
+      {
+        "year": "1920",
+        "event": "In 1920, in his first season with the Yankees, he hit 54."
+      },
+      {
+        "year": "1927",
+        "event": "In 1927, he hit 60 — a record that stood until Roger Maris hit 61 in 1961 (in a longer season)."
+      },
+      {
+        "year": "1923",
+        "event": "The Yankees won four World Series with Ruth: 1923, 1927, 1928, and 1932."
+      },
+      {
+        "year": "1927",
+        "event": "His 1927 Yankees are considered one of the greatest teams in history."
+      }
+    ],
     "born": "February 6, 1895",
     "died": "August 16, 1948",
     "nationality": "",
@@ -171,7 +205,12 @@
       "Bitcoin is a lot like the early Internet. People didn't understand it, and it was dismissed.",
       "We think of ourselves as building the infrastructure for the future of money."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "2017",
+        "event": "When Bitcoin reached $10,000 in late 2017, the investment was worth over $1 billion."
+      }
+    ],
     "born": "August 21, 1981",
     "died": "",
     "nationality": "",
@@ -220,7 +259,12 @@
     "quotes": [
       "My mother thinks I'm the best. And I was raised to always believe what my mother tells me."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "1986",
+        "event": "1986 World Cup is the test."
+      }
+    ],
     "born": "October 30, 1960",
     "died": "November 25, 2020",
     "nationality": "",
@@ -319,7 +363,12 @@
     "quotes": [
       "I start early and I stay late, day after day, year after year; it took me 17 years and 114 days to become an overnight success."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "2022",
+        "event": "2022 World Cup is the test."
+      }
+    ],
     "born": "June 24, 1987",
     "died": "",
     "nationality": "",
@@ -418,7 +467,12 @@
       "The secret is to believe in your dreams; in your potential that you can be like your star.",
       "My dad says: 'Play with joy, son.' That's what I try to do."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "2016",
+        "event": "Olympic gold 2016 is the test."
+      }
+    ],
     "born": "February 5, 1992",
     "died": "",
     "nationality": "",
@@ -641,7 +695,12 @@
       "I once cried because I had no shoes to play football with my friends. One day I met a man who had no feet.",
       "Silence is better than speaking badly."
     ],
-    "milestones": [],
+    "milestones": [
+      {
+        "year": "1998",
+        "event": "1998 World Cup final is the test."
+      }
+    ],
     "born": "June 23, 1972",
     "died": "",
     "nationality": "",
