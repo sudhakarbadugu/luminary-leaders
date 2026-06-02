@@ -50,7 +50,7 @@ export default function LeaderPage() {
     born: jsonEntry.born || tsBio?.born || '',
     died: jsonEntry.died || tsBio?.died || '',
     bio: jsonEntry.bio,
-    quotes: jsonEntry.quotes.length > 0 ? jsonEntry.quotes : (tsBio?.quotes || []),
+    quotes: (jsonEntry.quotes?.length ?? 0) > 0 ? jsonEntry.quotes : (tsBio?.quotes || []),
     milestones: jsonEntry.milestones,
     relatedIds: tsBio?.relatedIds || [],
   } : tsBio;
@@ -155,7 +155,7 @@ export default function LeaderPage() {
               <div style={{ display: 'flex', gap: 12, marginBottom: 24, flexWrap: 'wrap' }}>
                 <BookmarkButton id={leader.id} category="leader" name={leader.name} nickname={leader.role} size={20} />
                 <CompareToggleButton item={{ id: leader.id, name: leader.name, nickname: leader.role, category: 'leader', field: leader.role, nationality: bio.nationality || '', born: bio.born, era: bio.era, image: leader.image }} />
-                <ShareButton url={`https://3drrx75zxkbas.kimi.page/leader/${leader.id}`} title={leader.name} quote={bio.quotes[0]} />
+                <ShareButton url={`https://3drrx75zxkbas.kimi.page/leader/${leader.id}`} title={leader.name} quote={bio.quotes?.[0]} />
                 <PrintButton />
               </div>
 
@@ -172,11 +172,11 @@ export default function LeaderPage() {
               </div>
 
               {/* Quote */}
-              {bio.quotes.length > 0 && (
+              {((bio.quotes?.length ?? 0) > 0) && (
                 <div style={{ borderLeft: '3px solid #ffcc00', paddingLeft: 24, marginTop: 32 }}>
                   <Quote size={20} style={{ color: '#ffcc00', marginBottom: 8 }} />
                   <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, fontStyle: 'italic', lineHeight: 1.5, color: '#f1f1ee' }}>
-                    {bio.quotes[0]}
+                    {bio.quotes?.[0]}
                   </p>
                 </div>
               )}
@@ -197,12 +197,12 @@ export default function LeaderPage() {
         ))}
 
         {/* Additional Quotes */}
-        {bio.quotes.length > 1 && (
+        {(bio.quotes?.length ?? 0) > 1 && (
           <div style={{ marginTop: 60, marginBottom: 60 }}>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>
               In Their Words
             </div>
-            {bio.quotes.slice(1).map((quote, i) => (
+            {bio.quotes?.slice(1).map((quote, i) => (
               <div key={i} className="card-bg" style={{ background: "#fff", borderRadius: 12, padding: "32px 28px", marginBottom: 16, border: "1px solid #e5e5e0" }}>
                 <Quote size={18} style={{ color: '#ffcc00', marginBottom: 12 }} />
                 <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 20, fontStyle: 'italic', lineHeight: 1.5, color: '#282b2f' }}>

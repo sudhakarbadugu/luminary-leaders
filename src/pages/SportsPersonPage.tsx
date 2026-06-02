@@ -38,8 +38,8 @@ export default function SportsPersonPage() {
   const bio = jsonEntry ? {
     name: jsonEntry.name,
     bio: jsonEntry.bio,
-    quotes: jsonEntry.quotes.length > 0 ? jsonEntry.quotes : (tsBio?.quotes || []),
-    keyAchievements: tsBio?.keyAchievements || jsonEntry.milestones.map(m => ({ year: m.year, event: m.event })),
+    quotes: (jsonEntry.quotes?.length ?? 0) > 0 ? jsonEntry.quotes : (tsBio?.quotes || []),
+    keyAchievements: tsBio?.keyAchievements || (jsonEntry.milestones ?? []).map(m => ({ year: m.year, event: m.event })),
     relatedIds: tsBio?.relatedIds || [],
   } : tsBio;
 
@@ -150,10 +150,10 @@ export default function SportsPersonPage() {
         )}
 
         {/* Quotes */}
-        {bio.quotes.length > 0 && (
+        {(bio.quotes?.length ?? 0) > 0 && (
           <div style={{ marginTop: 60 }}>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>Words of Wisdom</div>
-            {bio.quotes.map((quote, i) => (
+            {(bio?.quotes ?? []).map((quote, i) => (
               <div key={i} style={{ background: '#282b2f', borderRadius: 12, padding: '28px 32px', marginBottom: 12, position: 'relative' }}>
                 <Quote size={20} style={{ color: '#ffcc00', position: 'absolute', top: 16, left: 16, opacity: 0.3 }} />
                 <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: '#f1f1ee', lineHeight: 1.6, fontStyle: 'italic', marginLeft: 24 }}>{quote}</p>

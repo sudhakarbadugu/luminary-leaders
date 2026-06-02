@@ -49,97 +49,6 @@ const SCIENTIST_NAMES = new Set([
   'yann-lecun','yoshua-bengio'
 ]);
 
-// Era mapping based on birth year
-function getEra(bornStr, category) {
-  const yearMatch = bornStr.match(/(\d{4})/);
-  const year = yearMatch ? parseInt(yearMatch[1]) : 2000;
-  
-  if (category === 'cricket') {
-    if (year < 1900) return 'Early Masters';
-    if (year < 1960) return 'Golden Age';
-    if (year < 1985) return 'Modern Legend';
-    return 'Modern Era';
-  }
-  if (category === 'traders') {
-    if (year < 1900) return 'Early Masters';
-    if (year < 1950) return 'Value & Growth';
-    if (year < 1970) return 'Trend & System';
-    if (year < 1990) return 'Macro & Forex';
-    if (year < 2000) return 'Hedge Fund Era';
-    return 'Quant Revolution';
-  }
-  if (category === 'scientists') {
-    if (year < 1600) return 'Foundational Giants';
-    if (year < 1900) return 'Revolutionary Thinkers';
-    if (year < 1950) return 'Foundational Giants';
-    return 'Modern Influencers';
-  }
-  if (category === 'sports') {
-    if (year < 1940) return 'Golden Age';
-    if (year < 1970) return 'Golden Age';
-    return 'Modern Era';
-  }
-  // leaders
-  if (year < 1940) return 'The Foundation';
-  if (year < 1960) return 'The Early Machines';
-  if (year < 1980) return 'The Personal Computer';
-  if (year < 1995) return 'The Internet Age';
-  if (year < 2005) return 'Dot-Com & Mobile';
-  if (year < 2015) return 'Cloud & AI';
-  return 'The Frontier';
-}
-
-// Sport detection for athletes
-function getSport(name, content) {
-  const lower = (name + ' ' + content.slice(0, 2000)).toLowerCase();
-  if (lower.includes('basketball') || lower.includes('nba') || name.match(/jordan|lebron|curry|chamberlain|taurasi|bryant/i)) return 'Basketball';
-  if (lower.includes('soccer') || lower.includes('football') && !lower.includes('american') || name.match(/ronaldo|messi|pele|marta|maradona|cruyff|zidane/i)) return 'Soccer';
-  if (lower.includes('tennis') || name.match(/federer|djokovic|nadal|serena|evert|navratilova|king/i)) return 'Tennis';
-  if (lower.includes('athletics') || lower.includes('sprint') || lower.includes('olympic') || name.match(/bolt|owens|lewis|felix/i)) return 'Athletics';
-  if (lower.includes('swimming') || lower.includes('swimmer') || name.match(/phelps|ledecky|spitz/i)) return 'Swimming';
-  if (lower.includes('american football') || lower.includes('nfl') || name.match(/brady|mahomes|rice|manning/i)) return 'American Football';
-  if (lower.includes('ice hockey') || lower.includes('nhl') || name.match(/gretzky|orr|crosby/i)) return 'Ice Hockey';
-  if (lower.includes('gymnastics') || lower.includes('gymnast') || name.match(/biles|comaneci/i)) return 'Gymnastics';
-  if (lower.includes('golf') || lower.includes('pga') || name.match(/woods|nicklaus/i)) return 'Golf';
-  if (lower.includes('formula 1') || lower.includes('f1') || lower.includes('racing') || name.match(/senna/i)) return 'Formula 1';
-  if (lower.includes('baseball') || name.match(/ruth/i)) return 'Baseball';
-  if (lower.includes('boxing') || lower.includes('boxer') || name.match(/ali/i)) return 'Boxing';
-  return 'Other Sports';
-}
-
-// Strategy detection for traders
-function getStrategy(name, content) {
-  const lower = content.slice(0, 2000).toLowerCase();
-  if (lower.includes('value investing') || lower.includes('value investor')) return 'Value Investing';
-  if (lower.includes('trend following') || lower.includes('systematic')) return 'Trend Following';
-  if (lower.includes('global macro') || lower.includes('macro')) return 'Global Macro';
-  if (lower.includes('activist') || lower.includes('activism')) return 'Activist Investing';
-  if (lower.includes('quant') || lower.includes('algorithm') || lower.includes('mathematical')) return 'Quant';
-  if (lower.includes('contrarian')) return 'Contrarian';
-  if (lower.includes('breakout') || lower.includes('momentum')) return 'Momentum / Breakout';
-  return 'Multi-Strategy';
-}
-
-// Field detection for scientists
-function getField(name, content) {
-  const lower = content.slice(0, 2000).toLowerCase();
-  if (lower.includes('physics') || name.match(/newton|einstein|tesla|hawking|feynman|bohr|heisenberg|curie|maxwell|planck/i)) return 'Physics';
-  if (lower.includes('mathematics') || lower.includes('mathematician') || name.match(/lovelace|khwarizmi|turing|johnson|hypatia/i)) return 'Mathematics';
-  if (lower.includes('computer science') || lower.includes('computing') || lower.includes('artificial intelligence') || lower.includes(' ai ') || name.match(/berners-lee|hinton|bengio|lecun|ng|hassabis|cerf|shannon/i)) return 'Computer Science & AI';
-  if (lower.includes('biology') || lower.includes('genetic') || name.match(/darwin|mendel|goodall|doudna|pasteur/i)) return 'Biology';
-  if (lower.includes('chemistry') || lower.includes('chemical') || name.match(/mendeleev|curie|franklin/i)) return 'Chemistry';
-  if (lower.includes('economics') || name.match(/acemoglu|johnson|robinson/i)) return 'Economics';
-  return 'Other';
-}
-
-// Role extraction from subtitle
-function getRole(subtitle, category) {
-  if (!subtitle) return '';
-  // Extract role from subtitle like "The Man Who Broke the Bank of England"
-  // or use category-specific defaults
-  return subtitle;
-}
-
 function detectCategory(slug, content) {
   if (CRICKET_NAMES.has(slug)) return 'cricket';
   if (SPORTS_NAMES.has(slug)) return 'sports';
@@ -157,88 +66,244 @@ function detectCategory(slug, content) {
   return 'leaders';
 }
 
+// Extract structured sections with subsections
+function parseSections(content) {
+  const sections = {};
+  const lines = content.split('\n');
+  let currentSection = null;
+  let currentSubsection = null;
+  let buffer = '';
+  
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    
+    // Main section header: ## 1. THE HOOK or ## 1. THE HOOK — Subtitle
+    const mainMatch = line.match(/^##\s+\d+\.\s+(.+)/);
+    if (mainMatch) {
+      if (currentSection) {
+        const body = buffer.trim();
+        if (currentSubsection) {
+          sections[currentSection].subsections[currentSubsection] = body;
+        } else {
+          sections[currentSection].body = body;
+        }
+      }
+      currentSection = mainMatch[1].trim().toUpperCase();
+      currentSubsection = null;
+      buffer = '';
+      if (!sections[currentSection]) {
+        sections[currentSection] = { body: '', subsections: {} };
+      }
+      continue;
+    }
+    
+    // Subsection header: ### PayPal Sale (2002)
+    const subMatch = line.match(/^###\s+(.+)/);
+    if (subMatch && currentSection) {
+      if (buffer.trim()) {
+        if (currentSubsection) {
+          sections[currentSection].subsections[currentSubsection] = buffer.trim();
+        } else {
+          sections[currentSection].body += (sections[currentSection].body ? '\n\n' : '') + buffer.trim();
+        }
+      }
+      currentSubsection = subMatch[1].trim();
+      buffer = '';
+      continue;
+    }
+    
+    // Accumulate body text
+    if (line.trim() && !line.startsWith('---')) {
+      buffer += line + '\n';
+    }
+  }
+  
+  // Flush last buffer
+  if (currentSection && buffer.trim()) {
+    if (currentSubsection) {
+      sections[currentSection].subsections[currentSubsection] = buffer.trim();
+    } else {
+      sections[currentSection].body += (sections[currentSection].body ? '\n\n' : '') + buffer.trim();
+    }
+  }
+  
+  return sections;
+}
+
+function extractQuotes(content) {
+  const quotes = [];
+  const matches = content.match(/"([^"]{10,500})"/g);
+  if (matches) {
+    matches.forEach(q => {
+      const clean = q.replace(/^"|"$/g, '').trim();
+      if (clean.length > 20 && clean.length < 400) quotes.push(clean);
+    });
+  }
+  return [...new Set(quotes)].slice(0, 12);
+}
+
+function extractActionableSteps(content) {
+  const steps = [];
+  const stepRegex = /^\d+\.\s+\*\*([^*]+)\*\*\s*[-—:]?\s*([\s\S]*?)(?=^\d+\.\s+\*\*|^\*\*|$)/gm;
+  let m;
+  while ((m = stepRegex.exec(content)) !== null) {
+    steps.push({ title: m[1].trim(), description: m[2].replace(/\n+/g, ' ').trim() });
+  }
+  if (steps.length === 0) {
+    // Fallback for numbered list with bold
+    const altRegex = /(\d+)\.\s+\*\*([^*]+)\*\*\s*[-—]?\s*([^\n]+)/g;
+    while ((m = altRegex.exec(content)) !== null) {
+      steps.push({ title: m[2].trim(), description: m[3].trim() });
+    }
+  }
+  return steps.slice(0, 10);
+}
+
+function extractMilestonesFromSubsections(sections) {
+  const milestones = [];
+  
+  // From THE TEST subsections (each ### has a title like "PayPal Sale (2002)")
+  const testSection = Object.keys(sections).find(k => k.includes('TEST'));
+  if (testSection && sections[testSection].subsections) {
+    Object.entries(sections[testSection].subsections).forEach(([title, body]) => {
+      const yearMatch = title.match(/\b(1[0-9]{3}|20[0-9]{2})\b/);
+      if (yearMatch) {
+        milestones.push({ year: yearMatch[1], title: title.replace(/\(\d{4}\)/, '').trim(), event: body.slice(0, 300).trim() });
+      }
+    });
+  }
+  
+  // From THE FIRE subsections (### Year Range or ### Event (Year))
+  const fireSection = Object.keys(sections).find(k => k.includes('FIRE'));
+  if (fireSection && sections[fireSection].subsections) {
+    Object.entries(sections[fireSection].subsections).forEach(([title, body]) => {
+      const yearMatch = title.match(/\b(1[0-9]{3}|20[0-9]{2})\b/);
+      if (yearMatch && !milestones.find(m => m.year === yearMatch[1] && m.title === title)) {
+        milestones.push({ year: yearMatch[1], title: title.replace(/\(\d{4}\)/, '').trim(), event: body.slice(0, 300).trim() });
+      }
+    });
+  }
+  
+  return milestones;
+}
+
+function extractKeyStats(content) {
+  const stats = {};
+  
+  // Net worth
+  const netWorth = content.match(/(?:worth|valued at|net worth)[^\n]*?\$([0-9,.]+)\s*(trillion|billion|million)/i);
+  if (netWorth) stats.netWorth = '$' + netWorth[1] + ' ' + netWorth[2];
+  
+  // Education
+  const edu = content.match(/(?:studied at|graduated from|attended|degree from|University of|College of)[^\n.]*/i);
+  if (edu) stats.education = edu[0].trim();
+  
+  // Key roles / positions
+  const roles = content.match(/(?:CEO|Founder|President|Chairman|Director|VP|Vice President|CTO|COO|CFO|General|Prime Minister|President|King|Queen)[^\n.]*/gi);
+  if (roles) stats.roles = [...new Set(roles.slice(0, 5))];
+  
+  // Birth date (more flexible)
+  const born = content.match(/(?:born|birth)[^\n]*?([A-Z][a-z]+\s+\d{1,2},?\s+\d{4}|\d{4})/i);
+  if (born) stats.birthDate = born[1].trim();
+  
+  // Death date
+  const died = content.match(/(?:died|passed away|death)[^\n]*?([A-Z][a-z]+\s+\d{1,2},?\s+\d{4}|\d{4})/i);
+  if (died) stats.deathDate = died[1].trim();
+  
+  return stats;
+}
+
 function parseMd(content) {
+  // Extract name from H1
   const h1Match = content.match(/^#\s+(.+?)(?:\s+[-\u2014]\s+(.+))?\s*$/m);
   const name = h1Match ? h1Match[1].trim() : 'Unknown';
   const subtitle = h1Match && h1Match[2] ? h1Match[2].trim() : '';
   
-  // Extract sections (handle both \n\n and single \n after section header)
-  const sections = {};
-  // First try with blank line after header (full bios)
-  const sectionRegex = /##\s+(\d+)\.\s+(.+?)\n+([\s\S]*?)(?=\n##\s+\d+\.|\n---\s*$|$)/g;
-  let m;
-  while ((m = sectionRegex.exec(content)) !== null) {
-    const sectionName = m[2].trim().toUpperCase();
-    let body = m[3].trim();
-    // Stop at --- separator if present
-    if (body.endsWith('---')) body = body.slice(0, -3).trim();
-    sections[sectionName] = body;
-  }
-  
-  // Build structured bio
-  const bioParts = [];
-  const sectionOrder = ['THE HOOK','ORIGIN','THE FIRE','THE GRIND','THE TEST','THE PHILOSOPHY','THE LEGACY','FINAL MOTIVATION'];
-  sectionOrder.forEach(title => {
-    const key = Object.keys(sections).find(k => k.includes(title));
-    if (key) bioParts.push(`**${key}**\n\n${sections[key]}`);
-  });
-  const bio = bioParts.join('\n\n---\n\n');
+  // Parse structured sections
+  const sections = parseSections(content);
   
   // Extract quotes
-  const quotes = [];
-  const phil = sections['THE PHILOSOPHY'] || sections['THE PHILOSOPHY — STEALABLE WISDOM'] || '';
-  const quoteMatches = phil.match(/"([^"]+)"/g);
-  if (quoteMatches) quoteMatches.forEach(q => quotes.push(q.replace(/"/g, '')));
+  const quotes = extractQuotes(content);
   
-  // Extract milestones from TEST section and LEGACY
-  const milestones = [];
-  const test = sections['THE TEST'] || sections['THE TEST — THE BREAKTHROUGH MOMENT'] || sections['THE TEST — THE BREAKTHROUGH'] || '';
-  const legacy = sections['THE LEGACY'] || sections['THE LEGACY — THE FOOTPRINT'] || sections['THE LEGACY'] || '';
-  const combined = test + '\n' + legacy;
+  // Extract actionable steps
+  const actionableSteps = extractActionableSteps(content);
   
-  // First try **YYYY**: event format
-  const milestoneMatches = combined.match(/\*\*(\d{4}[^*]*)\*\*[:\s—\-]+([^\n]+)/g);
-  if (milestoneMatches) {
-    milestoneMatches.forEach(mm => {
-      const parts = mm.match(/\*\*(\d{4}[^*]*)\*\*[:\s—\-]+([^\n]+)/);
-      if (parts) {
-        const yearMatch = parts[1].match(/(\d{4})/);
-        if (yearMatch) milestones.push({ year: yearMatch[1], event: parts[2].trim() });
-      }
-    });
+  // Extract milestones from subsections
+  const milestones = extractMilestonesFromSubsections(sections);
+  
+  // Extract key stats
+  const stats = extractKeyStats(content);
+  
+  // Build a rich biography object
+  const hookSection = Object.keys(sections).find(k => k.includes('HOOK'));
+  const originSection = Object.keys(sections).find(k => k.includes('ORIGIN'));
+  const fireSection = Object.keys(sections).find(k => k.includes('FIRE'));
+  const grindSection = Object.keys(sections).find(k => k.includes('GRIND'));
+  const testSection = Object.keys(sections).find(k => k.includes('TEST'));
+  const philosophySection = Object.keys(sections).find(k => k.includes('PHILOSOPHY'));
+  const legacySection = Object.keys(sections).find(k => k.includes('LEGACY'));
+  const finalSection = Object.keys(sections).find(k => k.includes('FINAL') || k.includes('MOTIVATION'));
+  
+  // Get all section bodies (full text)
+  const getBody = (key) => sections[key] ? sections[key].body : '';
+  const getSubs = (key) => sections[key] ? sections[key].subsections : {};
+  
+  // Build flat bio text (no MD formatting) for display
+  const bioParts = [];
+  if (hookSection) bioParts.push(getBody(hookSection));
+  if (originSection) bioParts.push(getBody(originSection));
+  if (fireSection) bioParts.push(getBody(fireSection));
+  if (grindSection) bioParts.push(getBody(grindSection));
+  if (testSection) bioParts.push(getBody(testSection));
+  if (philosophySection) bioParts.push(getBody(philosophySection));
+  if (legacySection) bioParts.push(getBody(legacySection));
+  if (finalSection) bioParts.push(getBody(finalSection));
+  const bio = bioParts.filter(Boolean).join('\n\n');
+  
+  // Determine born/died
+  let born = stats.birthDate || '';
+  let died = stats.deathDate || '';
+  
+  // Fallback: extract from ORIGIN text
+  if (!born) {
+    const origin = getBody(originSection);
+    const bornMatch = origin?.match(/(?:was\s+)?(?:born\s+)([A-Z][a-z]+\s+\d{1,2},?\s+\d{4})/i);
+    if (bornMatch) born = bornMatch[1].trim();
+    else {
+      const yearMatch = origin?.match(/\b(1[0-9]{3}|20[0-9]{2})\b/);
+      if (yearMatch) born = yearMatch[1];
+    }
   }
-  
-  // If no structured milestones, extract year+sentence from narrative
-  if (milestones.length === 0) {
-    const sentences = combined.split(/(?<=[.!?])\s+/);
-    sentences.forEach(s => {
-      const yearMatch = s.match(/\b(1[0-9]{3}|20[0-9]{2})\b/);
-      if (yearMatch && s.length < 250 && s.length > 20) {
-        milestones.push({ year: yearMatch[1], event: s.trim() });
-      }
-    });
-    // Cap to top 8 most informative
-    milestones.splice(8);
-  }
-  
-  // Extract dates
-  const origin = sections['ORIGIN'] || sections['THE ORIGIN'] || sections['THE ORIGIN — THE BEFORE'] || '';
-  let born = '';
-  let died = '';
-  const bornMatch = origin.match(/born\s+(?:on\s+)?([A-Za-z]+\s+\d+,?\s+\d{4}|\d{4})/i) || content.match(/born\s+(?:on\s+)?([A-Za-z]+\s+\d+,?\s+\d{4})/i);
-  if (bornMatch) born = bornMatch[1].trim();
-  const diedMatch = content.match(/died\s+(?:on\s+)?([A-Za-z]+\s+\d+,?\s+\d{4})/i) || content.match(/died\s+(?:on\s+)?(\d{4})/i);
-  if (diedMatch) died = diedMatch[1].trim();
   
   // Extract nationality
   let nationality = '';
-  const natMatch = origin.match(/(American|British|Indian|Chinese|German|French|Russian|Japanese|Australian|Canadian|Italian|Spanish|Brazilian|South African|Dutch|Swedish|Norwegian|Danish|Finnish|Polish|Portuguese|Irish|Scottish|Welsh|Mexican|Argentine|Swiss|Austrian|Belgian|Turkish|Greek|Israeli|Korean|Indonesian|Malaysian|Singaporean|Thai|Vietnamese|Filipino|Pakistani|Bangladeshi|Sri Lankan|Nepalese|Afghan|Iranian|Iraqi|Syrian|Jordanian|Lebanese|Egyptian|Hungarian|Czech|Romanian|Ukrainian|New Zealand|Icelandic|Estonian|Latvian|Lithuanian|Slovak|Slovenian|Croatian|Serbian|Bulgarian|Albanian|Moldovan|Georgian|Armenian|Azerbaijani|Kazakh|Uzbek|Saudi|Emirati|Qatari|Kuwaiti|Bahraini|Omani|Colombian|Venezuelan|Peruvian|Chilean|Ecuadorian|Bolivian|Paraguayan|Uruguayan|Costa Rican|Panamanian|Guatemalan|Honduran|Salvadoran|Nicaraguan|Cuban|Haitian|Dominican|Jamaican|Trinidadian|Barbadian|Guyanese|Ghanaian|Nigerian|Kenyan|Ugandan|Tanzanian|Ethiopian|Sudanese|Moroccan|Algerian|Tunisian|Libyan|Egyptian|Cameroonian|Senegalese|Ivorian|Zimbabwean|Zambian|Botswanan|Namibian|Rwandan|Congolese|Somali|Malagasy|Mauritian|Seychellois|Comoran|Palestinian|Kurdish|Tibetan|Kashmiri|Bengali|Punjabi|Tamil|Telugu|Kannada|Malayalam|Marathi|Gujarati|Rajasthani|Bhojpuri|Awadhi|Maithili|Odia|Assamese|Nepali|Sinhalese|Burmese|Khmer|Lao|Thai|Vietnamese|Filipino|Indonesian|Malaysian|Singaporean|Chinese|Japanese|Korean|Mongolian|Tibetan|Uyghur|Manchu|Cantonese|Hakka|Hokkien|Teochew|Fujianese|Shanghainese|Sichuanese|Hunanese|Cantonese|Taiwanese|Hong Kong|Macau)/i);
+  const origin = getBody(originSection);
+  const natMatch = origin?.match(/(?:was\s+)?(?:born\s+)?(?:in\s+)?([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)(?:,|\s+to)/) || 
+                   origin?.match(/(American|British|Indian|Chinese|German|French|Russian|Japanese|Australian|Canadian|Italian|Spanish|Brazilian|South African|Dutch|Swedish|Norwegian|Danish|Finnish|Polish|Portuguese|Irish|Scottish|Welsh|Mexican|Argentine|Swiss|Austrian|Belgian|Turkish|Greek|Israeli|Korean|Indonesian|Malaysian|Singaporean|Thai|Vietnamese|Filipino|Pakistani|Bangladeshi|Sri Lankan|Nepalese|Afghan|Iranian|Iraqi|Syrian|Jordanian|Lebanese|Egyptian|Libyan|Tunisian|Algerian|Moroccan|Sudanese|Ethiopian|Kenyan|Nigerian|Ghanaian|Ugandan|Zimbabwean|Zambian|Botswanan|Namibian|Zimbabwean|Malagasy|Mauritian|Seychellois|Comoran|Jamaican|Trinidadian|Barbadian|Guyanese|Grenadian|Vincentian|Lucian|Dominican|Antiguan|Bermudian|Haitian|Cuban|Dominican|Costa Rican|Panamanian|Guatemalan|Belizean|Salvadoran|Honduran|Nicaraguan|Colombian|Venezuelan|Ecuadorian|Peruvian|Bolivian|Paraguayan|Uruguayan|Surinamese|Guianese|Omani|Qatari|Emirati|Kuwaiti|Bahraini|Saudi|Yemeni|Lebanese|Palestinian|Armenian|Georgian|Azerbaijani|Kazakh|Uzbek|Tajik|Kyrgyz|Turkmen|Mongolian|Bhutanese|Maldivian|Laotian|Cambodian|Myanmarese|Burmese|Bruneian|Timorese|Papua New Guinean|Solomon Islander|Vanuatu|Fijian)/);
   if (natMatch) nationality = natMatch[1].trim();
-  // Check for compound nationalities
-  const compoundNat = origin.match(/(American|British|Indian|Chinese|German|French|Russian|Japanese|Australian|Canadian|Italian|Spanish|Brazilian|South African|Dutch|Swedish|Norwegian|Danish|Finnish|Polish|Portuguese|Irish|Scottish|Welsh|Hungarian|Czech|Romanian|Ukrainian|Israeli|Korean|Singaporean|Hong Kong|Taiwanese|Swiss|Austrian|Belgian|Turkish|Greek|Serbian|Croatian|Ukrainian|Georgian|Armenian|Azerbaijani|Kazakh|Saudi|Emirati|Colombian|Peruvian|Chilean|Jamaican|Trinidadian|Ghanaian|Nigerian|Kenyan|Ugandan|Zimbabwean|Zambian|Botswanan|Namibian|Rwandan|Congolese|Somali|Malagasy|Mauritian|Palestinian|Jordanian|Lebanese|Syrian|Iraqi|Iranian|Afghan|Pakistani|Bangladeshi|Sri Lankan|Nepalese|Burmese|Khmer|Lao|Thai|Vietnamese|Filipino|Indonesian|Malaysian|Estonian|Latvian|Lithuanian|Slovak|Slovenian|Bulgarian|Albanian|Moldovan|Icelandic|New Zealand|Serbian)-(American|British|Indian|Chinese|German|French|Russian|Japanese|Australian|Canadian|Italian|Spanish|Brazilian|South African|Dutch|Swedish|Norwegian|Danish|Finnish|Polish|Portuguese|Irish|Scottish|Welsh|Hungarian|Czech|Romanian|Ukrainian|Israeli|Korean|Swiss|Austrian|Belgian|Turkish|Greek|Serbian|Croatian|Georgian|Armenian|Azerbaijani|Kazakh|Saudi|Emirati|Colombian|Peruvian|Chilean|Jamaican|Ghanaian|Nigerian|Kenyan|Pakistani|Bangladeshi|Sri Lankan|Nepalese|Filipino|Indonesian|Malaysian|Thai|Vietnamese|Burmese|Afghan|Iranian|Iraqi|Syrian|Jordanian|Lebanese|Palestinian|Somali|Congolese|Rwandan|Zimbabwean|Zambian|Botswanan|Namibian|Ugandan|Tanzanian|Ghanaian|Nigerian|Ethiopian|Sudanese|Moroccan|Algerian|Tunisian|Libyan|Egyptian|Cameroonian|Senegalese|Ivorian|Mauritian|Malagasy|Seychellois|Comoran|Estonian|Latvian|Lithuanian|Slovak|Slovenian|Bulgarian|Albanian|Moldovan|Icelandic|New Zealand)/i);
-  if (compoundNat) nationality = compoundNat[0];
   
-  return { name, subtitle, bio, quotes, milestones, born, died, nationality, sections };
+  return { 
+    name, subtitle, bio, quotes, actionableSteps, milestones, born, died, nationality, 
+    sections: {
+      hook: getBody(hookSection),
+      origin: getBody(originSection),
+      fire: getBody(fireSection),
+      grind: getBody(grindSection),
+      test: getBody(testSection),
+      philosophy: getBody(philosophySection),
+      legacy: getBody(legacySection),
+      final: getBody(finalSection),
+      hookSubsections: getSubs(hookSection),
+      originSubsections: getSubs(originSection),
+      fireSubsections: getSubs(fireSection),
+      grindSubsections: getSubs(grindSection),
+      testSubsections: getSubs(testSection),
+      philosophySubsections: getSubs(philosophySection),
+      legacySubsections: getSubs(legacySection),
+      finalSubsections: getSubs(finalSection),
+    },
+    stats
+  };
 }
 
 // Main processing
@@ -253,37 +318,62 @@ files.forEach(filename => {
   const category = detectCategory(slug, content);
   const parsed = parseMd(content);
   
+  // Build rich entry
   const entry = {
     id: categories[category].length + 1,
     name: parsed.name,
     slug: slug,
     subtitle: parsed.subtitle,
-    bio: parsed.bio,
-    quotes: parsed.quotes,
-    milestones: parsed.milestones,
     born: parsed.born,
     died: parsed.died,
     nationality: parsed.nationality,
-    role: parsed.subtitle || '',
+    role: parsed.subtitle,
     company: '',
-    era: getEra(parsed.born, category),
+    era: '',
     yearStart: parsed.born ? parseInt((parsed.born.match(/\d{4}/) || ['0'])[0]) || 0 : 0,
     yearEnd: parsed.died ? parseInt((parsed.died.match(/\d{4}/) || ['Present'])[0]) || 'Present' : 'Present',
-    sport: category === 'sports' ? getSport(parsed.name, content) : undefined,
-    strategy: category === 'traders' ? getStrategy(parsed.name, content) : undefined,
-    field: category === 'scientists' ? getField(parsed.name, content) : undefined,
-    nickname: '',
-    markets: category === 'traders' ? [] : undefined,
-    netWorth: '',
+    
+    // Rich biography data
+    bio: parsed.bio,
+    hook: parsed.sections.hook,
+    origin: parsed.sections.origin,
+    fire: parsed.sections.fire,
+    grind: parsed.sections.grind,
+    test: parsed.sections.test,
+    philosophy: parsed.sections.philosophy,
+    legacy: parsed.sections.legacy,
+    finalMotivation: parsed.sections.final,
+    
+    // Subsections (key events with year context)
+    subsections: {
+      fire: parsed.sections.fireSubsections,
+      grind: parsed.sections.grindSubsections,
+      test: parsed.sections.testSubsections,
+      legacy: parsed.sections.legacySubsections,
+    },
+    
+    // Key data points
+    quotes: parsed.quotes,
+    milestones: parsed.milestones,
+    actionableSteps: parsed.actionableSteps,
+    
+    // Stats
+    stats: parsed.stats,
+    
     image: `/images/${category === 'cricket' ? 'cricket/' : category === 'sports' ? 'sports/' : category === 'traders' ? 'traders/' : category === 'scientists' ? 'scientists/' : ''}${slug}.jpg`,
     category: category
   };
   
-  // Remove undefined fields
-  Object.keys(entry).forEach(k => entry[k] === undefined && delete entry[k]);
+  // Remove empty fields for cleaner JSON
+  Object.keys(entry).forEach(k => {
+    const v = entry[k];
+    if (typeof v === 'string' && !v) delete entry[k];
+    if (Array.isArray(v) && v.length === 0) delete entry[k];
+    if (typeof v === 'object' && v !== null && !Array.isArray(v) && Object.keys(v).length === 0) delete entry[k];
+  });
   
   categories[category].push(entry);
-  summary.push({ slug, category, name: parsed.name, born: parsed.born });
+  summary.push({ slug, category, name: parsed.name, born: parsed.born, hasBio: !!parsed.bio, quoteCount: parsed.quotes.length, milestoneCount: parsed.milestones.length });
 });
 
 // Write category JSON files
@@ -293,7 +383,7 @@ Object.entries(categories).forEach(([cat, items]) => {
   console.log(`✓ ${cat}.json: ${items.length} entries`);
 });
 
-// Write index.json
+// Write index.json with metadata
 const index = {
   total: files.length,
   categories: {
@@ -312,3 +402,18 @@ console.log('\n=== Category Summary ===');
 Object.entries(categories).forEach(([cat, items]) => {
   console.log(`${cat}: ${items.length}`);
 });
+
+// Data quality report
+console.log('\n=== Data Quality ===');
+const all = [...categories.leaders, ...categories.traders, ...categories.sports, ...categories.cricket, ...categories.scientists];
+const hasBio = all.filter(l => l.bio && l.bio.length > 50).length;
+const hasQuotes = all.filter(l => l.quotes && l.quotes.length > 0).length;
+const hasMilestones = all.filter(l => l.milestones && l.milestones.length > 0).length;
+const hasSteps = all.filter(l => l.actionableSteps && l.actionableSteps.length > 0).length;
+const hasSubs = all.filter(l => l.subsections && Object.keys(l.subsections).some(k => Object.keys(l.subsections[k]).length > 0)).length;
+console.log(`Total: ${all.length}`);
+console.log(`Rich bio (>50 chars): ${hasBio} (${Math.round(hasBio/all.length*100)}%)`);
+console.log(`Has quotes: ${hasQuotes} (${Math.round(hasQuotes/all.length*100)}%)`);
+console.log(`Has milestones: ${hasMilestones} (${Math.round(hasMilestones/all.length*100)}%)`);
+console.log(`Has actionable steps: ${hasSteps} (${Math.round(hasSteps/all.length*100)}%)`);
+console.log(`Has subsections: ${hasSubs} (${Math.round(hasSubs/all.length*100)}%)`);

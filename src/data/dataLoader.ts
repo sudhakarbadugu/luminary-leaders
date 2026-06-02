@@ -12,23 +12,20 @@ import scientistsData from './json/scientists.json';
 // @ts-ignore
 import indexData from './json/index.json';
 
-// Core entry type from JSON
+// Rich entry type from JSON (enhanced with full MD content)
 export interface LeaderEntry {
   id: number;
   name: string;
   slug: string;
-  subtitle: string;
-  bio: string;
-  quotes: string[];
-  milestones: { year: string; event: string }[];
-  born: string;
-  died: string;
-  nationality: string;
-  role: string;
-  company: string;
-  era: string;
-  yearStart: number;
-  yearEnd: number | string;
+  subtitle?: string;
+  born?: string;
+  died?: string;
+  nationality?: string;
+  role?: string;
+  company?: string;
+  era?: string;
+  yearStart?: number;
+  yearEnd?: number | string;
   sport?: string;
   strategy?: string;
   field?: string;
@@ -37,13 +34,44 @@ export interface LeaderEntry {
   netWorth?: string;
   image: string;
   category: string;
+  // Rich biography data
+  bio: string;
+  hook?: string;
+  origin?: string;
+  fire?: string;
+  grind?: string;
+  test?: string;
+  philosophy?: string;
+  legacy?: string;
+  finalMotivation?: string;
+  // Subsections (key events with context)
+  subsections?: {
+    fire?: Record<string, string>;
+    grind?: Record<string, string>;
+    test?: Record<string, string>;
+    legacy?: Record<string, string>;
+  };
+  // Extracted data points
+  quotes?: string[];
+  milestones?: { year: string; title?: string; event: string }[];
+  actionableSteps?: { title: string; description: string }[];
+  stats?: {
+    netWorth?: string;
+    education?: string;
+    roles?: string[];
+    birthDate?: string;
+    deathDate?: string;
+  };
 }
 
 export interface IndexEntry {
   slug: string;
   category: string;
   name: string;
-  born: string;
+  born?: string;
+  hasBio?: boolean;
+  quoteCount?: number;
+  milestoneCount?: number;
 }
 
 export interface IndexData {
