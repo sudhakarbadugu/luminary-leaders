@@ -1,98 +1,57 @@
-# Diego Maradona — The Hand of God and Goal of the Century
+# Diego Maradona
 
-## 1. THE HOOK
-
-He won the 1986 World Cup. "Hand of God" goal. "Goal of the Century." He struggled with addiction. He says: "My mother thinks I'm the best."
-
-How does a boy from the slums become a god?
-
-## 2. ORIGIN — THE "Before" (The Relatability Engine)
-
-Diego Maradona was born October 30, 1960, in Lanús, Argentina. Died November 25, 2020. Grew up in Villa Fiorito slums.
-
-He was running from slums. He saw football. He wanted to be the best.
-
-## 3. THE FIRE — Failures, Rock-Bottom & Turning Points
-
-### Argentinos Juniors (1976-1981)
-
-Maradona debuted at 15. Argentine prodigy.
-
-### Barcelona (1982-1984)
-
-Maradona joined Barcelona. Injuries. Fights.
-
-### Napoli (1984-1991)
-
-Maradona joined Napoli. 2 Serie A titles. Italian Cup. God in Naples.
-
-### 1986 World Cup
-
-Maradona won World Cup. "Hand of God" goal. "Goal of the Century." England.
-
-### Cocaine Addiction
-
-Maradona struggled with cocaine. Banned from FIFA World Cup 1994.
-
-### Death (2020)
-
-Maradona died November 25, 2020. Heart attack.
-
-## 4. THE GRIND — The Invisible Years (The Method)
-
-Maradona's method is defined by genius, flaws, and loyalty.
-
-### Genius
-
-Maradona's philosophy: Left foot magic. Dribbling.
-
-### Flaws
-
-Maradona's philosophy: Addiction. Controversy. Humanity.
-
-### Loyalty
-
-Maradona's philosophy: Napoli fan favorite. Argentine icon.
-
-## 5. THE TEST — THE BREAKTHROUGH MOMENT
-
-1986 World Cup is the test. Hand of God. Goal of the Century.
-
-## 6. THE PHILOSOPHY — Stealable Wisdom
-
-**On Confidence:**
-"My mother thinks I'm the best. And I was raised to always believe what my mother tells me."
-
-## 7. THE LEGACY — Purpose Beyond Profit + Human Side
-
-Diego Maradona died in 2020. 1986 World Cup. Napoli legend. Argentine god.
-
-### What does he want to be remembered for?
-
-In interviews, Maradona emphasized genius and flaws. He wanted to be loved.
-
-## 8. FINAL MOTIVATION & PERSONAL APPLICATION Guide
-
-Maradona's career demonstrates that genius has flaws.
-
-**5 Actionable Steps This Week:**
-
-1. **Use left foot** — Genius. Left foot magic.
-
-2. **Score "Hand of God"** — Sometimes luck. Controversy.
-
-3. **Score "Goal of the Century"** — Brilliance. Dribble.
-
-4. **Be loyal** — Napoli loved him. Loyalty.
-
-5. **Accept flaws** — Addiction. Humanity.
-
-**The Hard Question:**
-
-If Maradona was genius and flawed—are you embracing your flaws or hiding them?
-
-Genius has flaws.
+**Argentine Football Legend, Napoli Icon, 1986 World Cup Captain**
 
 ---
 
-*Profile saved to: /root/Projects/leaders-biography/diego-maradona.md*
+## Section 1: Origins in the Fiorito Slums
+
+Diego Armando Maradona was born on October 30, 1960, in the Villa Fiorito shantytown of Buenos Aires, the son of a factory worker and a housewife. He grew up in poverty so severe that he and his family sometimes went without food, sharing a single room with several siblings in a neighborhood that visitors described as one of the most neglected in the city. Football was his escape from the一开始就注定的人生轨迹, and he began playing organized soccer at age 3, displaying reflexes and ball control that seemed to defy his age. His father constructed a makeshift goal for him in their narrow street, and neighbors began noticing that this small boy could do things with a football that adults couldn't match.
+
+By age 8, he was playing for a youth team, and by 10, he had been featured in a newspaper article about promising young players in Buenos Aires. The article noted not just his technical ability but his competitive fire—the way he responded to losing with tears and then immediate demands for rematches. His mother later said that even as a child, he seemed to carry the weight of an entire people's hopes on his shoulders—a dynamic that would define his entire adult life. The poverty of his childhood was not merely economic; it was a complete absence of the infrastructure and support systems that most children take for granted. Yet within that absence, football offered everything: a structure, a goal, a community of people who believed in something.
+
+## Section 2: Rise Through Argentinos Juniors and Boca Juniors
+
+Maradona joined Argentinos Juniors at 15 and made his professional debut in 1976, becoming one of the youngest players in Argentine league history. The debut came at a turbulent time for Argentina—the country was under military rule, and the national team was preparing for the 1978 World Cup, which the government was using as a propaganda tool. Maradona's rise represented something pure within a corrupt system: merit acknowledged and rewarded regardless of political context. Over the next five years, he developed from a precocious talent into one of the world's most devastating attacking players. His low center of gravity, close ball control, and ability to change direction at full speed made him nearly impossible to defend against—he could carry the ball through the tightest spaces and accelerate past defenders who had already committed to a challenge.
+
+He led Argentinos Juniors to the league title in 1981, and his performances attracted interest from Boca Juniors, Argentina's most storied club. He transferred to Boca in 1981 and quickly became the team's star, leading them to the league championship in 1982. His popularity in Buenos Aires was extraordinary—he was already being called "El Pibe de Oro," the golden boy, and fans sensed they were watching someone who would be spoken of decades later in the same breath as Pelé. The pressure that came with this fame was already apparent: he was 21 years old and already carrying the hopes of a nation on his shoulders, with the 1982 World Cup approaching and expectations for Argentina built on his emerging genius.
+
+## Section 3: Barcelona and the Naples Transformation
+
+Maradona's move to Barcelona in 1982 was supposed to elevate him to global superstar status, and while his performances were brilliant—he won the Copa del Rey and the league's top scorer award—they were interrupted by injury and controversy. His time in Catalonia ended with a bitter parting after a violent on-field incident and disagreements with the club's management. He transferred to Napoli in 1984 for a world-record fee, and what followed was one of the most extraordinary transformations in football history. Napoli had never won the Italian league title. The club was mid-table at best, and the city of Naples had a complex relationship with the football establishment—southern Italy had long felt neglected and looked down upon by the wealthy northern clubs.
+
+When Maradona arrived, he became not just a footballer but a symbol of southern pride. In 1989, he led Napoli to their first-ever Serie A championship, and the city erupted with joy that felt almost religious in its intensity. He also won the Coppa Italia, the UEFA Cup, and was twice named the world's best footballer. The relationship between Maradona and Naples was mutual worship—he was their god, and they gave him the unconditional love he never quite found elsewhere. He later said that Naples was the only place where he felt truly understood, where people didn't judge him for his failures but embraced him as one of their own. The love came with a price: the expectations of an entire city, the pressure of being everything to everyone, which contributed to the struggles he would face outside the pitch.
+
+## Section 4: The 1986 World Cup and the Hand of God
+
+No single tournament defined a player's career the way the 1986 World Cup defined Maradona's. Argentina entered the competition as a team in turmoil, struggling through qualifying matches and relying heavily on their captain's genius. But in Mexico, Maradona produced five games of such consistent brilliance that the tournament is often remembered as much for him as for the event itself. In the quarterfinal against England, he produced the two most famous goals in World Cup history four minutes apart. The first, the "Hand of God," was an illegal handball that he cleverly disguised as a header—knocking the ball past goalkeeper Peter Shilton into the net while the referee missed what was an obvious infraction. He later said he had made the choice in a fraction of a second, knowing that his hand was the only way to score.
+
+The second goal was even more remarkable: a 60-yard solo run in which he beat five English defenders with a combination of dribbling, feints, and explosive pace that seemed to defy the laws of physics. He picked up the ball in his own half, accelerated past the first defender, used the second defender's momentum to wrong-foot the third, and then paused just long enough to wrong-foot Shilton before slotting the ball home. The goal was later voted the greatest in World Cup history by FIFA, a decision that has never been seriously contested. He captained Argentina to the title, winning the tournament's Golden Ball award as its best player. Against Belgium in the semifinal, he scored another extraordinary goal, and in the final against West Germany, he orchestrated the winning goal with a header that caught the German defense sleeping.
+
+## Section 5: Personal Struggles and the Shadow of Addiction
+
+Even as Maradona achieved his greatest heights, he was fighting a private battle with cocaine addiction that would eventually consume much of his adult life. The drug first entered his life during his Barcelona years, when he was introduced to it by a member of his entourage. In Naples, where the pressures of fame and the expectations of an entire city bore down on him, the addiction intensified. He had money, fame, and the adoration of millions, but he also had an emptiness that the drugs temporarily filled. The pattern was one that would repeat throughout his life: periods of apparent stability interrupted by crises that revealed the depth of his dependency.
+
+In 1991, he tested positive for cocaine in Italy and received a 15-month ban, effectively ending his European career. He returned to Argentina, continued playing for teams in Buenos Aires, and attempted several comebacks that never recaptured his best form. His body was breaking down from decades of athletic stress combined with substance abuse. He managed the national team at the 2010 World Cup, but his health was deteriorating rapidly, and his team was eliminated in the quarterfinals in a manner that suggested a coach who had lost control of his players. Throughout this period, he remained in the public eye through television appearances, interviews, and occasional exhibition matches, but the man who had once moved like water was now moving like someone whose body had betrayed him.
+
+## Section 6: Death, Legacy, and the Medical Controversy
+
+Maradona died on November 25, 2020, at age 60, from heart failure in a rented house in Tigre, Argentina. The circumstances of his final days became the subject of an Argentine criminal investigation that lasted for years. Eight medical professionals—including physicians, nurses, and a psychologist—were eventually convicted of manslaughter for negligence in his care during the weeks leading to his death. The prosecution argued that Maradona was not properly monitored, that his medications were improperly managed, and that signs of his deteriorating condition were ignored by a medical team that should have recognized the danger.
+
+The defense countered that Maradona himself refused treatment and that his decades of drug use and obesity had created a body beyond any medical intervention. He was buried in the Jardin de la Paz cemetery in Buenos Aires, and hundreds of thousands of fans filed past his coffin over several days. The outpouring of grief was extraordinary—Buenos Aires declared three days of national mourning, and his coffin was carried through the streets as mourners sang songs, lit flares, and wept openly. The scene was reminiscent of the burial of Evita Peron decades earlier, suggesting that Maradona had achieved a kind of secular sainthood in the hearts of his people.
+
+## Section 7: Football's Eternal Contradiction
+
+Maradona left behind a legacy of stunning brilliance and profound sadness. He fathered at least eight children across multiple relationships and struggled with financial mismanagement that left him with debts at the time of his death. His career, when viewed as a whole, seems to contain two different people: the footballer whose genius was unmatched in his generation, and the man whose personal weaknesses found him repeatedly. But even those who knew of his struggles acknowledged that his impact on football was permanent. His playing style—low to the ground, physically compact, technically devastating—influenced generations of Argentine players who tried to emulate his way of moving, his quickness of thought, his ability to find space where none appeared to exist.
+
+He understood, perhaps better than any player before or since, that football was not just a sport but a form of collective expression for people who had little else. For the poor children of Latin America, for the working-class neighborhoods of Buenos Aires and Naples, he represented the possibility that talent could transcend circumstance. He gave them joy that felt transcendent, if only briefly, and for that they never stopped loving him. The tragedy was that the joy came with a price he could never fully pay: the expectations, the pressure, the loneliness that accompanied fame at the level he achieved. He handled all of it with a grace that sometimes failed him, but more often revealed a man trying to survive impossible circumstances.
+
+## Section 8: The Myth and the Man
+
+The mythology surrounding Maradona often obscures the human being beneath the legend. He was not a political figure, not a philosopher, not someone who sought to change the world beyond the football pitch. He was a craftsman of extraordinary ability who found in his craft a way to connect with millions of people and give them something they desperately needed: the belief that beauty could exist even in ugly circumstances. The "Hand of God" goal was, by his own admission, cheating—but it was cheating in service of something larger, a demonstration that intelligence and audacity could overcome rules that seemed designed to constrain him.
+
+The two goals in the England match encapsulated everything about him: the illegitimate goal showed his willingness to bend rules when necessary, while the legitimate goal showed what he could do when playing fairly. Together they told the story of a man who had learned early that the world did not give him what he needed, and that he would have to take it himself, by whatever means necessary. This interpretation may be too neat, too much a product of retrospection, but it captures something true about his character. He was not a hero in the conventional moral sense; he was something more complicated—a human being of extraordinary gifts deployed in the service of human joy and human tragedy simultaneously.
+
+---
+
+*Key fact: Scored both the "Hand of God" and the greatest goal in World Cup history within four minutes in 1986; transformed Napoli into Italian champions; died 2020 at 60.*

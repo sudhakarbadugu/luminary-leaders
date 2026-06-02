@@ -1,93 +1,46 @@
-# Warren Buffett — The Oracle of Omaha with $120B+
+# Warren Buffett
+## The Oracle of Omaha
 
-## 1. THE HOOK
-
-He bought his first stock at 11. He's worth $120B+. He lives in the same house since 1958. He says: "The best investment you can make is in yourself."
-
-How does a boy from Omaha become the world's greatest investor?
-
-## 2. ORIGIN — THE "Before" (The Relatability Engine)
-
-Warren Buffett was born August 30, 1930, in Omaha, Nebraska. Studied at University of Nebraska, Columbia University (MS economics 1951). Studied under Benjamin Graham.
-
-He was running from his father's expectations. He saw investing. He wanted to compound.
-
-## 3. THE FIRE — Failures, Rock-Bottom & Turning Points
-
-### Berkshire Hathaway (1965)
-
-Buffett bought Berkshire Hathaway. Textile mill. Failing business.
-
-### Charlie Munger (1959)
-
-Buffett met Charlie Munger. Partnership began.
-
-### Tech Bubble (2000)
-
-Buffett avoided tech stocks. Critics said he was outdated.
-
-### 2008 Financial Crisis
-
-Buffett invested when others panicked. Made billions.
-
-## 4. THE GRIND — The Invisible Years (The Method)
-
-Buffett's method is defined by value investing, compound interest, and circle of competence.
-
-### Value Investing
-
-Buffett's philosophy: "Buy wonderful companies at fair prices." Graham.
-
-### Compound Interest
-
-Buffett's philosophy: "My wealth has come from compound interest." Time.
-
-### Circle of Competence
-
-Buffett's philosophy: "Know your circle of competence." Don't invest in what you don't understand.
-
-## 5. THE TEST — THE BREAKTHROUGH MOMENT
-
-$120B+ net worth is the test. Berkshire Hathaway. Value investing works.
-
-## 6. THE PHILOSOPHY — Stealable Wisdom
-
-**On Investing:**
-"The best investment you can make is in yourself."
-
-**On Compound Interest:**
-"My wealth has come from a combination of living in America, some lucky genes, and compound interest."
-
-## 7. THE LEGACY — Purpose Beyond Profit + Human Side
-
-Warren Buffett is CEO of Berkshire Hathaway. $120B+ net worth. Pledges 99% to philanthropy.
-
-### What does he want to be remembered for?
-
-In interviews, Buffett emphasizes compound interest. He wanted to be the greatest investor.
-
-## 8. FINAL MOTIVATION & PERSONAL APPLICATION Guide
-
-Warren Buffett's career demonstrates that compound interest builds wealth.
-
-**5 Actionable Steps This Week:**
-
-1. **Invest in yourself** — "The best investment is in yourself." Learn.
-
-2. **Compound interest** — Start early. Time builds wealth.
-
-3. **Circle of competence** — Know what you understand. Don't guess.
-
-4. **Buy wonderful companies** — "Buy wonderful companies at fair prices."
-
-5. **Give away** — Pledge 99% to philanthropy. Give back.
-
-**The Hard Question:**
-
-If Buffett compounded wealth since age 11—are you compounding or spending?
-
-Compound interest builds wealth.
+**Born:** August 30, 1930 — Omaha, Nebraska  
+**Net Worth:** ~$130 billion  
+**Key Company:** Berkshire Hathaway (Chairman & CEO)
 
 ---
 
-*Profile saved to: /root/Projects/leaders-biography/warren-buffett.md*
+## Omaha Roots: The Making of an Investor
+
+Warren Edward Buffett was born in Omaha, Nebraska, the second of three children in the Buffett family. His father Howard Buffett served as a U.S. Congressman from Nebraska, and his mother Leila was a homemaker with strong financial discipline. From his earliest years, Warren demonstrated an extraordinary aptitude for numbers and a drive toward entrepreneurship that set him apart from his peers. He read his first book on finance, "One Thousand Ways to Make $1,000," at age 7 and began his first entrepreneurial ventures selling gum and Coca-Cola door to door. His understanding of compounding was evident even then — he calculated that a $100 investment at age 11 would grow to over $500,000 by age 65 at just 10% annual returns, a calculation he would repeat throughout his career.
+
+By age 13, he had filed his first tax return, claiming a $35 bicycle as a business expense. He was already thinking like an investor, looking for deductions and opportunities to maximize his capital. His parents encouraged this behavior without fully understanding where it would lead — they assumed their son would follow his father's path into politics, not finance. The Buffett family lived modestly in Omaha, and Warren's childhood was shaped by the values of the Midwest — hard work, humility, and respect for others.
+
+## Education and the Path to Value Investing
+
+Buffett attended the University of Nebraska-Lincoln at age 16, graduating in three years with a Bachelor of Science in Business Administration. He applied to Harvard Business School but was rejected in a ten-minute interview — an experience he later described as humbling and formative. The rejection forced him to find another path, which led him to Columbia Business School. At Columbia, Buffett studied under Benjamin Graham, the legendary investor and author of "Security Analysis." Graham's philosophy of value investing — finding companies trading below their intrinsic value — became the foundation of Buffett's approach.
+
+He graduated in 1951 with a Master of Science in Economics, armed with a framework that would guide his investment decisions for the next seven decades. He worked as a securities salesman in Omaha while developing his investment partnership, which he launched in 1956 with $105,000 from seven limited partners. He took no management fee but collected 25% of profits above a 6% threshold. This alignment of interests was revolutionary for its time.
+
+## Building Berkshire Hathaway
+
+By 1965, Buffett's partnership had generated returns that outpaced the Dow Jones Industrial Average by over 40 percentage points annually. He began buying shares in Berkshire Hathaway, a struggling textile manufacturing company trading at a discount to book value. He took control and used Berkshire as his primary investment vehicle. His early investment philosophy centered on purchasing companies trading below their intrinsic value, holding them indefinitely, and allowing compounding to work its magic. He avoided speculative bets and focused on businesses with durable competitive advantages — what he called "moats."
+
+In 1967, Berkshire acquired National Indemnity Company, an insurance company that became the cornerstone of Berkshire's financial structure. Buffett recognized that insurance "float" — premiums collected before claims are paid — could be deployed as investment capital, creating a structural advantage that compounded over decades. This insight transformed Berkshire's capabilities.
+
+## The Big Bets: Coca-Cola, Apple, and the Power of Patience
+
+Buffett's most famous investment remains Coca-Cola. In 1988, he purchased $1 billion of Coca-Cola shares, eventually increasing his stake to over $15 billion. The investment generated tens of billions in returns and exemplified his preference for simple, understandable businesses with global reach. He held Coca-Cola through multiple market crashes and economic downturns, never wavering in his thesis that the company's brand power and distribution network would generate increasing profits.
+
+In the 2000s, Buffett invested in companies like Wells Fargo, American Express, and Kraft Heinz. He avoided technology stocks during the dot-com bubble, famously calling them overvalued. When the bubble burst, his conservative approach was vindicated. Later, he invested heavily in Apple, recognizing the company's durable competitive advantage despite his historical aversion to technology. Apple became Berkshire's largest holding, worth over $150 billion.
+
+## The 2008 Financial Crisis: Investing During Panic
+
+During the 2008 financial crisis, Buffett made several strategic moves that demonstrated his willingness to act when others panicked. His $5 billion preferred stake in Goldman Sachs, with warrants to purchase common shares at below-market prices, earned Berkshire billions when markets recovered. His famous quote — "Be fearful when others are greedy, and greedy when others are fearful" — captured his approach. While retail investors fled the market, Buffett deployed capital systematically.
+
+He also declined to participate in the government's TARP program, instead using Berkshire's balance sheet to make private investments that earned better returns. His actions during the crisis solidified his reputation as the voice of sanity in irrational markets.
+
+## Philanthropy and Legacy
+
+In 2006, Buffett pledged 85% of his Berkshire shares to the Gates Foundation and other charities via the Giving Pledge, joining Bill Gates in committing to give away most of his fortune. His approach to philanthropy was systematic — he structured the pledges to encourage other wealthy individuals to follow suit, creating a movement that reshaped American philanthropy.
+
+Despite his billions, Buffett lived modestly. He still lived in the Omaha house he purchased in 1958 for $31,500. He ate at Dairy Queen and avoided ostentatious displays of wealth. His authenticity made him unusually respected among wealthy individuals — he was not performing wealth but simply accumulating it to give away.
+
+At 94, Buffett remains Chairman and CEO of Berkshire Hathaway, with successors widely expected to take over upon his retirement. His annual letters to shareholders are considered required reading in investing circles. His legacy extends beyond finances — he is seen as a moral authority, a guardian of honest capitalism, and a philanthropist who pledged his fortune to charitable causes.

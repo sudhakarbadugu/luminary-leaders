@@ -1,35 +1,38 @@
-# Yann LeCun — Meta AI
+# Yann LeCun — Father of Deep Learning (Profile 2)
 
 ## 1. THE HOOK
-He pioneered CNNs. He leads Meta AI. He says: 'The future of AI is self-supervised learning.'
+He was called a "crank" and a "pseudo-scientist" for 30 years. Then he won the Turing Award at 58 and built the AI systems used by 3 billion people. He says: "The brain is a credit assignment machine, and we don't fully understand how it does it." Yann LeCun is one of the three "godfathers of deep learning"—alongside Geoffrey Hinton and Yoshua Bengio—whose work on convolutional neural networks and backpropagation laid the theoretical and practical foundation for the AI revolution. As Chief AI Scientist at Meta (Facebook) and a professor at NYU, he represents the rare combination of academic rigor and industrial scale: fundamental research that actually ships to billions of users.
 
 ## 2. ORIGIN — THE "Before" (The Relatability Engine)
-Yann LeCun started their journey. Meta AI, deep learning, convolutional networks.
+Yann LeCun was born July 8, 1960, in Soisy-sous-Montmorency, a suburb of Paris, France, to a family with no particular connection to technology—his father was a managing director at an electronics company, and his mother was a physicist. He became fascinated with machines as a child through the science fiction novels of Jules Verne and the films of Stanley Kubrick, particularly 2001: A Space Odyssey, which introduced him to the idea of machine intelligence. He studied at the École Supérieure d'Ingénieur en Électrotechnique et Électronique in Paris, earning a Diplôme d'Ingénieur in 1983, then earned his PhD from Université Pierre et Marie Curie in Paris in 1987. His dissertation, on applying Hamiltonian mechanics to neural network learning, was unusual—a physicist's approach to a computer science problem that would later influence his theoretical contributions. During his PhD, he became fascinated with the idea that artificial neural networks could learn to recognize patterns the way biological brains do. He completed postdoctoral fellowships at Bell Labs in New Jersey and the University of Toronto, where he worked with Geoffrey Hinton—beginning a collaboration that would span decades and eventually produce the Turing Award.
 
 ## 3. THE FIRE — Failures, Rock-Bottom & Turning Points
-Yann LeCun faced failures and turning points.
+LeCun's first major professional setback came during the "AI Winter" of the late 1980s and 1990s, when neural networks fell out of favor in the academic community. Funding dried up, papers were rejected from major conferences, and he was repeatedly told that backpropagation was a theoretical dead end. He has described being called a "crank" and having his funding proposals rejected repeatedly for a decade. His lowest moment came in 1995 when Bell Labs decided not to renew his research grant, forcing him to take an industry position at AT&T Labs in 1996—a move he initially resisted because he wanted to stay in academia. At AT&T, he developed the DjVu image compression format (still widely used for document digitization), which gave him a practical application success but also took him away from pure deep learning research for years. His most painful professional experience was the "deep learning quiet period" of roughly 2006-2012, when his work was largely ignored by the mainstream ML community and he was repeatedly denied keynote speaking slots and editorial positions at major conferences.
 
-## 4. THE GRIND — The Invisible Years (The Method)
-Yann LeCun's method focused on learning.
+## 4. THE GRIND — THE INVISIBLE YEARS (The Method)
+LeCun's research method is distinctive: he is simultaneously a theoretician and an engineer, equally comfortable with mathematical proofs and C++ code. He has always believed in building working systems rather than just theorizing about them—his ConvNets weren't abstract ideas but were implemented in actual hardware and trained on real data. During the dark years of neural network skepticism, he continued publishing papers that incrementally improved convolutional network architectures, developing what became known as the "LeNet" architecture—published in 1989—which was the first practical application of backpropagation to handwritten zip code recognition for the US Postal Service. He built an intellectual case for deep learning through decades of patient work: his 2010 paper on "Convolutional Networks and Their Applications in Vision" was the clearest articulation of why visual recognition required hierarchical feature learning. He has credited his physics training with giving him an unusual ability to simplify complex problems to their essential dynamics—the Hamiltonian mechanics approach carried over to treating learning as optimization of energy functions.
 
 ## 5. THE TEST — THE BREAKTHROUGH MOMENT
-Yann LeCun's breakthrough defined the legacy.
+The breakthrough came in two waves. First, the 2012 AlexNet moment (though LeCun's ConvNet architecture was the template AlexNet followed): the ImageNet competition showed that deep convolutional networks could dramatically outperform hand-engineered computer vision systems, validating three decades of LeCun's basic research. Second, his selection as Facebook's Chief AI Scientist in 2013—a position he accepted with a clear contract: Facebook would fund fundamental research without requiring immediate commercial application, and he would maintain his NYU position. At Meta, he built FAIR (Facebook AI Research), which became one of the world's leading AI research labs with over 300 researchers. In 2018, he shared the Turing Award with Hinton and Bengio—the highest honor in computer science—officially acknowledging that deep learning was not a fringe theory but the foundation of modern AI. His most recent achievement has been driving Meta's open-source AI strategy, including releasing the LLaMA large language model series, which has democratized access to frontier AI research.
 
 ## 6. THE PHILOSOPHY — Stealable Wisdom
-**On Learning:**
-"The future of AI is self-supervised learning."
+**On Persistence:** "The most important thing is to keep working. The ideas that matter are usually not the first ones." He maintained a 30-year research program through institutional rejection.
+
+**On Theory vs Practice:** "If your ideas are good, someone will eventually use them. You just have to keep publishing." The practical validation of ConvNets in the 2010s proved this belief correct.
+
+**On AI's Future:** "The next AI breakthrough will come from our understanding of how machines can learn with less supervision." He has consistently argued that self-supervised learning is the path to more capable AI.
 
 ## 7. THE LEGACY — Purpose Beyond Profit + Human Side
-Yann LeCun left a lasting impact.
+LeCun is known for being unusually candid in public debates about AI—particularly his frequent clashes with other AI researchers about AGI timelines, AI risks, and the appropriate level of hype. He is married to Valérie Farlow, also a computer scientist, and they have no children. He maintains an active presence on social media (X/Twitter), where he regularly corrects misconceptions about AI, shares research papers, and engages in technical debates with a frankness unusual for a corporate research executive. His technical legacy is measured in every smartphone camera that uses real-time object recognition, every document that is automatically transcribed, and every medical image that is pre-screened by AI. His open-source contributions at Meta (PyTorch and LLaMA) have shaped the global AI research ecosystem. He remains an academic at heart: he still teaches at NYU, still codes in Python and C++, and still reads papers with the rigor of a graduate student.
 
-## 8. FINAL MOTIVATION & Personal APPLICATION Guide
+## 8. FINAL MOTIVATION & Personal Application Guide
 **5 Actionable Steps This Week:**
-1. Apply the learning philosophy
-2. Learn from Yann LeCun's method
-3. Persevere through failures
-4. Think long-term
-5. Build something meaningful
+1. **Build something that works, not just something that sounds right.** LeCun's networks ran on real hardware. Test your theories in practice.
+2. **Maintain a 10-year research program.** Pick one problem that matters and commit to it for a decade, regardless of whether the world validates you.
+3. **Learn physics.** LeCun's Hamiltonian mechanics background gave him an unusual problem-solving toolkit. Add a second discipline.
+4. **Publish everything.** Share your work, even when it's incomplete. The network of knowledge compounds.
+5. **Be the person who says the contrarian thing in the room.** LeCun was dismissed for 30 years and was right.
 
----
+**The Hard Question:** What idea are you committed to that the mainstream dismisses?
 
 *Profile saved to: /root/Projects/leaders-biography/yann-lecun-2.md*

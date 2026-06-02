@@ -1,35 +1,25 @@
-# Paul Graham — Y Combinator
+# Paul Graham
 
-## 1. THE HOOK
-He founded Y Combinator. He wrote startup essays. He says: 'Startups are a race.'
+## Early Life and Education
+Paul Graham was born in 1964 in England, though he grew up primarily in the United States after his family moved when he was young. He studied computer science at Cornell University, completing his undergraduate degree and then pursuing a Ph.D. at the University of Cambridge. However, Graham left Cambridge before finishing his doctorate, choosing to pursue a path in entrepreneurship and writing rather than academic computer science. This decision—prioritizing practical work over institutional credentials—would become a defining characteristic of his career and philosophy.
 
-## 2. ORIGIN — THE "Before" (The Relatability Engine)
-Paul Graham started their journey. Y Combinator, Lisp, startup essays.
+## Viaweb and Early Entrepreneurship
+In 1995, Graham co-founded Viaweb with Robert Morris and Trevor Blackwell. The company built software for creating online stores, pioneering what would later become e-commerce infrastructure. Graham served as the primary programmer, building the application in Lisp—a programming language he favored for its expressiveness and power. Viaweb was acquired by Yahoo in 1998 for approximately $49 million, becoming Yahoo Store. The experience gave Graham firsthand insight into building, scaling, and selling a startup—knowledge he would later distil for millions of readers.
 
-## 3. THE FIRE — Failures, Rock-Bottom & Turning Points
-Paul Graham faced failures and turning points.
+## Y Combinator Foundation
+In 2005, Graham co-founded Y Combinator with his wife, Jessica Livingston, and Robert Morris. The startup accelerator was inspired by a seed-stage fund Graham had informally run in the early 2000s. YC was structured around a simple idea: provide small investments ($5,000 per founder initially, later increased to $125,000 per company) in exchange for equity, and compress the funding process into a highly selective summer program. The model democratized access to capital and created a new template for startup funding that would be copied worldwide.
 
-## 4. THE GRIND — The Invisible Years (The Method)
-Paul Graham's method focused on startups.
+## Y Combinator's Impact and Model
+Y Combinator's influence on the startup ecosystem cannot be overstated. It funded early versions of Dropbox, Airbnb, Stripe, Reddit, and hundreds of other companies that became pillars of the technology economy. The YC program was distinctive in focusing on founders rather than ideas—the premise being that great founders could pivot and discover the right product. Graham's approach emphasized getting something real in front of users quickly, measuring growth, and iterating based on feedback. This methodology—sometimes called "lean startup"—became the dominant paradigm for software development.
 
-## 5. THE TEST — THE BREAKTHROUGH MOMENT
-Paul Graham's breakthrough defined the legacy.
+## Essays and Writing
+Graham began writing essays on his website, paulgraham.com, in the early 2000s, addressing topics ranging from startup strategy to programming languages to general advice for young people. His essay "How to Start a Startup" (later turned into a Stanford course) articulated the fundamentals of building a company: finding co-founders, getting users, and focusing on something people want. Other famous essays include "The Python Paradox," "Beating the Averages," "What You Can't Say," and "The Rise of Rest of Us." His writing is characterized by clear thinking, direct language, and unconventional conclusions that challenge conventional wisdom.
 
-## 6. THE PHILOSOPHY — Stealable Wisdom
-**On Startups:**
-"Make something people want."
+## Lisp and Programming Philosophy
+Graham has maintained a lifelong preference for Lisp as a programming language, considering it superior for building complex software quickly. His book "ANSI Common Lisp" (1995) taught the language to many programmers, and his advocacy for Lisp in "Beating the Averages" explained how language choice affects what you can build. Graham's technical background gave him unusual credibility with programmers, and his writings about programming offered both practical advice and philosophical perspective on what computation could accomplish. His emphasis on using powerful tools—rather than defaulting to mainstream languages—influenced countless developers.
 
-## 7. THE LEGACY — Purpose Beyond Profit + Human Side
-Paul Graham left a lasting impact.
+## Advising and Angel Investing
+Beyond YC, Graham invested in early-stage companies personally, with investments in companies like Hugging Face, Liner, and Faire. He served as an advisor to YC companies, sharing his accumulated wisdom about startup strategy, fundraising, and company-building. His essays were required reading at many startup accelerators and were widely shared in Silicon Valley's entrepreneurial community. Graham also served on the board of several YC companies, offering guidance through critical moments in their development.
 
-## 8. FINAL MOTIVATION & Personal APPLICATION Guide
-**5 Actionable Steps This Week:**
-1. Apply the startups philosophy
-2. Learn from Paul Graham's method
-3. Persevere through failures
-4. Think long-term
-5. Build something meaningful
-
----
-
-*Profile saved to: /root/Projects/leaders-biography/paul-graham.md*
+## Legacy and Current Work
+Paul Graham fundamentally changed how technology startups get funded and built. YC created a factory for unicorn companies, but Graham's essays shaped the culture and philosophy underlying Silicon Valley's approach to risk and reward. His insistence on clear thinking, practical demonstration, and founder-centric organization influenced everything from startup culture to how universities teach entrepreneurship. Graham remains active as a partner at YC, continuing to write essays and invest in promising companies. His legacy represents the rare combination of theoretical insight and practical execution that has shaped an entire industry.

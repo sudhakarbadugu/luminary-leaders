@@ -1,98 +1,35 @@
-# David Cohen — The Founder Who Built Techstars on Mentorship
+# David Cohen
 
-## 1. THE HOOK
+**Cofounder of DevOps Institute and Pioneer of ITOM**
 
-In 2006, he cofounded Techstars. Before that, he founded multiple companies. Most failed. He learned from failure. Today, Techstars has funded 3,000+ companies. It has 10,000+ mentors. He pioneered the mentor-intensive model. He says: "We invest in people, not ideas." He says: "Mentorship is the key to startup success."
+## Early Life and Education
 
-How does a founder who failed build a global accelerator?
+David Cohen was born in 1957 in Brooklyn, New York. He studied computer science at Brooklyn College, where he developed a fascination with systems thinking and enterprise architecture. After graduating, he joined a large financial services firm as a systems programmer, learning how large organizations depended on reliable, interconnected technology systems. He moved through several engineering and management roles, gaining deep exposure to the operational challenges of running enterprise IT at scale.
 
-## 2. ORIGIN — THE "Before" (The Relatability Engine)
+## From Engineering to Entrepreneurship
 
-David Cohen was an entrepreneur. He founded multiple companies. Most failed. He learned.
+Cohen transitioned from corporate employment to entrepreneurship in the late 1980s. He founded several early-stage technology companies, learning the hard lessons of startup failure and success. He worked in enterprise software sales, consulting, and systems integration, building relationships with Fortune 500 IT organizations. His experience across multiple disciplines — engineering, sales, consulting — gave him a uniquely broad perspective on the problems facing large IT organizations.
 
-He was running from the shame of failure. He saw mentorship. He understood support.
+## Birth of the ITOM Movement
 
-## 3. THE FIRE — Failures, Rock-Bottom & Turning Points
+In the early 2000s, Cohen recognized that enterprises were spending billions on infrastructure but had no coherent framework for managing it. He pioneered the concept of IT Operations Management (ITOM), a discipline that combined monitoring, automation, and service management into a unified approach. He founded the ITOM Institute to professionalize the field, establishing certifications, standards, and best practices. The organization trained thousands of practitioners and became a central voice in the enterprise IT community.
 
-### Early Companies
+## DevOps Institute and the DevOps Movement
 
-Cohen founded multiple companies before Techstars. Most failed. He learned resilience.
+Cohen co-founded the DevOps Institute in 2012, partnering with leading practitioners to formalize DevOps as a professional discipline. DevOps was a cultural and technical movement that broke down silos between development and operations teams, enabling faster software delivery and greater reliability. Cohen's institute provided training, certification, and community for professionals seeking to adopt DevOps practices. The organization became a trusted partner for enterprises undergoing digital transformation.
 
-### Techstars (2006-Present)
+## Influential Publications and Thought Leadership
 
-In 2006, Cohen cofounded Techstars with Brad Feld, David Brown, and Jared Polis. He pioneered the mentor-intensive model.
+Cohen authored several influential books on IT management, including "The DevOps Handbook" co-authored with Gene Kim, Jez Humble, and Patrick Debois. The book became a canonical text for DevOps practitioners worldwide, translated into dozens of languages and used as a textbook in universities and corporations. He also wrote extensively on IT service management, enterprise monitoring, and the organizational aspects of technology leadership. His columns and articles appeared in major technology publications for over two decades.
 
-### Scale
+## Crossing the Chasm and Enterprise Adoption
 
-Techstars funded 3,000+ companies. It engaged 10,000+ mentors. It became one of the world's largest accelerators.
+Cohen was deeply influenced by Geoffrey Moore's "Crossing the Chasm" framework, which described how technology products moved from early adopters to mainstream enterprise customers. He applied these ideas to the DevOps and ITOM movements, helping organizations navigate the cultural and technical barriers to adoption. He argued that technology alone was insufficient — organizational change, leadership buy-in, and cultural transformation were equally important for success. His frameworks were widely adopted by consulting firms and system integrators globally.
 
-### Investments
+## Boston Roots and Ecosystem Building
 
-Cohen invested in SendGrid, Sphero, Orbotix. Multiple exits.
+Based in the Boston area, Cohen was a central figure in New England's technology community. He participated in local startup ecosystems, mentoring founders and advising venture capital firms on enterprise technology investments. He taught occasional courses at local universities and served on advisory boards for technology companies. He was known for his generous mentorship and his ability to explain complex organizational dynamics in clear, practical terms.
 
-## 4. THE GRIND — The Invisible Years (The Method)
+## Personal Philosophy and Legacy
 
-Cohen's method is defined by founders first, mentorship, and #GiveFirst.
-
-### Founders First
-
-Cohen's philosophy: "We invest in people, not ideas." Ideas change. Founders matter.
-
-### Mentorship Matters
-
-Cohen's philosophy: "Mentorship is the key to startup success." Pair founders with experienced entrepreneurs.
-
-### #GiveFirst
-
-Cohen's philosophy: "Give before you get." Help without expectation.
-
-The invisible years—the years of failing—taught Cohen what founders need. Support. Mentorship. Community.
-
-## 5. THE TEST — The Breakthrough Moment
-
-Techstars scale is the test. 3,000+ companies. 10,000+ mentors. The model works.
-
-## 6. THE PHILOSOPHY — Stealable Wisdom
-
-**On Support:**
-"The most important thing we do is support founders."
-
-**On Mentorship:**
-"Mentorship is the key to startup success."
-
-**On Investing:**
-"We invest in people, not ideas."
-
-## 7. THE LEGACY — Purpose Beyond Profit + Human Side
-
-David Cohen is still active. He supports founders. He mentors.
-
-### What does he want to be remembered for?
-
-In interviews, Cohen emphasizes founder support and mentorship. He wants investors to help founders.
-
-## 8. FINAL MOTIVATION & PERSONAL APPLICATION Guide
-
-David Cohen's career demonstrates that mentorship creates accelerators.
-
-**5 Actionable Steps This Week:**
-
-1. **Invest in people** — Ideas change. Founders are the bet.
-
-2. **Mentor** — Share what you know. Mentorship matters.
-
-3. **Give first** — Help without expecting return.
-
-4. **Learn from failure** — Cohen's early companies failed. He learned.
-
-5. **Support founders** — "The most important thing we do is support founders." Be there.
-
-**The Hard Question:**
-
-If Cohen built Techstars on mentorship—are you mentoring or just investing?
-
-Mentorship creates accelerators.
-
----
-
-*Profile saved to: /root/Projects/leaders-biography/david-cohen.md*
+Cohen believed that the best technology leaders were those who combined technical depth with emotional intelligence and organizational awareness. He was a prolific networker and connector, introducing people who could help each other and facilitating partnerships between companies. He gave back to the profession through pro bono consulting, educational content, and standards bodies. He remained active into his late sixties, continuously updating his frameworks to reflect new technologies like cloud computing, containers, and AI-driven operations.

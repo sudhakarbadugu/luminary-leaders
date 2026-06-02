@@ -1,93 +1,35 @@
-# Cristiano Ronaldo — The Most Complete Goalscorer with 5 Ballon d'Or
+# Cristiano Ronaldo
 
-## 1. THE HOOK
+**Portuguese Footballer, Al Nassr Forward**
 
-He has 5 Ballon d'Or awards. 900+ career goals. Champions League top scorer. He was called a "show pony" early in his career. He says: "Your love makes me strong. Your hate makes me unstoppable."
+## Early Years in Madeira
 
-How does a skinny kid from Madeira become the most complete goalscorer?
+Cristiano Ronaldo dos Santos Aveiro was born in 1985 in Funchal, Madeira, Portugal. He grew up in a working-class household, sharing a room with his siblings in a small apartment. His father worked as a kit man at a local football club, and his mother cleaned houses. Ronaldo showed extraordinary talent from a very young age, joining local club Andorinha at age 7. At 12, he moved alone to mainland Portugal to join Sporting CP's youth academy, a difficult separation from his family that shaped his成熟 and resilience.
 
-## 2. ORIGIN — THE "Before" (The Relatability Engine)
+## Manchester United and Global Stardom
 
-Cristiano Ronaldo was born February 5, 1985, in Funchal, Madeira. Father was a kit man, alcoholic. Mother was a cook. Grew up in poverty. Signed by Sporting CP at 12.
+Ronaldo joined Manchester United in 2003 for £12.2 million and quickly became one of the world's best players. Under Sir Alex Ferguson, he won three Premier League titles, the FA Cup, two League Cups, and the Champions League in 2008. He scored 42 goals in the 2007-08 season, earning his first Ballon d'Or. His combination of pace, finishing, and spectacular skills made him a global brand. He left United in 2009 for a then-world record £80 million transfer to Real Madrid.
 
-He was running from poverty. He saw football. He wanted to be unstoppable.
+## Real Madrid Legacy
 
-## 3. THE FIRE — Failures, Rock-Bottom & Turning Points
+At Real Madrid, Ronaldo became the club's all-time top scorer with 450 goals in nine seasons. He won four Champions League titles in five years, including a three-peat from 2016 to 2018. He scored 17 goals in a single Champions League season multiple times. He won two La Liga titles and finished as Real's top scorer for most of his seasons. He won the Ballon d'Or five times (2008, 2013, 2014, 2016, 2017), tying Lionel Messi for most ever at that point. He scored over 100 goals in the Champions League, the first player to reach that milestone.
 
-### Father's Death (2005)
+## Juventus and Return to Manchester United
 
-Ronaldo lost his father to alcoholism at 20.
+Ronaldo transferred to Juventus in 2018 for €100 million, seeking a new challenge in Italy. He scored 81 goals in three seasons, winning two Serie A titles and a Supercoppa Italiana. In 2021, he returned to Manchester United, rejoining the club that made him famous. He scored 27 goals in all competitions during his second stint, but the team struggled overall. His relationship with the club deteriorated after a critical interview in 2022, and he left by mutual consent ahead of the 2022 World Cup.
 
-### "Show Pony" Criticism
+## Al Nassr and the Saudi Arabian Chapter
 
-Early career dismissed as style over substance.
+In January 2023, Ronaldo signed for Al Nassr in Saudi Arabia on a contract reported to be worth over €200 million per year, making him the highest-paid footballer in history. The move shocked the football world and signaled a shift in the global流向 of elite talent toward the Gulf. At Al Nassr, he continued to score goals at a prolific rate, breaking the Saudi Pro League scoring records. He became a cultural ambassador for Saudi football's ambitions to become a top global destination.
 
-### 2018 Real Madrid Exit
+## 900+ Career Goals and Milestones
 
-Ronaldo felt unappreciated after 3 consecutive CL titles.
+Ronaldo surpassed 900 career goals in 2024, reaching a milestone that no footballer in history had achieved. Of those, over 840 were scored in official matches for clubs and country. He holds the record for most goals in men's international football, surpassing Ali Daei's record of 109 goals. He scored in five World Cups (2006, 2010, 2014, 2018, 2022), though Portugal never won the tournament. He won the European Championship in 2016 and the Nations League in 2019.
 
-### 2022 World Cup
+## $1 Billion Career Earnings
 
-Benched and eliminated in quarterfinals.
+Ronaldo became the first footballer in history to earn over $1 billion in pre-tax career earnings, combining salaries, endorsements, and business ventures. He was Forbes' highest-paid athlete for multiple years, with annual earnings exceeding $100 million at his peak. His partnership with Nike was one of the most lucrative athlete endorsement deals in history. He launched the CR7 brand of underwear, shoes, hotels, and gyms. He built a massive social media following — over 600 million on Instagram — making him one of the most valuable marketing platforms on earth.
 
-## 4. THE GRIND — The Invisible Years (The Method)
+## Legacy and Personal Life
 
-Ronaldo's method is defined by obsession, discipline, and proving wrong.
-
-### Obsession
-
-Ronaldo's philosophy: First to arrive, last to leave. Daily.
-
-### Discipline
-
-Ronaldo's philosophy: No sugar, no alcohol. High-protein diet.
-
-### Proving Wrong
-
-Ronaldo's philosophy: "Your hate makes me unstoppable." Prove them wrong.
-
-## 5. THE TEST — THE BREAKTHROUGH MOMENT
-
-900+ goals is the test. 5 Ballon d'Or. Champions League.
-
-## 6. THE PHILOSOPHY — Stealable Wisdom
-
-**On Hate:**
-"Your love makes me strong. Your hate makes me unstoppable."
-
-**On Work:**
-"Talent without work is nothing."
-
-## 7. THE LEGACY — Purpose Beyond Profit + Human Side
-
-Cristiano Ronaldo plays for Al Nassr. 5 Ballon d'Or. 900+ goals. Champions League top scorer.
-
-### What does he want to be remembered for?
-
-In interviews, Ronaldo emphasizes hard work. He wanted to prove doubters wrong.
-
-## 8. FINAL MOTIVATION & PERSONAL APPLICATION Guide
-
-Cristiano Ronaldo's career demonstrates that obsession beats talent.
-
-**5 Actionable Steps This Week:**
-
-1. **Obsession beats talent** — First to arrive, last to leave.
-
-2. **Discipline** — No sugar, no alcohol. Take care of your body.
-
-3. **Prove them wrong** — "Your hate makes me unstoppable."
-
-4. **Document greatness** — Stats, records. Measure.
-
-5. **Leave on your terms** — When clubs disrespect, move.
-
-**The Hard Question:**
-
-If Ronaldo proved doubters wrong—are you proving them wrong or believing them?
-
-Obsession beats talent.
-
----
-
-*Profile saved to: /root/Projects/leaders-biography/cristiano-ronaldo.md*
+Ronaldo was known for his extreme discipline, training regimen, and professional dedication. He transformed his body through relentless work, becoming faster and stronger into his late 30s. He had five children with two partners and maintained a high public profile through charitable donations and business ventures. He was hated and revered in equal measure, dividing opinion like few athletes in history. He remained Portugal's most famous citizen and one of the most recognizable human beings on the planet.

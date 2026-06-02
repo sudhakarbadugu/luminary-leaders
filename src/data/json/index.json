@@ -1,11 +1,11 @@
 {
-  "total": 288,
+  "total": 290,
   "categories": {
-    "leaders": 139,
-    "traders": 74,
-    "sports": 26,
+    "leaders": 109,
+    "traders": 86,
+    "sports": 29,
     "cricket": 5,
-    "scientists": 44
+    "scientists": 61
   },
   "items": [
     {
@@ -55,11 +55,11 @@
     },
     {
       "slug": "adam-neumann",
-      "category": "leaders",
+      "category": "traders",
       "name": "Adam Neumann",
-      "born": "",
+      "born": "1978",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 8,
       "milestoneCount": 0
     },
     {
@@ -120,19 +120,19 @@
       "slug": "alexander-osterwalder",
       "category": "leaders",
       "name": "Alexander Osterwalder",
-      "born": "1971",
+      "born": "2005",
       "hasBio": true,
-      "quoteCount": 5,
-      "milestoneCount": 2
+      "quoteCount": 10,
+      "milestoneCount": 0
     },
     {
       "slug": "alfred-lin",
       "category": "traders",
       "name": "Alfred Lin",
-      "born": "1973",
+      "born": "2004",
       "hasBio": true,
-      "quoteCount": 6,
-      "milestoneCount": 1
+      "quoteCount": 5,
+      "milestoneCount": 0
     },
     {
       "slug": "allyson-felix",
@@ -174,10 +174,10 @@
       "slug": "andrew-mccollum",
       "category": "scientists",
       "name": "Andrew McCollum",
-      "born": "1983",
+      "born": "",
       "hasBio": true,
-      "quoteCount": 1,
-      "milestoneCount": 3
+      "quoteCount": 4,
+      "milestoneCount": 0
     },
     {
       "slug": "andrew-ng",
@@ -228,9 +228,9 @@
       "slug": "anthony-albanese",
       "category": "leaders",
       "name": "Anthony Albanese",
-      "born": "",
+      "born": "March 2, 1963",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 3,
       "milestoneCount": 0
     },
     {
@@ -249,6 +249,24 @@
       "born": "",
       "hasBio": true,
       "quoteCount": 0,
+      "milestoneCount": 0
+    },
+    {
+      "slug": "antonio-guters",
+      "category": "leaders",
+      "name": "Antonio Guterres",
+      "born": "April 30, 1949",
+      "hasBio": true,
+      "quoteCount": 12,
+      "milestoneCount": 0
+    },
+    {
+      "slug": "antonio-gutters",
+      "category": "leaders",
+      "name": "Antonio Guterres",
+      "born": "April 30, 1949",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
@@ -273,10 +291,10 @@
       "slug": "ash-maurya",
       "category": "leaders",
       "name": "Ash Maurya",
-      "born": "",
+      "born": "2008",
       "hasBio": true,
-      "quoteCount": 5,
-      "milestoneCount": 2
+      "quoteCount": 8,
+      "milestoneCount": 0
     },
     {
       "slug": "atul-gawande",
@@ -318,9 +336,9 @@
       "slug": "barack-obama",
       "category": "leaders",
       "name": "Barack Obama",
-      "born": "",
+      "born": "August 4, 1961",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 12,
       "milestoneCount": 0
     },
     {
@@ -354,18 +372,18 @@
       "slug": "benjamin-netanyahu",
       "category": "leaders",
       "name": "Benjamin Netanyahu",
-      "born": "",
+      "born": "1949",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 5,
       "milestoneCount": 0
     },
     {
       "slug": "bernard-arnault",
-      "category": "leaders",
+      "category": "traders",
       "name": "Bernard Arnault",
-      "born": "",
+      "born": "March 5, 1949",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 5,
       "milestoneCount": 0
     },
     {
@@ -381,9 +399,9 @@
       "slug": "bernie-sanders",
       "category": "leaders",
       "name": "Bernie Sanders",
-      "born": "",
+      "born": "September 8, 1941",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 5,
       "milestoneCount": 0
     },
     {
@@ -437,34 +455,34 @@
       "name": "Biz Stone",
       "born": "1974",
       "hasBio": true,
-      "quoteCount": 3,
-      "milestoneCount": 3
+      "quoteCount": 9,
+      "milestoneCount": 0
     },
     {
       "slug": "bjarne-stroustrup",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Bjarne Stroustrup",
-      "born": "",
+      "born": "December 30, 1950",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 12,
       "milestoneCount": 0
     },
     {
       "slug": "bob-dylan",
       "category": "scientists",
       "name": "Bob Dylan",
-      "born": "2016",
+      "born": "May 24, 1941",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 12,
       "milestoneCount": 0
     },
     {
       "slug": "bob-iger",
       "category": "leaders",
       "name": "Bob Iger",
-      "born": "",
+      "born": "November 5, 1951",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 12,
       "milestoneCount": 0
     },
     {
@@ -559,21 +577,21 @@
     },
     {
       "slug": "carlos-slim",
-      "category": "leaders",
+      "category": "traders",
       "name": "Carlos Slim",
-      "born": "",
+      "born": "January 28, 1940",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 6,
       "milestoneCount": 0
     },
     {
       "slug": "cathie-wood",
       "category": "traders",
-      "name": "Cathie Wood",
+      "name": "CATHIE WOOD: THE INNOVATION ARCHAEOLOGIST",
       "born": "1955",
-      "hasBio": true,
-      "quoteCount": 5,
-      "milestoneCount": 1
+      "hasBio": false,
+      "quoteCount": 2,
+      "milestoneCount": 0
     },
     {
       "slug": "charles-darwin",
@@ -595,12 +613,12 @@
     },
     {
       "slug": "chris-hughes",
-      "category": "leaders",
-      "name": "Chris Hughes",
-      "born": "November 26, 1983",
-      "hasBio": true,
-      "quoteCount": 6,
-      "milestoneCount": 4
+      "category": "scientists",
+      "name": "CHRIS HUGHES: THE IDEALIST DISENTANGLED",
+      "born": "",
+      "hasBio": false,
+      "quoteCount": 1,
+      "milestoneCount": 0
     },
     {
       "slug": "chris-rock",
@@ -632,18 +650,18 @@
     {
       "slug": "claude-shannon",
       "category": "scientists",
-      "name": "Claude Shannon",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "name": "CLAUDE SHANNON: THE INFORMATION THEORIST",
+      "born": "1916",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
       "slug": "cornelius-vanderbilt",
       "category": "leaders",
-      "name": "Cornelius Vanderbilt",
-      "born": "",
-      "hasBio": true,
+      "name": "CORNELIUS VANDERBILT: THE IRON COMMANDER",
+      "born": "1794",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -651,10 +669,10 @@
       "slug": "cristiano-ronaldo",
       "category": "sports",
       "name": "Cristiano Ronaldo",
-      "born": "February 5, 1985",
-      "hasBio": true,
-      "quoteCount": 5,
-      "milestoneCount": 3
+      "born": "1985",
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "cv-raman",
@@ -676,37 +694,37 @@
     },
     {
       "slug": "dario-amodei",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Dario Amodei",
       "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
       "slug": "david-attenborough",
       "category": "leaders",
       "name": "David Attenborough",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "1926",
+      "hasBio": false,
+      "quoteCount": 4,
       "milestoneCount": 0
     },
     {
       "slug": "david-cohen",
-      "category": "leaders",
+      "category": "scientists",
       "name": "David Cohen",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 3,
-      "milestoneCount": 1
+      "born": "1957",
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "david-geffen",
       "category": "leaders",
       "name": "David Geffen",
-      "born": "",
-      "hasBio": true,
+      "born": "1943",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -739,10 +757,10 @@
     },
     {
       "slug": "david-zaslav",
-      "category": "leaders",
+      "category": "traders",
       "name": "David Zaslav",
-      "born": "",
-      "hasBio": true,
+      "born": "1960",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -750,8 +768,8 @@
       "slug": "demis-hassabis",
       "category": "scientists",
       "name": "Demis Hassabis",
-      "born": "",
-      "hasBio": true,
+      "born": "1976",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -778,18 +796,18 @@
       "category": "sports",
       "name": "Diego Maradona",
       "born": "October 30, 1960",
-      "hasBio": true,
-      "quoteCount": 2,
-      "milestoneCount": 5
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "donald-trump",
-      "category": "leaders",
+      "category": "sports",
       "name": "Donald Trump",
-      "born": "June 14, 1946",
-      "hasBio": true,
-      "quoteCount": 7,
-      "milestoneCount": 2
+      "born": "1946",
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "douglas-engelbart",
@@ -814,18 +832,18 @@
       "category": "scientists",
       "name": "Drew Weissman",
       "born": "1959",
-      "hasBio": true,
+      "hasBio": false,
       "quoteCount": 0,
-      "milestoneCount": 3
+      "milestoneCount": 0
     },
     {
       "slug": "dustin-moskovitz",
       "category": "leaders",
       "name": "Dustin Moskovitz",
       "born": "1984",
-      "hasBio": true,
-      "quoteCount": 2,
-      "milestoneCount": 4
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "ed-catmull",
@@ -865,12 +883,12 @@
     },
     {
       "slug": "elon-musk",
-      "category": "leaders",
+      "category": "traders",
       "name": "Elon Musk",
-      "born": "June 28, 1971",
-      "hasBio": true,
-      "quoteCount": 4,
-      "milestoneCount": 4
+      "born": "1971",
+      "hasBio": false,
+      "quoteCount": 1,
+      "milestoneCount": 0
     },
     {
       "slug": "elvis-presley",
@@ -901,12 +919,12 @@
     },
     {
       "slug": "eric-ries",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Eric Ries",
       "born": "1978",
-      "hasBio": true,
-      "quoteCount": 4,
-      "milestoneCount": 3
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "ernest-hemingway",
@@ -948,27 +966,27 @@
       "slug": "fred-ehrsam",
       "category": "traders",
       "name": "Fred Ehrsam",
-      "born": "1988",
-      "hasBio": true,
-      "quoteCount": 5,
-      "milestoneCount": 3
+      "born": "",
+      "hasBio": false,
+      "quoteCount": 1,
+      "milestoneCount": 0
     },
     {
       "slug": "fred-wilson",
       "category": "traders",
       "name": "Fred Wilson",
       "born": "1961",
-      "hasBio": true,
-      "quoteCount": 4,
-      "milestoneCount": 2
+      "hasBio": false,
+      "quoteCount": 1,
+      "milestoneCount": 0
     },
     {
       "slug": "fumio-kishida",
       "category": "leaders",
       "name": "Fumio Kishida",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "1957",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
@@ -982,19 +1000,19 @@
     },
     {
       "slug": "gautam-adani",
-      "category": "traders",
+      "category": "leaders",
       "name": "Gautam Adani",
       "born": "June 24, 1962",
-      "hasBio": true,
-      "quoteCount": 2,
-      "milestoneCount": 1
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "geoffrey-hinton",
       "category": "scientists",
       "name": "Geoffrey Hinton",
-      "born": "",
-      "hasBio": true,
+      "born": "December 6, 1947",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1020,35 +1038,35 @@
       "slug": "grace-hopper",
       "category": "scientists",
       "name": "Grace Hopper",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "December 9, 1906",
+      "hasBio": false,
+      "quoteCount": 4,
       "milestoneCount": 0
     },
     {
       "slug": "greta-thunberg",
       "category": "leaders",
       "name": "Greta Thunberg",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "January 3, 2003",
+      "hasBio": false,
+      "quoteCount": 5,
       "milestoneCount": 0
     },
     {
       "slug": "guido-van-rossum",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Guido van Rossum",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "1956",
+      "hasBio": false,
+      "quoteCount": 2,
       "milestoneCount": 0
     },
     {
       "slug": "henry-ford-ii",
       "category": "leaders",
       "name": "Henry Ford II",
-      "born": "",
-      "hasBio": true,
+      "born": "September 7, 1917",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1056,27 +1074,27 @@
       "slug": "henry-ford",
       "category": "leaders",
       "name": "Henry Ford",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "July 30, 1863",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
       "slug": "henry-kravis",
-      "category": "leaders",
+      "category": "traders",
       "name": "Henry Kravis",
-      "born": "January 6, 1944",
-      "hasBio": true,
-      "quoteCount": 4,
-      "milestoneCount": 2
+      "born": "February 5, 1948",
+      "hasBio": false,
+      "quoteCount": 1,
+      "milestoneCount": 0
     },
     {
       "slug": "hillary-clinton",
       "category": "leaders",
       "name": "Hillary Clinton",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "October 26, 1947",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
@@ -1099,38 +1117,38 @@
     },
     {
       "slug": "ilya-sutskever",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Ilya Sutskever",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "1986",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
       "slug": "ingvar-kamprad",
       "category": "leaders",
       "name": "Ingvar Kamprad",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "1926",
+      "hasBio": false,
+      "quoteCount": 3,
       "milestoneCount": 0
     },
     {
       "slug": "isaac-newton",
       "category": "scientists",
       "name": "Isaac Newton",
-      "born": "",
+      "born": "December 25, 1642",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 5,
       "milestoneCount": 0
     },
     {
       "slug": "jacinda-ardern",
       "category": "leaders",
       "name": "Jacinda Ardern",
-      "born": "",
+      "born": "July 26, 1980",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 6,
       "milestoneCount": 0
     },
     {
@@ -1146,45 +1164,45 @@
       "slug": "jack-ma",
       "category": "leaders",
       "name": "Jack Ma",
-      "born": "",
+      "born": "September 10, 1964",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 5,
       "milestoneCount": 0
     },
     {
       "slug": "jack-welch",
       "category": "leaders",
       "name": "Jack Welch",
-      "born": "",
+      "born": "November 19, 1935",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 4,
       "milestoneCount": 0
     },
     {
       "slug": "james-clear",
-      "category": "leaders",
+      "category": "sports",
       "name": "James Clear",
-      "born": "",
+      "born": "January 28, 1987",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 5,
       "milestoneCount": 0
     },
     {
       "slug": "james-gosling",
-      "category": "leaders",
+      "category": "scientists",
       "name": "James Gosling",
-      "born": "",
+      "born": "May 19, 1955",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 6,
       "milestoneCount": 0
     },
     {
       "slug": "jane-goodall",
       "category": "leaders",
       "name": "Jane Goodall",
-      "born": "",
+      "born": "April 3, 1934",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 7,
       "milestoneCount": 0
     },
     {
@@ -1192,9 +1210,9 @@
       "category": "traders",
       "name": "Jeff Bezos",
       "born": "January 12, 1964",
-      "hasBio": true,
-      "quoteCount": 5,
-      "milestoneCount": 4
+      "hasBio": false,
+      "quoteCount": 1,
+      "milestoneCount": 0
     },
     {
       "slug": "jennifer-doudna",
@@ -1209,9 +1227,9 @@
       "slug": "jensen-huang",
       "category": "leaders",
       "name": "Jensen Huang",
-      "born": "",
+      "born": "February 17, 1963",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 5,
       "milestoneCount": 0
     },
     {
@@ -1227,10 +1245,10 @@
       "slug": "jessica-livingston",
       "category": "leaders",
       "name": "Jessica Livingston",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 4,
-      "milestoneCount": 2
+      "born": "1973",
+      "hasBio": false,
+      "quoteCount": 1,
+      "milestoneCount": 0
     },
     {
       "slug": "jim-rogers",
@@ -1255,8 +1273,8 @@
       "category": "leaders",
       "name": "Joe Biden",
       "born": "November 20, 1942",
-      "hasBio": true,
-      "quoteCount": 5,
+      "hasBio": false,
+      "quoteCount": 0,
       "milestoneCount": 0
     },
     {
@@ -1279,20 +1297,20 @@
     },
     {
       "slug": "john-collison",
-      "category": "leaders",
+      "category": "traders",
       "name": "John Collison",
-      "born": "1990",
-      "hasBio": true,
-      "quoteCount": 5,
-      "milestoneCount": 1
+      "born": "1988",
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "john-d-rockefeller",
       "category": "leaders",
       "name": "John D. Rockefeller",
       "born": "July 8, 1839",
-      "hasBio": true,
-      "quoteCount": 4,
+      "hasBio": false,
+      "quoteCount": 0,
       "milestoneCount": 0
     },
     {
@@ -1345,17 +1363,17 @@
       "category": "leaders",
       "name": "Justin Trudeau",
       "born": "December 25, 1971",
-      "hasBio": true,
-      "quoteCount": 3,
+      "hasBio": false,
+      "quoteCount": 0,
       "milestoneCount": 0
     },
     {
       "slug": "karl-albrecht",
       "category": "leaders",
       "name": "Karl Albrecht",
-      "born": "February 22, 1920",
-      "hasBio": true,
-      "quoteCount": 3,
+      "born": "February 9, 1920",
+      "hasBio": false,
+      "quoteCount": 0,
       "milestoneCount": 0
     },
     {
@@ -1371,8 +1389,8 @@
       "slug": "keir-starmer",
       "category": "leaders",
       "name": "Keir Starmer",
-      "born": "",
-      "hasBio": true,
+      "born": "September 6, 1962",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1408,25 +1426,25 @@
       "category": "sports",
       "name": "Kobe Bryant",
       "born": "August 23, 1978",
-      "hasBio": true,
-      "quoteCount": 4,
-      "milestoneCount": 5
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "konosuke-matsushita",
       "category": "leaders",
       "name": "Konosuke Matsushita",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "November 27, 1894",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
       "slug": "kristalina-georgieva",
       "category": "leaders",
       "name": "Kristalina Georgieva",
-      "born": "",
-      "hasBio": true,
+      "born": "August 13, 1953",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1435,17 +1453,17 @@
       "category": "sports",
       "name": "Kylian Mbappé",
       "born": "December 20, 1998",
-      "hasBio": true,
-      "quoteCount": 4,
-      "milestoneCount": 3
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "larry-ellison",
       "category": "leaders",
       "name": "Larry Ellison",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "August 17, 1944",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
@@ -1459,11 +1477,11 @@
     },
     {
       "slug": "larry-page",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Larry Page",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "March 26, 1973",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
@@ -1471,9 +1489,9 @@
       "category": "sports",
       "name": "LeBron James",
       "born": "December 30, 1984",
-      "hasBio": true,
-      "quoteCount": 3,
-      "milestoneCount": 5
+      "hasBio": false,
+      "quoteCount": 2,
+      "milestoneCount": 0
     },
     {
       "slug": "leon-cooperman",
@@ -1486,19 +1504,19 @@
     },
     {
       "slug": "leonardo-da-vinci",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Leonardo da Vinci",
-      "born": "",
-      "hasBio": true,
+      "born": "April 15, 1452",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
     {
       "slug": "li-ka-shing",
-      "category": "leaders",
+      "category": "traders",
       "name": "Li Ka-shing",
-      "born": "",
-      "hasBio": true,
+      "born": "June 13, 1928",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1513,11 +1531,11 @@
     },
     {
       "slug": "linus-torvalds",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Linus Torvalds",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "December 28, 1969",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
@@ -1525,16 +1543,16 @@
       "category": "sports",
       "name": "Lionel Messi",
       "born": "June 24, 1987",
-      "hasBio": true,
-      "quoteCount": 1,
-      "milestoneCount": 3
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "lisa-su",
-      "category": "leaders",
-      "name": "Lisa Su",
-      "born": "",
-      "hasBio": true,
+      "category": "traders",
+      "name": "Dr. Lisa Su",
+      "born": "1969",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1542,8 +1560,8 @@
       "slug": "mahatma-gandhi",
       "category": "leaders",
       "name": "Mahatma Gandhi",
-      "born": "",
-      "hasBio": true,
+      "born": "October 2, 1869",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1551,18 +1569,18 @@
       "slug": "malala-yousafzai",
       "category": "leaders",
       "name": "Malala Yousafzai",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "July 12, 1997",
+      "hasBio": false,
+      "quoteCount": 2,
       "milestoneCount": 0
     },
     {
       "slug": "malcolm-gladwell",
       "category": "leaders",
       "name": "Malcolm Gladwell",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "September 3, 1963",
+      "hasBio": false,
+      "quoteCount": 4,
       "milestoneCount": 0
     },
     {
@@ -1579,9 +1597,9 @@
       "category": "scientists",
       "name": "Marie Curie",
       "born": "November 7, 1867",
-      "hasBio": true,
-      "quoteCount": 2,
-      "milestoneCount": 4
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "mario-gabelli",
@@ -1594,10 +1612,10 @@
     },
     {
       "slug": "marissa-mayer",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Marissa Mayer",
-      "born": "",
-      "hasBio": true,
+      "born": "May 30, 1975",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1605,9 +1623,9 @@
       "slug": "mark-andreessen",
       "category": "leaders",
       "name": "Mark Andreessen",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "July 9, 1971",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
@@ -1632,8 +1650,8 @@
       "slug": "martin-luther-king-jr",
       "category": "leaders",
       "name": "Martin Luther King Jr.",
-      "born": "",
-      "hasBio": true,
+      "born": "January 15, 1929",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1659,8 +1677,8 @@
       "slug": "masayoshi-son",
       "category": "traders",
       "name": "Masayoshi Son",
-      "born": "",
-      "hasBio": true,
+      "born": "August 11, 1957",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1678,9 +1696,9 @@
       "category": "sports",
       "name": "Michael Jordan",
       "born": "February 17, 1963",
-      "hasBio": true,
-      "quoteCount": 3,
-      "milestoneCount": 4
+      "hasBio": false,
+      "quoteCount": 6,
+      "milestoneCount": 0
     },
     {
       "slug": "michael-marcus",
@@ -1705,9 +1723,9 @@
       "category": "sports",
       "name": "Michael Phelps",
       "born": "June 30, 1985",
-      "hasBio": true,
-      "quoteCount": 2,
-      "milestoneCount": 5
+      "hasBio": false,
+      "quoteCount": 1,
+      "milestoneCount": 0
     },
     {
       "slug": "michael-steinhardt",
@@ -1722,17 +1740,17 @@
       "slug": "mike-krieger",
       "category": "leaders",
       "name": "Mike Krieger",
-      "born": "March 4, 1986",
-      "hasBio": true,
-      "quoteCount": 1,
-      "milestoneCount": 5
+      "born": "1986",
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "mikhail-prokhorov",
-      "category": "leaders",
+      "category": "traders",
       "name": "Mikhail Prokhorov",
-      "born": "",
-      "hasBio": true,
+      "born": "May 3, 1965",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1740,8 +1758,8 @@
       "slug": "mitch-mcconnell",
       "category": "leaders",
       "name": "Mitch McConnell",
-      "born": "",
-      "hasBio": true,
+      "born": "February 1, 1942",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1759,25 +1777,25 @@
       "category": "sports",
       "name": "Muhammad Ali",
       "born": "January 17, 1942",
-      "hasBio": true,
-      "quoteCount": 3,
-      "milestoneCount": 6
+      "hasBio": false,
+      "quoteCount": 7,
+      "milestoneCount": 0
     },
     {
       "slug": "mukesh-ambani",
       "category": "leaders",
       "name": "Mukesh Ambani",
       "born": "April 19, 1957",
-      "hasBio": true,
-      "quoteCount": 2,
-      "milestoneCount": 3
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "nancy-pelosi",
       "category": "leaders",
       "name": "Nancy Pelosi",
-      "born": "",
-      "hasBio": true,
+      "born": "March 26, 1940",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1785,8 +1803,8 @@
       "slug": "narendra-modi",
       "category": "leaders",
       "name": "Narendra Modi",
-      "born": "2014",
-      "hasBio": true,
+      "born": "September 17, 1950",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1796,16 +1814,16 @@
       "name": "Nathan Blecharczyk",
       "born": "1983",
       "hasBio": true,
-      "quoteCount": 3,
-      "milestoneCount": 3
+      "quoteCount": 7,
+      "milestoneCount": 0
     },
     {
       "slug": "naval-ravikant",
-      "category": "leaders",
+      "category": "traders",
       "name": "Naval Ravikant",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "April 17, 1974",
+      "hasBio": false,
+      "quoteCount": 2,
       "milestoneCount": 0
     },
     {
@@ -1821,8 +1839,8 @@
       "slug": "nelson-mandela",
       "category": "leaders",
       "name": "Nelson Mandela",
-      "born": "",
-      "hasBio": true,
+      "born": "July 18, 1918",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1831,9 +1849,9 @@
       "category": "sports",
       "name": "Neymar",
       "born": "February 5, 1992",
-      "hasBio": true,
-      "quoteCount": 3,
-      "milestoneCount": 1
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "nicolas-darvas",
@@ -1848,8 +1866,8 @@
       "slug": "nikola-tesla",
       "category": "scientists",
       "name": "Nikola Tesla",
-      "born": "",
-      "hasBio": true,
+      "born": "July 10, 1856",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1857,44 +1875,44 @@
       "slug": "noah-glass",
       "category": "leaders",
       "name": "Noah Glass",
-      "born": "1981",
-      "hasBio": true,
-      "quoteCount": 4,
-      "milestoneCount": 2
+      "born": "1970",
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "olaf-scholz",
       "category": "leaders",
       "name": "Olaf Scholz",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "June 21, 1958",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
       "slug": "oprah-winfrey",
       "category": "leaders",
       "name": "Oprah Winfrey",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "January 29, 1954",
+      "hasBio": false,
+      "quoteCount": 2,
       "milestoneCount": 0
     },
     {
       "slug": "pablo-picasso",
       "category": "leaders",
       "name": "Pablo Picasso",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "October 25, 1881",
+      "hasBio": false,
+      "quoteCount": 2,
       "milestoneCount": 0
     },
     {
       "slug": "pat-gelsinger",
-      "category": "leaders",
+      "category": "traders",
       "name": "Pat Gelsinger",
-      "born": "",
-      "hasBio": true,
+      "born": "March 30, 1962",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -1918,11 +1936,11 @@
     },
     {
       "slug": "paul-graham",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Paul Graham",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "1964",
+      "hasBio": false,
+      "quoteCount": 3,
       "milestoneCount": 0
     },
     {
@@ -1948,9 +1966,9 @@
       "category": "sports",
       "name": "Pelé",
       "born": "October 23, 1940",
-      "hasBio": true,
-      "quoteCount": 6,
-      "milestoneCount": 5
+      "hasBio": false,
+      "quoteCount": 1,
+      "milestoneCount": 0
     },
     {
       "slug": "pete-docter",
@@ -1965,9 +1983,9 @@
       "slug": "peter-drucker",
       "category": "leaders",
       "name": "Peter Drucker",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "November 19, 1909",
+      "hasBio": false,
+      "quoteCount": 5,
       "milestoneCount": 0
     },
     {
@@ -2001,19 +2019,19 @@
       "slug": "peter-thiel",
       "category": "traders",
       "name": "Peter Thiel",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "October 11, 1967",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
       "slug": "phil-knight",
       "category": "sports",
       "name": "Phil Knight",
-      "born": "February 24, 1938",
-      "hasBio": true,
-      "quoteCount": 5,
-      "milestoneCount": 3
+      "born": "1938",
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "prem-watsa",
@@ -2037,10 +2055,10 @@
       "slug": "ray-dalio",
       "category": "traders",
       "name": "Ray Dalio",
-      "born": "August 8, 1949",
-      "hasBio": true,
-      "quoteCount": 4,
-      "milestoneCount": 2
+      "born": "August 1, 1949",
+      "hasBio": false,
+      "quoteCount": 3,
+      "milestoneCount": 0
     },
     {
       "slug": "reed-hastings",
@@ -2053,11 +2071,11 @@
     },
     {
       "slug": "reid-hoffman",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Reid Hoffman",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "December 25, 1967",
+      "hasBio": false,
+      "quoteCount": 2,
       "milestoneCount": 0
     },
     {
@@ -2082,26 +2100,26 @@
       "slug": "richard-feynman",
       "category": "scientists",
       "name": "Richard Feynman",
-      "born": "",
-      "hasBio": true,
+      "born": "May 11, 1918",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
     {
       "slug": "richard-stallman",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Richard Stallman",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "March 16, 1953",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
       "slug": "rishi-sunak",
       "category": "leaders",
       "name": "Rishi Sunak",
-      "born": "",
-      "hasBio": true,
+      "born": "May 12, 1980",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -2128,16 +2146,16 @@
       "category": "sports",
       "name": "Roger Federer",
       "born": "August 8, 1981",
-      "hasBio": true,
-      "quoteCount": 2,
-      "milestoneCount": 3
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "rupert-murdoch",
       "category": "leaders",
       "name": "Rupert Murdoch",
-      "born": "",
-      "hasBio": true,
+      "born": "March 11, 1931",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -2145,26 +2163,26 @@
       "slug": "ruth-porat",
       "category": "traders",
       "name": "Ruth Porat",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "February 17, 1957",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
       "slug": "ryan-holiday",
       "category": "leaders",
       "name": "Ryan Holiday",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "June 30, 1987",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
       "slug": "sam-altman",
-      "category": "leaders",
+      "category": "traders",
       "name": "Sam Altman",
-      "born": "",
-      "hasBio": true,
+      "born": "1984",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -2172,27 +2190,27 @@
       "slug": "sam-walton",
       "category": "leaders",
       "name": "Sam Walton",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "March 29, 1918",
+      "hasBio": false,
+      "quoteCount": 2,
       "milestoneCount": 0
     },
     {
       "slug": "sanna-marin",
       "category": "leaders",
       "name": "Sanna Marin",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "November 16, 1985",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
       "slug": "satya-nadella",
       "category": "leaders",
       "name": "Satya Nadella",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "August 19, 1967",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
@@ -2209,17 +2227,17 @@
       "category": "sports",
       "name": "Serena Williams",
       "born": "September 26, 1981",
-      "hasBio": true,
-      "quoteCount": 2,
-      "milestoneCount": 3
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "sergey-brin",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Sergey Brin",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "August 21, 1973",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
@@ -2235,9 +2253,9 @@
       "slug": "sheryl-sandberg",
       "category": "leaders",
       "name": "Sheryl Sandberg",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "December 28, 1969",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
@@ -2253,10 +2271,10 @@
       "slug": "simone-biles",
       "category": "sports",
       "name": "Simone Biles",
-      "born": "March 14, 1997",
-      "hasBio": true,
-      "quoteCount": 4,
-      "milestoneCount": 4
+      "born": "September 14, 1997",
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "stanley-druckenmiller",
@@ -2271,9 +2289,9 @@
       "slug": "stephen-hawking",
       "category": "scientists",
       "name": "Stephen Hawking",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "January 8, 1942",
+      "hasBio": false,
+      "quoteCount": 6,
       "milestoneCount": 0
     },
     {
@@ -2298,18 +2316,18 @@
       "slug": "steve-blank",
       "category": "leaders",
       "name": "Steve Blank",
-      "born": "1953",
-      "hasBio": true,
-      "quoteCount": 6,
-      "milestoneCount": 2
+      "born": "May 26, 1953",
+      "hasBio": false,
+      "quoteCount": 1,
+      "milestoneCount": 0
     },
     {
       "slug": "steve-jobs",
-      "category": "leaders",
+      "category": "scientists",
       "name": "Steve Jobs",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "February 24, 1955",
+      "hasBio": false,
+      "quoteCount": 1,
       "milestoneCount": 0
     },
     {
@@ -2318,8 +2336,8 @@
       "name": "Steve Prefontaine",
       "born": "January 25, 1951",
       "hasBio": true,
-      "quoteCount": 3,
-      "milestoneCount": 2
+      "quoteCount": 7,
+      "milestoneCount": 0
     },
     {
       "slug": "steve-wozniak",
@@ -2343,17 +2361,17 @@
       "slug": "sumner-redstone",
       "category": "leaders",
       "name": "Sumner Redstone",
-      "born": "",
+      "born": "May 27, 1923",
       "hasBio": true,
-      "quoteCount": 0,
-      "milestoneCount": 0
+      "quoteCount": 8,
+      "milestoneCount": 3
     },
     {
       "slug": "sundar-pichai",
       "category": "leaders",
       "name": "Sundar Pichai",
-      "born": "",
-      "hasBio": true,
+      "born": "June 12, 1972",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -2361,46 +2379,46 @@
       "slug": "susan-wojcicki",
       "category": "leaders",
       "name": "Susan Wojcicki",
-      "born": "",
+      "born": "July 5, 1968",
       "hasBio": true,
-      "quoteCount": 0,
-      "milestoneCount": 0
+      "quoteCount": 9,
+      "milestoneCount": 4
     },
     {
       "slug": "ted-turner",
-      "category": "leaders",
+      "category": "sports",
       "name": "Ted Turner",
-      "born": "",
+      "born": "November 19, 1938",
       "hasBio": true,
-      "quoteCount": 0,
-      "milestoneCount": 0
+      "quoteCount": 11,
+      "milestoneCount": 5
     },
     {
       "slug": "the-beatles",
       "category": "leaders",
       "name": "The Beatles",
-      "born": "",
+      "born": "October 9, 1940",
       "hasBio": true,
-      "quoteCount": 0,
-      "milestoneCount": 0
+      "quoteCount": 12,
+      "milestoneCount": 4
     },
     {
       "slug": "theo-albrecht",
       "category": "traders",
       "name": "Theo Albrecht",
-      "born": "",
+      "born": "March 3, 1922",
       "hasBio": true,
-      "quoteCount": 0,
-      "milestoneCount": 0
+      "quoteCount": 12,
+      "milestoneCount": 5
     },
     {
       "slug": "thomas-edison",
       "category": "leaders",
       "name": "Thomas Edison",
-      "born": "",
+      "born": "February 11, 1847",
       "hasBio": true,
-      "quoteCount": 0,
-      "milestoneCount": 0
+      "quoteCount": 7,
+      "milestoneCount": 5
     },
     {
       "slug": "thomas-h-lee",
@@ -2416,16 +2434,16 @@
       "category": "sports",
       "name": "Tiger Woods",
       "born": "December 30, 1975",
-      "hasBio": true,
-      "quoteCount": 1,
-      "milestoneCount": 5
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "tim-cook",
       "category": "leaders",
       "name": "Tim Cook",
-      "born": "",
-      "hasBio": true,
+      "born": "November 1, 1960",
+      "hasBio": false,
       "quoteCount": 0,
       "milestoneCount": 0
     },
@@ -2433,10 +2451,10 @@
       "slug": "tim-ferriss",
       "category": "leaders",
       "name": "Tim Ferriss",
-      "born": "",
+      "born": "September 20, 1972",
       "hasBio": true,
-      "quoteCount": 0,
-      "milestoneCount": 0
+      "quoteCount": 12,
+      "milestoneCount": 3
     },
     {
       "slug": "travis-kalanick",
@@ -2452,9 +2470,9 @@
       "category": "sports",
       "name": "Usain Bolt",
       "born": "August 21, 1986",
-      "hasBio": true,
-      "quoteCount": 6,
-      "milestoneCount": 4
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     },
     {
       "slug": "vijay-kedia",
@@ -2469,10 +2487,10 @@
       "slug": "vincent-van-gogh",
       "category": "leaders",
       "name": "Vincent van Gogh",
-      "born": "",
+      "born": "March 30, 1853",
       "hasBio": true,
-      "quoteCount": 0,
-      "milestoneCount": 0
+      "quoteCount": 12,
+      "milestoneCount": 3
     },
     {
       "slug": "vinod-khosla",
@@ -2496,27 +2514,27 @@
       "slug": "vladimir-putin",
       "category": "leaders",
       "name": "Vladimir Putin",
-      "born": "",
+      "born": "October 7, 1952",
       "hasBio": true,
-      "quoteCount": 0,
-      "milestoneCount": 0
+      "quoteCount": 12,
+      "milestoneCount": 6
     },
     {
       "slug": "volodymyr-zelenskyy",
       "category": "leaders",
       "name": "Volodymyr Zelenskyy",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "January 25, 1978",
+      "hasBio": false,
+      "quoteCount": 3,
       "milestoneCount": 0
     },
     {
       "slug": "walt-disney",
       "category": "leaders",
       "name": "Walt Disney",
-      "born": "",
-      "hasBio": true,
-      "quoteCount": 0,
+      "born": "December 5, 1901",
+      "hasBio": false,
+      "quoteCount": 3,
       "milestoneCount": 0
     },
     {
@@ -2533,9 +2551,9 @@
       "category": "traders",
       "name": "Warren Buffett",
       "born": "August 30, 1930",
-      "hasBio": true,
-      "quoteCount": 6,
-      "milestoneCount": 4
+      "hasBio": false,
+      "quoteCount": 3,
+      "milestoneCount": 0
     },
     {
       "slug": "whitney-wolfe-herd",
@@ -2559,18 +2577,18 @@
       "slug": "william-shakespeare",
       "category": "leaders",
       "name": "William Shakespeare",
-      "born": "",
+      "born": "1564",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 5,
       "milestoneCount": 0
     },
     {
       "slug": "xi-jinping",
       "category": "leaders",
       "name": "Xi Jinping",
-      "born": "",
+      "born": "1953",
       "hasBio": true,
-      "quoteCount": 0,
+      "quoteCount": 9,
       "milestoneCount": 0
     },
     {
@@ -2596,9 +2614,9 @@
       "category": "sports",
       "name": "Zinedine Zidane",
       "born": "June 23, 1972",
-      "hasBio": true,
-      "quoteCount": 2,
-      "milestoneCount": 2
+      "hasBio": false,
+      "quoteCount": 0,
+      "milestoneCount": 0
     }
   ]
 }

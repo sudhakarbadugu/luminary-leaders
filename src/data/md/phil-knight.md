@@ -1,106 +1,43 @@
-# Phil Knight — The Runner Who Built Nike and Changed Athletics Forever
+# Phil Knight
 
-## 1. THE HOOK
+**Cofounder and Former CEO of Nike, Inc.**
 
-In 1964, he cofounded Blue Ribbon Sports with $500. He sold shoes from his Plymouth Valiant. In 1971, he rebranded to Nike. The Swoosh. Just Do It. $50B+ annual revenue. $40B+ net worth. He says: "The cowards never started and the weak died along the way. That leaves you."
+## Early Life and Athletic Background
 
-How does a middle-distance runner from Oregon build a $200B+ athletic empire?
+Philip Hampson Knight was born in 1938 in Portland, Oregon, to a working-class family. He grew up running track at the University of Oregon, where he was a middle-distance runner under coach Bill Bowerman. Knight was an accomplished athlete, specializing in the mile and the 1500 meters. He graduated with a degree in journalism but remained deeply connected to sports throughout his life. Bowerman became his mentor and later his business partner, and their relationship defined the culture of Nike for decades.
 
-## 2. ORIGIN — THE "Before" (The Relatability Engine)
+## Stanford MBA and International Travel
 
-Phil Knight was born February 24, 1938, in Portland, Oregon. He studied at University of Oregon (BS journalism 1959), Stanford Graduate School of Business (MBA 1962).
+After graduating from Oregon, Knight earned an MBA from Stanford Business School in 1962. While at Stanford, he wrote a paper arguing that Japanese shoe manufacturers could compete with German brands like Adidas in the U.S. market. After business school, Knight traveled to Japan, where he met the executives of Onitsuka Tiger (later ASICS) and secured the rights to distribute their shoes in the United States. The trip planted the seed for his future business ventures and gave him a global perspective on the athletic shoe industry.
 
-He was running from his father's expectations. He saw running shoes. He wanted to make athletes faster.
+## Blue Ribbon Sports and the First Store
 
-## 3. THE FIRE — Failures, Rock-Bottom & Turning Points
+Knight started Blue Ribbon Sports in 1964, operating initially as a distributor for Onitsuka Tiger shoes from a small office in Eugene, Oregon. He partnered with his former coach Bill Bowerman, who designed shoes for the company in his garage. The company opened its first retail store in 1966 on Pico Boulevard in Santa Monica, California, selling shoes out of the back of a car at local track meets. Knight handled the business side while Bowerman handled product design, and together they built the foundation of what would become Nike.
 
-### Running at Oregon
+## Nike's Growth and the Swoosh
 
-Knight ran track. Coach Bill Bowerman. Co-founder.
+Knight renamed the company Nike in 1971 after the Greek goddess of victory. He hired a young graphic design student, Carolyn Davidson, to create the iconic swoosh logo for $35. The company grew rapidly through the 1970s, benefiting from the running boom in the United States. Knight's distribution model evolved, and Nike began manufacturing its own shoes. He brought Phil Knight's philosophy of performance and innovation to every product decision, positioning Nike as the brand for serious athletes.
 
-### Blue Ribbon Sports (1964)
+## Marketing and Michael Jordan
 
-In 1964, Knight and Bowerman founded Blue Ribbon Sports. $500 each. Sold shoes from trunk.
+Knight's marketing genius was perhaps his greatest business strength. He signed Michael Jordan in 1984, creating the Air Jordan line that transformed both the sneaker industry and athlete endorsements. The partnership was unprecedented — Jordan received equity in Nike and a percentage of all shoe sales, provisions that became industry standard. The Air Jordan brand generated billions in revenue and turned Jordan into a global cultural icon. Knight's willingness to invest heavily in endorsements and marketing campaigns became a blueprint for sports marketing.
 
-### Onitsuka Tiger
+## Expansion Beyond Shoes
 
-Knight imported shoes from Onitsuka Tiger. Sold at track meets.
+Under Knight's leadership, Nike expanded into apparel, equipment, and accessories. He positioned Nike as a lifestyle brand rather than just a sports company, targeting young consumers who associated Nike with ambition and coolness. The company's "Just Do It" slogan, introduced in 1988, became one of the most recognized taglines in advertising history. Knight oversaw the acquisition of Converse in 2003 and the acquisition of Umbro in 2008, further expanding Nike's global footprint.
 
-### Nike (1971)
+## The Phil Knight Memoir
 
-In 1971, Onitsuka relationship ended. Knight launched Nike. Swoosh logo. Waffle Trainer.
+Knight authored "Shoe Dog," a memoir published in 2016, recounting his journey from Oregon runner to global CEO. The book was widely praised for its candid account of the challenges of building a business from scratch. Knight wrote honestly about the financial near-collapses, the deal-making with Japanese partners, and the personal toll of building Nike while raising a family. The memoir became a bestseller and was included in many lists of the best business books of the decade.
 
-### IPO (1980)
+## Leadership Transition and Retirement
 
-In 1980, Nike went public. $2.2B valuation.
+Knight stepped down as CEO in 2004, handing the role to Mark Parker, who had joined Nike in the 1970s as a designer. Knight remained chairman of the board and continued to be deeply involved in company strategy. He maintained an office at Nike's headquarters in Beaverton, Oregon, and attended board meetings regularly. The leadership transition was one of the smoothest in corporate history, reflecting Knight's long-term approach to succession planning.
 
-### 1980s Crisis
+## Oregon Runner and Philanthropy
 
-Nike stumbled. Reebok surged. Knight bet on Michael Jordan. Air Jordan. 1985. Recovery.
+Knight remained connected to his roots as a runner throughout his life. He donated hundreds of millions to the University of Oregon, funding the Jordan Schnitzer Museum of Art, the Knight Campus for the Life Sciences, and the Phil and Penny Knight Campus for Accelerating Scientific Impact. He and his wife Penny contributed to numerous other causes, including Stanford, Portland's art institutions, and cancer research. He was a major donor to the Oregon track program that had shaped his early years.
 
-## 4. THE GRIND — The Invisible Years (The Method)
+## Net Worth and Recognition
 
-Knight's method is defined by running, people business, and no finish line.
-
-### Running
-
-Knight's philosophy: Running is belonging. Make shoes for runners.
-
-### People Business
-
-Knight's philosophy: "We're not in the shoe business. We're in the people business."
-
-### No Finish Line
-
-Knight's philosophy: "Believe me, there is no finish line." Continuous growth.
-
-The invisible years—the years selling from trunk—gave Knight grit. He built Nike.
-
-## 5. THE TEST — THE BREAKTHROUGH MOMENT
-
-$50B+ revenue is the test. Michael Jordan. Air Jordan. People business works.
-
-## 6. THE PHILOSOPHY — Stealable Wisdom
-
-**On Starting:**
-"The cowards never started and the weak died along the way. That leaves you."
-
-**On Finish Lines:**
-"Believe me, there is no finish line."
-
-**On People:**
-"We're not in the shoe business. We're in the people business."
-
-## 7. THE LEGACY — Purpose Beyond Profit + Human Side
-
-Phil Knight is chairman emeritus of Nike. He wrote "Shoe Dog." He gives to philanthropy.
-
-### What does he want to be remembered for?
-
-In interviews, Knight emphasizes the journey. He wants to create something that matters.
-
-## 8. FINAL MOTIVATION & PERSONAL APPLICATION Guide
-
-Phil Knight's career demonstrates that running creates empires.
-
-**5 Actionable Steps This Week:**
-
-1. **Start** — Knight started with $500. Start small.
-
-2. **No finish line** — "No finish line." Continuous growth.
-
-3. **People business** — "We're in the people business." Serve athletes.
-
-4. **Bet on talent** — Michael Jordan. Bet on talent.
-
-5. **Sell from trunk** — Knight sold from his trunk. Hustle.
-
-**The Hard Question:**
-
-If Knight built Nike from selling shoes from his trunk—are you starting or hesitating?
-
-Running creates empires.
-
----
-
-*Profile saved to: /root/Projects/leaders-biography/phil-knight.md*
+Knight's net worth exceeded $30 billion, making him one of the wealthiest people in the United States. Forbes consistently listed him among the richest people on earth. He received the Presidential Medal of Freedom in 2012 from President Obama. Knight was inducted into the Basketball Hall of Fame as a contributor. He remained one of the most respected founders in American business history, credited with building Nike into a brand that transcended sports and became a symbol of culture, ambition, and athletic excellence.

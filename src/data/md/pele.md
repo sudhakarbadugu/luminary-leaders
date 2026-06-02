@@ -1,94 +1,25 @@
-# Pelé — The King of Football with 3 World Cups
+# Pelé
 
-## 1. THE HOOK
+## Early Life and Santos FC
+Edson Arantes do Nascimento, known as Pelé, was born on October 23, 1940, in Três Corações, Minas Gerais, Brazil. The son of a former footballer (Dondinho) and a housewife, Pelé grew up in poverty in the city of Bauru in São Paulo state. He developed his skills playing barefoot in the streets, learning the game that would define his life. He began playing for Santos FC at age 15 in 1956, and within a year had become one of the most exciting players in Brazilian football. Pelé's talent was immediately apparent—his first game for Santos saw him score a hat-trick.
 
-He won 3 FIFA World Cups. 1,283 goals in 1,367 games. He's called "The King of Football." He says: "Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing."
+## Rise to Global Stardom
+Pelé became the youngest player to appear in a FIFA World Cup at age 17 in 1958, helping Brazil win the tournament in Sweden. He scored a remarkable goal in the final against Sweden, chipping the goalkeeper in a moment that announced his arrival to the world. He added another World Cup victory in 1962 (though injury curtailed his participation) and then secured Brazil's third title in 1970, delivering iconic performances in Mexico. Pelé scored 12 goals across his four World Cups and is the youngest goal-scorer in tournament history at 17 years and 249 days.
 
-How does a boy from Três Corações become O Rei?
+## Santos Career and Statistics
+Pelé spent the majority of his career at Santos FC, winning multiple state championships, Copa do Brasil titles, and two Copa Libertadores (1962 and 1963). He scored an official 1,091 goals in 1,116 matches for Santos—though this figure includes friendly matches and is sometimes disputed, the total is remarkable either way. He won the Ballon d'Or three times (1958, 1959, 1970), the only Brazilian to receive the honor until Ronaldo in 1997. Santos became a global attraction, touring internationally and introducing football to new audiences across the world.
 
-## 2. ORIGIN — THE "Before" (The Relatability Engine)
+## New York Cosmos Career
+In 1977, Pelé came to the United States to play for the New York Cosmos in the North American Soccer League. His arrival transformed American soccer's visibility, drawing massive crowds and celebrity attention. At the Cosmos, Pelé played alongside other international stars and helped popularize soccer in a country where American football and basketball dominated. He won the NASL championship in 1977 and retired after the season, ending his playing career on a high note. The Cosmos reportedly paid him $10 million over three years—a record for the time.
 
-Pelé was born October 23, 1940, in Três Corações, Brazil. Died December 29, 2022. Dropped out of school. Played barefoot.
+## Playing Style and Achievements
+Pelé was renowned for his complete game: he could shoot with either foot, head the ball with precision, dribble past multiple defenders, and set up teammates with visionary passing. His "jogo bonito" (beautiful game) style emphasized technique and creativity over physical aggression. He was ambidextrous, possessed exceptional speed, and had an intuitive understanding of positioning and space. His 1,000+ career goals came in official matches and friendlies, and his ability to produce decisive performances in major finals distinguished him from merely prolific goal scorers.
 
-He was running from poverty. He saw football. He wanted to be The King.
+## Beyond Football
+Following his playing career, Pelé served as Brazil's Minister of Sports from 1997 to 2001, working to reform the country's sports policies and infrastructure. He became a global ambassador for football, appearing in films and advertisements and serving as a goodwill ambassador for the United Nations. He continued playing exhibition matches well into his 60s. Pelé was awarded the International Peace Prize and received the honorific title of "Peruanidade" from Peru—a remarkable recognition in a country with deep football rivalries with Brazil.
 
-## 3. THE FIRE — Failures, Rock-Bottom & Turning Points
+## Health and Final Years
+Pelé battled colon cancer, undergoing surgery in 2021. His health declined over the following months, and he was admitted to the hospital multiple times in late 2022 with multiple organ failures. He passed away on December 29, 2022, at age 82, in São Paulo. His death triggered an outpouring of grief in Brazil and worldwide, with tributes from heads of state, football organizations, and millions of fans. He was buried in Santos, the city where his legend began, after a state funeral attended by thousands.
 
-### Santos FC (1956-1974)
-
-Pelé joined Santos at 15. Scored 1,000+ goals.
-
-### 1958 World Cup
-
-Pelé won World Cup at 17. Youngest ever.
-
-### 1962 World Cup
-
-Pelé won World Cup. Injured early. Team won.
-
-### 1970 World Cup
-
-Pelé won World Cup. Greatest team ever.
-
-### New York Cosmos (1975-1977)
-
-Pelé played in NASL. Popularized football in US.
-
-## 4. THE GRIND — The Invisible Years (The Method)
-
-Pelé's method is defined by hard work, love, and sacrifice.
-
-### Hard Work
-
-Pelé's philosophy: "Success is no accident. It is hard work."
-
-### Love
-
-Pelé's philosophy: "Love of what you are doing."
-
-### Sacrifice
-
-Pelé's philosophy: "Perseverance, learning, studying, sacrifice."
-
-## 5. THE TEST — THE BREAKTHROUGH MOMENT
-
-3 World Cups is the test. 1,283 goals. The King.
-
-## 6. THE PHILOSOPHY — Stealable Wisdom
-
-**On Success:**
-"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing."
-
-## 7. THE LEGACY — Purpose Beyond Profit + Human Side
-
-Pelé died in 2022. FIFA Player of the Century. 3 World Cups. Global icon.
-
-### What does he want to be remembered for?
-
-In interviews, Pelé emphasized hard work and love. He wanted to inspire.
-
-## 8. FINAL MOTIVATION & PERSONAL APPLICATION Guide
-
-Pelé's career demonstrates that hard work + love = greatness.
-
-**5 Actionable Steps This Week:**
-
-1. **Work hard** — "Success is hard work." Grind.
-
-2. **Love what you do** — "Love of what you are doing." Passion.
-
-3. **Sacrifice** — Study, sacrifice. Give.
-
-4. **Win 3 World Cups** — Excellence. Win.
-
-5. **Be The King** — Self-belief. Greatness.
-
-**The Hard Question:**
-
-If Pelé succeeded through hard work and love—are you working hard or wishing?
-
-Hard work + love = greatness.
-
----
-
-*Profile saved to: /root/Projects/leaders-biography/pele.md*
+## Legacy and Historical Position
+Pelé's legacy is intertwined with the globalization of football and Brazil's emergence as the sport's dominant nation. He is credited with popularizing the game in non-traditional markets and demonstrating that individual genius could elevate an entire team to legendary status. FIFA named him the "Player of the Century" alongside Diego Maradona, and many analysts consider him the greatest footballer of all time—though Lionel Messi and Cristiano Ronaldo have challenged that view. Pelé himself was gracious about such debates, saying he simply played the game he loved and let others judge. His impact on football's worldwide appeal, and his embodiment of the sport's artistic potential, ensure his place among history's most significant athletes.

@@ -1,35 +1,25 @@
-# Nikola Tesla — Serbian-American inventor
+# Nikola Tesla
 
-## 1. THE HOOK
-He invented AC electricity. He worked for Edison then quit. He died penniless. He says: 'I don't care that they stole my idea, I care that they don't have any of their own.'
+## Early Life and Education
+Nikola Tesla was born on July 10, 1856, in Smiljan, which was then part of the Austrian Empire (now Croatia). His father was an Orthodox priest, and his mother managed the household and invented household appliances in her spare time. Tesla studied engineering at the Austrian Polytechnic in Graz, excelling in mathematics and physics. He later attended the Charles-Ferdinand University in Prague but left before completing his degree, driven by a desire to work on practical electrical innovations rather than pure academic study.
 
-## 2. ORIGIN — THE "Before" (The Relatability Engine)
-Nikola Tesla was born. Serbian-American inventor, AC electricity, wireless transmission
+## Early Career and Edison
+In 1882, Tesla conceived the idea for the induction motor—a device that would use alternating current (AC) rather than direct current (DC). He moved to Budapest, then Paris, working for a telegraph company and later for Thomas Edison's continental operation in Strasbourg. Tesla impressed Edison with his engineering skills and was hired to work in Edison's New York laboratory in 1884. However, the two clashed almost immediately—Edison dismissively dismissed Tesla's ideas about AC power as impractical, leading to an infamous rift that shaped the trajectory of electrical history.
 
-## 3. THE FIRE — Failures, Rock-Bottom & Turning Points
-Nikola Tesla faced failures and turning points.
+## AC Power System
+Tesla quit Edison's employ after a dispute over promised compensation and briefly struggled before finding investors for his AC motor concept. He partnered with industrialist George Westinghouse, whose company licensed Tesla's patents for AC motors and power transmission systems. Tesla's AC system proved superior to Edison's DC system for long-distance transmission, allowing electricity to be generated in remote locations and distributed efficiently to homes and factories. The "War of Currents" ended with Tesla's AC system dominating, a victory that electrification the modern world.
 
-## 4. THE GRIND — The Invisible Years (The Method)
-Nikola Tesla's method focused on vision.
+## Radio and Wardenclyffe Tower
+Tesla's ambitions grew to include wireless transmission of electricity and information. He moved to Colorado Springs in 1899 to conduct experiments, demonstrating wireless electricity and creating artificial lightning. He later envisioned the Wardenclyffe Tower in Shoreham, New York—a massive structure intended to transmit both messages and power wirelessly across the Atlantic. J.P. Morgan financed the project, but Tesla underestimated the commercial challenges and faced mounting debts. The project was never completed, and Morgan withdrew funding, bankrupting Tesla and marking the beginning of his decline.
 
-## 5. THE TEST — THE BREAKTHROUGH MOMENT
-Nikola Tesla's breakthrough defined the legacy.
+## Other Inventions and Contributions
+Tesla registered over 300 patents worldwide and contributed numerous innovations beyond AC power. He developed the Tesla coil, still used in radio and electronics today. He pioneered early X-ray experimentation, though other researchers later claimed priority. He designed an electric oscillator that was briefly marketed as a medical device. Tesla also worked on early electric car concepts, radio-controlled boats, and theoretical approaches to earthquake detection. Many of his ideas remained on the drawing board due to lack of funding or practical impossibility with available technology.
 
-## 6. THE PHILOSOPHY — Stealable Wisdom
-**On Vision:**
-"The present is theirs; the future, for which I really worked, is mine."
+## Later Life and Financial Struggles
+Tesla lived much of his later life in poverty, oscillating between periods of relative comfort and severe debt. He earned modest fees as a consulting engineer but struggled with business acumen and personal habits, including an obsession with pigeons and extreme cleanliness. His dependence on investors and his inability to convert inventions into commercial success left him vulnerable financially. Tesla died alone in Room 3327 of the New Yorker Hotel on January 7, 1943, at age 86, leaving behind an estate of mostly theoretical papers and personal effects.
 
-## 7. THE LEGACY — Purpose Beyond Profit + Human Side
-Nikola Tesla left a lasting impact.
+## Legacy and Recognition
+Tesla's contributions fundamentally shaped the modern electrical world, from AC power to wireless transmission concepts now used in smartphone charging. His reputation suffered during his lifetime due to competition from Edison's public relations campaigns and his own uncompromising personality, but he has since been recognized as one of history's great inventors. The unit of magnetic flux density was named the "tesla" in his honor. Nikola Tesla's legacy represents both the power of scientific imagination and the challenges facing inventors who struggle to commercialize breakthrough ideas.
 
-## 8. FINAL MOTIVATION & Personal APPLICATION Guide
-**5 Actionable Steps This Week:**
-1. Apply the vision philosophy
-2. Learn from Nikola Tesla's method
-3. Persevere through failures
-4. Think long-term
-5. Build something meaningful
-
----
-
-*Profile saved to: /root/Projects/leaders-biography/nikola-tesla.md*
+## Historical Assessment
+Tesla's life illustrates both the brilliance of pure innovation and the difficulty of translating invention into commercial and personal success. His intellectual achievements transformed daily life and laid foundations for technologies from radio to smartphones. Yet he died nearly penniless, his genius recognized more in retrospect than in the moment. Today, Tesla's image appears on stamps, currency, and company logos—and his story endures as a reminder that the line between inventor and visionary often depends on factors beyond the inventor's control.

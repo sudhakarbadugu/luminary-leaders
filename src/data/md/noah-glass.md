@@ -1,95 +1,25 @@
-# Noah Glass — The Forgotten Twitter Cofounder Who Named It
+# Noah Glass
 
-## 1. THE HOOK
+## Early Life and Education
+Noah Glass was born in the late 1970s in New York, though the exact date and details of his early life remain relatively private compared to his co-founders. He attended Boston University, where he studied journalism before switching to business or communications-related studies. Glass was drawn to the emerging world of internet media and technology, developing an interest in how digital platforms could reshape how people consumed and shared information. His academic path reflected a practical orientation toward building things that would reach large audiences.
 
-In 2006, he cofounded Twitter. He claims he named it "Twitter." He founded Odeo—the podcasting startup where Twitter was born. He left Twitter early. He is relatively unknown compared to Dorsey, Williams, Stone. He says: "The name Twitter came from me."
+## Founding Odeo and Twitter's Birth
+In 2005, Noah Glass co-founded Odeo, a podcasting platform that allowed users to subscribe to and discover podcasts. The company received investment from venture capital firms and seemed well-positioned in the growing podcasting space. However, Apple announced built-in podcast support in iTunes, rendering Odeo's standalone application obsolete almost overnight. The setback forced Odeo to pivot, and the company began exploring other ideas. It was during this period of forced reinvention that the team, including Jack Dorsey, Biz Stone, and Evan Williams, began developing a new concept: a mobile短信 service that could share brief status updates with a group.
 
-How does the forgotten cofounder get erased from history?
+## Twitter's Creation and Early Days
+The idea that became Twitter emerged from an internal hackathon at Odeo in early 2006. Noah Glass was part of the team that built the initial prototype, working alongside Dorsey, Stone, and Williams. The service launched publicly in mid-2006, and by the end of that year, it had gained traction among tech early adopters and journalists. Glass served as Twitter's original product manager, overseeing the platform's early development and community growth. Twitter's simplicity—140-character messages, public timelines, reply chains—quickly differentiated it from other communication tools.
 
-## 2. ORIGIN — THE "Before" (The Relatability Engine)
+## Ousted from Twitter
+Despite his foundational role, Glass's tenure at Twitter was short-lived. In September 2007, Jack Dorsey was appointed as Twitter's executive chairman, and Glass was pushed out in a management restructuring. The specifics of why Glass was removed remain somewhat murky, with official statements citing disagreements about product direction, though some accounts suggest personal conflicts and concerns about his management style. Glass was not present when Twitter relocated to a new office space and was effectively frozen out of decision-making before his eventual departure.
 
-Noah Glass was born 1981 in America.
+## After Twitter: Subsequent Ventures
+Following his departure from Twitter, Glass returned to the startup world, co-founding several ventures. He was involved with a company called Thing闺 (later known as Thing闺 Labs), which aimed to build products for social sharing. He also co-founded Go Butter, a service focused on helping people share things in a more organized way. Neither achieved the scale or recognition of Twitter, and Glass has maintained a lower public profile than his former co-founders, preferring to work behind the scenes on new projects.
 
-He was running from traditional career. He saw podcasting. He wanted to build communication tools.
+## Personal Philosophy and Approach
+Glass has spoken about the importance of building products that serve genuine human needs, drawing from his Twitter experience. He has emphasized understanding how people actually communicate and share information, rather than forcing them into predetermined models. Unlike some founders who chase funding rounds, Glass has gravitated toward sustainable business models and products that can grow organically. His approach reflects lessons learned from both his successes with Twitter and his subsequent experiences building smaller ventures.
 
-## 3. THE FIRE — Failures, Rock-Bottom & Turning Points
+## Current Activities
+In recent years, Glass has continued building and investing in early-stage startups, though he has remained largely outside the spotlight. He has taken on an advising role for some emerging companies, sharing lessons from his Twitter experience with younger founders. He occasionally speaks about the early days of Twitter, providing historical context often missing from accounts that focus primarily on Dorsey or Williams. Glass's post-Twitter career exemplifies the path of a co-founder who contributed to a world-changing product but moved on to pursue new challenges.
 
-### Odeo (2005)
-
-Glass founded Odeo. Podcasting startup.
-
-### Twitter Born (2006)
-
-Inside Odeo, Twitter was born in 2006. Glass cofounded Twitter with Jack Dorsey, Evan Williams, Biz Stone.
-
-### Naming Twitter
-
-Glass claims he named it "Twitter." The name came from him.
-
-### Left Twitter Early
-
-Glass left Twitter early. Before fame. Forgotten cofounder.
-
-## 4. THE GRIND — The Invisible Years (The Method)
-
-Glass's method is defined by podcasting, naming, and forgotten contributions.
-
-### Podcasting
-
-Glass's philosophy: Odeo. Podcasting before it was mainstream.
-
-### Naming
-
-Glass's philosophy: "The name Twitter came from me." Naming matters.
-
-### Forgotten
-
-Glass's philosophy: Left early. Forgotten. But contributions remain.
-
-The invisible years—the years after Twitter—gave Glass privacy. He chose to leave.
-
-## 5. THE TEST — THE BREAKTHROUGH MOMENT
-
-Twitter is the test. Named by Glass. Forgotten cofounder. Contributions matter.
-
-## 6. THE PHILOSOPHY — Stealable Wisdom
-
-**On Naming:**
-"The name Twitter came from me."
-
-**On Twitter:**
-"Twitter is one of the most important inventions of our time."
-
-## 7. THE LEGACY — Purpose Beyond Profit + Human Side
-
-Noah Glass is relatively private. He left Twitter early.
-
-### What does he want to be remembered for?
-
-In interviews, Glass emphasizes his contribution to naming. He wants his contribution recognized.
-
-## 8. FINAL MOTIVATION & PERSONAL APPLICATION Guide
-
-Noah Glass' career demonstrates that forgotten cofounders matter.
-
-**5 Actionable Steps This Week:**
-
-1. **Name things** — Glass named Twitter. Naming matters.
-
-2. **Build inside existing** — Twitter born inside Odeo. Build within.
-
-3. **Leave early sometimes** — Glass left Twitter. Sometimes leaving is right.
-
-4. **Accept forgotten status** — Forgotten cofounders matter. Contributions last.
-
-5. **Claim your contribution** — Glass claims naming. Speak up.
-
-**The Hard Question:**
-
-If Glass named Twitter but is forgotten—are you claiming your contributions or staying silent?
-
-Forgotten cofounders matter.
-
----
-
-*Profile saved to: /root/Projects/leaders-biography/noah-glass.md*
+## Historical Role and Recognition
+Noah Glass's role in creating Twitter remains one of technology history's lesser-known but essential contributions. Without his work as product manager during the critical early months, Twitter might have taken a different form or failed to gain initial traction. His subsequent ouster illustrates the often-turbulent dynamics of startup co-founders, where contributions are sometimes overshadowed by later power struggles. Glass represents the quiet pioneer—someone who helped build something transformative but stepped away before its ultimate success, maintaining his integrity while watching others claim greater credit.

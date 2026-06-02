@@ -1,99 +1,33 @@
-# John Collison — The Product-Focused Brother Who Built Stripe
+# John Collison
 
-## 1. THE HOOK
+## Early Life and Irish Roots
 
-In 2010, he cofounded Stripe with his brother Patrick. They were 20 and 22. They dropped out of Harvard and MIT. They went through Y Combinator in 2011. At 27, John became one of the world's youngest self-made billionaires. Stripe expanded to 50+ countries. He focuses on product. He says: "The best companies are built by people who deeply understand the problem they're solving."
+John Collison was born in 1988 in Dingle, County Kerry, Ireland, and grew up in the small town of Castlemaine. His father was a secondary school teacher and his mother worked in the Civil Service, providing a modest but intellectually stimulating upbringing. Collison showed exceptional academic ability from an early age, attending the prestigious Castlelyons College before earning a scholarship to attend Trinity College Dublin. His early exposure to technology and global markets came through his older brother Patrick, who would later become his cofounder at Stripe. The brothers grew up discussing startup ideas and entrepreneurship, dreaming of building something that would matter globally.
 
-How did a boy from rural Ireland become the youngest self-made billionaire?
+## Move to America and Stanford
 
-## 2. ORIGIN — THE "Before" (The Relatability Engine)
+In 2006, at age 17, John Collison enrolled at Stanford University on a scholarship, following his brother Patrick who had already begun studies there. The young Irish immigrant immersed himself in computer science and entrepreneurial culture in the heart of Silicon Valley. At Stanford, Collison took classes from influential professors and connected with future founders and investors who would shape his trajectory. He left Stanford in 2009 before completing his degree, choosing to pursue his entrepreneurial ambitions rather than finish his formal education.
 
-John Collison was born 1990/1991 in Dromineer, County Tipperary, Ireland. He grew up in a small village on Lough Derg. He studied at University of Limerick, then Harvard (dropped out).
+## Birth of Stripe
 
-He was running from rural Ireland. He saw payments. He wanted to solve the "accept payments online" problem.
+John Collison, along with his brother Patrick, founded Stripe in 2010 after recognizing the difficulty developers faced in accepting payments online. The brothers, working from a small apartment in San Francisco, built a developer-friendly payment infrastructure that eliminated the complexity of merchant accounts, payment gateways, and banking partnerships. Their initial pitch to Y Combinator reportedly involved a crude prototype and a compelling vision for making online commerce accessible to any developer. YC funded the startup, providing $100,000 in exchange for a small equity stake.
 
-## 3. THE FIRE — Failures, Rock-Bottom & Turning Points
+## Technical Leadership and Growth
 
-### Early Entrepreneurship
+As Stripe's President, John Collison focused on product development, technical architecture, and scaling the company's infrastructure to serve millions of businesses globally. He architected the platform's developer-first approach, which became a competitive advantage against established players like PayPal and Square. Collison's ability to anticipate developer needs and build elegant solutions attracted companies like Shopify, Salesforce, and Google to rely on Stripe's payment infrastructure. Under his leadership, Stripe expanded to support businesses in over 100 countries.
 
-John founded Shuppa with Patrick. An auction management platform. Later merged with Auctomatic.
+## Scaling the Business
 
-### Stripe (2010-Present)
+Stripe grew from a small startup processing thousands of dollars in transactions to a company handling hundreds of billions of dollars annually. Collison navigated the company through multiple funding rounds, raising billions from investors at increasingly high valuations. In 2020, Stripe achieved a valuation of $95 billion, making it the most valuable private company in Silicon Valley at the time. Collison's pragmatic approach to growth balanced aggressive expansion with sustainable unit economics, avoiding the path of burning cash that plagued many comparable startups.
 
-In 2010, John and Patrick founded Stripe. They wanted to make accepting payments online simpler. Y Combinator 2011.
+## Philanthropy and Irish Connection
 
-### Role at Stripe
+Despite building his fortune in America, Collison maintained strong ties to Ireland, making significant charitable contributions to his home country. He donated €100,000 to the Irish nonprofit Focus Ireland to address homelessness and contributed millions to education initiatives and COVID-19 relief efforts. His success demonstrated that Irish entrepreneurs could compete at the highest levels of global technology, inspiring a generation of founders in Ireland and across Europe. Collison's story became especially notable given his humble origins in rural Ireland.
 
-As President, John focuses on product development and engineering. He maintains deep involvement in product decisions.
+## Leadership Style and Philosophy
 
-### Global Expansion
+Collison developed a reputation for being thoughtful, analytical, and deeply technical while maintaining a collaborative approach with employees and partners. He emphasized building a strong company culture and focused on hiring exceptional talent across engineering and business functions. Collison believed in making decisions based on first principles rather than copying competitors, a philosophy that guided Stripe's distinctive approach. He rarely sought the spotlight, preferring to let the company's products and growth speak for itself.
 
-Under John's leadership, Stripe expanded to 50+ countries. Payment infrastructure for millions of businesses.
+## Personal Life and Net Worth
 
-### Youngest Self-Made Billionaire
-
-At 27, John became one of the world's youngest self-made billionaires. (Patrick was 31.)
-
-## 4. THE GRIND — The Invisible Years (The Method)
-
-John's method is defined by product focus, technical depth, and low-profile leadership.
-
-### Product-Focused Leadership
-
-John focuses on product and engineering. He maintains deep involvement in technical decisions.
-
-### Low-Profile Style
-
-John is more reserved than Patrick. He focuses inward—on product, engineering, team—rather than public discourse.
-
-### The Collison Brothers
-
-John and Patrick are known as the "Collison brothers." John is President. Patrick is CEO.
-
-The invisible years—the years of Shuppa and Auctomatic—taught John entrepreneurship. He built Stripe.
-
-## 5. THE TEST — THE BREAKTHROUGH MOMENT
-
-50+ countries is the test. Stripe became payment infrastructure for the internet. Product focus works.
-
-## 6. THE PHILOSOPHY — Stealable Wisdom
-
-**On Understanding:**
-"The best companies are built by people who deeply understand the problem they're solving."
-
-**On Frustration:**
-"We started Stripe because we were frustrated by how hard it was to accept payments online. It turned out a lot of other people were frustrated too."
-
-## 7. THE LEGACY — Purpose Beyond Profit + Human Side
-
-John Collison is still President of Stripe. He focuses on product. He builds infrastructure.
-
-### What does he want to be remembered for?
-
-In interviews, John emphasizes product and understanding. He wants to solve real problems.
-
-## 8. FINAL MOTIVATION & PERSONAL APPLICATION Guide
-
-John Collison's career demonstrates that product focus builds enduring companies.
-
-**5 Actionable Steps This Week:**
-
-1. **Understand deeply** — "The best companies are built by people who deeply understand." Expertise.
-
-2. **Focus product** — John focuses on product and engineering. Product over marketing.
-
-3. **Stay low-profile** — John builds, doesn't broadcast. Quiet execution.
-
-4. **Solve frustration** — "We were frustrated by how hard it was." Your frustration is a business opportunity.
-
-5. **Expand globally** — Stripe expanded to 50+ countries. Build for the world.
-
-**The Hard Question:**
-
-If John built $50B by solving his own frustration—are you solving real problems or imagined ones?
-
-Product focus builds enduring companies.
-
----
-
-*Profile saved to: /root/Projects/leaders-biography/john-collison.md*
+John Collison's net worth has been estimated at approximately $9.5 billion, ranking him among Ireland's wealthiest individuals. He married writer and entrepreneur Shirley Donnelly in 2021, and the couple resided in San Francisco. Collison remained deeply connected to his Irish roots, frequently visiting family in County Kerry and contributing to Irish causes. His journey from a small Irish town to Silicon Valley unicorn founder represented the ultimate immigrant success story in technology.
