@@ -98,5 +98,3 @@ If Fenton generates multiple $1 billion exits with low ego—are you helping fou
 Low ego and founder focus create returns.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/peter-fenton.md*

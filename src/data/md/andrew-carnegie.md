@@ -123,5 +123,3 @@ Carnegie built a fortune and gave it away. His life proves wealth is a tool, not
 Carnegie said the man who dies rich dies disgraced. How much is enough—and what will you do with the rest?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/andrew-carnegie.md*

@@ -94,5 +94,3 @@ If Feld built Techstars on giving—are you taking or giving?
 Giving first creates ecosystems.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/brad-feld.md*

@@ -118,5 +118,3 @@ If Brown made vulnerability a strength—are you numbing or embracing?
 Research transforms leadership.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/brene-brown.md*

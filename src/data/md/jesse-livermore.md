@@ -121,5 +121,3 @@ If the greatest trader of his era could make and lose multiple fortunes because 
 The rules are easy. Following them is hard.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/jesse-livermore.md*

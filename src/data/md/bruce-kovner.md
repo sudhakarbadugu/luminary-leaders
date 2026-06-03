@@ -114,5 +114,3 @@ If the smartest trader lost his first $3,000 and learned to manage risk—what l
 The market transfers wealth from the impatient to the patient.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/bruce-kovner.md*

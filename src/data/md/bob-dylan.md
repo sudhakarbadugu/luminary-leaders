@@ -96,5 +96,3 @@ He was discovered by Columbia Records producer John Hammond, who signed him to a
 Dylan has been relevant for 60 years because he kept evolving. What would you do if you committed to constant reinvention? What would you be willing to sacrifice for your art?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/bob-dylan.md*

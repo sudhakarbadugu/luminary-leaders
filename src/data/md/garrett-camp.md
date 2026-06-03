@@ -98,5 +98,3 @@ If Camp created two breakthrough companies—are you solving interesting problem
 Solving interesting problems creates value.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/garrett-camp.md*

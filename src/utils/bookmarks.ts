@@ -1,5 +1,5 @@
 export interface Bookmark {
-  id: number;
+  id: string;
   category: 'leader' | 'trader' | 'athlete' | 'cricketer' | 'scientist';
   name: string;
   nickname: string;
@@ -25,12 +25,12 @@ export function getBookmarks(): Bookmark[] {
   return load().sort((a, b) => b.addedAt - a.addedAt);
 }
 
-export function isBookmarked(id: number, category: Bookmark['category']): boolean {
+export function isBookmarked(id: string, category: Bookmark['category']): boolean {
   return load().some(b => b.id === id && b.category === category);
 }
 
 export function toggleBookmark(
-  id: number,
+  id: string,
   category: Bookmark['category'],
   name: string,
   nickname: string
@@ -48,7 +48,7 @@ export function toggleBookmark(
   }
 }
 
-export function removeBookmark(id: number, category: Bookmark['category']) {
+export function removeBookmark(id: string, category: Bookmark['category']) {
   const list = load().filter(b => !(b.id === id && b.category === category));
   save(list);
 }

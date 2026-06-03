@@ -109,5 +109,3 @@ If Hastings destroyed Blockbuster with culture—are you tolerating brilliant je
 Culture disrupts industries.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/reed-hastings.md*

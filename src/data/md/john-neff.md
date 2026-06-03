@@ -98,5 +98,3 @@ If Neff beat the S&P for 31 of 35 years by buying unloved sectors—are you chas
 Discipline beats genius.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/john-neff.md*

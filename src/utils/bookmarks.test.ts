@@ -11,29 +11,29 @@ describe('bookmarks utils', () => {
   });
 
   it('adds and retrieves bookmarks', () => {
-    toggleBookmark(1, 'leader', 'Test Leader', 'TL');
+    toggleBookmark('test-leader', 'leader', 'Test Leader', 'TL');
     const bookmarks = getBookmarks();
     expect(bookmarks).toHaveLength(1);
-    expect(bookmarks[0].id).toBe(1);
+    expect(bookmarks[0].id).toBe('test-leader');
     expect(bookmarks[0].category).toBe('leader');
   });
 
   it('checks if an item is bookmarked', () => {
-    toggleBookmark(1, 'leader', 'Test Leader', 'TL');
-    expect(isBookmarked(1, 'leader')).toBe(true);
-    expect(isBookmarked(2, 'leader')).toBe(false);
+    toggleBookmark('test-leader', 'leader', 'Test Leader', 'TL');
+    expect(isBookmarked('test-leader', 'leader')).toBe(true);
+    expect(isBookmarked('other-leader', 'leader')).toBe(false);
   });
 
   it('removes a bookmark', () => {
-    toggleBookmark(1, 'leader', 'Test Leader', 'TL');
-    removeBookmark(1, 'leader');
+    toggleBookmark('test-leader', 'leader', 'Test Leader', 'TL');
+    removeBookmark('test-leader', 'leader');
     expect(getBookmarks()).toEqual([]);
   });
 
   it('toggles bookmarks off via toggle', () => {
-    toggleBookmark(1, 'leader', 'Test Leader', 'TL');
-    expect(isBookmarked(1, 'leader')).toBe(true);
-    toggleBookmark(1, 'leader', 'Test Leader', 'TL');
-    expect(isBookmarked(1, 'leader')).toBe(false);
+    toggleBookmark('test-leader', 'leader', 'Test Leader', 'TL');
+    expect(isBookmarked('test-leader', 'leader')).toBe(true);
+    toggleBookmark('test-leader', 'leader', 'Test Leader', 'TL');
+    expect(isBookmarked('test-leader', 'leader')).toBe(false);
   });
 });

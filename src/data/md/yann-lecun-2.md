@@ -34,5 +34,3 @@ LeCun is known for being unusually candid in public debates about AI—particula
 5. **Be the person who says the contrarian thing in the room.** LeCun was dismissed for 30 years and was right.
 
 **The Hard Question:** What idea are you committed to that the mainstream dismisses?
-
-*Profile saved to: /root/Projects/leaders-biography/yann-lecun-2.md*

@@ -1,5 +1,5 @@
 export interface CompareItem {
-  id: number;
+  id: string;
   name: string;
   nickname: string;
   category: 'leader' | 'trader' | 'athlete' | 'cricketer' | 'scientist';
@@ -29,7 +29,7 @@ export function getCompareItems(): CompareItem[] {
   return load();
 }
 
-export function isInCompare(id: number, category: CompareItem['category']): boolean {
+export function isInCompare(id: string, category: CompareItem['category']): boolean {
   return load().some(item => item.id === id && item.category === category);
 }
 

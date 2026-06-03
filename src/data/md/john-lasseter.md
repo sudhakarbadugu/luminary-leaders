@@ -106,5 +106,3 @@ If Lasseter built Pixar after getting fired—are you letting setbacks stop you?
 Storytelling beats technology.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/john-lasseter.md*

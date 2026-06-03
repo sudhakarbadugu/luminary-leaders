@@ -112,5 +112,3 @@ If a man turned $400 into $5 billion by buying right and holding tight—what ar
 The profit is in the holding.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/rakesh-jhunjhunwala.md*

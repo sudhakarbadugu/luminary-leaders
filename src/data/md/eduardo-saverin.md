@@ -99,5 +99,3 @@ If Saverin recovered from share dilution—are you fighting for your equity?
 Cofounders can recover from dilution.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/eduardo-saverin.md*

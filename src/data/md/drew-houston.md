@@ -128,5 +128,3 @@ If a student who kept forgetting his USB drive could build a $10 billion company
 The best businesses come from personal pain. The pain is the signal.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/drew-houston.md*

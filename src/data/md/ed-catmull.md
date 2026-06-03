@@ -102,5 +102,3 @@ If Catmull built Pixar on creativity—are you protecting your creative teams?
 Process enables creativity.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/ed-catmull.md*

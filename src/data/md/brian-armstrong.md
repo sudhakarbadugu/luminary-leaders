@@ -98,5 +98,3 @@ If Armstrong took crypto mainstream—are you building for the future?
 Regulated exchanges mainstream crypto.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/brian-armstrong.md*

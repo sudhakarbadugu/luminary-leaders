@@ -131,5 +131,3 @@ Ortega built a fashion empire by controlling everything and staying invisible.
 Ortega built Zara without advertising. What would you build if you couldn't market it—and had to let the product speak for itself?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/amancio-ortega.md*

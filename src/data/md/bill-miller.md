@@ -102,5 +102,3 @@ If Miller beat the S&P 500 for 15 consecutive years but lost 65% in 2008—what 
 Value is what will be worth more in the future.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/bill-miller.md*

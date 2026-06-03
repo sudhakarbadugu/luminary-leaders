@@ -40,4 +40,3 @@ Java became the foundation for enterprise software, Android apps, web applicatio
 5. Spend two hours learning a technology outside your comfort zone this week
 
 ---
-*Profile saved to: /root/Projects/leaders-biography/james-gosling.md*

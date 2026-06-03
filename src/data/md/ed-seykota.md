@@ -104,5 +104,3 @@ If Seykota says everyone gets what they want from the market—what do you want?
 Excitement leads to losses. Discipline leads to profits. Choose.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/ed-seykota.md*

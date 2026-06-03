@@ -138,5 +138,3 @@ When was the last time you sized a position to your actual conviction, rather th
 If the answer is "never" or "a long time ago," your problem may not be your trading strategy. It may be your preparation.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/andy-krieger.md*

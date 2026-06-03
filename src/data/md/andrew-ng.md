@@ -98,5 +98,3 @@ If Ng democratized AI education—are you hoarding knowledge or sharing it?
 Education democratizes technology.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/andrew-ng.md*

@@ -101,5 +101,3 @@ If Munger avoided stupidity for 45 years—are you avoiding stupidity or chasing
 Inversion avoids failure.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/charlie-munger.md*

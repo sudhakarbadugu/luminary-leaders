@@ -140,5 +140,3 @@ If your brand or your team was evaluated solely on the consistency of experience
 If not, the problem is not your marketing. It is your operations.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/angela-ahrendts.md*

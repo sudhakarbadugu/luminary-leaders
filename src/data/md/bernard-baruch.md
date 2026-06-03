@@ -110,5 +110,3 @@ If Baruch made his money by selling too soon—what position are you holding tha
 The key is not to make money. The key is to preserve it.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/bernard-baruch.md*

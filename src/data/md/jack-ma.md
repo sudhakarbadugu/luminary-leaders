@@ -40,4 +40,3 @@ Jack Ma's Alibaba created over 10 million jobs globally and transformed Chinese 
 5. Write down your biggest failure this year and what lessons it taught you, then share it with someone who needs encouragement
 
 ---
-*Profile saved to: /root/Projects/leaders-biography/jack-ma.md*

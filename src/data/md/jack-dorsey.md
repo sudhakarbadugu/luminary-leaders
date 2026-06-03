@@ -102,5 +102,3 @@ If Dorsey was fired twice and came back—are you giving up or returning?
 Firing is not the end.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/jack-dorsey.md*

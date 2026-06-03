@@ -106,5 +106,3 @@ If a dancer with telegram updates made $2 million—what system do you need to d
 You do not need to be a professional. You need a system and discipline.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/nicolas-darvas.md*

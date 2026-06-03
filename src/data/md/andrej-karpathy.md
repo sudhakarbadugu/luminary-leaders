@@ -127,5 +127,3 @@ Karpathy learned AI by building from scratch. His life proves that deep understa
 Karpathy says the most important skill is learning how to learn. How are you developing this skill—and teaching it to others?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/andrej-karpathy.md*

@@ -40,4 +40,3 @@ NVIDIA has become the intellectual infrastructure of the modern AI era, powering
 5. Invest 2 hours in learning a new programming language or technical skill outside your specialty
 
 ---
-*Profile saved to: /root/Projects/leaders-biography/jensen-huang-2.md*

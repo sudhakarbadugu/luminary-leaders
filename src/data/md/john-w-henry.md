@@ -110,5 +110,3 @@ If a trend-following trader could break an 86-year curse by applying data analys
 The framework applies everywhere.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/john-w-henry.md*

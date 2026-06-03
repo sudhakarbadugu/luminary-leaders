@@ -102,5 +102,3 @@ If Chesky built Airbnb on trust—are you designing for love or scale?
 Design thinking disrupts industries.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/brian-chesky.md*

@@ -34,5 +34,3 @@ McCollum is one of the few venture capitalists who has seen both sides of the fo
 5. **Follow the data that surprises you.** McCollum's best investments came from following anomalies, not patterns.
 
 **The Hard Question:** What problem are you obsessed with that most people don't even notice exists?
-
-*Profile saved to: /root/Projects/leaders-biography/andrew-mccollum.md*

@@ -98,5 +98,3 @@ If software is eating the world—what industry are you ignoring?
 Software eats every industry.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/marc-andreessen.md*

@@ -110,5 +110,3 @@ If Sinek made "why" the most important—are you starting with what or why?
 "Why" inspires.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/simon-sinek.md*

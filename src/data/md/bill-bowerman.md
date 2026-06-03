@@ -102,5 +102,3 @@ If Bowerman revolutionized footwear as a coach—are you coaching or just compet
 Coaches can revolutionize industries.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/bill-bowerman.md*

@@ -36,5 +36,3 @@ Maurya scaled his blog and methodology into a company called 10xers (originally 
 5. **Distinguish problem validity from solution validity.** A great solution to a non-problem is worthless. Make sure the problem is real first.
 
 **The Hard Question:** If your current product didn't exist, how would your target customer solve their problem today?
-
-*Profile saved to: /root/Projects/leaders-biography/ash-maurya.md*

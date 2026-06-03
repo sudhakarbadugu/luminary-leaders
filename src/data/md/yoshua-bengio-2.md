@@ -34,5 +34,3 @@ Bengio has co-authored over 300 papers, with a cumulative citation count exceedi
 5. **Stay in academia when industry beckons.** Bengio's academic freedom allowed him to work on long-term problems that industry couldn't justify.
 
 **The Hard Question:** What problem are you willing to work on for 20 years without validation?
-
-*Profile saved to: /root/Projects/leaders-biography/yoshua-bengio-2.md*

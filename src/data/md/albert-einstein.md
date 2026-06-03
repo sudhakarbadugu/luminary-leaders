@@ -128,5 +128,3 @@ Einstein's life proves that imagination beats knowledge.
 Einstein said imagination is more important than knowledge. What are you imagining—and what are you just memorizing?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/albert-einstein.md*

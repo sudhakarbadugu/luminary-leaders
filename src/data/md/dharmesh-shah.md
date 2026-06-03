@@ -98,5 +98,3 @@ If Shah built startup wisdom into HubSpot—are you sharing your lessons or hoar
 Sharing wisdom scales impact.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/dharmesh-shah.md*

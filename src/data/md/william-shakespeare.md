@@ -34,5 +34,3 @@ Shakespeare died April 23, 1616—his 52nd birthday—and was buried beneath the
 5. **Define your own epitaph.** What do you want to leave behind? Write it. Live accordingly.
 
 **The Hard Question:** What are you building that will outlast you?
-
-*Profile saved to: /root/Projects/leaders-biography/william-shakespeare.md*

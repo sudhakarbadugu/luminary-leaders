@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router';
+import { useParams, useNavigate } from 'react-router-dom';
 import { cricketers, cricketerBioData } from '../data';
 import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, Globe, Quote, Award, Target } from 'lucide-react';
@@ -10,6 +10,7 @@ import PrintButton from '../components/PrintButton';
 import gsap from 'gsap';
 import { getReadingTime } from '../utils/readingTime';
 import AudioNarration from '../components/AudioNarration';
+import MarkdownText from '../components/MarkdownText';
 
 import { getGradient, TRADER_GRADIENT_COLORS } from '../utils/visual';
 
@@ -17,7 +18,7 @@ export default function CricketPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const contentRef = useRef<HTMLDivElement>(null);
-  const cricketerId = parseInt(id || '1');
+  const cricketerId = id || '';
   const cricketer = cricketers.find(c => c.id === cricketerId);
   const tsBio = cricketerBioData[cricketerId];
 
@@ -117,7 +118,7 @@ export default function CricketPage() {
              <AudioNarration text={fullBioText} title={`Listen to ${cricketer.name}'s story`} />
 
            {bio.bio.split('\n\n').map((paragraph, i) => (
-          <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 0 : 28 }}>{paragraph}</p>
+          <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 0 : 28 }}><MarkdownText text={paragraph} /></p>
         ))}
 
         {/* Key Achievements */}
@@ -142,7 +143,7 @@ export default function CricketPage() {
             {(bio.quotes ?? []).map((quote, i) => (
               <div key={i} style={{ background: '#282b2f', borderRadius: 12, padding: '28px 32px', marginBottom: 12, position: 'relative' }}>
                 <Quote size={20} style={{ color: '#ffcc00', position: 'absolute', top: 16, left: 16, opacity: 0.3 }} />
-                <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: '#f1f1ee', lineHeight: 1.6, fontStyle: 'italic', marginLeft: 24 }}>{quote}</p>
+                <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: '#f1f1ee', lineHeight: 1.6, fontStyle: 'italic', marginLeft: 24 }}><MarkdownText text={quote} /></p>
               </div>
             ))}
           </div>

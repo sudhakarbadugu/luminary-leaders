@@ -103,5 +103,3 @@ If Schwarzman built a $1 trillion empire from $400,000—what scale are you aimi
 Ambition creates empires.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/stephen-schwarzman.md*

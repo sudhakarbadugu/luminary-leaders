@@ -10,7 +10,7 @@ export interface BlogArticle {
   coverGradient: [string, string];
   excerpt: string;
   content: string[];
-  featuredLeaderId: number;
+  featuredLeaderId: string;
   tags: string[];
 }
 
@@ -25,7 +25,7 @@ export const blogArticles: BlogArticle[] = [
     readTime: '18 min read',
     category: 'Deep Dive',
     coverGradient: ['#1a1a2e', '#16213e'],
-    featuredLeaderId: 11,
+    featuredLeaderId: "steve-jobs",
     excerpt: 'Steven Paul Jobs was given up for adoption as an infant, dropped out of college after one semester, was fired from the company he founded, and battled a rare form of pancreatic cancer for nearly a decade. Yet he became the most iconic technology leader in history, transforming personal computers, animated movies, music, phones, tablet computing, and digital publishing.',
     content: [
       'Steven Paul Jobs was born on February 24, 1955, in San Francisco to Abdulfattah Jandali, a Syrian graduate student, and Joanne Schieble, an American undergraduate. Unwed and facing intense social pressure, they gave their son up for adoption. Paul and Clara Jobs, a working-class couple from Mountain View, California, adopted him and gave him their name. Paul was a machinist who restored cars; Clara was an accountant. They promised Joanne that their son would attend college, a promise that would ironically lead to one of history\'s most famous dropout stories.',
@@ -57,7 +57,7 @@ export const blogArticles: BlogArticle[] = [
     readTime: '15 min read',
     category: 'Trailblazer',
     coverGradient: ['#2c3e50', '#34495e'],
-    featuredLeaderId: 3,
+    featuredLeaderId: "grace-hopper",
     excerpt: 'In 1943, Grace Hopper was told she was too old and too thin to serve her country. She was 34, weighed 105 pounds, and had a Ph.D. in mathematics from Yale. The Navy needed her mind, but regulations said no. Grace Hopper did not accept no.',
     content: [
       'Grace Brewster Murray was born on December 9, 1906, in New York City. Her father, Walter Fletcher Murray, was an insurance executive. Her mother, Mary Campbell Van Horne, had a passion for mathematics that she quietly passed to her daughter. Young Grace was irrepressibly curious. At age seven, she decided to understand how alarm clocks worked. She dismantled every clock in the house. By the time her mother discovered the collection of springs and gears spread across the floor, Grace had taken apart seven clocks. Her mother limited her to one clock thereafter, but the lesson was clear: Grace Hopper would spend her life taking things apart to understand them, then putting them back together better than before.',
@@ -87,7 +87,7 @@ export const blogArticles: BlogArticle[] = [
     readTime: '16 min read',
     category: 'Founder Story',
     coverGradient: ['#0f2027', '#203a43'],
-    featuredLeaderId: 45,
+    featuredLeaderId: "jensen-huang",
     excerpt: 'Jensen Huang arrived in America at age nine, sent by parents who didn\'t speak English to live with relatives who didn\'t want him. Thirty years later, he was co-founding NVIDIA in a booth at a Denny\'s in San Jose. Another thirty years after that, NVIDIA became the most valuable company in the world, powering the artificial intelligence revolution.',
     content: [
       'Jen-Hsun Huang was born on February 17, 1963, in Tainan City, Taiwan. His father was a chemical engineer, his mother a teacher. When Jensen was nine years old, his parents made an extraordinary decision: they sent him and his older brother to the United States to attend school in a country where they had no relatives willing to take them in. They eventually found a boarding school in rural Kentucky for troubled boys. The headmaster assumed Huang\'s parents had made a mistake. They had not.',
@@ -118,7 +118,7 @@ export const blogArticles: BlogArticle[] = [
     readTime: '20 min read',
     category: 'Deep Dive',
     coverGradient: ['#1c2833', '#2e4053'],
-    featuredLeaderId: 2,
+    featuredLeaderId: "alan-turing",
     excerpt: 'In the spring of 1954, Alan Turing ate an apple he had dipped in cyanide. He was 41 years old. The British government, which he had saved from Nazi Germany, had destroyed him for being gay. It would take nearly sixty years for his country to apologize.',
     content: [
       'Alan Mathison Turing was born on June 23, 1912, in Maida Vale, London. His father, Julius Mathison Turing, was a member of the Indian Civil Service, stationed in India. His mother, Ethel Sara Stoney, came from an Anglo-Irish family of engineers and scientists. Alan and his older brother John were raised by family friends in various English seaside towns while their parents were in India. Young Alan was a solitary child who taught himself to read in three weeks and showed an early fascination with numbers, chemistry, and biology.',

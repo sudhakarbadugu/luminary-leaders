@@ -144,5 +144,3 @@ If a college dropout who couldn't get into film school could build a billion-dol
 The tools are cheaper. The knowledge is free. The only variable that changed is your willingness to start.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/aaron-levie.md*

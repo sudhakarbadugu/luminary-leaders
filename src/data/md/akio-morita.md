@@ -113,5 +113,3 @@ Morita built Sony from nothing by combining quality obsession with consumer unde
 Morita said machines are rational but people require compromise. Are you treating your team as rational systems—or understanding their human needs?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/akio-morita.md*

@@ -152,5 +152,3 @@ If the twins had taken their $65 million settlement and put it in a diversified 
 Conviction is not certainty. Conviction is the willingness to act on what you believe.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/cameron-winklevoss.md*

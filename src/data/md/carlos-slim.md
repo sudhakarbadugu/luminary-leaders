@@ -82,4 +82,3 @@ Slim's monopolistic telecommunications practices in Mexico have been estimated t
 
 ---
 
-*Profile saved to: /root/Projects/leaders-biography/carlos-slim.md*

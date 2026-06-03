@@ -103,5 +103,3 @@ If the Pit Bull knew where he was getting out before he entered—do you?
 Define your stop-loss before you buy.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/marty-schwartz.md*

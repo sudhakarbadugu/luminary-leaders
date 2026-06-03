@@ -102,5 +102,3 @@ If Dennis published his rules and no one followed them—what rules do you know 
 The secret is not the rules. The secret is the discipline.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/richard-dennis.md*

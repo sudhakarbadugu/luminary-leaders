@@ -40,4 +40,3 @@ Clear has fundamentally changed how modern society thinks about self-improvement
 5. Track your habits using a simple check-in system, reviewing weekly to identify patterns
 
 ---
-*Profile saved to: /root/Projects/leaders-biography/james-clear.md*

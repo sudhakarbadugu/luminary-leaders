@@ -114,5 +114,3 @@ If the trader who made $100 million on Black Monday was prepared for multiple sc
 Preparation is cheaper than prediction.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/paul-tudor-jones.md*

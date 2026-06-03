@@ -102,5 +102,3 @@ If Bogle saved trillions by minimizing costs—what are you paying in fees?
 Costs matter more than brilliance.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/john-bogle.md*

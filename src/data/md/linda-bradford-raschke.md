@@ -102,5 +102,3 @@ If Raschke made consistent profits for 20+ years without blowing up—are you sw
 Consistency beats home runs.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/linda-bradford-raschke.md*

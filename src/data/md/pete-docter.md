@@ -99,5 +99,3 @@ If Docter built Pixar on emotion—are you moving drawings or moving audiences?
 Emotion moves audiences.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/pete-docter.md*

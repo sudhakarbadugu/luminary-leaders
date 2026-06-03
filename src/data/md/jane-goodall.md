@@ -40,4 +40,3 @@ Goodall founded the Jane Goodall Institute in 1977, which now operates conservat
 5. Write a letter to a decision-maker about an environmental issue you care about
 
 ---
-*Profile saved to: /root/Projects/leaders-biography/jane-goodall.md*

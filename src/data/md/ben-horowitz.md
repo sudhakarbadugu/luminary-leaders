@@ -98,5 +98,3 @@ If Horowitz survived the dot-com crash—what hard thing are you avoiding?
 Surviving hard things creates wisdom.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/ben-horowitz.md*

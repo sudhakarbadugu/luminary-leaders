@@ -40,4 +40,3 @@ Welch's tenure at GE produced unmatched financial returns—total shareholder re
 5. Write down your "not-to-do" list—the commitments you need to drop to focus on what matters
 
 ---
-*Profile saved to: /root/Projects/leaders-biography/jack-welch.md*

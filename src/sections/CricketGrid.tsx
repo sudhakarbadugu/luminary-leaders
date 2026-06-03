@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, useMemo } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { cricketers, cricketerBioData } from '../data';
@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function CricketGrid() {
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
-  const [visibleCount, setVisibleCount] = useState(24);
+  const [visibleCount, setVisibleCount] = useState(8);
   const [eraFilter, setEraFilter] = useState('All');
   const [roleFilter, setRoleFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
@@ -48,7 +48,7 @@ export default function CricketGrid() {
     return () => ctx.revert();
   }, [displayed]);
 
-  const reset = () => { setEraFilter('All'); setRoleFilter('All'); setSearchQuery(''); setVisibleCount(24); };
+  const reset = () => { setEraFilter('All'); setRoleFilter('All'); setSearchQuery(''); setVisibleCount(8); };
   const hasActive = eraFilter !== 'All' || roleFilter !== 'All' || searchQuery;
 
   return (
@@ -66,7 +66,7 @@ export default function CricketGrid() {
           <input type="text" placeholder="Search cricketers by name, nickname, nationality, or role..." value={searchQuery} onChange={e => { setSearchQuery(e.target.value); setVisibleCount(24); }}
             style={{ width: '100%', padding: '14px 48px', borderRadius: 99, border: '1px solid #e5e5e0', background: '#fff', fontFamily: "'Inter', sans-serif", fontSize: 15, color: '#282b2f', outline: 'none', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}
             onFocus={e => { e.currentTarget.style.borderColor = '#ffcc00'; }} onBlur={e => { e.currentTarget.style.borderColor = '#e5e5e0'; }} />
-          {searchQuery && <button onClick={() => { setSearchQuery(''); setVisibleCount(24); }} style={{ position: 'absolute', right: 16, top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', color: '#968671' }}><X size={16} /></button>}
+          {searchQuery && <button onClick={() => { setSearchQuery(''); setVisibleCount(8); }} style={{ position: 'absolute', right: 16, top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', color: '#968671' }}><X size={16} /></button>}
         </div>
 
         {/* Filters */}
@@ -136,7 +136,7 @@ export default function CricketGrid() {
         {visibleCount < filtered.length && (
           <div style={{ textAlign: 'center' }}>
             <button onClick={() => setVisibleCount(prev => Math.min(prev + 12, filtered.length))} style={{ border: '1px solid #282b2f', borderRadius: 99, padding: '14px 36px', background: 'transparent', color: '#282b2f', fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 500, cursor: 'pointer', transition: 'all 0.3s' }}
-              onMouseEnter={e => { e.currentTarget.style.background = '#282b2f'; e.currentTarget.style.color = '#f1f1ee'; }} onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#282b2f'; }}>Load More ({filtered.length - visibleCount} remaining)</button>
+              onMouseEnter={e => { e.currentTarget.style.background = '#282b2f'; e.currentTarget.style.color = '#f1f1ee'; }} onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#282b2f'; }}>Browse More Cricketers ({filtered.length - visibleCount} remaining)</button>
           </div>
         )}
       </div>

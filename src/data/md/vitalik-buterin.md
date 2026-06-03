@@ -98,5 +98,3 @@ If Buterin invented Ethereum at 19—are you writing your whitepaper?
 Shy prodigies can invent platforms.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/vitalik-buterin.md*

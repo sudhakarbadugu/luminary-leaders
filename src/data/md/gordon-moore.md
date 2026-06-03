@@ -124,5 +124,3 @@ If an observation from three data points could guide an industry for fifty years
 Every law started as an observation. The industry believed it. The industry made it true.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/gordon-moore.md*

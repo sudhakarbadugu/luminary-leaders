@@ -98,5 +98,3 @@ If Wolfe Herd turned a lawsuit into $13B—are you letting adversity stop you or
 Adversity becomes opportunity.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/whitney-wolfe-herd.md*

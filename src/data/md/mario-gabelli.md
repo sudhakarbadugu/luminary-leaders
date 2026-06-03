@@ -98,5 +98,3 @@ If Gabelli looks at downside first—what is your downside protection?
 Sector expertise and downside protection create wealth.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/mario-gabelli.md*

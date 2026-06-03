@@ -112,5 +112,3 @@ If a mathematician could beat the market by finding patterns in noisy data—wha
 The numbers have patterns. Find them.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/jim-simons.md*

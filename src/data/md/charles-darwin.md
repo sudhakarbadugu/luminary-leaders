@@ -146,5 +146,3 @@ If a man who expected to become a country vicar could overturn the religious and
 The evidence is there. The question is whether you will see it.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/charles-darwin.md*

@@ -106,5 +106,3 @@ If Karikó persisted for 40 years—are you quitting too early?
 Persistence saves lives.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/katalin-kariko.md*

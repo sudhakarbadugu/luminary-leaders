@@ -98,5 +98,3 @@ Bjarne Stroustrup was born December 30, 1950, in Aarhus, Denmark. His father was
 Stroustrup built C++ over 40 years, consistently updating and improving. What would you create if you committed to working on one thing for 40 years?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/bjarne-stroustrup.md*

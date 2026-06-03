@@ -112,5 +112,3 @@ If the Nobel Prize-winning economist says markets are driven by stories—what s
 The story is not always true. But it drives the price.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/robert-shiller.md*

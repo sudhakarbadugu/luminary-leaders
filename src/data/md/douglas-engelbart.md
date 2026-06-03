@@ -136,5 +136,3 @@ If Engelbart could demonstrate the future of computing in 1968—mouse, windows,
 Being ahead of your time is not the same as being wrong. But it is not the same as being rich, either.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/douglas-engelbart.md*

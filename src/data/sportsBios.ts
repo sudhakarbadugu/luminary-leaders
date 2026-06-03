@@ -1,5 +1,5 @@
 export interface AthleteBioData {
-  id: number;
+  id: string;
   name: string;
   nickname: string;
   sport: string;
@@ -11,418 +11,418 @@ export interface AthleteBioData {
   bio: string;
   keyAchievements: { year: string; event: string }[];
   quotes: string[];
-  relatedIds: number[];
+  relatedIds: string[];
   image?: string;
 }
 
-export const athleteBioData: Record<number, AthleteBioData> = {
-  1: {
-    id: 1, name: "Michael Jordan", nickname: "His Airness", sport: "Basketball", nationality: "American", born: "1963",
+export const athleteBioData: Record<string, AthleteBioData> = {
+  "michael-jordan": {
+    id: "michael-jordan", name: "Michael Jordan", nickname: "His Airness", sport: "Basketball", nationality: "American", born: "1963",
     netWorth: "$3.2B", era: "Modern Era", image: "/images/sports/michael-jordan.jpg",
     bio: "Michael Jeffrey Jordan was born in Brooklyn, New York, the fourth of five children. His family moved to Wilmington, North Carolina when he was young. As a sophomore, Jordan was cut from his high school varsity basketball team — a humiliation that fueled an obsessive work ethic. He made the team the next year and became a McDonald's All-American.\n\nAt the University of North Carolina, Jordan hit the game-winning shot in the 1982 NCAA Championship as a freshman. Drafted third overall by the Chicago Bulls in 1984, he transformed the NBA and global sports culture over 15 seasons. He won six NBA championships, six Finals MVPs, five regular-season MVPs, and was a 14-time All-Star. His 1990s Bulls teams are considered the greatest dynasty in basketball history.\n\nJordan retired briefly in 1993 to play minor league baseball after his father's murder, then returned to win three more titles. His Air Jordan sneaker line with Nike revolutionized athlete endorsements, and he became the first athlete-billionaire. Widely regarded as the greatest basketball player of all time, Jordan's competitive drive and clutch performances remain the gold standard.",
     keyAchievements: [{ year: "1982", event: "Game-winning shot for UNC NCAA title" }, { year: "1991-93", event: "First three-peat with Bulls" }, { year: "1996-98", event: "Second three-peat; 6 titles total" }, { year: "1985-present", event: "Air Jordan brand; first athlete-billionaire" }],
     quotes: ["I've failed over and over again in my life. And that is why I succeed.", "Talent wins games, but teamwork and intelligence win championships.", "I can accept failure, everyone fails at something. But I can't accept not trying."],
-    relatedIds: [2, 4, 42]
+    relatedIds: ["lebron-james", "wilt-chamberlain", "muhammad-ali"]
   },
-  2: {
-    id: 2, name: "LeBron James", nickname: "King James", sport: "Basketball", nationality: "American", born: "1984",
+  "lebron-james": {
+    id: "lebron-james", name: "LeBron James", nickname: "King James", sport: "Basketball", nationality: "American", born: "1984",
     netWorth: "$1.2B", era: "Modern Era", image: "/images/sports/lebron-james.jpg",
     bio: "LeBron Raymone James was born in Akron, Ohio, to a 16-year-old single mother, Gloria James. His childhood was marked by poverty and instability. A local football coach, Frankie Walker, took LeBron into his home when he was nine, providing the stability that allowed his athletic gifts to flourish.\n\nLeBron was a basketball prodigy at St. Vincent-St. Mary High School, dubbed \"The Chosen One\" on the cover of Sports Illustrated at age 16. Drafted first overall in 2003 by the Cleveland Cavaliers, he has played for the Cavaliers, Miami Heat, and Los Angeles Lakers, winning four NBA championships with three different teams. In 2023, he became the NBA's all-time leading scorer.\n\nOff the court, LeBron is a media mogul, philanthropist, and activist. His LeBron James Family Foundation has sent thousands of Akron children to college. He co-founded SpringHill Company, a media empire worth over $700 million. He is the first active NBA player to become a billionaire. His longevity and basketball IQ make him one of the most complete players in history.",
     keyAchievements: [{ year: "2003", event: "Drafted #1 overall by Cleveland Cavaliers" }, { year: "2012-13", event: "Back-to-back titles with Miami Heat" }, { year: "2016", event: "Led Cavaliers to first championship; 3-1 comeback" }, { year: "2023", event: "Became NBA all-time leading scorer" }],
     quotes: ["You can't be afraid to fail. It's the only way you succeed.", "I like criticism. It makes you strong.", "Nothing is given. Everything is earned."],
-    relatedIds: [1, 3, 42]
+    relatedIds: ["michael-jordan", "stephen-curry", "muhammad-ali"]
   },
-  3: {
-    id: 3, name: "Stephen Curry", nickname: "The Baby-Faced Assassin", sport: "Basketball", nationality: "American", born: "1988",
+  "stephen-curry": {
+    id: "stephen-curry", name: "Stephen Curry", nickname: "The Baby-Faced Assassin", sport: "Basketball", nationality: "American", born: "1988",
     netWorth: "$200M+", era: "Modern Era",
     bio: "Wardell Stephen Curry II was born in Akron, Ohio, while his father Dell was an NBA player. He grew up in Charlotte, North Carolina. Undersized and overlooked by major colleges, he attended Davidson College and led an improbable run to the NCAA Elite Eight in 2008.\n\nDrafted seventh overall by the Golden State Warriors in 2009, Curry revolutionized basketball by proving a three-point-shooting team could dominate. The Warriors won four NBA championships (2015, 2017, 2018, 2022) and set the record with 73 wins in 2016. Curry won back-to-back MVPs, becoming the first unanimous MVP in NBA history.\n\nCurry transformed how basketball is played at every level. He holds the NBA record for most career three-pointers. Off the court, he is a devoted family man, entrepreneur, and philanthropist. His story is one of overcoming skepticism through relentless skill development.",
     keyAchievements: [{ year: "2008", event: "Led Davidson to NCAA Elite Eight" }, { year: "2015-16", event: "Back-to-back MVPs; unanimous in 2016" }, { year: "2015-22", event: "4 NBA championships with Warriors" }],
     quotes: ["Success is not an accident, success is actually a choice.", "I can do all things.", "Be the best version of yourself in anything that you do."],
-    relatedIds: [1, 2, 47]
+    relatedIds: ["michael-jordan", "lebron-james", "lin-dan"]
   },
-  4: {
-    id: 4, name: "Wilt Chamberlain", nickname: "Wilt the Stilt", sport: "Basketball", nationality: "American", born: "1936", died: "1999",
+  "wilt-chamberlain": {
+    id: "wilt-chamberlain", name: "Wilt Chamberlain", nickname: "Wilt the Stilt", sport: "Basketball", nationality: "American", born: "1936", died: "1999",
     era: "Golden Age",
     bio: "Wilton Norman Chamberlain was born in Philadelphia, Pennsylvania. He grew to 7 feet 1 inch by age 17 with extraordinary athleticism. At Overbrook High School, he dominated so thoroughly that college coaches nationwide competed for him. He chose the University of Kansas, leading the Jayhawks to the 1957 NCAA title game.\n\nChamberlain played 14 NBA seasons. His statistics remain staggering: he averaged 50.4 points per game in 1961-62, scored 100 points in a single game on March 2, 1962 (still the NBA record), and grabbed 55 rebounds in another game. He won two NBA championships and four MVP awards.\n\nWilt's rivalry with Bill Russell defined an era. Despite Wilt's superior individual stats, Russell's Celtics consistently beat him in the playoffs. Chamberlain retired as the NBA's all-time leading scorer. He died in 1999 at age 63. His records may never be broken.",
     keyAchievements: [{ year: "1962", event: "Scored 100 points in a single game" }, { year: "1962", event: "Averaged 50.4 points per game for season" }, { year: "1967", event: "Won first NBA title with 76ers" }],
     quotes: ["Nobody roots for Goliath.", "They say that nobody is perfect. Then they tell you practice makes perfect. I wish they'd make up their minds.", "Everything is habit forming, so make sure what you do is what you want to be doing."],
-    relatedIds: [1, 2, 41]
+    relatedIds: ["michael-jordan", "lebron-james", "babe-ruth"]
   },
-  5: {
-    id: 5, name: "Diana Taurasi", nickname: "The White Mamba", sport: "Basketball", nationality: "American", born: "1982",
+  "diana-taurasi": {
+    id: "diana-taurasi", name: "Diana Taurasi", nickname: "The White Mamba", sport: "Basketball", nationality: "American", born: "1982",
     era: "Modern Era",
     bio: "Diana Lorena Taurasi was born in Chino, California, to Argentine immigrant parents. Her father was a professional soccer player in Argentina. Diana grew up playing against boys and developed a fearless, competitive style. At the University of Connecticut, she led the Huskies to three consecutive NCAA championships from 2002 to 2004.\n\nDrafted first overall by the Phoenix Mercury in 2004, Taurasi became the greatest scorer in WNBA history, surpassing 10,000 career points — a milestone no other WNBA player has reached. She won three WNBA championships, was named MVP in 2009, and won five Olympic gold medals.\n\nTaurasi also won multiple EuroLeague championships in Russia. Her nickname \"White Mamba\" was given by Kobe Bryant as a tribute to her killer instinct. She has been a vocal advocate for gender equality in sports.",
     keyAchievements: [{ year: "2004", event: "Won third straight NCAA title with UConn" }, { year: "2009", event: "WNBA MVP; led Mercury to championship" }, { year: "2017", event: "Became WNBA all-time leading scorer" }, { year: "2021", event: "Fifth Olympic gold medal" }],
     quotes: ["If you don't want to win, don't play.", "I was taught to compete, and that's what I do.", "You have to earn everything in this game."],
-    relatedIds: [1, 2, 3]
+    relatedIds: ["michael-jordan", "lebron-james", "stephen-curry"]
   },
-  6: {
-    id: 6, name: "Cristiano Ronaldo", nickname: "CR7", sport: "Soccer", nationality: "Portuguese", born: "1985",
+  "cristiano-ronaldo": {
+    id: "cristiano-ronaldo", name: "Cristiano Ronaldo", nickname: "CR7", sport: "Soccer", nationality: "Portuguese", born: "1985",
     netWorth: "$800M", era: "Modern Era", image: "/images/sports/cristiano-ronaldo.jpg",
     bio: "Cristiano Ronaldo dos Santos Aveiro was born on the island of Madeira, Portugal, the youngest of four children. His father was a municipal gardener and part-time kit man at a local football club. Ronaldo grew up in a working-class neighborhood, sharing a single room with his siblings. He was diagnosed with a racing heart at age 15 and underwent surgery to correct it.\n\nSigned by Sporting Lisbon as a teenager, Ronaldo caught the attention of Manchester United during a friendly match. Sir Alex Ferguson signed him in 2003. At United, he won three Premier League titles and the 2008 Champions League. He then moved to Real Madrid for a then-world-record fee, becoming the club's all-time leading scorer with 450 goals in 438 games, winning four Champions League titles.\n\nRonaldo has won five Ballon d'Or awards, five Champions League titles, and led Portugal to UEFA Euro 2016 glory. He is the all-time leading scorer in men's international football with over 130 goals. His dedication to fitness and self-improvement has allowed him to compete at the highest level into his late 30s. He is one of the most marketable and followed athletes in history.",
     keyAchievements: [{ year: "2008", event: "First Champions League title with Manchester United" }, { year: "2014-18", event: "4 Champions League titles with Real Madrid" }, { year: "2016", event: "Led Portugal to UEFA Euro championship" }, { year: "2021", event: "All-time international top scorer (130+ goals)" }],
     quotes: ["Your love makes me strong. Your hate makes me unstoppable.", "I'm not a perfectionist, but I like to feel that things are done well.", "If you don't believe you are the best, then you will never achieve all that you are capable of."],
-    relatedIds: [7, 8, 38]
+    relatedIds: ["lionel-messi", "pele", "lewis-hamilton"]
   },
-  7: {
-    id: 7, name: "Lionel Messi", nickname: "La Pulga", sport: "Soccer", nationality: "Argentine", born: "1987",
+  "lionel-messi": {
+    id: "lionel-messi", name: "Lionel Messi", nickname: "La Pulga", sport: "Soccer", nationality: "Argentine", born: "1987",
     netWorth: "$700M", era: "Modern Era", image: "/images/sports/lionel-messi.jpg",
     bio: "Lionel Andres Messi was born in Rosario, Argentina. At age 11, he was diagnosed with growth hormone deficiency. His family could not afford the treatment, but FC Barcelona offered to pay for it if he moved to Spain and joined their youth academy, La Masia. At 13, Messi left Argentina for Barcelona, a move that would change football forever.\n\nMessi made his first-team debut at 16 and became the youngest player to score for Barcelona in La Liga. Over 17 seasons, he scored 672 goals in 778 appearances, winning 10 La Liga titles, 4 Champions Leagues, and 7 Copa del Rey trophies. He won a record eight Ballon d'Or awards. In 2022, he led Argentina to the FIFA World Cup title, cementing his legacy as the greatest ever.\n\nIn 2021, financial constraints forced Barcelona to let Messi leave. He joined Paris Saint-Germain, then moved to Inter Miami in 2023, transforming football's popularity in the United States. His dribbling, vision, and finishing are universally considered the most elegant in football history.",
     keyAchievements: [{ year: "2009", event: "First Champions League title; won treble" }, { year: "2012", event: "Scored 91 goals in a calendar year (record)" }, { year: "2021", event: "Won Copa America with Argentina" }, { year: "2022", event: "Led Argentina to FIFA World Cup glory" }],
     quotes: ["You have to fight to reach your dream. You have to sacrifice and work hard for it.", "The best decisions aren't made with your mind, but with your instinct.", "I start early and I stay late, day after day, year after year. It took me 17 years and 114 days to become an overnight success."],
-    relatedIds: [6, 8, 38]
+    relatedIds: ["cristiano-ronaldo", "pele", "lewis-hamilton"]
   },
-  8: {
-    id: 8, name: "Pele", nickname: "The King", sport: "Soccer", nationality: "Brazilian", born: "1940", died: "2022",
+  "pele": {
+    id: "pele", name: "Pele", nickname: "The King", sport: "Soccer", nationality: "Brazilian", born: "1940", died: "2022",
     era: "Golden Age",
     bio: "Edson Arantes do Nascimento was born in Tres Coracoes, Minas Gerais, Brazil. He was named after Thomas Edison but was nicknamed \"Pele\" as a child — a name with no meaning that would become the most recognized in sports history. He grew up in poverty, polishing shoes to help his family afford a football. He learned the game playing barefoot in the streets with a ball made of rags.\n\nAt 15, Pele joined Santos FC. At 16, he became the top scorer in the Brazilian league. At 17, he won his first World Cup in 1958, scoring six goals including two in the final against Sweden — the youngest player ever to score in a World Cup final. He would go on to win three World Cups (1958, 1962, 1970), the only player in history to do so. He scored over 1,000 career goals.\n\nPele's impact transcended football. After the 1970 World Cup, he was declared a national treasure by Brazil's government to prevent him from being sold to a European club. He helped popularize football in the United States with the New York Cosmos in the 1970s. When Nigeria's civil war paused for 48 hours so both sides could watch him play an exhibition match in 1969, the world understood his power. He died in December 2022 at age 82.",
     keyAchievements: [{ year: "1958", event: "First World Cup at age 17; 6 goals" }, { year: "1970", event: "Third World Cup; only player to win 3" }, { year: "1969", event: "Scored his 1,000th career goal" }],
     quotes: ["Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing.", "I was born to play football, just like Beethoven was born to write music.", "Enthusiasm is everything. It must be taut and vibrating like a guitar string."],
-    relatedIds: [6, 7, 38]
+    relatedIds: ["cristiano-ronaldo", "lionel-messi", "lewis-hamilton"]
   },
-  9: {
-    id: 9, name: "Marta", nickname: "Pele in Skirts", sport: "Soccer", nationality: "Brazilian", born: "1986",
+  "marta": {
+    id: "marta", name: "Marta", nickname: "Pele in Skirts", sport: "Soccer", nationality: "Brazilian", born: "1986",
     era: "Modern Era",
     bio: "Marta Vieira da Silva was born in Dois Riachos, a small town in the Brazilian state of Alagoas. She grew up playing street football with boys, often barefoot, because there were no girls' teams and her family couldn't afford proper equipment. A scout discovered her at 14, and she moved to Rio de Janeiro to pursue professional football.\n\nMarta became the greatest female footballer of all time. She won the FIFA Women's World Player of the Year award a record six times (2006-2010, 2018). She is the all-time leading scorer in FIFA Women's World Cup history with 17 goals. She has played professionally in Sweden and the United States, winning multiple league titles.\n\nBeyond her individual brilliance, Marta has been a trailblazer for women's football in Brazil and globally. She used her 2019 World Cup platform to deliver a powerful message to young girls: \"You are not born a champion. You become one.\" In 2021, she became the first player to score in five different World Cups. Her skill, creativity, and advocacy have elevated women's football to new heights.",
     keyAchievements: [{ year: "2006-10", event: "Won FIFA World Player of the Year 5 consecutive times" }, { year: "2018", event: "Record sixth FIFA World Player of the Year" }, { year: "2021", event: "First player to score in 5 World Cups" }],
     quotes: ["You are not born a champion. You become one.", "I never gave up, even when nobody believed in me.", "Football doesn't care if you're a boy or a girl. It cares if you're good."],
-    relatedIds: [6, 7, 8]
+    relatedIds: ["cristiano-ronaldo", "lionel-messi", "pele"]
   },
-  10: {
-    id: 10, name: "Serena Williams", nickname: "The GOAT", sport: "Tennis", nationality: "American", born: "1981",
+  "serena-williams": {
+    id: "serena-williams", name: "Serena Williams", nickname: "The GOAT", sport: "Tennis", nationality: "American", born: "1981",
     netWorth: "$300M", era: "Modern Era",
     bio: "Serena Jameka Williams was born in Saginaw, Michigan, the youngest of five sisters. Her father, Richard Williams, taught himself tennis from books and videos so he could coach his daughters. The family moved to Compton, California, where Serena and her sister Venus practiced on public courts in a neighborhood plagued by gang violence.\n\nSerena turned professional at 14. She won her first Grand Slam at the 1999 US Open at age 17. Over the next two decades, she transformed women's tennis with her power, athleticism, and mental toughness. She won 23 Grand Slam singles titles — the most in the Open Era — plus 14 Grand Slam doubles titles with Venus, and 2 mixed doubles titles. She held the world No. 1 ranking for 319 weeks.\n\nWilliams is a cultural icon who transcended tennis. She fought through life-threatening complications after giving birth in 2017 to return to Grand Slam finals. She has been a vocal advocate for gender and racial equality, maternal health, and body positivity. She launched her own venture capital firm, Serena Ventures, investing in diverse founders. She retired in 2022 with the title of the greatest female tennis player in history.",
     keyAchievements: [{ year: "1999", event: "First Grand Slam title at US Open (age 17)" }, { year: "2002-03", event: "First Serena Slam — 4 majors in a row" }, { year: "2017", event: "Won Australian Open while 8 weeks pregnant" }, { year: "2022", event: "Retired with 23 Grand Slam singles titles" }],
     quotes: ["I really think a champion is defined not by their wins but by how they can recover when they fall.", "The success of every woman should be the inspiration to another.", "I don't like to lose — at anything. Yet I've grown most not from victories, but setbacks."],
-    relatedIds: [11, 14, 16]
+    relatedIds: ["roger-federer", "martina-navratilova", "billie-jean-king"]
   },
-  11: {
-    id: 11, name: "Roger Federer", nickname: "The Maestro", sport: "Tennis", nationality: "Swiss", born: "1981",
+  "roger-federer": {
+    id: "roger-federer", name: "Roger Federer", nickname: "The Maestro", sport: "Tennis", nationality: "Swiss", born: "1981",
     netWorth: "$600M", era: "Modern Era",
     bio: "Roger Federer was born in Basel, Switzerland. He played football and tennis as a child, initially preferring football, but chose to focus on tennis at age 12. Known for his effortless grace and precision, he turned professional in 1998.\n\nFederer dominated tennis in the mid-2000s, holding the world No. 1 ranking for a record 237 consecutive weeks. He won 20 Grand Slam singles titles, including 8 Wimbledon championships — an Open Era record. His rivalry with Rafael Nadal and Novak Djokovic is considered the greatest in tennis history.\n\nFederer is celebrated not just for his titles but for his sportsmanship and elegance. He won the Stefan Edberg Sportsmanship Award a record 13 times. His playing style — fluid, creative, and seemingly effortless — made him the most beloved tennis player worldwide. He retired in 2022 with the Laver Cup, surrounded by rivals who had become friends.",
     keyAchievements: [{ year: "2003", event: "First Wimbledon title" }, { year: "2004-08", event: "237 consecutive weeks as world No. 1" }, { year: "2009", event: "Completed career Grand Slam at French Open" }, { year: "2018", event: "Won 20th Grand Slam at Australian Open" }],
     quotes: ["I always believe if you're stuck in a hole and maybe things aren't going well, you will come out stronger.", "When you do something best in life, you don't really want to give that up.", "What I think I've been able to do well over the years is play with pain, play with problems."],
-    relatedIds: [12, 13, 10]
+    relatedIds: ["novak-djokovic", "rafael-nadal", "serena-williams"]
   },
-  12: {
-    id: 12, name: "Novak Djokovic", nickname: "The Joker", sport: "Tennis", nationality: "Serbian", born: "1987",
+  "novak-djokovic": {
+    id: "novak-djokovic", name: "Novak Djokovic", nickname: "The Joker", sport: "Tennis", nationality: "Serbian", born: "1987",
     netWorth: "$250M", era: "Modern Era",
     bio: "Novak Djokovic was born in Belgrade, Yugoslavia (now Serbia). He grew up during the Yugoslav Wars — his family endured NATO bombing in 1999, forcing them to shelter in the basement of their apartment building. At age six, he was discovered by tennis coach Jelena Gencic, who recognized his extraordinary talent.\n\nDjokovic turned professional in 2003 and won his first Grand Slam at the 2008 Australian Open. He holds the record for 24 Grand Slam men's singles titles, the most weeks at world No. 1 (400+), and has completed the career Grand Slam multiple times. His rivalry with Federer and Nadal pushed all three to unprecedented heights.\n\nDjokovic's game is built on extraordinary flexibility, defensive prowess, and mental resilience. He is known for his strict diet and fitness regime. Off the court, he founded the Novak Djokovic Foundation to support early childhood education in Serbia. His determination to maximize his potential has made him the statistically most successful male tennis player in history.",
     keyAchievements: [{ year: "2008", event: "First Grand Slam at Australian Open" }, { year: "2016", event: "Completed career Grand Slam at Roland Garros" }, { year: "2023", event: "Record 24th Grand Slam title" }, { year: "2024", event: "Most weeks at world No. 1 (400+)" }],
     quotes: ["I think luck falls on not just the brave but also the ones who believe they belong there.", "When you take care of your body, your body takes care of you.", "The only limit is the one you set yourself."],
-    relatedIds: [11, 13, 10]
+    relatedIds: ["roger-federer", "rafael-nadal", "serena-williams"]
   },
-  13: {
-    id: 13, name: "Rafael Nadal", nickname: "The King of Clay", sport: "Tennis", nationality: "Spanish", born: "1986",
+  "rafael-nadal": {
+    id: "rafael-nadal", name: "Rafael Nadal", nickname: "The King of Clay", sport: "Tennis", nationality: "Spanish", born: "1986",
     netWorth: "$220M", era: "Modern Era",
     bio: "Rafael Nadal Parera was born in Mallorca, Spain. His uncle, Toni Nadal, was his coach from childhood and instilled a relentless work ethic. Another uncle, Miguel Angel Nadal, was a professional footballer for FC Barcelona. Rafa initially preferred football but chose tennis at 15.\n\nNadal is the undisputed greatest clay-court player ever, winning a record 14 French Open titles. His 22 Grand Slam titles include wins at all four majors, making him one of only two men to complete the career Grand Slam twice. His playing style — built on ferocious topspin forehands, defensive speed, and inexhaustible stamina — has produced some of the most physically grueling matches in tennis history.\n\nNadal's career has been defined by his battle against injuries. Multiple knee surgeries, wrist problems, and chronic foot pain have threatened to end his career multiple times. Yet he has always returned, often winning major titles immediately after months away. His resilience and humility have made him one of the most admired athletes in any sport.",
     keyAchievements: [{ year: "2005", event: "First French Open title at age 19" }, { year: "2008", event: "First Wimbledon; epic final vs Federer" }, { year: "2022", event: "Record 14th French Open title" }, { year: "2022", event: "22nd Grand Slam; 2nd career Grand Slam" }],
     quotes: ["Losing is not my enemy, my enemy is the fear of losing.", "I play each point like my life depends on it.", "The glory is being happy. The glory is not winning here or winning there."],
-    relatedIds: [11, 12, 10]
+    relatedIds: ["roger-federer", "novak-djokovic", "serena-williams"]
   },
-  14: {
-    id: 14, name: "Martina Navratilova", nickname: "The Tennis Legend", sport: "Tennis", nationality: "Czech-American", born: "1956",
+  "martina-navratilova": {
+    id: "martina-navratilova", name: "Martina Navratilova", nickname: "The Tennis Legend", sport: "Tennis", nationality: "Czech-American", born: "1956",
     era: "Golden Age",
     bio: "Martina Navratilova was born in Prague, Czechoslovakia (now Czech Republic). She defected to the United States in 1975 at age 18, leaving behind her family and everything she knew, because the communist government restricted her ability to compete internationally. She was granted asylum and became a U.S. citizen in 1981.\n\nNavratilova dominated women's tennis in the 1980s with her serve-and-volley style. She won 18 Grand Slam singles titles, 31 Grand Slam doubles titles, and 10 Grand Slam mixed doubles titles — 59 major titles in total, the most of any player in the Open Era. She held the world No. 1 ranking for 332 weeks.\n\nNavratilova was one of the first openly gay athletes, coming out in 1981 at a time when it carried significant professional and personal risk. She has been a tireless advocate for LGBTQ+ rights, gender equality in sports, and animal welfare. Her courage both on and off the court has inspired generations of athletes to live authentically.",
     keyAchievements: [{ year: "1975", event: "Defected from Czechoslovakia to pursue tennis" }, { year: "1982-87", event: "Won 6 consecutive Wimbledon singles titles" }, { year: "1990", event: "Record 9th Wimbledon singles title" }],
     quotes: ["The difference between involvement and commitment is like ham and eggs. The chicken is involved; the pig is committed.", "Labels are for clothing, not people.", "Whoever said, 'It's not whether you win or lose that counts,' probably lost."],
-    relatedIds: [15, 16, 10]
+    relatedIds: ["chris-evert", "billie-jean-king", "serena-williams"]
   },
-  15: {
-    id: 15, name: "Chris Evert", nickname: "The Ice Princess", sport: "Tennis", nationality: "American", born: "1954",
+  "chris-evert": {
+    id: "chris-evert", name: "Chris Evert", nickname: "The Ice Princess", sport: "Tennis", nationality: "American", born: "1954",
     era: "Golden Age",
     bio: "Christine Marie Evert was born in Fort Lauderdale, Florida. Her father, Jimmy Evert, was a tennis coach who taught all five of his children to play. Chris showed extraordinary focus and consistency from a young age, rarely making unforced errors — a trait that would define her career.\n\nEvert turned professional in 1972 and immediately dominated, winning 125 consecutive matches on clay — a surface record that still stands. She won 18 Grand Slam singles titles and was ranked world No. 1 for 260 weeks. Her rivalry with Martina Navratilova is considered the greatest in women's tennis history — they faced each other 80 times, with Navratilova holding a 43-37 edge.\n\nEvert's playing style was built on consistency, mental toughness, and a devastating two-handed backhand. She was the first female athlete to earn over $1 million in career prize money. After retiring in 1989, she became a respected commentator and founded a tennis academy. Her rivalry with Navratilova elevated women's tennis to unprecedented popularity.",
     keyAchievements: [{ year: "1972-79", event: "125 consecutive match wins on clay (record)" }, { year: "1974-86", event: "Won at least one Grand Slam per year for 13 years" }, { year: "1989", event: "Retired with 18 Grand Slam singles titles" }],
     quotes: ["If you can react the same way to winning and losing, that's a big accomplishment.", "I was always very determined. I never had the biggest serve or the biggest groundstrokes, but I had the biggest heart.", "The thing about tennis is that you can't get too high or too low."],
-    relatedIds: [14, 16, 10]
+    relatedIds: ["martina-navratilova", "billie-jean-king", "serena-williams"]
   },
-  16: {
-    id: 16, name: "Billie Jean King", nickname: "The Pioneer", sport: "Tennis", nationality: "American", born: "1943",
+  "billie-jean-king": {
+    id: "billie-jean-king", name: "Billie Jean King", nickname: "The Pioneer", sport: "Tennis", nationality: "American", born: "1943",
     era: "Golden Age",
     bio: "Billie Jean Moffitt was born in Long Beach, California. Her mother was a homemaker and her father was a firefighter. She began playing tennis at 11 on public courts. By 15, she was competing nationally. In 1961, she won her first Wimbledon doubles title.\n\nKing won 12 Grand Slam singles titles, 16 Grand Slam doubles titles, and 11 Grand Slam mixed doubles titles. But her impact on sports extends far beyond her playing record. In 1973, she defeated Bobby Riggs in the famous \"Battle of the Sexes\" match, watched by 90 million people worldwide. The match became a landmark moment for gender equality in sports.\n\nKing was a driving force behind the formation of the Women's Tennis Association (WTA) and the campaign for equal prize money at major tournaments. She founded the Women's Sports Foundation and has been a lifelong advocate for LGBTQ+ rights. The USTA National Tennis Center in New York is named in her honor. She is arguably the most influential figure in the history of women's sports.",
     keyAchievements: [{ year: "1966-75", event: "Won 6 Wimbledon singles titles" }, { year: "1973", event: "Defeated Bobby Riggs in Battle of the Sexes" }, { year: "1973", event: "Founded the Women's Tennis Association" }],
     quotes: ["Pressure is a privilege.", "Champions keep playing until they get it right.", "No one changes the world who isn't obsessed."],
-    relatedIds: [10, 14, 42]
+    relatedIds: ["serena-williams", "martina-navratilova", "muhammad-ali"]
   },
-  17: {
-    id: 17, name: "Usain Bolt", nickname: "Lightning Bolt", sport: "Athletics", nationality: "Jamaican", born: "1986",
+  "usain-bolt": {
+    id: "usain-bolt", name: "Usain Bolt", nickname: "Lightning Bolt", sport: "Athletics", nationality: "Jamaican", born: "1986",
     netWorth: "$90M", era: "Modern Era",
     bio: "Usain St. Leo Bolt was born in Sherwood Content, a small town in rural Jamaica. He grew up playing cricket and football, dreaming of becoming a professional footballer. His cricket coach noticed his speed and suggested he try sprinting. By 15, Bolt was the youngest ever world junior champion.\n\nAt the 2008 Beijing Olympics, Bolt exploded onto the global stage, winning gold in the 100m, 200m, and 4x100m relay — all in world record time. His 100m victory, where he seemed to ease up and celebrate 15 meters from the finish line while still breaking the world record, made him an instant global icon. He repeated the triple at the 2012 London Olympics and the 2016 Rio Olympics.\n\nBolt holds the world records for 100m (9.58s) and 200m (19.19s), both set at the 2009 World Championships in Berlin — records that still stand. He is the only sprinter to win Olympic 100m and 200m titles at three consecutive Olympics. His charisma, signature \"To Di World\" pose, and dominance made him the most famous track athlete since Jesse Owens.",
     keyAchievements: [{ year: "2008", event: "Triple gold at Beijing Olympics; 3 world records" }, { year: "2009", event: "Set 100m (9.58s) and 200m (19.19s) world records" }, { year: "2012-16", event: "Triple-triple: 9 Olympic golds across 3 Games" }],
     quotes: ["Don't think about the start of the race, think about the ending.", "I work hard, and I do good, and I'm going to enjoy myself.", "Easy is not an option. No days off. Never quit. Be fearless."],
-    relatedIds: [18, 19, 20]
+    relatedIds: ["jesse-owens", "carl-lewis", "allyson-felix"]
   },
-  18: {
-    id: 18, name: "Jesse Owens", nickname: "The Buckeye Bullet", sport: "Athletics", nationality: "American", born: "1913", died: "1980",
+  "jesse-owens": {
+    id: "jesse-owens", name: "Jesse Owens", nickname: "The Buckeye Bullet", sport: "Athletics", nationality: "American", born: "1913", died: "1980",
     era: "Golden Age",
     bio: "James Cleveland Owens was born in Oakville, Alabama, the seventh of eleven children. His parents were sharecroppers. As a child, he picked cotton and suffered from chronic bronchitis and pneumonia. The family moved to Cleveland, Ohio, when Jesse was nine, seeking better opportunities.\n\nAt Ohio State University, Owens faced daily racism — he was not allowed to live on campus, eat with white athletes, or receive a scholarship. Yet on May 25, 1935, at the Big Ten Championships in Ann Arbor, he achieved what is still called \"the greatest 45 minutes in sport.\" He set three world records and tied a fourth in three separate events — the 100 yards, long jump, and 220 yards.\n\nAt the 1936 Berlin Olympics, Owens won four gold medals (100m, 200m, long jump, 4x100m relay) in front of Adolf Hitler, directly contradicting the Nazi ideology of Aryan racial superiority. Hitler reportedly refused to shake his hand. Owens returned to America and was forced to ride the service elevator to his own victory reception at the Waldorf Astoria. Despite these indignities, his performance transcended sports and became a defining moment in the civil rights movement.",
     keyAchievements: [{ year: "1935", event: "Set 3 world records in 45 minutes at Big Ten Championships" }, { year: "1936", event: "4 gold medals at Berlin Olympics" }],
     quotes: ["We all have dreams. In order to make dreams come into reality, it takes an awful lot of determination, dedication, self-discipline, and effort.", "The only victory that counts is the one over yourself.", "Find the good. It's all around you. Find it, showcase it and you'll start believing in it."],
-    relatedIds: [17, 19, 42]
+    relatedIds: ["usain-bolt", "carl-lewis", "muhammad-ali"]
   },
-  19: {
-    id: 19, name: "Carl Lewis", nickname: "The Son of the Wind", sport: "Athletics", nationality: "American", born: "1961",
+  "carl-lewis": {
+    id: "carl-lewis", name: "Carl Lewis", nickname: "The Son of the Wind", sport: "Athletics", nationality: "American", born: "1961",
     era: "Modern Era",
     bio: "Frederick Carlton Lewis was born in Birmingham, Alabama. Both of his parents were star athletes — his mother ran track and his father was a college football player. The family moved to Willingboro, New Jersey, where young Carl was surrounded by sports. He set a national high school long jump record at 18.\n\nAt the University of Houston, Lewis became the world's best long jumper and sprinter. At the 1984 Los Angeles Olympics, he won four gold medals (100m, 200m, long jump, 4x100m relay), matching Jesse Owens' 1936 feat. He would compete in four Olympic Games, winning nine gold medals in total — making him one of the most decorated Olympians in track and field history.\n\nLewis won the Olympic long jump four consecutive times (1984-1996), an unprecedented feat. He set world records in the 100m and long jump. His rivalry with sprinter Ben Johnson, who was disqualified for doping at the 1988 Seoul Olympics, defined an era. Lewis became a vocal anti-doping advocate. After retiring, he pursued acting, coaching, and politics, running for the New Jersey State Senate in 2011.",
     keyAchievements: [{ year: "1984", event: "4 gold medals at Los Angeles Olympics" }, { year: "1988-96", event: "4 consecutive Olympic long jump golds" }, { year: "Career", event: "9 Olympic gold medals" }],
     quotes: ["It's all about the journey, not the outcome.", "I don't feel I'm fast. I feel I'm a technician.", "The man who has no imagination has no wings."],
-    relatedIds: [17, 18, 20]
+    relatedIds: ["usain-bolt", "jesse-owens", "allyson-felix"]
   },
-  20: {
-    id: 20, name: "Allyson Felix", nickname: "The Speed Queen", sport: "Athletics", nationality: "American", born: "1985",
+  "allyson-felix": {
+    id: "allyson-felix", name: "Allyson Felix", nickname: "The Speed Queen", sport: "Athletics", nationality: "American", born: "1985",
     era: "Modern Era",
     bio: "Allyson Michelle Felix was born in Los Angeles, California. Her father was an ordained minister and professor of New Testament Greek, and her mother was an elementary school teacher. Felix discovered her speed in ninth grade when she tried out for the track team and ran faster than the varsity sprinters.\n\nFelix is the most decorated American track and field athlete in Olympic history, with 11 medals (7 gold, 3 silver, 1 bronze) across five Olympic Games (2004-2020). She specializes in the 200m and 400m sprints, as well as relay events. At the 2012 London Olympics, she won three gold medals — the 200m, 4x100m relay, and 4x400m relay.\n\nFelix's most significant victory may have come off the track. In 2019, she wrote an op-ed for The New York Times revealing that Nike had offered her a new contract with a 70% pay cut after she became pregnant. Her advocacy led to Nike and other sponsors changing their maternity policies for female athletes. She launched her own shoe company, Saysh, designed specifically for women's feet. In 2022, she won her 11th Olympic medal, surpassing Carl Lewis as the most decorated American track athlete.",
     keyAchievements: [{ year: "2012", event: "3 gold medals at London Olympics" }, { year: "2021", event: "11th Olympic medal; most decorated US track athlete" }, { year: "2019", event: "Advocacy changed Nike maternity policy" }],
     quotes: ["I always want to give my best. I don't want to leave any stone unturned.", "My faith helps me understand that circumstances don't dictate my joy.", "I never want to look back and say, 'What if?'"],
-    relatedIds: [17, 19, 16]
+    relatedIds: ["usain-bolt", "carl-lewis", "billie-jean-king"]
   },
-  21: {
-    id: 21, name: "Michael Phelps", nickname: "The Baltimore Bullet", sport: "Swimming", nationality: "American", born: "1985",
+  "michael-phelps": {
+    id: "michael-phelps", name: "Michael Phelps", nickname: "The Baltimore Bullet", sport: "Swimming", nationality: "American", born: "1985",
     netWorth: "$100M", era: "Modern Era",
     bio: "Michael Fred Phelps II was born in Baltimore, Maryland. His parents divorced when he was nine, and he struggled with ADHD and behavioral issues in school. Swimming became his outlet — at 10, he held a national record for his age group. His coach, Bob Bowman, recognized extraordinary potential and began training him with a relentless regimen.\n\nAt the 2004 Athens Olympics, Phelps won six gold and two bronze medals, tying the record for most medals in a single Olympics. In 2008 Beijing, he achieved what many thought impossible: eight gold medals in a single Games, breaking Mark Spitz's 36-year-old record. His final relay victory came by 0.08 seconds — one of the closest finishes in Olympic history.\n\nPhelps competed in five Olympic Games, winning 23 gold medals and 28 total medals — both all-time records. After retiring in 2012, he returned for the 2016 Rio Olympics, winning five more golds and one silver. He has been open about his struggles with depression and substance abuse after the 2012 Olympics, becoming a powerful advocate for mental health awareness. He launched the Michael Phelps Foundation to promote water safety and healthy living.",
     keyAchievements: [{ year: "2004", event: "8 medals at Athens Olympics" }, { year: "2008", event: "8 gold medals at Beijing; broke Spitz's record" }, { year: "2016", event: "5 golds at Rio; 23 total golds" }, { year: "Career", event: "28 total Olympic medals (record)" }],
     quotes: ["You can't put a limit on anything. The more you dream, the farther you get.", "If you want to be the best, you have to do things that other people aren't willing to do.", "I think that everything is possible as long as you put your mind to it."],
-    relatedIds: [22, 23, 17]
+    relatedIds: ["katie-ledecky", "mark-spitz", "usain-bolt"]
   },
-  22: {
-    id: 22, name: "Katie Ledecky", nickname: "The Distance Queen", sport: "Swimming", nationality: "American", born: "1997",
+  "katie-ledecky": {
+    id: "katie-ledecky", name: "Katie Ledecky", nickname: "The Distance Queen", sport: "Swimming", nationality: "American", born: "1997",
     era: "Modern Era",
     bio: "Kathleen Genevieve Ledecky was born in Washington, D.C. She learned to swim at age six and was inspired by her older brother. At 15, she stunned the swimming world by winning gold in the 800m freestyle at the 2012 London Olympics — the second-youngest American swimmer to win an individual Olympic gold.\n\nLedecky is the most dominant female distance swimmer in history. She has won seven Olympic gold medals and 21 World Championship gold medals — the most by any female swimmer. She holds world records in the 400m, 800m, and 1500m freestyle. At the 2016 Rio Olympics, she won four golds and one silver. At the 2020 Tokyo Olympics, she won two golds and two silvers, including the first-ever women's 1500m freestyle Olympic race.\n\nWhat sets Ledecky apart is her combination of extraordinary aerobic capacity and mental toughness. She often wins races by multiple body lengths — margins unheard of at elite swimming. She attended Stanford University, where she set numerous NCAA records while maintaining a 3.5 GPA. She is known for her humility, work ethic, and grace in both victory and defeat.",
     keyAchievements: [{ year: "2012", event: "Olympic gold in 800m at age 15" }, { year: "2016", event: "4 golds, 1 silver at Rio Olympics" }, { year: "2021", event: "Won first Olympic 1500m freestyle" }, { year: "Career", event: "7 Olympic golds; 21 World Championship golds" }],
     quotes: ["I just like to train hard and race hard.", "The water doesn't care who you are. It doesn't care what you've done before.", "I'm just focused on the next race, the next practice."],
-    relatedIds: [21, 23, 20]
+    relatedIds: ["michael-phelps", "mark-spitz", "allyson-felix"]
   },
-  23: {
-    id: 23, name: "Mark Spitz", nickname: "The Golden Shark", sport: "Swimming", nationality: "American", born: "1950",
+  "mark-spitz": {
+    id: "mark-spitz", name: "Mark Spitz", nickname: "The Golden Shark", sport: "Swimming", nationality: "American", born: "1950",
     era: "Golden Age",
     bio: "Mark Andrew Spitz was born in Modesto, California. He started swimming competitively at age nine and was breaking age-group records within two years. By 16, he held 17 national age-group records. He attended Indiana University under legendary coach Doc Counsilman.\n\nAt the 1972 Munich Olympics, Spitz achieved what was then considered impossible: seven gold medals in seven events, all in world record time. He won the 100m and 200m freestyle, 100m and 200m butterfly, and three relay events. The Munich Games were tragically overshadowed by the massacre of 11 Israeli athletes and coaches by Palestinian terrorists. Spitz, who is Jewish, was evacuated from Germany for his own safety before the Closing Ceremony.\n\nSpitz's seven-gold record stood for 36 years until Michael Phelps broke it in 2008. He became a celebrity after Munich, appearing on talk shows and earning endorsements at a time when swimmer marketing was virtually unheard of. He attempted a comeback at age 41 for the 1992 Olympics but failed to qualify. His 1972 performance remains one of the defining achievements in Olympic history.",
     keyAchievements: [{ year: "1968", event: "2 golds, 1 silver, 2 bronzes at Mexico City" }, { year: "1972", event: "7 gold medals, 7 world records at Munich" }],
     quotes: ["If you fail to prepare, you're prepared to fail.", "I'm trying to do the best I can. I'm not concerned with tomorrow, but with what goes on today.", "Life is true to form; records are meant to be broken."],
-    relatedIds: [21, 22, 17]
+    relatedIds: ["michael-phelps", "katie-ledecky", "usain-bolt"]
   },
-  24: {
-    id: 24, name: "Tom Brady", nickname: "The GOAT", sport: "American Football", nationality: "American", born: "1977",
+  "tom-brady": {
+    id: "tom-brady", name: "Tom Brady", nickname: "The GOAT", sport: "American Football", nationality: "American", born: "1977",
     netWorth: "$300M", era: "Modern Era",
     bio: "Thomas Edward Patrick Brady Jr. was born in San Mateo, California. He grew up attending San Francisco 49ers games and idolizing Joe Montana. At Junipero Serra High School, Brady was a backup quarterback as a sophomore and didn't start until his junior year. He was drafted in the 18th round of the MLB draft by the Montreal Expos but chose football instead.\n\nAt the University of Michigan, Brady had to battle for playing time and was not drafted until the sixth round of the 2000 NFL Draft — pick number 199. The New England Patriots selected him as a backup. When starter Drew Bledsoe was injured in 2001, Brady took over and never looked back. He led the Patriots to nine Super Bowl appearances, winning six. In 2020, at age 43, he joined the Tampa Bay Buccaneers and won his seventh Super Bowl in his first season.\n\nBrady retired in 2023 as the winningest quarterback in NFL history. He holds records for most Super Bowl wins (7), most Super Bowl MVPs (5), most career passing touchdowns, and most career passing yards. His work ethic, preparation, and ability to perform under pressure are legendary. He is widely considered the greatest quarterback and one of the greatest athletes of all time.",
     keyAchievements: [{ year: "2001", event: "Won first Super Bowl as backup-turned-starter" }, { year: "2014-18", event: "3 Super Bowls in 5 years with Patriots" }, { year: "2021", event: "Won 7th Super Bowl with Buccaneers at age 43" }],
     quotes: ["Too often in life, something happens and we blame other people for us not being happy or satisfied.", "If you don't believe in yourself why is anyone else going to believe in you?", "I didn't come this far to only come this far."],
-    relatedIds: [25, 26, 42]
+    relatedIds: ["patrick-mahomes", "jerry-rice", "muhammad-ali"]
   },
-  25: {
-    id: 25, name: "Patrick Mahomes", nickname: "The Wizard", sport: "American Football", nationality: "American", born: "1995",
+  "patrick-mahomes": {
+    id: "patrick-mahomes", name: "Patrick Mahomes", nickname: "The Wizard", sport: "American Football", nationality: "American", born: "1995",
     era: "Modern Era",
     bio: "Patrick Lavon Mahomes II was born in Tyler, Texas. His father, Pat Mahomes Sr., was a Major League Baseball pitcher, and his mother was a collegiate athlete. Patrick grew up in clubhouses, attending MLB games and practicing multiple sports. He was a standout baseball, basketball, and football player at Whitehouse High School.\n\nMahomes attended Texas Tech University, where he set NCAA records for single-game passing yards and total offense. The Kansas City Chiefs drafted him 10th overall in 2017. After sitting behind Alex Smith for a year, Mahomes took over as starter in 2018 and threw 50 touchdown passes — second-most in a single season. In just his second year as a starter, he led the Chiefs to their first Super Bowl victory in 50 years.\n\nMahomes has won three Super Bowls and two league MVPs in his first seven seasons. He is known for his extraordinary arm strength, improvisational ability, and clutch performances in high-pressure moments. In 2020, he signed a 10-year, $450 million contract extension — the largest in sports history at the time. At 28, he is already being compared to Tom Brady as potentially the greatest quarterback ever.",
     keyAchievements: [{ year: "2018", event: "50 TD passes in first season as starter" }, { year: "2020", event: "Led Chiefs to first Super Bowl in 50 years" }, { year: "2023", event: "3rd Super Bowl title; 2-time MVP" }],
     quotes: ["I just go out there and be me.", "You have to be able to make those tough throws in the clutch moments.", "I want to be the greatest to ever play this game."],
-    relatedIds: [24, 26, 42]
+    relatedIds: ["tom-brady", "jerry-rice", "muhammad-ali"]
   },
-  26: {
-    id: 26, name: "Jerry Rice", nickname: "The GOAT WR", sport: "American Football", nationality: "American", born: "1962",
+  "jerry-rice": {
+    id: "jerry-rice", name: "Jerry Rice", nickname: "The GOAT WR", sport: "American Football", nationality: "American", born: "1962",
     era: "Modern Era",
     bio: "Jerry Lee Rice was born in Starkville, Mississippi, and grew up in the small town of Crawford. His father was a brick mason who had Jerry and his brothers carry bricks as children, developing the strong hands that would become legendary. Rice attended Mississippi Valley State, a small historically black university, where he set NCAA records for receiving yards and touchdowns.\n\nThe San Francisco 49ers drafted Rice in the first round of the 1985 NFL Draft. Over 20 seasons with the 49ers, Oakland Raiders, and Seattle Seahawks, Rice became the most productive wide receiver in NFL history. He holds records for career receptions (1,549), receiving yards (22,895), and receiving touchdowns (197) — records that may never be broken. He won three Super Bowls with the 49ers and was named Super Bowl MVP in 1989.\n\nRice's work ethic was legendary. He ran hills in the offseason, practiced routes endlessly, and maintained peak physical condition well into his 40s. He played his final NFL game at age 42. He is universally regarded as the greatest wide receiver in football history and one of the greatest players at any position.",
     keyAchievements: [{ year: "1989", event: "Super Bowl MVP with 49ers" }, { year: "1995", event: "122 catches, 1,848 yards in single season" }, { year: "Career", event: "1,549 receptions; 22,895 yards; 197 TDs (all records)" }],
     quotes: ["Today I will do what others won't, so tomorrow I can accomplish what others can't.", "I'm not the fastest, I'm not the biggest, but I'm going to outwork you.", "The fear of failure is the engine that has driven me."],
-    relatedIds: [24, 25, 42]
+    relatedIds: ["tom-brady", "patrick-mahomes", "muhammad-ali"]
   },
-  27: {
-    id: 27, name: "Peyton Manning", nickname: "The Sheriff", sport: "American Football", nationality: "American", born: "1976",
+  "peyton-manning": {
+    id: "peyton-manning", name: "Peyton Manning", nickname: "The Sheriff", sport: "American Football", nationality: "American", born: "1976",
     era: "Modern Era",
     bio: "Peyton Williams Manning was born in New Orleans, Louisiana. His father, Archie Manning, was a star NFL quarterback for the New Orleans Saints. Peyton grew up around football, studying the game from an early age. At the University of Tennessee, he became one of the most decorated college quarterbacks in history.\n\nThe Indianapolis Colts drafted Manning first overall in 1998. Over 18 seasons with the Colts and Denver Broncos, Manning revolutionized the quarterback position with his pre-snap reads, audible calls, and cerebral approach to the game. He won five NFL MVP awards — the most by any player — and two Super Bowls. He set single-season records for passing touchdowns (55 in 2013) and passing yards (5,477 in 2013).\n\nManning missed the entire 2011 season with a neck injury that required multiple surgeries. Many thought his career was over, but he signed with the Denver Broncos and won his fifth MVP and a Super Bowl in 2015. His farewell season ended with a Super Bowl 50 victory — a storybook ending to one of the greatest careers in NFL history. He retired as the league's all-time leader in passing touchdowns and yards.",
     keyAchievements: [{ year: "2007", event: "Won Super Bowl XLI with Colts" }, { year: "2013", event: "55 TD passes; single-season record" }, { year: "2016", event: "Won Super Bowl 50 with Broncos" }],
     quotes: ["The most valuable player is the one that makes the most players valuable.", "Pressure is something you feel when you don't know what you're doing.", "It's not wanting to win that makes you a winner; it's refusing to fail."],
-    relatedIds: [24, 25, 26]
+    relatedIds: ["tom-brady", "patrick-mahomes", "jerry-rice"]
   },
-  28: {
-    id: 28, name: "Wayne Gretzky", nickname: "The Great One", sport: "Ice Hockey", nationality: "Canadian", born: "1961",
+  "wayne-gretzky": {
+    id: "wayne-gretzky", name: "Wayne Gretzky", nickname: "The Great One", sport: "Ice Hockey", nationality: "Canadian", born: "1961",
     netWorth: "$250M", era: "Modern Era",
     bio: "Wayne Douglas Gretzky was born in Brantford, Ontario, Canada. His father, Walter, built a backyard ice rink where Wayne practiced for hours every day. By age six, he was playing against 10-year-olds. By 10, he scored 378 goals in a single season. His entire childhood was consumed by hockey.\n\nGretzky joined the NHL with the Edmonton Oilers in 1979 and immediately began rewriting the record books. He holds 61 NHL records, including most career goals (894), most career assists (1,963), and most career points (2,857). He won four Stanley Cups with the Oilers. In 1988, he was traded to the Los Angeles Kings in a move so shocking that it became known as \"The Trade\" and Canadian politicians demanded the government block it.\n\nGretzky's greatness came not from physical dominance but from his hockey IQ. He was not the fastest skater or hardest shooter, but he saw the ice like no one before or since. He knew where the puck was going before it got there. He retired in 1999, and the NHL immediately retired his number 99 league-wide — the only player to receive that honor. He remains the most iconic figure in hockey history.",
     keyAchievements: [{ year: "1981-82", event: "92 goals in a single season (record)" }, { year: "1984-88", event: "4 Stanley Cups with Edmonton Oilers" }, { year: "1988", event: "Traded to LA Kings; 'The Trade'" }],
     quotes: ["You miss 100% of the shots you don't take.", "I skate to where the puck is going to be, not where it has been.", "Procrastination is one of the most common and deadliest of diseases."],
-    relatedIds: [29, 30, 42]
+    relatedIds: ["bobby-orr", "sidney-crosby", "muhammad-ali"]
   },
-  29: {
-    id: 29, name: "Bobby Orr", nickname: "The Defenseman", sport: "Ice Hockey", nationality: "Canadian", born: "1948",
+  "bobby-orr": {
+    id: "bobby-orr", name: "Bobby Orr", nickname: "The Defenseman", sport: "Ice Hockey", nationality: "Canadian", born: "1948",
     era: "Golden Age",
     bio: "Robert Gordon Orr was born in Parry Sound, Ontario, a small town on Georgian Bay. His father, Doug, had been a hockey player whose career was cut short by World War II. Bobby began skating at age four on the frozen river behind his house. By 12, he was playing against 18-year-olds.\n\nOrr revolutionized hockey by transforming the defenseman position. Before Orr, defensemen rarely carried the puck or scored. Orr did both — and did them better than anyone. He won eight consecutive Norris Trophies as the NHL's best defenseman. He scored 139 points in the 1970-71 season — a record for defensemen that still stands. His famous \"flying goal\" in the 1970 Stanley Cup Final, where he scored while airborne after being tripped, is the most iconic image in NHL history.\n\nOrr's career was cut short by devastating knee injuries — he played only 12 NHL seasons. He won two Stanley Cups with the Boston Bruins and remains the only defenseman to win the Art Ross Trophy as the league's leading scorer. After retiring, he became a player agent and philanthropist. Every modern offensive defenseman, from Paul Coffey to Cale Makar, plays in Bobby Orr's shadow.",
     keyAchievements: [{ year: "1966", event: "Won Calder Trophy as NHL Rookie of the Year" }, { year: "1970", event: "Iconic flying goal; won first Stanley Cup" }, { year: "1970-75", event: "6 consecutive 100-point seasons as defenseman" }],
     quotes: ["Forget about style; worry about results.", "The kids wait for it to happen. The greats make it happen.", "Hockey is a tough game."],
-    relatedIds: [28, 30, 42]
+    relatedIds: ["wayne-gretzky", "sidney-crosby", "muhammad-ali"]
   },
-  30: {
-    id: 30, name: "Sidney Crosby", nickname: "Sid the Kid", sport: "Ice Hockey", nationality: "Canadian", born: "1987",
+  "sidney-crosby": {
+    id: "sidney-crosby", name: "Sidney Crosby", nickname: "Sid the Kid", sport: "Ice Hockey", nationality: "Canadian", born: "1987",
     netWorth: "$80M", era: "Modern Era",
     bio: "Sidney Patrick Crosby was born in Halifax, Nova Scotia. His father, Troy, had been a goaltender drafted by the Montreal Canadiens. Sidney grew up in Cole Harbour, Nova Scotia, and was a hockey prodigy from age three. At 14, he scored 217 points in 81 games for a junior team. By 16, he was being called \"The Next One\" — the heir apparent to Wayne Gretzky.\n\nThe Pittsburgh Penguins drafted Crosby first overall in 2005. He won the Hart Trophy (MVP) in just his second season at age 19 — the youngest scoring champion in NHL history. He captained the Penguins to three Stanley Cup championships (2009, 2016, 2017) and won two Olympic gold medals with Team Canada, including scoring the overtime winner in the 2010 Vancouver Olympics.\n\nCrosby's career was threatened by a series of concussions that cost him nearly two full seasons. His comeback from those injuries is considered one of the greatest in sports history. He has been the face of the NHL for nearly two decades, known for his work ethic, two-way excellence, and clutch performances. He is widely considered one of the greatest hockey players of all time.",
     keyAchievements: [{ year: "2007", event: "Youngest scoring champion and MVP at 19" }, { year: "2009-17", event: "3 Stanley Cups with Penguins" }, { year: "2010", event: "Overtime winner for Canada at Vancouver Olympics" }],
     quotes: ["I don't think you can play your best hockey if you're not having fun.", "Hard work beats talent when talent doesn't work hard.", "It's not about being the best. It's about being better than you were yesterday."],
-    relatedIds: [28, 29, 42]
+    relatedIds: ["wayne-gretzky", "bobby-orr", "muhammad-ali"]
   },
 
-  31: {
-    id: 31, name: "Simone Biles", nickname: "The GOAT", sport: "Gymnastics", nationality: "American", born: "1997",
+  "simone-biles": {
+    id: "simone-biles", name: "Simone Biles", nickname: "The GOAT", sport: "Gymnastics", nationality: "American", born: "1997",
     netWorth: "$20M", era: "Modern Era",
     bio: "Simone Arianne Biles was born in Columbus, Ohio. Her mother struggled with substance abuse, and Simone and her siblings were placed in foster care. At age three, she went to live with her grandparents, Ron and Nellie Biles, in Spring, Texas, who eventually adopted her. Simone was introduced to gymnastics during a daycare field trip to a gym at age six.\n\nBiles is the most decorated American gymnast in history, with 37 combined World and Olympic medals. She introduced skills so difficult they were named after her — including the Biles (double layout with a half twist) and the Biles II (triple-double). At the 2016 Rio Olympics, she won four gold medals and one bronze. At the 2019 World Championships, she won five gold medals, bringing her total to 25 World medals — the most by any gymnast, male or female.\n\nAt the 2020 Tokyo Olympics (held in 2021), Biles withdrew from several events to prioritize her mental health, sparking a global conversation about athlete well-being. Her courage in speaking openly about the \"twisties\" — a mental block that causes gymnasts to lose spatial awareness mid-air — was praised worldwide. She returned to win a bronze on beam. In 2023, she came back from a two-year break to dominate the World Championships again, proving she remains the greatest gymnast of all time.",
     keyAchievements: [{ year: "2016", event: "4 gold medals at Rio Olympics" }, { year: "2019", event: "25 World medals; most in gymnastics history" }, { year: "2023", event: "Returned from break to dominate World Championships" }],
     quotes: ["I'd rather regret the risks that didn't work out than the chances I didn't take at all.", "Mental health is just as important as physical health.", "I'm not the next Usain Bolt or Michael Phelps. I'm the first Simone Biles."],
-    relatedIds: [32, 16, 20]
+    relatedIds: ["nadia-comaneci", "billie-jean-king", "allyson-felix"]
   },
-  32: {
-    id: 32, name: "Nadia Comaneci", nickname: "The Perfect 10", sport: "Gymnastics", nationality: "Romanian", born: "1961",
+  "nadia-comaneci": {
+    id: "nadia-comaneci", name: "Nadia Comaneci", nickname: "The Perfect 10", sport: "Gymnastics", nationality: "Romanian", born: "1961",
     era: "Golden Age",
     bio: "Nadia Elena Comaneci was born in Onesti, Romania. At age six, she was discovered by coaches Bela and Martha Karolyi while playing at a school playground, doing cartwheels and flips with natural grace. The Karolyis were building a gymnastics program and saw extraordinary potential in the young girl.\n\nAt the 1976 Montreal Olympics, 14-year-old Nadia achieved what was thought impossible: she scored a perfect 10.0 on the uneven bars — the first perfect score in Olympic gymnastics history. The scoreboard, not programmed to display 10.0, showed 1.00. She went on to score six more perfect 10s at the same Games, winning three gold medals. She became the youngest Olympic gymnastics all-around champion ever.\n\nNadia's perfection transformed gymnastics from a sport of poise into one of daring athleticism. She won two more gold medals at the 1980 Moscow Olympics. She defected to the United States in 1989, weeks before the Romanian Revolution. She married American Olympic gymnast Bart Conner and became a gymnastics commentator and advocate. Her perfect 10 remains the most iconic moment in gymnastics history.",
     keyAchievements: [{ year: "1976", event: "First perfect 10.0 in Olympic gymnastics history" }, { year: "1976", event: "7 perfect 10s; 3 gold medals at Montreal" }, { year: "1980", event: "2 more gold medals at Moscow Olympics" }],
     quotes: ["I don't run away from a challenge because I am afraid. Instead, I run toward it because the only way to escape fear is to trample it beneath your feet.", "I believe that you should gravitate to people who are doing productive and positive things.", "Hard work has made it easy."],
-    relatedIds: [31, 16, 10]
+    relatedIds: ["simone-biles", "billie-jean-king", "serena-williams"]
   },
-  33: {
-    id: 33, name: "Tiger Woods", nickname: "The Big Cat", sport: "Golf", nationality: "American", born: "1975",
+  "tiger-woods": {
+    id: "tiger-woods", name: "Tiger Woods", nickname: "The Big Cat", sport: "Golf", nationality: "American", born: "1975",
     netWorth: "$1.1B", era: "Modern Era",
     bio: "Eldrick Tont Woods was born in Cypress, California. His father, Earl Woods, gave him the nickname \"Tiger\" after a South Vietnamese soldier he served with. Earl, a former Green Beret, began teaching Tiger golf before age two. At three, Tiger appeared on The Mike Douglas Show and The Merv Griffin Show putting against Bob Hope. He won the Optimist International Junior World Championship six times.\n\nWoods turned professional in 1996 and won the Masters by a record 12 strokes in 1997, becoming the youngest winner at 21. He dominated golf for the next decade, winning 14 major championships by age 32 — on pace to break Jack Nicklaus' record of 18. His 2000 U.S. Open victory at Pebble Beach by 15 strokes is considered the most dominant performance in golf history.\n\nWoods' personal life collapsed in 2009 when infidelity became public. He divorced, underwent multiple knee and back surgeries, and was arrested for DUI in 2017. Many thought his career was over. But in 2019, at age 43, he won the Masters — his first major in 11 years — in one of the greatest comeback stories in sports history. He was seriously injured in a car crash in 2021 but has continued to play. He is widely credited with transforming golf's popularity and prize money.",
     keyAchievements: [{ year: "1997", event: "Youngest Masters champion at age 21" }, { year: "2000", event: "Won U.S. Open by record 15 strokes" }, { year: "2019", event: "Won Masters; greatest comeback in golf history" }],
     quotes: ["The greatest thing about tomorrow is, I will be better than I am today.", "Winning is not always the barometer of getting better.", "My will can move mountains."],
-    relatedIds: [34, 42, 1]
+    relatedIds: ["jack-nicklaus", "muhammad-ali", "michael-jordan"]
   },
-  34: {
-    id: 34, name: "Jack Nicklaus", nickname: "The Golden Bear", sport: "Golf", nationality: "American", born: "1940",
+  "jack-nicklaus": {
+    id: "jack-nicklaus", name: "Jack Nicklaus", nickname: "The Golden Bear", sport: "Golf", nationality: "American", born: "1940",
     netWorth: "$400M", era: "Golden Age",
     bio: "Jack William Nicklaus was born in Columbus, Ohio. His father, Charlie, was a pharmacist who played football at Ohio State. Jack started golf at age 10 and was largely self-taught, studying Ben Hogan's instructional book \"Five Lessons.\" By 12, he had broken 70. At Ohio State University, he won the U.S. Amateur twice.\n\nNicklaus turned professional in 1961 and won his first major, the 1962 U.S. Open, defeating Arnold Palmer in Palmer's hometown. It established a rivalry that defined golf for a decade. Nicklaus won 18 professional major championships — a record that still stands — including six Masters, five PGA Championships, four U.S. Opens, and three British Opens. He finished runner-up in a major 19 times.\n\nWhat set Nicklaus apart was his mental game. He was known for his conservative strategy, meticulous preparation, and ability to perform under pressure. He won his final major, the 1986 Masters, at age 46 — the oldest Masters champion ever. He has designed over 400 golf courses worldwide and founded the Memorial Tournament. Many consider him not just the greatest golfer but the greatest individual athlete of all time, given the longevity and consistency of his dominance.",
     keyAchievements: [{ year: "1962", event: "First major; beat Arnold Palmer at U.S. Open" }, { year: "1986", event: "Won 18th and final major at Masters; age 46" }, { year: "Career", event: "18 major championships (record)" }],
     quotes: ["Resolve never to quit, never to give up, no matter what the situation.", "Success is achieved by developing our strengths, not by eliminating our weaknesses.", "I think I fail a bit less than everyone else."],
-    relatedIds: [33, 42, 11]
+    relatedIds: ["tiger-woods", "muhammad-ali", "roger-federer"]
   },
-  35: {
-    id: 35, name: "Sachin Tendulkar", nickname: "The God of Cricket", sport: "Cricket", nationality: "Indian", born: "1973",
+  "sachin-tendulkar": {
+    id: "sachin-tendulkar", name: "Sachin Tendulkar", nickname: "The God of Cricket", sport: "Cricket", nationality: "Indian", born: "1973",
     netWorth: "$200M", era: "Modern Era",
     bio: "Sachin Ramesh Tendulkar was born in Mumbai, India. His father, Ramesh, was a Marathi novelist and poet. As a child, Sachin was a bully at school. His older brother Ajit took him to coach Ramakant Achrekar at age 11 to channel his aggression into cricket. Achrekar would put a one-rupee coin on top of the stumps during practice matches — if Sachin survived the entire session without being dismissed, he kept the coin. Sachin collected 13 such coins.\n\nTendulkar made his Test debut for India at 16 against Pakistan in 1989, facing the fearsome pace of Wasim Akram and Waqar Younis with a bloodied nose but refusing to leave the field. Over the next 24 years, he became the greatest batsman in cricket history. He is the all-time leading run-scorer in both Test cricket (15,921 runs) and One Day Internationals (18,426 runs). He scored 100 international centuries — the only player to reach this milestone.\n\nTendulkar carried the hopes of a billion Indians for two decades. His 98 against Pakistan in the 2003 World Cup is considered one of the greatest innings ever played. After winning the 2011 World Cup on home soil — his ultimate dream — he played two more years before retiring in 2013. His farewell speech, delivered in tears at Mumbai's Wankhede Stadium, moved an entire nation. In 2014, he received the Bharat Ratna, India's highest civilian award.",
     keyAchievements: [{ year: "1989", event: "Test debut at age 16 against Pakistan" }, { year: "2011", event: "Won Cricket World Cup at home" }, { year: "2012", event: "100th international century" }, { year: "2014", event: "Awarded Bharat Ratna" }],
     quotes: ["People throw stones at you and you convert them into milestones.", "Don't stop chasing your dreams, because dreams do come true.", "I have never tried to compare myself to anyone else."],
-    relatedIds: [36, 37, 42]
+    relatedIds: ["virat-kohli", "kapil-dev", "muhammad-ali"]
   },
-  36: {
-    id: 36, name: "Virat Kohli", nickname: "The Run Machine", sport: "Cricket", nationality: "Indian", born: "1988",
+  "virat-kohli": {
+    id: "virat-kohli", name: "Virat Kohli", nickname: "The Run Machine", sport: "Cricket", nationality: "Indian", born: "1988",
     netWorth: "$120M", era: "Modern Era",
     bio: "Virat Kohli was born in Delhi, India. His father, Prem, was a criminal lawyer; his mother, Saroj, is a homemaker. Virat's father died of a heart attack when Virat was 18 — a devastating loss that transformed his approach to cricket. He played a Ranji Trophy match for Delhi the day after his father's death, scoring 90, because he knew his father wanted him to play.\n\nKohli made his ODI debut in 2008 and Test debut in 2011. He quickly established himself as one of the greatest batsmen of the modern era, known for his aggressive style, fitness obsession, and relentless hunger for runs. He has scored over 80 international centuries and is the fastest player to reach 8,000, 9,000, 10,000, 11,000, and 12,000 ODI runs. He led India to the top of the ICC Test rankings for a record 42 consecutive months.\n\nKohli captained India across all formats from 2014 to 2022, becoming the most successful Test captain in Indian history. He has been a vocal advocate for fitness in cricket, transforming the culture of the Indian team. His rivalry with contemporaries like Steve Smith, Kane Williamson, and Joe Root has defined an era of batting excellence. Off the field, he is a successful entrepreneur and philanthropist.",
     keyAchievements: [{ year: "2008", event: "ODI debut for India" }, { year: "2018", event: "Fastest to 10,000 ODI runs" }, { year: "2023", event: "Most runs in a single World Cup (765)" }],
     quotes: ["Self-belief and hard work will always earn you success.", "I like people who don't need everyone to like them.", "Never give up. Today is hard, tomorrow will be worse, but the day after tomorrow will be sunshine."],
-    relatedIds: [35, 37, 42]
+    relatedIds: ["sachin-tendulkar", "kapil-dev", "muhammad-ali"]
   },
-  37: {
-    id: 37, name: "Kapil Dev", nickname: "The Haryana Hurricane", sport: "Cricket", nationality: "Indian", born: "1959",
+  "kapil-dev": {
+    id: "kapil-dev", name: "Kapil Dev", nickname: "The Haryana Hurricane", sport: "Cricket", nationality: "Indian", born: "1959",
     era: "Golden Age",
     bio: "Kapil Dev Nikhanj was born in Chandigarh, India. He grew up in a middle-class family and was sent to a cricket academy at the age of 14, where his coach recognized his all-round potential. He made his Test debut in 1978 against Pakistan at age 19.\n\nKapil Dev is widely regarded as India's greatest all-rounder and one of the greatest in cricket history. He captained India to its first-ever Cricket World Cup victory in 1983, defeating the mighty West Indies in the final at Lord's — an upset so shocking it transformed cricket in India forever. He scored 175 not out against Zimbabwe in a must-win group stage match, an innings considered one of the greatest in World Cup history.\n\nKapil Dev held the world record for most Test wickets (434) until it was broken by Courtney Walsh. He was a fast-medium bowler with a natural outswinger and an explosive lower-order batsman who could change a match in minutes. His 434 Test wickets and 5,248 Test runs made him one of only a handful of players to achieve the all-rounder's double of 5,000 runs and 400 wickets. He was named the Indian Cricketer of the Century by Wisden in 2002.",
     keyAchievements: [{ year: "1983", event: "Led India to first Cricket World Cup victory" }, { year: "1983", event: "175 not out vs Zimbabwe; greatest ODI innings" }, { year: "Career", event: "434 Test wickets and 5,248 Test runs" }],
     quotes: ["Every country has its own cricket culture.", "When you put your heart into something, the results will follow.", "I never thought about records. I just played the game."],
-    relatedIds: [35, 36, 42]
+    relatedIds: ["sachin-tendulkar", "virat-kohli", "muhammad-ali"]
   },
-  38: {
-    id: 38, name: "Lewis Hamilton", nickname: "The King", sport: "Formula 1", nationality: "British", born: "1985",
+  "lewis-hamilton": {
+    id: "lewis-hamilton", name: "Lewis Hamilton", nickname: "The King", sport: "Formula 1", nationality: "British", born: "1985",
     netWorth: "$300M", era: "Modern Era",
     bio: "Lewis Carl Davidson Hamilton was born in Stevenage, Hertfordshire, England. His parents separated when he was two, and he was raised by his father, Anthony, and his mixed-race family. His father worked multiple jobs to fund Lewis's karting career, often arriving at races exhausted. At age 10, Lewis approached McLaren team principal Ron Dennis at an awards ceremony and told him, \"One day I want to race for you.\" Dennis signed him to the McLaren driver development program three years later.\n\nHamilton made his F1 debut with McLaren in 2007, finishing one point shy of the championship in his rookie season — the closest margin ever. In 2008, he won his first World Championship at age 23, becoming the youngest champion at the time. He moved to Mercedes in 2013 and dominated the sport, winning six more championships (2014-2015, 2017-2020). He tied Michael Schumacher's record of seven championships in 2020.\n\nHamilton has been a powerful advocate for diversity in motorsport, environmental sustainability, and racial justice. He established the Hamilton Commission to increase Black representation in UK motorsport. In 2021, he was knighted by the British Crown. He is the winningest driver in F1 history with over 100 victories and is widely considered one of the greatest racing drivers of all time.",
     keyAchievements: [{ year: "2008", event: "First World Championship with McLaren" }, { year: "2014-20", event: "6 championships with Mercedes" }, { year: "2020", event: "Tied record with 7th World Championship" }, { year: "2021", event: "Knighted by British Crown" }],
     quotes: ["We win and we lose together.", "You just need to be accepted for who you are and be proud of who you are.", "The way I differentiate myself is through my work ethic."],
-    relatedIds: [39, 42, 6]
+    relatedIds: ["ayrton-senna", "muhammad-ali", "cristiano-ronaldo"]
   },
-  39: {
-    id: 39, name: "Ayrton Senna", nickname: "The Magic", sport: "Formula 1", nationality: "Brazilian", born: "1960", died: "1994",
+  "ayrton-senna": {
+    id: "ayrton-senna", name: "Ayrton Senna", nickname: "The Magic", sport: "Formula 1", nationality: "Brazilian", born: "1960", died: "1994",
     era: "Golden Age",
     bio: "Ayrton Senna da Silva was born in Sao Paulo, Brazil, into a wealthy family. He began karting at age four and won the South American Kart Championship at 17. His family financed his progression through European racing series. He made his F1 debut in 1984 with Toleman.\n\nSenna won three World Championships (1988, 1990, 1991) with McLaren. His rivalry with Alain Prost is the most famous in F1 history — they were teammates, friends, bitter enemies, and rivals who pushed each other to extraordinary heights. Senna was known for his supernatural car control, particularly in wet conditions. His qualifying laps seemed to defy physics. He is widely considered the fastest driver ever over a single lap.\n\nOn May 1, 1994, Senna was leading the San Marino Grand Prix at Imola when his car left the track at Tamburello corner and struck a concrete wall. He died from his injuries. The weekend had already claimed the life of Austrian driver Roland Ratzenberger during qualifying. Senna's death shocked the world and led to sweeping safety reforms in F1. An estimated three million people lined the streets of Sao Paulo for his funeral. He remains the most beloved and iconic figure in motorsport history.",
     keyAchievements: [{ year: "1988", event: "First World Championship with McLaren" }, { year: "1990-91", event: "2 more World Championships" }, { year: "1993", event: "Legendary European GP win at Donington" }],
     quotes: ["Racing, competing, is in my blood. It's part of me, it's part of my life.", "Being second is to be the first of the ones who lose.", "If you no longer go for a gap that exists, you are no longer a racing driver."],
-    relatedIds: [38, 42, 17]
+    relatedIds: ["lewis-hamilton", "muhammad-ali", "usain-bolt"]
   },
-  40: {
-    id: 40, name: "Shohei Ohtani", nickname: "Shotime", sport: "Baseball", nationality: "Japanese", born: "1994",
+  "shohei-ohtani": {
+    id: "shohei-ohtani", name: "Shohei Ohtani", nickname: "Shotime", sport: "Baseball", nationality: "Japanese", born: "1994",
     netWorth: "$100M", era: "Modern Era",
     bio: "Shohei Ohtani was born in Oshu, Iwate Prefecture, Japan. His mother was a competitive badminton player, and his father worked at a local automobile plant and coached Little League. Shohei attended Hanamaki Higashi High School, where he threw a 99 mph fastball as a teenager — drawing comparisons to Japan's greatest pitcher, Hideo Nomo.\n\nIn 2018, Ohtani joined the Los Angeles Angels, becoming the first true two-way player in Major League Baseball in nearly a century. He both pitched and hit at an elite level — something no player had done since Babe Ruth. In 2021, he was named the unanimous AL MVP after hitting 46 home runs while posting a 9-2 pitching record. In 2023, he signed a record 10-year, $700 million contract with the Los Angeles Dodgers — the largest contract in sports history.\n\nOhtani won his second unanimous MVP award in 2023 after hitting 44 home runs and driving in 95 runs, despite suffering a torn UCL that ended his pitching season. He represents a new paradigm in baseball — a player so talented that the sport's traditional separation of pitchers and hitters may never be the same.",
     keyAchievements: [{ year: "2018", event: "First true two-way MLB player in a century" }, { year: "2021", event: "Unanimous AL MVP; 46 HRs, 9-2 as pitcher" }, { year: "2023", event: "Record $700M contract with Dodgers; 2nd MVP" }],
     quotes: ["I want to be the kind of player that fans want to watch.", "I don't think about limits. I just focus on getting better.", "If you don't challenge yourself, you'll never know your potential."],
-    relatedIds: [41, 42, 1]
+    relatedIds: ["babe-ruth", "muhammad-ali", "michael-jordan"]
   },
-  41: {
-    id: 41, name: "Babe Ruth", nickname: "The Sultan of Swat", sport: "Baseball", nationality: "American", born: "1895", died: "1948",
+  "babe-ruth": {
+    id: "babe-ruth", name: "Babe Ruth", nickname: "The Sultan of Swat", sport: "Baseball", nationality: "American", born: "1895", died: "1948",
     era: "Early Masters",
     bio: "George Herman Ruth Jr. was born in Baltimore, Maryland, into a working-class family. His parents ran a waterfront saloon and were largely absent. At age seven, they sent him to St. Mary's Industrial School for Boys, a reformatory and orphanage. It was there that Brother Matthias Boutlier taught him to play baseball.\n\nRuth began his career as a dominant left-handed pitcher for the Boston Red Sox, winning 89 games in six seasons. But his true gift was hitting. In 1919, he set the single-season home run record with 29. The Red Sox sold him to the New York Yankees in 1920 for $100,000 — a transaction so infamous it launched the \"Curse of the Bambino\" that supposedly kept Boston from winning a World Series for 86 years.\n\nWith the Yankees, Ruth transformed baseball and American sports culture. He hit 54 home runs in 1920, 59 in 1921, and a record 60 in 1927 — a record that stood for 34 years. He finished with 714 career home runs, a record that stood until 1974. He was larger than life: he drank, ate, and lived with the same gusto he brought to the batter's box. He transformed baseball from a game of strategy into a game of power, creating the template for the modern superstar athlete.",
     keyAchievements: [{ year: "1920", event: "Hit 54 home runs; transformed baseball" }, { year: "1927", event: "Record 60 home runs in a season" }, { year: "Career", event: "714 home runs; saved baseball after Black Sox scandal" }],
     quotes: ["Every strike brings me closer to the next home run.", "It's hard to beat a person who never gives up.", "Heroes get remembered, but legends never die."],
-    relatedIds: [40, 42, 34]
+    relatedIds: ["shohei-ohtani", "muhammad-ali", "jack-nicklaus"]
   },
-  42: {
-    id: 42, name: "Muhammad Ali", nickname: "The Greatest", sport: "Boxing", nationality: "American", born: "1942", died: "2016",
+  "muhammad-ali": {
+    id: "muhammad-ali", name: "Muhammad Ali", nickname: "The Greatest", sport: "Boxing", nationality: "American", born: "1942", died: "2016",
     era: "Golden Age", image: "/images/sports/muhammad-ali.jpg",
     bio: "Cassius Marcellus Clay Jr. was born in Louisville, Kentucky. At 12, his bicycle was stolen, and he told a police officer he wanted to beat up the thief. The officer, Joe Martin, was a boxing coach who told the young boy he'd better learn to fight first. Clay won six Kentucky Golden Gloves titles and an Olympic gold medal at the 1960 Rome Olympics before turning professional.\n\nIn 1964, at age 22, Clay defeated Sonny Liston to become the youngest heavyweight champion in history. He announced his conversion to Islam and changed his name to Muhammad Ali. In 1967, he refused induction into the U.S. Army during the Vietnam War, famously stating, \"I ain't got no quarrel with them Viet Cong.\" He was stripped of his titles, banned from boxing for three years, and convicted of draft evasion. The Supreme Court later overturned his conviction.\n\nAli returned to boxing in 1970 and engaged in three of the most famous fights in history: the \"Fight of the Century\" against Joe Frazier at Madison Square Garden (1971), the \"Rumble in the Jungle\" against George Foreman in Zaire (1974), and the \"Thrilla in Manila\" against Frazier (1975). He became the first three-time heavyweight champion. After retiring in 1981, he devoted himself to philanthropy and humanitarian work, becoming a global symbol of courage, conviction, and grace. He lit the Olympic cauldron at the 1996 Atlanta Games, his hands shaking from Parkinson's disease. He died in 2016.",
     keyAchievements: [{ year: "1960", event: "Olympic gold medal at Rome" }, { year: "1964", event: "Youngest heavyweight champion" }, { year: "1974", event: "Rumble in the Jungle; regained title" }, { year: "1996", event: "Lit Olympic cauldron at Atlanta Games" }],
     quotes: ["Float like a butterfly, sting like a bee.", "I am the greatest. I said that even before I knew I was.", "He who is not courageous enough to take risks will accomplish nothing in life.", "Service to others is the rent you pay for your room here on earth."],
-    relatedIds: [43, 51, 38]
+    relatedIds: ["floyd-mayweather", "mike-tyson", "lewis-hamilton"]
   },
-  43: {
-    id: 43, name: "Floyd Mayweather", nickname: "Money", sport: "Boxing", nationality: "American", born: "1977",
+  "floyd-mayweather": {
+    id: "floyd-mayweather", name: "Floyd Mayweather", nickname: "Money", sport: "Boxing", nationality: "American", born: "1977",
     netWorth: "$450M", era: "Modern Era",
     bio: "Floyd Joy Mayweather Jr. was born in Grand Rapids, Michigan, into a boxing family. His father, Floyd Sr., was a welterweight contender who fought Sugar Ray Leonard. His uncles Roger and Jeff were also professional boxers. Floyd's mother struggled with drug addiction, and his father was incarcerated for drug trafficking during Floyd's childhood. Boxing became his refuge.\n\nMayweather won a bronze medal at the 1996 Atlanta Olympics as an amateur. He turned professional later that year and won his first world title in 1998. Over the next two decades, he compiled a perfect 50-0 professional record — the best in boxing history. He won world titles in five weight classes, from super featherweight to light middleweight, and defeated a who's who of boxing greats including Oscar De La Hoya, Manny Pacquiao, and Canelo Alvarez.\n\nMayweather transformed boxing into a business spectacle. He promoted his own fights through Mayweather Promotions, earning over $1 billion in career earnings. His 2015 fight against Manny Pacquiao generated $600 million in revenue. His 2017 crossover bout against Conor McGregor earned him over $300 million for one night's work. While critics call him defensive and risk-averse, his financial genius and technical mastery are undeniable.",
     keyAchievements: [{ year: "1996", event: "Olympic bronze medal at Atlanta" }, { year: "2007", event: "Beat Oscar De La Hoya; became boxing's biggest star" }, { year: "2015", event: "Beat Manny Pacquiao; $600M revenue" }, { year: "2017", event: "50-0 record; retired undefeated" }],
     quotes: ["Hard work and dedication.", "I'm not in this sport to say a guy can beat me.", "You hear certain things, negative things, all the time that aren't true, but you never hear about the positive."],
-    relatedIds: [42, 51, 38]
+    relatedIds: ["muhammad-ali", "mike-tyson", "lewis-hamilton"]
   },
-  44: {
-    id: 44, name: "Jim Thorpe", nickname: "The World's Greatest Athlete", sport: "Multi-Sport", nationality: "American", born: "1887", died: "1953",
+  "jim-thorpe": {
+    id: "jim-thorpe", name: "Jim Thorpe", nickname: "The World's Greatest Athlete", sport: "Multi-Sport", nationality: "American", born: "1887", died: "1953",
     era: "Early Masters",
     bio: "Wa-Tho-Huk, which means \"Bright Path,\" was born in a one-room cabin near Prague, Indian Territory (now Oklahoma). He was a member of the Sac and Fox Nation. His twin brother died of pneumonia at age nine. Jim was sent to the Carlisle Indian Industrial School in Pennsylvania, a boarding school designed to assimilate Native American children. There, legendary coach Glenn \"Pop\" Warner discovered his extraordinary athletic ability.\n\nAt the 1912 Stockholm Olympics, Thorpe won gold medals in both the pentathlon and decathlon — a feat never repeated. King Gustav V of Sweden told him at the medal ceremony, \"You, sir, are the greatest athlete in the world.\" Thorpe reportedly replied, \"Thanks, King.\" Six months later, it was discovered he had played minor league baseball for $2 per game in 1909-1910, violating Olympic amateurism rules. His medals were stripped and not restored until 1983 — thirty years after his death.\n\nThorpe also played professional baseball, football, and basketball. He was the first president of what became the NFL. Despite his extraordinary achievements, he spent his later years in poverty, battling alcoholism. He died in 1953. In 1950, the Associated Press named him the greatest athlete of the first half of the 20th century. His story is one of extraordinary talent, injustice, and enduring legacy.",
     keyAchievements: [{ year: "1912", event: "Gold medals in pentathlon and decathlon at Stockholm" }, { year: "1920", event: "First president of the NFL" }, { year: "1950", event: "Named greatest athlete of the half-century" }],
     quotes: ["I never practiced. I just went out and did it.", "I was never content to lose.", "The price of victory is high, but so are the rewards."],
-    relatedIds: [45, 42, 18]
+    relatedIds: ["bo-jackson", "muhammad-ali", "jesse-owens"]
   },
-  45: {
-    id: 45, name: "Bo Jackson", nickname: "The Bo Knows", sport: "Multi-Sport", nationality: "American", born: "1962",
+  "bo-jackson": {
+    id: "bo-jackson", name: "Bo Jackson", nickname: "The Bo Knows", sport: "Multi-Sport", nationality: "American", born: "1962",
     era: "Modern Era",
     bio: "Vincent Edward Jackson was born in Bessemer, Alabama. He was the eighth of ten children in a working-class family. At McAdory High School, he was a two-sport star, setting state records in track while also excelling at football. He attended Auburn University, where he won the 1985 Heisman Trophy as the best player in college football while also starring on the baseball team.\n\nJackson was drafted first overall by the Tampa Bay Buccaneers in the 1986 NFL Draft, but he refused to sign after the Bucs cost him his college baseball eligibility with a deceptive trip. He signed with the Kansas City Royals instead and played Major League Baseball. In 1987, the Los Angeles Raiders drafted him, and owner Al Davis allowed him to play both sports — Jackson became the only athlete to be named an All-Star in both MLB and the NFL.\n\nJackson's athletic gifts were almost mythical. At 6'1\" and 230 pounds, he ran a 4.12-second 40-yard dash — the fastest ever recorded at the NFL Combine. He famously ran up the outfield wall after making a catch. On the football field, he ran over defenders with devastating power. His career was cut short by a hip injury suffered during a 1991 NFL playoff game, but his legend endures. The \"Bo Knows\" Nike ad campaign became a cultural phenomenon.",
     keyAchievements: [{ year: "1985", event: "Won Heisman Trophy at Auburn" }, { year: "1989", event: "NFL Pro Bowl and MLB All-Star in same year" }, { year: "1990", event: "Only athlete to be All-Star in two major US sports" }],
     quotes: ["Set your goals high, and don't stop till you get there.", "If you have a chance to accomplish something that will make things better for people coming behind you, and you don't do that, you are wasting your time on this earth.", "I was a smart kid, but I hated school."],
-    relatedIds: [44, 42, 24]
+    relatedIds: ["jim-thorpe", "muhammad-ali", "tom-brady"]
   },
-  46: {
-    id: 46, name: "Jon Jones", nickname: "Bones", sport: "MMA", nationality: "American", born: "1987",
+  "jon-jones": {
+    id: "jon-jones", name: "Jon Jones", nickname: "Bones", sport: "MMA", nationality: "American", born: "1987",
     era: "Modern Era",
     bio: "Jonathan Dwight Jones was born in Rochester, New York. He grew up in a devout Christian family with three brothers, all of whom played football. Jon wrestled in high school and won a national junior college wrestling title at Iowa Central Community College before turning to mixed martial arts.\n\nJones made his UFC debut in 2008 at age 21. In 2011, he defeated Mauricio \"Shogun\" Rua to become the youngest UFC champion in history at 23. He has defended the light heavyweight title a record 11 times and also won the heavyweight championship, becoming one of only a handful of fighters to hold titles in two weight classes simultaneously.\n\nJones' fighting style is built on creativity, reach, and an unorthodox striking game that has baffled opponents for over a decade. His record includes victories over some of the greatest fighters in MMA history. Outside the octagon, he has faced legal issues and doping violations that have interrupted his career, but his return to dominance after each setback has been remarkable. He is widely considered the greatest mixed martial artist of all time.",
     keyAchievements: [{ year: "2011", event: "Youngest UFC champion at age 23" }, { year: "2012-20", event: "Record 11 light heavyweight title defenses" }, { year: "2023", event: "Won UFC Heavyweight Championship" }],
     quotes: ["I'm a lion. I don't concern myself with the opinions of sheep.", "I'm not a great fighter because I never lose. I'm a great fighter because of how I respond to losing.", "Believe in yourself and all that you are."],
-    relatedIds: [42, 43, 24]
+    relatedIds: ["muhammad-ali", "floyd-mayweather", "tom-brady"]
   },
-  47: {
-    id: 47, name: "Lin Dan", nickname: "Super Dan", sport: "Badminton", nationality: "Chinese", born: "1983",
+  "lin-dan": {
+    id: "lin-dan", name: "Lin Dan", nickname: "Super Dan", sport: "Badminton", nationality: "Chinese", born: "1983",
     era: "Modern Era",
     bio: "Lin Dan was born in Longyan, Fujian Province, China. He began playing badminton at age five and joined the Fujian provincial team at 12. By 18, he was on the Chinese national team. His left-handed playing style, explosive power, and unmatched mental toughness made him the most dominant player in badminton history.\n\nLin Dan is the only player to complete the \"Super Grand Slam\" — winning all nine major titles in world badminton: Olympic Games, World Championships, World Cup, Thomas Cup, Sudirman Cup, Super Series Masters Finals, All England Open, Asian Games, and Asian Championships. He won Olympic gold medals at the 2008 Beijing and 2012 London Games, defeating his nemesis Lee Chong Wei in both finals.\n\nHis rivalry with Malaysia's Lee Chong Wei is considered the greatest in badminton history — they faced each other 40 times, with Lin winning 28. Their matches were epic battles of skill and will that elevated the sport's global profile. Lin retired in 2020, leaving behind a legacy as the greatest badminton player ever and one of China's most beloved athletes.",
     keyAchievements: [{ year: "2008", event: "Olympic gold at Beijing Games" }, { year: "2012", event: "Second Olympic gold at London" }, { year: "Career", event: "Only player to complete Super Grand Slam" }],
     quotes: ["The most important thing is to never give up.", "Your opponent is not the person across the net. It's yourself.", "Every match is a new beginning."],
-    relatedIds: [49, 48, 42]
+    relatedIds: ["ma-long", "eddy-merckx", "muhammad-ali"]
   },
-  48: {
-    id: 48, name: "Eddy Merckx", nickname: "The Cannibal", sport: "Cycling", nationality: "Belgian", born: "1945",
+  "eddy-merckx": {
+    id: "eddy-merckx", name: "Eddy Merckx", nickname: "The Cannibal", sport: "Cycling", nationality: "Belgian", born: "1945",
     era: "Golden Age",
     bio: "Edouard Louis Joseph Merckx was born in Meensel-Kiezegem, Belgium. He was a sickly child who suffered from respiratory problems. At 16, he bought his first racing bicycle with money earned from a part-time job and began cycling competitively. By 20, he had turned professional.\n\nMerckx earned his nickname \"The Cannibal\" because he seemed insatiably hungry for victories — he would attack on flat stages, mountain stages, and time trials with equal ferocity. He won the Tour de France five times (1969-72, 1974), the Giro d'Italia five times, and the Vuelta a Espana once. He won all five cycling monuments — the most prestigious one-day races — multiple times. His 525 professional victories remain a record that may never be broken.\n\nWhat set Merckx apart was his completeness. He could sprint, climb, and time-trial better than anyone. In the 1969 Tour de France, he won the yellow jersey (overall), green jersey (points), and polka-dot jersey (mountains) — the only rider to ever sweep all three classifications. A crash in 1975 nearly killed him, but he returned to race again. He retired in 1978 and remains the most dominant cyclist in the sport's history.",
     keyAchievements: [{ year: "1969", event: "First Tour de France; won all 3 jerseys" }, { year: "1969-74", event: "5 Tour de France victories" }, { year: "Career", event: "525 professional wins (record)" }],
     quotes: ["Cyclists live with pain. If you can't handle it, you win nothing.", "I don't believe in limits.", "As long as I breathe, I attack."],
-    relatedIds: [38, 17, 42]
+    relatedIds: ["lewis-hamilton", "usain-bolt", "muhammad-ali"]
   },
-  49: {
-    id: 49, name: "Ma Long", nickname: "The Dragon", sport: "Table Tennis", nationality: "Chinese", born: "1988",
+  "ma-long": {
+    id: "ma-long", name: "Ma Long", nickname: "The Dragon", sport: "Table Tennis", nationality: "Chinese", born: "1988",
     era: "Modern Era",
     bio: "Ma Long was born in Anshan, Liaoning Province, China. He started playing table tennis at age five and joined the Liaoning provincial team at 12. By 15, he was on the Chinese national team — the most competitive table tennis program in the world. His explosive forehand, footwork, and tactical intelligence quickly set him apart.\n\nMa Long is the greatest table tennis player in history. He has won the Olympic gold medal in men's singles twice (2016, 2021), the World Championships three times (2015, 2017, 2019), and the World Cup twice. He held the world No. 1 ranking for a record 64 consecutive months. In 2021, at age 33, he became the oldest Olympic table tennis champion, defeating his teammate Fan Zhendong in a masterful display of experience and skill.\n\nWhat makes Ma Long's dominance extraordinary is the depth of Chinese table tennis talent. China produces world-class players by the dozens, yet Ma Long has remained at the top for nearly two decades. His combination of power, precision, and mental toughness is considered the most complete in the sport's history. He is a national hero in China and has done more than any player to globalize table tennis.",
     keyAchievements: [{ year: "2016", event: "Olympic gold in men's singles" }, { year: "2021", event: "Second Olympic gold; oldest table tennis champion" }, { year: "2015-19", event: "3 consecutive World Championships" }],
     quotes: ["Table tennis is not just a sport, it's an art.", "The harder you work, the luckier you get.", "I play every point as if it's match point."],
-    relatedIds: [47, 48, 42]
+    relatedIds: ["lin-dan", "eddy-merckx", "muhammad-ali"]
   },
-  50: {
-    id: 50, name: "Dhyan Chand", nickname: "The Wizard", sport: "Field Hockey", nationality: "Indian", born: "1905", died: "1979",
+  "dhyan-chand": {
+    id: "dhyan-chand", name: "Dhyan Chand", nickname: "The Wizard", sport: "Field Hockey", nationality: "Indian", born: "1905", died: "1979",
     era: "Early Masters",
     bio: "Dhyan Singh was born in Allahabad, British India. His father was in the British Indian Army, and the family moved frequently. Dhyan took up hockey while enrolled in the Indian Army. He practiced hockey late into the night, giving rise to his nickname \"Chand\" (Moon) because he would play by moonlight.\n\nDhyan Chand led India to three consecutive Olympic gold medals in field hockey (1928, 1932, 1936), scoring over 400 goals in international competition. At the 1936 Berlin Olympics, he scored 11 goals, including a hat-trick in the final against Germany. According to legend, his ball control was so extraordinary that the Germans suspected his hockey stick had a magnet inside. After the final, Adolf Hitler reportedly offered him a position in the German army — Chand declined.\n\nDhyan Chand is widely considered the greatest field hockey player in history. His stickwork was so magical that it seemed to defy physics. India observes National Sports Day on his birthday, August 29. His legacy inspired generations of Indian hockey players and established India as the dominant force in international hockey for decades.",
     keyAchievements: [{ year: "1928", event: "First Olympic gold at Amsterdam" }, { year: "1936", event: "3rd Olympic gold at Berlin; 11 goals" }, { year: "Career", event: "400+ international goals; 3 Olympic golds" }],
     quotes: ["Goals are scored not by strength, but by timing.", "Hockey is not just a sport, it is a way of life.", "The greatest pride is in playing for your country."],
-    relatedIds: [47, 49, 42]
+    relatedIds: ["lin-dan", "ma-long", "muhammad-ali"]
   },
-  51: {
-    id: 51, name: "Mike Tyson", nickname: "Iron Mike", sport: "Boxing", nationality: "American", born: "1966",
+  "mike-tyson": {
+    id: "mike-tyson", name: "Mike Tyson", nickname: "Iron Mike", sport: "Boxing", nationality: "American", born: "1966",
     netWorth: "$10M", era: "Modern Era",
     bio: "Michael Gerard Tyson was born in Brooklyn, New York. His father abandoned the family before Mike was born. He grew up in the violent neighborhood of Brownsville, where he was arrested 38 times by age 13. He was sent to the Tryon School for Boys, a reform school in upstate New York, where boxing trainer Bobby Stewart discovered his raw power. Stewart introduced Tyson to legendary trainer Cus D'Amato, who became his legal guardian and mentor.\n\nUnder D'Amato, Tyson developed into the most feared heavyweight in boxing history. He won his first 19 professional fights by knockout, 12 in the first round. At age 20, he defeated Trevor Berbick to become the youngest heavyweight champion in history — a record that still stands. His combination of speed, power, and the \"peek-a-boo\" style made him nearly unstoppable. He unified the WBA, WBC, and IBF titles by age 21.\n\nTyson's life unraveled after D'Amato's death in 1985. He married and divorced actress Robin Givens, fired his longtime team, and was convicted of rape in 1992, serving three years in prison. After his release, he won the WBA and WBC titles but lost to Evander Holyfield in the infamous \"Bite Fight.\" Tyson declared bankruptcy in 2003 despite earning over $300 million. In recent years, he has rebuilt his life as a cannabis entrepreneur, podcaster, and actor. His story is the most dramatic rise, fall, and redemption in sports history.",
     keyAchievements: [{ year: "1986", event: "Youngest heavyweight champion at age 20" }, { year: "1987-88", event: "Unified WBA, WBC, IBF heavyweight titles" }, { year: "2020", event: "Returned for exhibition fight at age 54" }],
     quotes: ["Everyone has a plan until they get punched in the mouth.", "Discipline is doing what you hate to do, but doing it like you love it.", "I'm a dreamer. I have to dream and reach for the stars."],
-    relatedIds: [42, 43, 46]
+    relatedIds: ["muhammad-ali", "floyd-mayweather", "jon-jones"]
   },
 };

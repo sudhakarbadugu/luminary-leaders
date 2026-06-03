@@ -36,5 +36,3 @@ Arnault is married to Helène Mercier Arpault, a Canadian concert pianist he mar
 5. **Learn to wait and then act decisively.** Arnault spent years waiting for LVMH; then he struck.
 
 **The Hard Question:** What dream are you building—or could you buy—rather than just sell?
-
-*Profile saved to: /root/Projects/leaders-biography/bernard-arnault.md*

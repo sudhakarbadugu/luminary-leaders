@@ -106,5 +106,3 @@ If Grant proved givers succeed—are you a giver or a taker?
 Giving succeeds in the long run.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/adam-grant.md*

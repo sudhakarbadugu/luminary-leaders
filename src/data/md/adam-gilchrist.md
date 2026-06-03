@@ -135,5 +135,3 @@ If a boy from a small town in Western Australia could make "the guy who kept wic
 You don't have to be the star to matter. But you have to be extraordinary in your role to deserve to matter at all.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/adam-gilchrist.md*

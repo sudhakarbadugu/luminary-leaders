@@ -152,5 +152,3 @@ If a man who died at 32 could change how the world thinks about martial arts, fi
 You will not have forever. The water does not wait.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/bruce-lee.md*

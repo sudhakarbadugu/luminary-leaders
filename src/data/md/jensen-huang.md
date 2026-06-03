@@ -40,4 +40,3 @@ NVIDIA under Huang has become the engine of modern AI, with every major AI syste
 5. Set one "impossible goal" for your team that would require rethinking your approach entirely
 
 ---
-*Profile saved to: /root/Projects/leaders-biography/jensen-huang.md*

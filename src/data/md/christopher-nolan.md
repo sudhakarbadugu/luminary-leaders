@@ -126,5 +126,3 @@ If a director who refuses to use a smartphone could build some of the most techn
 The tools are not the vision. The vision is what matters.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/christopher-nolan.md*

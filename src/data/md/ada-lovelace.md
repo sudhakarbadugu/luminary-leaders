@@ -104,5 +104,3 @@ Ada saw the future before it existed. She combined mathematics with imagination.
 Ada invented programming before computers existed. Are you building something people will understand in 100 years—or only what they understand today?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/ada-lovelace.md*

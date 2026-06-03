@@ -101,5 +101,3 @@ Lincoln's life proves that preparation meets opportunity in moments of crisis.
 Lincoln prepared his entire life for one moment—leading America through civil war. Are you preparing for yours—or just waiting?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/abraham-lincoln.md*

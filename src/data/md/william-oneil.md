@@ -119,5 +119,3 @@ If O'Neil's secret is to lose the least amount when wrong—at what percentage a
 Cut at 7-8%. No exceptions.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/william-oneil.md*

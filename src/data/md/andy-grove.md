@@ -132,5 +132,3 @@ If a refugee who hid from Nazis during the Holocaust and escaped Soviet occupati
 The cost of looking foolish by overreacting is smaller than the cost of dying by underreacting.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/andy-grove.md*

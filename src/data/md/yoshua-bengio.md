@@ -106,5 +106,3 @@ If Bengio—the Turing Award winner—warns about AI—are you building responsi
 Pioneers can become protectors.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/yoshua-bengio.md*

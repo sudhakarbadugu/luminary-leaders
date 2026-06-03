@@ -1,4 +1,5 @@
 import { Quote } from 'lucide-react';
+import MarkdownText from './MarkdownText';
 
 interface QuoteCardsProps {
   quotes: string[];
@@ -36,7 +37,7 @@ export default function QuoteCards({ quotes, color = '#3498db', authorName }: Qu
           >
             <Quote size={32} style={{ color: `${color}40`, position: 'absolute', top: 12, left: 12 }} />
             <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 20, color: '#282b2f', lineHeight: 1.5, fontStyle: 'italic', marginLeft: 20 }}>
-              "{quote}"
+              "<MarkdownText text={quote} />"
             </p>
             {authorName && (
               <p style={{ textAlign: 'right', marginTop: 12, fontSize: 14, color, fontWeight: 600 }}>

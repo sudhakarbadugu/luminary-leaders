@@ -106,5 +106,3 @@ If Gebbia followed curiosity to Airbnb—are you following passion or curiosity?
 Curiosity drives innovation.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/joe-gebbia.md*

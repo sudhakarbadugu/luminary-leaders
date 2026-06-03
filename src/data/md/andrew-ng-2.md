@@ -125,5 +125,3 @@ Ng democratized AI education. His life proves teaching at scale changes millions
 Ng says AI is the new electricity. Are you learning to use it—or will you be replaced by those who do?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/andrew-ng-2.md*

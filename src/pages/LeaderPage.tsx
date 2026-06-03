@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router';
+import { useParams, useNavigate } from 'react-router-dom';
 import { bioData, leaders } from '../data';
 import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, MapPin, Quote, Users } from 'lucide-react';
@@ -13,6 +13,8 @@ import Timeline from '../components/Timeline';
 import StatCards from '../components/StatCards';
 import QuoteCards from '../components/QuoteCards';
 import ActionableSteps from '../components/ActionableSteps';
+import ReadingProgress from '../components/ReadingProgress';
+import MarkdownText from '../components/MarkdownText';
 import { getInitials, getGradient, SECTION_GRADIENT_COLORS } from '../utils/visual';
 
 
@@ -20,7 +22,7 @@ import { getInitials, getGradient, SECTION_GRADIENT_COLORS } from '../utils/visu
 export default function LeaderPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const leaderId = parseInt(id || '0', 10);
+  const leaderId = id || '';
   const bio = bioData[leaderId];
   const leader = leaders.find(l => l.id === leaderId);
 
@@ -32,7 +34,7 @@ export default function LeaderPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [leaderId]);
+  }, [id]);
 
   if (!bio || !leader) {
     return (
@@ -53,6 +55,12 @@ export default function LeaderPage() {
 
   return (
     <div className="page-container" style={{ background: "#f1f1ee", minHeight: "100vh" }}>
+      <ReadingProgress sections={[
+        { id: 'story', label: 'Story' },
+        { id: 'insights', label: 'Insights' },
+        { id: 'quotes', label: 'Quotes' },
+        { id: 'related', label: 'Related' },
+      ]} />
       {/* Hero Section */}
       <div
         className="dark-hero"
@@ -148,7 +156,7 @@ export default function LeaderPage() {
                 <div style={{ borderLeft: '3px solid #ffcc00', paddingLeft: 24, marginTop: 32 }}>
                   <Quote size={20} style={{ color: '#ffcc00', marginBottom: 8 }} />
                   <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, fontStyle: 'italic', lineHeight: 1.5, color: '#f1f1ee' }}>
-                    {bio.quotes?.[0]}
+                    <MarkdownText text={bio.quotes?.[0]} />
                   </p>
                 </div>
               )}
@@ -158,19 +166,19 @@ export default function LeaderPage() {
       </div>
 
       {/* Bio Content */}
-      <div style={{ maxWidth: 800, margin: '0 auto', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
+      <div id="story" style={{ maxWidth: 800, margin: '0 auto', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
         <AudioNarration text={fullBioText} title={`Listen to ${bio.name}'s story`} />
 
         <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>
           The Story
         </div>
         {bio.bio.split('\n\n').map((paragraph, i) => (
-          <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, lineHeight: 1.8, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 40 : 28 }}>{paragraph}</p>
+          <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, lineHeight: 1.8, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 40 : 28 }}><MarkdownText text={paragraph} /></p>
         ))}
 
         {/* Visual Components - Rich Data */}
         {jsonEntry && (
-          <>
+          <div id="insights">
             <StatCards 
               born={jsonEntry.born} 
               died={jsonEntry.died} 
@@ -181,12 +189,12 @@ export default function LeaderPage() {
             <Timeline milestones={jsonEntry.milestones || []} color="#ffcc00" />
             <QuoteCards quotes={jsonEntry.quotes || []} color="#ffcc00" authorName={jsonEntry.name} />
             <ActionableSteps steps={jsonEntry.actionableSteps || []} color="#ffcc00" />
-          </>
+          </div>
         )}
 
         {/* Additional Quotes */}
         {(bio.quotes?.length ?? 0) > 1 && (
-          <div style={{ marginTop: 60, marginBottom: 60 }}>
+          <div id="quotes" style={{ marginTop: 60, marginBottom: 60 }}>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>
               In Their Words
             </div>
@@ -194,7 +202,7 @@ export default function LeaderPage() {
               <div key={i} className="card-bg" style={{ background: "#fff", borderRadius: 12, padding: "32px 28px", marginBottom: 16, border: "1px solid #e5e5e0" }}>
                 <Quote size={18} style={{ color: '#ffcc00', marginBottom: 12 }} />
                 <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 20, fontStyle: 'italic', lineHeight: 1.5, color: '#282b2f' }}>
-                  {quote}
+                  <MarkdownText text={quote} />
                 </p>
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginTop: 16 }}>
                   -- {bio.name}
@@ -206,7 +214,7 @@ export default function LeaderPage() {
 
         {/* Related Leaders */}
         {relatedLeaders.length > 0 && (
-          <div style={{ marginTop: 60 }}>
+          <div id="related" style={{ marginTop: 60 }}>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>
               Related Legends
             </div>

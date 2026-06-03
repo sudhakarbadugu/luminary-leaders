@@ -98,5 +98,3 @@ If Parker was forced out of multiple companies—are you staying too long or lea
 Disruption creates value despite failures.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/sean-parker.md*

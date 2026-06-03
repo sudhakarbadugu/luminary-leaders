@@ -106,5 +106,3 @@ If Khosrowshahi fixed Uber's culture—are you building trust or burning relatio
 Diplomacy fixes culture.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/dara-khosrowshahi.md*

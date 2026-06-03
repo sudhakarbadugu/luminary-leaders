@@ -100,5 +100,3 @@ If the trader who never risked more than 1% on a single position was profitable 
 You do not have to be right. You have to not be wrong too much.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/larry-hite.md*

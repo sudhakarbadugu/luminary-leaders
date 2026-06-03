@@ -40,4 +40,3 @@ Bezos transformed how humanity shops, reads, watches, and stores data—creating
 5. Write down your personal "Day 1" principles and review them monthly
 
 ---
-*Profile saved to: /root/Projects/leaders-biography/jeff-bezos-2.md*

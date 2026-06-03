@@ -36,5 +36,3 @@ Sanders is married to Jane O'Meara, a former Vermont college administrator whom 
 5. **Be consistent enough that people know where you stand.** In a world of flip-flopping, conviction is a competitive advantage.
 
 **The Hard Question:** What would you fight for even if you lost every election for 20 years?
-
-*Profile saved to: /root/Projects/leaders-biography/bernie-sanders.md*

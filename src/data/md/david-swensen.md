@@ -102,5 +102,3 @@ If Swensen turned $1 billion into $30 billion with process consistency—how con
 Consistency beats brilliance.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/david-swensen.md*

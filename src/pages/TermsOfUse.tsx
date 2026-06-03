@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, FileText, BookOpen, AlertCircle, Copyright, Scale } from 'lucide-react';
 
 export default function TermsOfUse() {

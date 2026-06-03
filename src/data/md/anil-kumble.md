@@ -140,5 +140,3 @@ If a mechanical engineer from Bangalore became the highest wicket-taker in India
 Work with what you have. Keep it accurate. Take wickets.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/anil-kumble.md*

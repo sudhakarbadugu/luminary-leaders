@@ -102,5 +102,3 @@ If Kalanick was forced out of Uber—are you building culture or just growth?
 Disruption creates enemies.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/travis-kalanick.md*

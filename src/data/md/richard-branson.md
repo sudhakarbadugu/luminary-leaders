@@ -118,5 +118,3 @@ If a dyslexic dropout built a global brand by saying "screw it, let's do it"—w
 The brave may not live forever, but the cautious do not live at all.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/richard-branson.md*

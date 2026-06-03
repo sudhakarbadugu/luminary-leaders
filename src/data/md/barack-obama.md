@@ -98,5 +98,3 @@ He took a different path after the loss—focusing on voter registration drives 
 Obama went from community organizer to President in 18 years. What are you doing with your time that's comparable? Every day is a choice. What would you do if you committed fully to one goal for the next 18 years?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/barack-obama.md*

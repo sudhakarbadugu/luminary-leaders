@@ -124,5 +124,3 @@ If a man who survived the Nazi occupation could use his understanding of human p
 Markets are human. Psychology is part of the system.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/george-soros.md*

@@ -97,5 +97,3 @@ Steve Prefontaine's life demonstrates that the gift is effort, not talent. His s
 If Prefontaine died at 24 having given everything—are you giving your best right now? What would he say about your current effort level? Are you sacrificing the gift?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/steve-prefontaine.md*

@@ -130,5 +130,3 @@ Kitaro transformed manufacturing by eliminating waste and empowering workers.
 Kitaro eliminated waste from manufacturing. What waste exists in your daily work that you haven't removed yet?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/akio-kitaro.md*

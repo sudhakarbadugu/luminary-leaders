@@ -98,5 +98,3 @@ If Williams pioneered three revolutions—are you building platforms or content?
 Platforms enable expression.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/evan-williams.md*

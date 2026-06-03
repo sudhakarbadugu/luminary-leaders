@@ -86,5 +86,4 @@ If Stone says the most powerful thing is being yourself—are you showing up as 
 
 ---
 
-*Profile saved to: /root/Projects/leaders-biography/biz-stone.md*
 *Lines: 160 | Word count: ~2,400 | Reading time: 10 minutes*

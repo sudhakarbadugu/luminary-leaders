@@ -106,5 +106,3 @@ If Schloss beat the market with no computer and 100+ stocks—how complicated do
 "We try to buy stocks cheap... it's not that complicated."
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/walter-schloss.md*

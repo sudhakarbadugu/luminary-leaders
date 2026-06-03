@@ -98,5 +98,3 @@ If El-Erian coined "The New Normal" in 2009—what structural change are you ign
 The world has changed permanently. Prepare for multiple scenarios.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/mohamed-el-erian.md*

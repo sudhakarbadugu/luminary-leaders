@@ -163,5 +163,3 @@ If a man who could have been dismissed as overweight, undisciplined, and controv
 You do not have to be perfect. You have to be ready.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/ian-botham.md*

@@ -99,5 +99,3 @@ If Charpentier discovered molecular scissors—are you studying defense mechanis
 Bacterial research changes medicine.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/emmanuelle-charpentier.md*

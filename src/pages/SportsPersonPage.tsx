@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router';
+import { useParams, useNavigate } from 'react-router-dom';
 import { athletes, athleteBioData } from '../data';
 import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, DollarSign, Trophy, Globe, Quote, Award, Medal } from 'lucide-react';
@@ -13,13 +13,15 @@ import AudioNarration from '../components/AudioNarration';
 import Timeline from '../components/Timeline';
 import StatCards from '../components/StatCards';
 import QuoteCards from '../components/QuoteCards';
+import ActionableSteps from '../components/ActionableSteps';
+import MarkdownText from '../components/MarkdownText';
 import { getGradient, SCIENTIST_GRADIENT_COLORS } from '../utils/visual';
 
 export default function SportsPersonPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const contentRef = useRef<HTMLDivElement>(null);
-  const athleteId = parseInt(id || '1');
+  const athleteId = id || '';
   const athlete = athletes.find(a => a.id === athleteId);
   const bio = athleteBioData[athleteId];
   const jsonEntry = athlete ? jsonLoader.getJsonBioByName(athlete.name) : undefined;
@@ -112,7 +114,7 @@ export default function SportsPersonPage() {
              <AudioNarration text={fullBioText} title={`Listen to ${athlete.name}'s story`} />
 
            {bio.bio.split('\n\n').map((paragraph, i) => (
-          <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 0 : 28 }}>{paragraph}</p>
+          <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 0 : 28 }}><MarkdownText text={paragraph} /></p>
         ))}
 
         {/* Visual Components - Rich Data */}
@@ -153,7 +155,7 @@ export default function SportsPersonPage() {
             {(bio?.quotes ?? []).map((quote, i) => (
               <div key={i} style={{ background: '#282b2f', borderRadius: 12, padding: '28px 32px', marginBottom: 12, position: 'relative' }}>
                 <Quote size={20} style={{ color: '#ffcc00', position: 'absolute', top: 16, left: 16, opacity: 0.3 }} />
-                <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: '#f1f1ee', lineHeight: 1.6, fontStyle: 'italic', marginLeft: 24 }}>{quote}</p>
+                <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: '#f1f1ee', lineHeight: 1.6, fontStyle: 'italic', marginLeft: 24 }}><MarkdownText text={quote} /></p>
               </div>
             ))}
           </div>

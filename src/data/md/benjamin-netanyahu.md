@@ -36,5 +36,3 @@ Netanyahu is married to Sara, a former flight attendant whom he married in 1978,
 5. **Define your non-negotiables clearly.** His security convictions never wavered, even when his tactics did.
 
 **The Hard Question:** What would you never concede, even if concession would make everything easier?
-
-*Profile saved to: /root/Projects/leaders-biography/benjamin-netanyahu.md*

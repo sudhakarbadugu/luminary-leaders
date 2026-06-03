@@ -89,5 +89,3 @@ Nathan Blecharczyk's career demonstrates that infrastructure enables revolutions
 If Blecharczyk built infrastructure that enabled trust at scale—are you investing in the foundations of your career or just chasing visible wins? The most powerful contributions are often invisible.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/nathan-blecharczyk.md*

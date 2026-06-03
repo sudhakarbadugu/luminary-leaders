@@ -98,5 +98,3 @@ If Rabois built three major companies through hiring—are you hiring people bet
 Operational expertise creates companies.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/keith-rabois.md*

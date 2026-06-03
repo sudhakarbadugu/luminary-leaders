@@ -116,5 +116,3 @@ If Graham required margin of safety after nearly going bankrupt in 1929—what m
 Price is what you pay. Value is what you get.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/benjamin-graham.md*

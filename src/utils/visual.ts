@@ -23,8 +23,13 @@ export const SCIENTIST_GRADIENT_COLORS = [
   ['#bf360c', '#e64a19'], ['#33691e', '#558b2f'], ['#4e342e', '#6d4c41'],
 ];
 
-export function getGradient(colors: string[][], id: number): string {
-  const c = colors[id % colors.length];
+export function getGradient(colors: string[][], id: string | number): string {
+  if (!Array.isArray(colors) || colors.length === 0) {
+    return 'linear-gradient(135deg, #2c3e50, #3498db)';
+  }
+  const numId = typeof id === 'string' ? id.split('').reduce((a, b) => a + b.charCodeAt(0), 0) : Number(id);
+  const safeIndex = Number.isFinite(numId) ? Math.abs(Math.trunc(numId)) : 0;
+  const c = colors[safeIndex % colors.length] ?? colors[0];
   return `linear-gradient(135deg, ${c[0]}, ${c[1]})`;
 }
 

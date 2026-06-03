@@ -99,5 +99,3 @@ If Griffin locked the gates in 2008 to survive—do you have a plan for crisis?
 Risk management is survival.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/ken-griffin.md*

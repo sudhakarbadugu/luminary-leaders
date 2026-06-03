@@ -98,5 +98,3 @@ If Marcus turned $30,000 into $80 million with trend following and position sizi
 Bet small when losing. Bet big when winning.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/michael-marcus.md*

@@ -320,7 +320,7 @@ files.forEach(filename => {
   
   // Build rich entry
   const entry = {
-    id: categories[category].length + 1,
+    id: slug,
     name: parsed.name,
     slug: slug,
     subtitle: parsed.subtitle,

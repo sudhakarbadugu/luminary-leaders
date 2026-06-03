@@ -98,5 +98,3 @@ If Patrick built $95B from rural Ireland—are you underestimating what you can 
 Long-term thinking builds infrastructure.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/patrick-collison.md*

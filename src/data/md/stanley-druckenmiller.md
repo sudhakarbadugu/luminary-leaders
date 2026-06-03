@@ -119,5 +119,3 @@ If the trader who never had a losing year holds cash when he lacks conviction—
 The key is not being right. The key is how much you make when you're right and how much you lose when you're wrong.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/stanley-druckenmiller.md*

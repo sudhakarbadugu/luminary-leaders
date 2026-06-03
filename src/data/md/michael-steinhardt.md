@@ -108,5 +108,3 @@ If Steinhardt made 24% annualized for 28 years and then walked away—how long w
 Intensity produces returns. It also produces burnout.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/michael-steinhardt.md*

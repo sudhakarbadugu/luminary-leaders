@@ -158,5 +158,3 @@ If a 19-year-old with no success, no finance degree, and no connections could go
 The market doesn't care about your age, your background, or your last failure. It only cares whether your thinking is better than everyone else's. Is it?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/vijay-kedia.md*

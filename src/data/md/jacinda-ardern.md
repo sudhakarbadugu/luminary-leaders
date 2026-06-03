@@ -40,4 +40,3 @@ Ardern's legacy encompasses groundbreaking social policies, including the world'
 5. Set one specific goal to improve your personal wellbeing this month, treating it as seriously as professional goals
 
 ---
-*Profile saved to: /root/Projects/leaders-biography/jacinda-ardern.md*

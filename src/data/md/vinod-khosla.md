@@ -102,5 +102,3 @@ If Khosla invests in science experiments—are you pursuing breakthroughs or pla
 Breakthrough thinking creates empires.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/vinod-khosla.md*

@@ -106,5 +106,3 @@ If Halligan disrupted marketing by attracting instead of interrupting—are you 
 Attracting beats interrupting.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/brian-halligan.md*

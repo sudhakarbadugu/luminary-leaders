@@ -36,5 +36,3 @@ Albanese is married to Haydn Hedell (a theatrical producer) and has one adult so
 5. **Be the candidate of optimism.** Albanese won by running on what Australia could become, not what it had lost.
 
 **The Hard Question:** What would you do if you knew you had 30 years to build the relationships and credibility you need?
-
-*Profile saved to: /root/Projects/leaders-biography/anthony-albanese.md*

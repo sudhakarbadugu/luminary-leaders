@@ -5,20 +5,20 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ParticleCanvas from '../components/ParticleCanvas';
 import Navigation from '../sections/Navigation';
 import Hero from '../sections/Hero';
+import FeaturedReading from '../sections/FeaturedReading';
+import ProfileOfTheDay from '../sections/ProfileOfTheDay';
 import LeadersGrid from '../sections/LeadersGrid';
-import Blog from '../sections/Blog';
-import About from '../sections/About';
-import Methodology from '../sections/Methodology';
-import Timeline from '../sections/Timeline';
-import Stats from '../sections/Stats';
-import Quote from '../sections/Quote';
-
 import TradersGrid from '../sections/TradersGrid';
 import SportsGrid from '../sections/SportsGrid';
 import CricketGrid from '../sections/CricketGrid';
 import ScientistsGrid from '../sections/ScientistsGrid';
+import Blog from '../sections/Blog';
 import Bookmarks from '../sections/Bookmarks';
-import ProfileOfTheDay from '../sections/ProfileOfTheDay';
+import Stats from '../sections/Stats';
+import About from '../sections/About';
+import Methodology from '../sections/Methodology';
+import Timeline from '../sections/Timeline';
+import Quote from '../sections/Quote';
 import Submit from '../sections/Submit';
 import Footer from '../sections/Footer';
 
@@ -77,19 +77,20 @@ export default function HomePage() {
 
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Hero lenisRef={lenisRef} />
+        <FeaturedReading />
         <ProfileOfTheDay />
         <LeadersGrid />
-        <Blog />
-        <About />
-        <Methodology />
-        <Timeline />
-        <Stats />
-        <Quote />
         <TradersGrid />
         <SportsGrid />
         <CricketGrid />
         <ScientistsGrid />
+        <Blog />
         <Bookmarks />
+        <Stats />
+        <About />
+        <Methodology />
+        <Timeline />
+        <Quote />
         <Submit />
         <Footer />
       </div>

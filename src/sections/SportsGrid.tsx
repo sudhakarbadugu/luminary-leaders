@@ -1,24 +1,20 @@
 import { useEffect, useRef, useState, useMemo } from 'react';
-import { useNavigate } from 'react-router';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { athletes, athleteBioData } from '../data';
 import { Search, X, Trophy } from 'lucide-react';
-import BookmarkButton from '../components/BookmarkButton';
-import CompareToggleButton from '../components/CompareToggleButton';
 import { getCategoryStyle } from '../utils/categoryStyles';
-import { getInitials, getGradient, SCIENTIST_GRADIENT_COLORS } from '../utils/visual';
+import ProfileCard from '../components/ProfileCard';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function SportsGrid() {
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
-  const [visibleCount, setVisibleCount] = useState(24);
+  const [visibleCount, setVisibleCount] = useState(8);
   const [eraFilter, setEraFilter] = useState('All');
   const [sportFilter, setSportFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
-  const navigate = useNavigate();
 
   const eras = ['All', ...new Set(athletes.map(a => a.era))];
   const sports = useMemo(() => {
@@ -48,7 +44,7 @@ export default function SportsGrid() {
     return () => ctx.revert();
   }, [displayed]);
 
-  const reset = () => { setEraFilter('All'); setSportFilter('All'); setSearchQuery(''); setVisibleCount(24); };
+  const reset = () => { setEraFilter('All'); setSportFilter('All'); setSearchQuery(''); setVisibleCount(8); };
   const hasActive = eraFilter !== 'All' || sportFilter !== 'All' || searchQuery;
 
   return (
@@ -66,7 +62,7 @@ export default function SportsGrid() {
           <input type="text" placeholder="Search athletes by name, nickname, or sport..." value={searchQuery} onChange={e => { setSearchQuery(e.target.value); setVisibleCount(24); }}
             style={{ width: '100%', padding: '14px 48px', borderRadius: 99, border: '1px solid #e5e5e0', background: '#fff', fontFamily: "'Inter', sans-serif", fontSize: 15, color: '#282b2f', outline: 'none', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}
             onFocus={e => { e.currentTarget.style.borderColor = '#ffcc00'; }} onBlur={e => { e.currentTarget.style.borderColor = '#e5e5e0'; }} />
-          {searchQuery && <button onClick={() => { setSearchQuery(''); setVisibleCount(24); }} style={{ position: 'absolute', right: 16, top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', color: '#968671' }}><X size={16} /></button>}
+          {searchQuery && <button onClick={() => { setSearchQuery(''); setVisibleCount(8); }} style={{ position: 'absolute', right: 16, top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', color: '#968671' }}><X size={16} /></button>}
         </div>
 
         {/* Filters */}
@@ -88,40 +84,7 @@ export default function SportsGrid() {
         {displayed.length > 0 ? (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))', gap: 48, marginBottom: 64 }}>
             {displayed.map((athlete, idx) => (
-              <div key={athlete.id} ref={el => { if (el) cardsRef.current[idx] = el; }} onClick={() => navigate(`/athlete/${athlete.id}`)} style={{ opacity: 0, cursor: 'pointer' }}>
-                <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', position: 'relative', background: athlete.image ? undefined : getGradient(SCIENTIST_GRADIENT_COLORS, athlete.id) }}>
-                  {athlete.image ? (
-                    <img src={athlete.image} alt={athlete.name} style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }} onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.03)'; }} onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)'; }} />
-                  ) : (
-                    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: "'Instrument Serif', serif", fontSize: 48 }}>{getInitials(athlete.name)}</div>
-                  )}
-                  <div style={{ position: 'absolute', top: 12, right: 12, background: 'rgba(40,43,47,0.85)', backdropFilter: 'blur(4px)', color: '#f1f1ee', fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, padding: '4px 10px', borderRadius: 99, letterSpacing: 0.5 }}>{athlete.sport}</div>
-                  {/* Action buttons */}
-                  <div style={{ position: 'absolute', bottom: 12, right: 12, display: 'flex', gap: 6, zIndex: 2 }}>
-                    <BookmarkButton id={athlete.id} category="athlete" name={athlete.name} nickname={athlete.nickname} />
-                    <CompareToggleButton item={{ id: athlete.id, name: athlete.name, nickname: athlete.nickname, category: 'athlete', field: athlete.sport, nationality: athlete.nationality, born: athlete.born, era: athlete.era, image: athlete.image }} />
-                  </div>
-                </div>
-                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, fontWeight: 500, color: '#282b2f', marginTop: 16 }}>{athlete.name}</div>
-                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginTop: 4 }}>{athlete.nickname}</div>
-                
-                {/* Visual badges row */}
-                <div style={{ display: 'flex', gap: 6, marginTop: 8, flexWrap: 'wrap' }}>
-                  {athlete.nationality && (
-                    <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#f1f1ee', color: '#968671', fontWeight: 500, letterSpacing: 0.3 }}>
-                      {athlete.nationality}
-                    </span>
-                  )}
-                  {athleteBioData[athlete.id]?.born && (
-                    <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#282b2f10', color: '#282b2f', fontWeight: 500, letterSpacing: 0.3 }}>
-                      {athleteBioData[athlete.id]?.born}
-                    </span>
-                  )}
-                  <span style={{ fontSize: 11, padding: '3px 10px', borderRadius: 99, background: '#2e7d3220', color: '#2e7d32', fontWeight: 500, letterSpacing: 0.3 }}>
-                    {athlete.sport}
-                  </span>
-                </div>
-              </div>
+              <ProfileCard key={athlete.id} id={athlete.id} name={athlete.name} subtitle={athlete.nickname} category="athlete" route="athlete" field={athlete.sport} nationality={athlete.nationality} born={athleteBioData[athlete.id]?.born || athlete.born} era={athlete.era} image={athlete.image} accent="#2e7d32" refCallback={el => { if (el) cardsRef.current[idx] = el; }} />
             ))}
           </div>
         ) : (
@@ -135,7 +98,7 @@ export default function SportsGrid() {
         {visibleCount < filtered.length && (
           <div style={{ textAlign: 'center' }}>
             <button onClick={() => setVisibleCount(prev => Math.min(prev + 12, filtered.length))} style={{ border: '1px solid #282b2f', borderRadius: 99, padding: '14px 36px', background: 'transparent', color: '#282b2f', fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 500, cursor: 'pointer', transition: 'all 0.3s' }}
-              onMouseEnter={e => { e.currentTarget.style.background = '#282b2f'; e.currentTarget.style.color = '#f1f1ee'; }} onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#282b2f'; }}>Load More ({filtered.length - visibleCount} remaining)</button>
+              onMouseEnter={e => { e.currentTarget.style.background = '#282b2f'; e.currentTarget.style.color = '#f1f1ee'; }} onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#282b2f'; }}>Browse More Athletes ({filtered.length - visibleCount} remaining)</button>
           </div>
         )}
       </div>

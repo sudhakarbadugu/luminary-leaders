@@ -34,5 +34,3 @@ Neumann published a book in 2020 called "We"—which critics noted was an irony 
 5. **Learn from spectacular failures.** Every $47B collapse contains lessons worth more than a $47B success story.
 
 **The Hard Question:** What part of your story would collapse if investors saw your actual financials?
-
-*Profile saved to: /root/Projects/leaders-biography/adam-neumann.md*

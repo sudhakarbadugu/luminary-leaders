@@ -152,5 +152,3 @@ If a man living 2,300 years ago, without any of the mathematical tools you now h
 The tools are better. The knowledge is wider. The barriers are lower. What is missing is the willingness to draw the circles.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/archimedes.md*

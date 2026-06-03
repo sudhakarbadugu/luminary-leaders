@@ -98,5 +98,3 @@ If Watsa bet against housing before the crash—what bubble are you seeing that 
 Insurance float and value investing create wealth.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/prem-watsa.md*

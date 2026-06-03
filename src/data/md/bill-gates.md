@@ -102,5 +102,3 @@ If Gates pledged to give away 99% of his wealth—are you giving or hoarding?
 Wealth enables philanthropy.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/bill-gates.md*

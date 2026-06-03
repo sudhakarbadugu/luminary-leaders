@@ -12,11 +12,11 @@ import * as json from './dataLoader';
 
 /** Legacy adapter: enriches old TS data with new JSON data */
 
-function enrichRecord<T extends { id: number; bio: string; quotes?: string[] }>(
-  record: Record<number, T>,
-  people: { id: number; name: string }[]
-): Record<number, T> {
-  const result: Record<number, T> = {};
+function enrichRecord<T extends { id: string; bio: string; quotes?: string[] }>(
+  record: Record<string, T>,
+  people: { id: string; name: string }[]
+): Record<string, T> {
+  const result: Record<string, T> = {};
   for (const bio of Object.values(record)) {
     const person = people.find(p => p.id === bio.id);
     if (!person) {

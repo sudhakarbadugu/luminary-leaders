@@ -158,5 +158,3 @@ If an investor who lost over a billion dollars on a public short and over four b
 The loss is not the end of the story. The decision to keep going is.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/bill-ackman.md*

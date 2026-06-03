@@ -84,5 +84,3 @@ Antonio Manuel de Oliveira Guterres was born April 30, 1949, in Lisbon, Portugal
 Gareth spent a decade in refugee work before leading the UN. What have you done to prepare for your current role—beyond the obvious requirements?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/antonio-guters.md*

@@ -102,5 +102,3 @@ If Moritz finds obsessed founders—are you betting on skills or obsession?
 Founder obsession creates extraordinary returns.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/michael-moritz.md*

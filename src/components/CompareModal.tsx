@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { getCompareItems, clearCompare } from '../utils/compare';
 import type { CompareItem } from '../utils/compare';
 import { isBookmarked, toggleBookmark } from '../utils/bookmarks';

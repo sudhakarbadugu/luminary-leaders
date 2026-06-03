@@ -4,7 +4,7 @@ import { isBookmarked, toggleBookmark } from '../utils/bookmarks';
 import { cn } from '@/lib/utils';
 
 interface Props {
-  id: number;
+  id: string;
   category: 'leader' | 'trader' | 'athlete' | 'cricketer' | 'scientist';
   name: string;
   nickname: string;

@@ -138,5 +138,3 @@ If Allyson Felix could nearly die in childbirth at 32, return to training while 
 The time to start was years ago. The second-best time is now.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/allyson-felix.md*

@@ -36,5 +36,3 @@ Lin is currently a General Partner at Sequoia Capital, where he focuses on consu
 5. **Build relationships before you need them.** Lin's Sequoia connection came from relationships built during the Zappos crisis.
 
 **The Hard Question:** How many days of cash do you have, and what would change if it dropped to 60?
-
-*Profile saved to: /root/Projects/leaders-biography/alfred-lin.md*

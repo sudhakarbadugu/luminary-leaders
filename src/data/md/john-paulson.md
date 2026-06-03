@@ -126,5 +126,3 @@ If one trade can define a career—what trade are you avoiding because you do no
 The largest profits come from being right when everyone else is wrong. But you pay for the right to be right.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/john-paulson.md*

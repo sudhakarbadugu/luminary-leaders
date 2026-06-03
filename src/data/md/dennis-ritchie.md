@@ -128,5 +128,3 @@ If the man who built the foundation of modern computing could live and die in ob
 The code is what matters. The foundation is what matters. The name is optional.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/dennis-ritchie.md*

@@ -102,5 +102,3 @@ If Systrom built a $1B app by stripping features—are you adding or removing?
 Simplicity scales.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/kevin-systrom.md*

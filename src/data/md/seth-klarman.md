@@ -102,5 +102,3 @@ If Klarman returns 20% annualized while holding 40-50% cash—what is your cash 
 Not losing is more important than winning big.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/seth-klarman.md*

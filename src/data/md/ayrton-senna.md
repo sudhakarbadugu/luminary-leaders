@@ -149,5 +149,3 @@ If a man who died at 34 could win three world championships, change the safety s
 The gaps that exist will not wait. Go for them.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/ayrton-senna.md*

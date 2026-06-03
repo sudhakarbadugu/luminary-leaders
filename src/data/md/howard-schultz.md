@@ -106,5 +106,3 @@ If Schultz created the third place—are you creating transactions or belonging?
 Creating belonging builds empires.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/howard-schultz.md*

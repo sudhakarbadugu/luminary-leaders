@@ -140,5 +140,3 @@ If a man who worked until 88 could say that the most important exercise was aski
 Certainty is not the goal. Clarity about uncertainty is.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/byron-wien.md*

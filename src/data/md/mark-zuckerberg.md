@@ -106,5 +106,3 @@ If Zuckerberg connected 3 billion people—are you connecting or isolating?
 Connecting people creates empires.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/mark-zuckerberg.md*

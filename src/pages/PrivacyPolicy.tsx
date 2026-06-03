@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Shield, FileText, Database, AlertTriangle, ExternalLink } from 'lucide-react';
 
 export default function PrivacyPolicy() {

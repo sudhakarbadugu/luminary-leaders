@@ -32,4 +32,3 @@ António Guterres left a lasting impact.
 
 ---
 
-*Profile saved to: /root/Projects/leaders-biography/antonio-guterres.md*

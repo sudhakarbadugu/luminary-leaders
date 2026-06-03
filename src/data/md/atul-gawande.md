@@ -102,5 +102,3 @@ If Gawande reduced surgical deaths with checklists—are you using simple soluti
 Simple solutions save lives.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/atul-gawande.md*

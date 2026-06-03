@@ -169,5 +169,3 @@ If the 15th child of a candlemaker, with two years of schooling, could sign the 
 The circumstances are not the barrier. The decision to begin is.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/benjamin-franklin.md*

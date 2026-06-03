@@ -98,5 +98,3 @@ If Rotter makes €50-100 million annually by holding positions for minutes—ar
 Small edges repeated create extraordinary returns.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/paul-rotter.md*

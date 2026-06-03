@@ -102,5 +102,3 @@ If Wozniak chose fun over money—are you designing for joy or profit?
 Engineering genius builds empires.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/steve-wozniak.md*

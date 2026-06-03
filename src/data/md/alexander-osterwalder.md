@@ -36,5 +36,3 @@ Osterwalder has remained primarily an academic, serving as a professor at the Un
 5. **Test one hypothesis.** Pick the most uncertain assumption in your model and design an experiment to test it within two weeks.
 
 **The Hard Question:** If you had to explain your business model on a single page, right now, could you?
-
-*Profile saved to: /root/Projects/leaders-biography/alexander-osterwalder.md*

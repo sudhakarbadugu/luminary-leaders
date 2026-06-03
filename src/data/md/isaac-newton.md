@@ -40,5 +40,3 @@ Newton was knighted in 1705 by Queen Anne—the first scientist to be knighted f
 5. Read his 1692 letter to the Secretary of State about the recoinage to study applied problem-solving under pressure
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/isaac-newton.md*

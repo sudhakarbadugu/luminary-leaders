@@ -98,5 +98,3 @@ If Meeker's Internet Trends Report shaped the industry—are you following the d
 Data-driven analysis creates influence.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/mary-meeker.md*

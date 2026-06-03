@@ -120,5 +120,3 @@ If a fund manager who beat the market for 13 years invested in what he knew—wh
 The best investments are often in your daily life.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/peter-lynch.md*

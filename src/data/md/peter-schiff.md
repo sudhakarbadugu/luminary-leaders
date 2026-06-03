@@ -112,5 +112,3 @@ If Peter Schiff predicted the 2008 crash and missed the 2009-2020 bull market—
 A prediction is not timing. Being early is expensive.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/peter-schiff.md*

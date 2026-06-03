@@ -99,5 +99,3 @@ If Lee made 35x on Snapple through operational improvements—are you restructur
 Collaboration beats confrontation.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/thomas-h-lee.md*

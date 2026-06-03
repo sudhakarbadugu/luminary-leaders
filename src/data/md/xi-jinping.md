@@ -34,5 +34,3 @@ Xi is married to Peng Liyuan, a famous traditional Chinese opera singer who has 
 5. **Build loyalty through shared mission.** Xi frames everything in national rejuvenation. What is your team's larger purpose?
 
 **The Hard Question:** What would you never concede, even if it cost you everything else?
-
-*Profile saved to: /root/Projects/leaders-biography/xi-jinping.md*

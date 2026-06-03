@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -85,9 +85,12 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="border-t border-white/10 mt-12 pt-6">
+        <div className="border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <p className="font-inter text-[12px] text-brand-muted dark:text-brand-muted-dark">
             © {new Date().getFullYear()} Luminary. All rights reserved.
+          </p>
+          <p className="font-inter text-[11px] text-brand-muted/60 dark:text-brand-muted-dark/60">
+            v{__APP_VERSION__} · Built {new Date(__APP_BUILD_TIME__).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
           </p>
         </div>
       </div>

@@ -98,5 +98,3 @@ If Ballmer succeeded without being a founder—are you waiting to found or joini
 You don't need to be a founder to win.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/steve-ballmer.md*

@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { bioData } from '../data';
 import BookmarkButton from './BookmarkButton';
 import CompareToggleButton from './CompareToggleButton';
@@ -7,7 +7,7 @@ import type { Leader } from '../data/leaders';
 
 interface LeaderCardProps {
   leader: Leader;
-  getNationality: (id: number) => string;
+  getNationality: (id: string) => string;
 }
 
 export default function LeaderCard({ leader, getNationality }: LeaderCardProps) {

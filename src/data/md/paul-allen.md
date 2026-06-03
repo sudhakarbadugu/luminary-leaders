@@ -98,5 +98,3 @@ If Allen envisioned the wired world—are you envisioning or reacting?
 Vision enables investment.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/paul-allen.md*

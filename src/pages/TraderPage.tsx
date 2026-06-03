@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router';
+import { useParams, useNavigate } from 'react-router-dom';
 import { traders, traderBioData } from '../data';
 import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, DollarSign, TrendingUp, Globe, Quote, Target } from 'lucide-react';
@@ -14,6 +14,8 @@ import Timeline from '../components/Timeline';
 import StatCards from '../components/StatCards';
 import QuoteCards from '../components/QuoteCards';
 import ActionableSteps from '../components/ActionableSteps';
+import ReadingProgress from '../components/ReadingProgress';
+import MarkdownText from '../components/MarkdownText';
 import { getGradient, TRADER_GRADIENT_COLORS } from '../utils/visual';
 
 
@@ -22,7 +24,7 @@ export default function TraderPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const contentRef = useRef<HTMLDivElement>(null);
-  const traderId = parseInt(id || '1');
+  const traderId = id || '';
   const trader = traders.find(t => t.id === traderId);
   const bio = traderBioData[traderId];
   const jsonEntry = trader ? jsonLoader.getJsonBioByName(trader.name) : undefined;
@@ -52,6 +54,13 @@ export default function TraderPage() {
 
   return (
     <div className="page-container" style={{ background: "#f1f1ee", minHeight: "100vh" }}>
+      <ReadingProgress sections={[
+        { id: 'story', label: 'Story' },
+        { id: 'insights', label: 'Insights' },
+        { id: 'trades', label: 'Key Trades' },
+        { id: 'quotes', label: 'Wisdom' },
+        { id: 'related', label: 'Related' },
+      ]} />
       {/* Hero */}
       <div style={{ background: getGradient(TRADER_GRADIENT_COLORS, trader.id), padding: 'clamp(80px, 10vw, 120px) clamp(20px, 4vw, 40px) clamp(40px, 6vw, 80px)', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.05, backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.4) 1px, transparent 0)', backgroundSize: '32px 32px' }} />
@@ -89,7 +98,7 @@ export default function TraderPage() {
       </div>
 
       {/* Content */}
-      <div ref={contentRef} style={{ maxWidth: 720, margin: '0 auto', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
+      <div id="story" ref={contentRef} style={{ maxWidth: 720, margin: '0 auto', padding: 'clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px)' }}>
         {/* Info Cards */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(200px, 100%), 1fr))', gap: 16, marginBottom: 48 }}>
           <div className="card-bg" style={{ background: "#fff", borderRadius: 12, padding: '24px', border: '1px solid #e5e5e0' }}>
@@ -106,12 +115,12 @@ export default function TraderPage() {
              <AudioNarration text={fullBioText} title={`Listen to ${trader.name}'s story`} />
 
            {bio.bio.split('\n\n').map((paragraph, i) => (
-          <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 0 : 28 }}>{paragraph}</p>
+          <p key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: 16, lineHeight: 1.85, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 0 : 28 }}><MarkdownText text={paragraph} /></p>
         ))}
 
         {/* Visual Components - Rich Data */}
         {jsonEntry && (
-          <>
+          <div id="insights">
             <StatCards 
               born={jsonEntry.born} 
               died={jsonEntry.died} 
@@ -122,12 +131,12 @@ export default function TraderPage() {
             <Timeline milestones={jsonEntry.milestones || []} color="#ffcc00" />
             <QuoteCards quotes={jsonEntry.quotes || []} color="#ffcc00" authorName={jsonEntry.name} />
             <ActionableSteps steps={jsonEntry.actionableSteps || []} color="#ffcc00" />
-          </>
+          </div>
         )}
 
         {/* Key Trades */}
         {bio.keyTrades.length > 0 && (
-          <div style={{ marginTop: 60 }}>
+          <div id="trades" style={{ marginTop: 60 }}>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>Key Trades</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {bio.keyTrades.map((trade, i) => (
@@ -142,12 +151,12 @@ export default function TraderPage() {
 
         {/* Quotes */}
         {(bio.quotes?.length ?? 0) > 0 && (
-          <div style={{ marginTop: 60 }}>
+          <div id="quotes" style={{ marginTop: 60 }}>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>Wisdom</div>
             {(bio?.quotes ?? []).map((quote, i) => (
               <div key={i} style={{ background: '#282b2f', borderRadius: 12, padding: '28px 32px', marginBottom: 12, position: 'relative' }}>
                 <Quote size={20} style={{ color: '#ffcc00', position: 'absolute', top: 16, left: 16, opacity: 0.3 }} />
-                <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: '#f1f1ee', lineHeight: 1.6, fontStyle: 'italic', marginLeft: 24 }}>{quote}</p>
+                <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 18, color: '#f1f1ee', lineHeight: 1.6, fontStyle: 'italic', marginLeft: 24 }}><MarkdownText text={quote} /></p>
               </div>
             ))}
           </div>
@@ -155,7 +164,7 @@ export default function TraderPage() {
 
         {/* Related Traders */}
         {relatedTraders.length > 0 && (
-          <div style={{ marginTop: 80 }}>
+          <div id="related" style={{ marginTop: 80 }}>
             <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, textTransform: 'uppercase', letterSpacing: 2, color: '#968671', marginBottom: 24 }}>Related Traders</div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(200px, 100%), 1fr))', gap: 16 }}>
               {relatedTraders.map(rt => (

@@ -98,5 +98,3 @@ If LeCun built CNNs for computer vision—are you building foundations or chasin
 Conviction creates foundations.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/yann-lecun.md*

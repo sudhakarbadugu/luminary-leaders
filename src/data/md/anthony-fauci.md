@@ -98,5 +98,3 @@ If Fauci guided 7 presidents—are you trusting science or politics?
 Science guides through crises.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/anthony-fauci.md*

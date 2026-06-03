@@ -106,5 +106,3 @@ If Icahn made billions fighting management for decades—are you speaking up whe
 Activism requires stubbornness. Be willing to fight.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/carl-icahn.md*

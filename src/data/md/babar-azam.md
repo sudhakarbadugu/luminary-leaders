@@ -144,5 +144,3 @@ If a boy from Lahore who was told he was too slow, too quiet, and too similar to
 Your style is not your limitation. Your refusal to adapt your style is.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/babar-azam.md*

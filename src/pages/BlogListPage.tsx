@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { blogArticles } from '../data/blog';
 import { ArrowLeft, Clock, Tag } from 'lucide-react';
 import gsap from 'gsap';

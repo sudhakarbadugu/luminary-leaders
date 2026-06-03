@@ -98,5 +98,3 @@ If Cooperman transfers money from impatient to patient—are you patient?
 Patience creates wealth.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/leon-cooperman.md*

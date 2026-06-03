@@ -94,5 +94,3 @@ Robert Iger was born November 5, 1951, in New York City, the second of three chi
 Iger built a $250 billion company through strategic acquisitions and long-term thinking. What would you do if you thought in 10-year time horizons instead of 10-quarter horizons?
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/bob-iger.md*

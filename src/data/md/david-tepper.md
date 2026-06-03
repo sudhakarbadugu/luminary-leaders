@@ -98,5 +98,3 @@ If Tepper made billions buying banks during the worst financial crisis—what ar
 When the Fed is supporting the system, do not fight it.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/david-tepper.md*

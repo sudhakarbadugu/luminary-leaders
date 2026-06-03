@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router';
+import { useParams, useNavigate } from 'react-router-dom';
 import { scientists, scientistBioData } from '../data';
 import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, Globe, Quote, FlaskConical } from 'lucide-react';
@@ -13,13 +13,15 @@ import AudioNarration from '../components/AudioNarration';
 import Timeline from '../components/Timeline';
 import StatCards from '../components/StatCards';
 import QuoteCards from '../components/QuoteCards';
+import ActionableSteps from '../components/ActionableSteps';
+import MarkdownText from '../components/MarkdownText';
 import { getGradient, SCIENTIST_GRADIENT_COLORS } from '../utils/visual';
 
 export default function ScientistPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const contentRef = useRef<HTMLDivElement>(null);
-  const scientistId = parseInt(id || '1');
+  const scientistId = id || '';
   const scientist = scientists.find(s => s.id === scientistId);
   const bio = scientistBioData[scientistId];
   const jsonEntry = scientist ? jsonLoader.getJsonBioByName(scientist.name) : undefined;
@@ -29,7 +31,7 @@ export default function ScientistPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [scientistId]);
+  }, [id]);
 
   useEffect(() => {
     if (!contentRef.current) return;
@@ -38,7 +40,7 @@ export default function ScientistPage() {
       { y: 40, opacity: 0 },
       { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: 'power2.out', scrollTrigger: { trigger: contentRef.current, start: 'top 85%' } }
     );
-  }, [scientistId]);
+  }, [id]);
 
   if (!bio || !scientist) {
     return (
@@ -84,7 +86,7 @@ export default function ScientistPage() {
                 {bio.name}
               </h1>
               <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 18, color: '#968671', marginBottom: 24 }}>
-                {scientist.role} {scientist.institution && `at ${scientist.institution}`}
+                {scientist.role}
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
@@ -115,7 +117,7 @@ export default function ScientistPage() {
                 <div style={{ borderLeft: '3px solid #ffcc00', paddingLeft: 24, marginTop: 32 }}>
                   <Quote size={20} style={{ color: '#ffcc00', marginBottom: 8 }} />
                   <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 22, fontStyle: 'italic', lineHeight: 1.5, color: '#f1f1ee' }}>
-                    {bio.quotes?.[0]}
+                    <MarkdownText text={bio.quotes?.[0]} />
                   </p>
                 </div>
               )}
@@ -131,7 +133,7 @@ export default function ScientistPage() {
           The Story
         </div>
         {bio.bio.split('\n\n').map((paragraph, i) => (
-          <p key={i} className="section-animate" style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, lineHeight: 1.8, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 40 : 28 }}>{paragraph}</p>
+          <p key={i} className="section-animate" style={{ fontFamily: "'Inter', sans-serif", fontSize: 17, lineHeight: 1.8, color: '#282b2f', marginBottom: i === bio.bio.split('\n\n').length - 1 ? 40 : 28 }}><MarkdownText text={paragraph} /></p>
         ))}
 
         {/* Visual Components - Rich Data */}
@@ -156,7 +158,7 @@ export default function ScientistPage() {
             {(bio?.quotes ?? []).slice(1).map((quote, i) => (
               <div key={i} className="card-bg" style={{ background: "#fff", borderRadius: 12, padding: "32px 28px", marginBottom: 16, border: "1px solid #e5e5e0" }}>
                 <Quote size={18} style={{ color: '#ffcc00', marginBottom: 12 }} />
-                <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 20, fontStyle: 'italic', lineHeight: 1.5, color: '#282b2f' }}>{quote}</p>
+                <p style={{ fontFamily: "'Instrument Serif', serif", fontSize: 20, fontStyle: 'italic', lineHeight: 1.5, color: '#282b2f' }}><MarkdownText text={quote} /></p>
                 <p style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginTop: 16 }}>-- {bio.name}</p>
               </div>
             ))}
@@ -169,7 +171,7 @@ export default function ScientistPage() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(200px, 100%), 1fr))', gap: 24 }}>
               {relatedScientists.map(related => related && (
                 <div key={related.id} onClick={() => navigate(`/scientist/${related.id}`)} style={{ cursor: 'pointer', transition: 'transform 0.3s' }} onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; }} onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; }}>
-                  <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', background: related.image ? undefined : getGradient(related.id) }}>
+                  <div style={{ aspectRatio: '3/4', borderRadius: 8, overflow: 'hidden', background: related.image ? undefined : getGradient(SCIENTIST_GRADIENT_COLORS, related.id) }}>
                     {related.image ? (
                       <img src={related.image} alt={related.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     ) : (

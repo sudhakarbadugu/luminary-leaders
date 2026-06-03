@@ -124,5 +124,3 @@ If Bill Dunn could sit through a 50% drawdown and not change his strategy becaus
 The hardest part is not the strategy. The hardest part is staying.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/bill-dunn.md*

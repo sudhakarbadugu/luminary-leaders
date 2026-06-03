@@ -98,5 +98,3 @@ If Doudna edited the code of life—are you editing the code or watching?
 Bacterial research changes medicine.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/jennifer-doudna.md*

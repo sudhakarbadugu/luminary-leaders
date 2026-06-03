@@ -148,5 +148,3 @@ If a civil servant in colonial India could win a Nobel Prize using the spare tim
 The resources matter less than the questions. The questions matter less than the persistence. Start.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/cv-raman.md*

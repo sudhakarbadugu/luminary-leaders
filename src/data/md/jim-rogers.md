@@ -112,5 +112,3 @@ If a billionaire chose to spend years on a motorcycle in remote countries becaus
 Get on the bike.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/jim-rogers.md*

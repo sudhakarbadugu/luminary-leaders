@@ -127,5 +127,3 @@ If a man convinced millions that their house is a liability—what beliefs about
 The poor work for money. The rich have money work for them.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/robert-kiyosaki.md*

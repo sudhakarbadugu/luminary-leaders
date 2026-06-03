@@ -121,5 +121,3 @@ If a man who started his Test career with two golden ducks and was written off b
 The story isn't over. The method works. Trust it.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/alastair-cook.md*

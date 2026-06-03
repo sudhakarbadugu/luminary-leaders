@@ -99,5 +99,3 @@ If Rubenstein built Carlyle on relationships—are you building your network?
 Relationships and patriotism create empires.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/david-rubenstein.md*

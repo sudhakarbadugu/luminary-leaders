@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function LeadersGrid() {
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
-  const [visibleCount, setVisibleCount] = useState(24);
+  const [visibleCount, setVisibleCount] = useState(8);
   const [filter, setFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [nationalityFilter, setNationalityFilter] = useState('All');
@@ -152,13 +152,13 @@ export default function LeadersGrid() {
     setNationalityFilter('All');
     setCompanyFilter('All');
     setFieldFilter('All');
-    setVisibleCount(24);
+    setVisibleCount(8);
   };
 
   const hasActiveFilters = filter !== 'All' || searchQuery || nationalityFilter !== 'All' || companyFilter !== 'All' || fieldFilter !== 'All';
 
   // Nationality display map helper
-  const getNationality = (leaderId: number) => {
+  const getNationality = (leaderId: string) => {
     return bioData[leaderId]?.nationality || '';
   };
 
@@ -265,7 +265,7 @@ export default function LeadersGrid() {
           />
           {searchQuery && (
             <button
-              onClick={() => { setSearchQuery(''); setVisibleCount(24); }}
+              onClick={() => { setSearchQuery(''); setVisibleCount(8); }}
               style={{
                 position: 'absolute',
                 right: 16,
@@ -698,7 +698,7 @@ export default function LeadersGrid() {
                 e.currentTarget.style.color = '#282b2f';
               }}
             >
-              Load More ({filteredLeaders.length - visibleCount} remaining)
+              Browse More Legends ({filteredLeaders.length - visibleCount} remaining)
             </button>
           </div>
         )}

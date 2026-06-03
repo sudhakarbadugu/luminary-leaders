@@ -106,5 +106,3 @@ If Sacca made $1 billion on discomfort—are you seeking comfort or returns?
 Concentrated bets on founders create billions.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/chris-sacca.md*

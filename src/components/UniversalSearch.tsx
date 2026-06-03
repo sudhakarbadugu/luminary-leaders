@@ -1,11 +1,11 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { Search, X, Users, TrendingUp, Trophy, FlaskConical, Crosshair, ArrowRight } from 'lucide-react';
 import { leaders, traders, athletes, cricketers, scientists, bioData, traderBioData, athleteBioData, cricketerBioData, scientistBioData } from '../data';
 import { getInitials } from '../utils/visual';
 
 interface SearchResult {
-  id: number;
+  id: string;
   name: string;
   role: string;
   category: 'leader' | 'trader' | 'athlete' | 'cricketer' | 'scientist';

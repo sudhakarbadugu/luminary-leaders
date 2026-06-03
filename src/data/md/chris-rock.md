@@ -154,5 +154,3 @@ If a high school dropout who was bullied for being the wrong kind of Black could
 The laugh is in the truth. The truth is in the uncomfortable.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/chris-rock.md*

@@ -144,5 +144,3 @@ If a reform school boy from Baltimore could change the most popular sport in Ame
 The fear of missing is the only thing keeping you from hitting it out of the park.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/babe-ruth.md*

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router';
+import { useParams, useNavigate } from 'react-router-dom';
 import { getArticleBySlug, getRelatedArticles } from '../data/blog';
 import { leaders } from '../data/leaders';
 import { ArrowLeft, Calendar, Clock, Tag, ArrowRight, User } from 'lucide-react';

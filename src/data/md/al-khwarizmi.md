@@ -129,5 +129,3 @@ If a Persian mathematician from the 9th century could build a framework of reaso
 Your tools are better. Your resources are greater. The only question is whether you're doing work that will outlast your own lifetime.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/al-khwarizmi.md*

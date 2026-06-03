@@ -99,5 +99,3 @@ If Butterfield turned two failed games into $27.7 billion—are you pivoting fro
 Pivots build fortunes.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/stewart-butterfield.md*

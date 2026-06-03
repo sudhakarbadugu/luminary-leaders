@@ -110,5 +110,3 @@ If Templeton bought when Europe was at war in 1939—what market are you avoidin
 The best investments are where others are not looking.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/john-templeton.md*

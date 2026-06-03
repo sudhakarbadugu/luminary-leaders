@@ -98,5 +98,3 @@ If Tyson defends science over sentiment—are you defending evidence or emotion?
 Science communication scales impact.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/neil-degrasse-tyson.md*

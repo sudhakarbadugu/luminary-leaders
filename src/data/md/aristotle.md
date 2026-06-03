@@ -152,5 +152,3 @@ If Aristotle could master every field of knowledge available in his time and cre
 The tools are better. The knowledge is more accessible. The only difference is commitment.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/aristotle.md*

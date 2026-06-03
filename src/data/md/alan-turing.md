@@ -110,5 +110,3 @@ Turing changed the world while being persecuted for who he loved.
 Turing was convicted for loving a man. He died at 41, unrecognized. Are you building something that matters beyond today's validation?
 
 ---
-
-*Profile saved to: /root/Projects/luminary-leaders/src/data/md/alan-turing.md*

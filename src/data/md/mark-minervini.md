@@ -106,5 +106,3 @@ If Minervini turns $250 into $188,000 in under six months—what are you doing t
 Average down is for losers. Average up is for winners.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/mark-minervini.md*

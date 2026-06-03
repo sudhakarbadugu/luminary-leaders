@@ -102,5 +102,3 @@ If Dell eliminated the middleman—are you adding layers or cutting them?
 Direct beats middleman.
 
 ---
-
-*Profile saved to: /root/Projects/leaders-biography/michael-dell.md*
