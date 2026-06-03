@@ -11,7 +11,7 @@ function normalizeText(text: string) {
     .trim();
 }
 
-export function renderMarkdownText(text?: string): ReactNode {
+function renderMarkdownText(text?: string): ReactNode {
   if (!text) return null;
 
   const normalized = normalizeText(text);

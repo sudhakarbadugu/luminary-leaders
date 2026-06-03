@@ -1,4 +1,5 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useNavigate } from 'react-router-dom';
 import { Search, X, Users, TrendingUp, Trophy, FlaskConical, Crosshair, ArrowRight } from 'lucide-react';
 import { leaders, traders, athletes, cricketers, scientists, bioData, traderBioData, athleteBioData, cricketerBioData, scientistBioData } from '../data';
@@ -197,14 +198,14 @@ export default function UniversalSearch() {
       </button>
 
       {/* Search overlay */}
-      {isOpen && (
+      {isOpen && createPortal(
         <div
           style={{
             position: 'fixed',
             top: 0, left: 0, right: 0, bottom: 0,
             background: 'rgba(40,43,47,0.7)',
             backdropFilter: 'blur(8px)',
-            zIndex: 1000,
+            zIndex: 99999,
             display: 'flex',
             alignItems: 'flex-start',
             justifyContent: 'center',
@@ -391,7 +392,8 @@ export default function UniversalSearch() {
               <span>{results.length} results</span>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
