@@ -4,6 +4,7 @@ import { scientists, scientistBioData } from '../data';
 import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, Globe, Quote, FlaskConical } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
+import ReadToggleButton from '../components/ReadToggleButton';
 import CompareToggleButton from '../components/CompareToggleButton';
 import ShareButton from '../components/ShareButton';
 import PrintButton from '../components/PrintButton';
@@ -16,6 +17,7 @@ import QuoteCards from '../components/QuoteCards';
 import ActionableSteps from '../components/ActionableSteps';
 import MarkdownText from '../components/MarkdownText';
 import { getGradient, SCIENTIST_GRADIENT_COLORS } from '../utils/visual';
+import { markAsRead } from '../utils/readProfiles';
 
 export default function ScientistPage() {
   const { id } = useParams<{ id: string }>();
@@ -31,7 +33,8 @@ export default function ScientistPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [id]);
+    if (scientist && bio) markAsRead(scientistId, 'scientist');
+  }, [id, scientistId, scientist, bio]);
 
   useEffect(() => {
     if (!contentRef.current) return;
@@ -96,6 +99,7 @@ export default function ScientistPage() {
 
               <div style={{ display: 'flex', gap: 12, marginBottom: 24, flexWrap: 'wrap' }}>
                 <BookmarkButton id={scientist.id} category="scientist" name={scientist.name} nickname={scientist.role} size={20} />
+                <ReadToggleButton id={scientist.id} category="scientist" />
                 <CompareToggleButton item={{ id: scientist.id, name: scientist.name, nickname: scientist.role, category: 'scientist', field: scientist.field, nationality: bio.nationality || '', born: bio.born, era: scientist.era, image: scientist.image }} />
                 <ShareButton url={`https://3drrx75zxkbas.kimi.page/scientist/${scientist.id}`} title={scientist.name} quote={bio.quotes?.[0]} />
                 <PrintButton />

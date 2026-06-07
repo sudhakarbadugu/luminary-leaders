@@ -6,7 +6,10 @@ import { cricketers, cricketerBioData } from '../data';
 import { Search, X, Trophy } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
+import ReadBadge from '../components/ReadBadge';
+import ReadStatusFilter from '../components/ReadStatusFilter';
 import { getCategoryStyle } from '../utils/categoryStyles';
+import { filterByReadStatus, type ReadFilter } from '../utils/readProfiles';
 import { getInitials, getGradient, SCIENTIST_GRADIENT_COLORS } from '../utils/visual';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -18,6 +21,7 @@ export default function CricketGrid() {
   const [eraFilter, setEraFilter] = useState('All');
   const [roleFilter, setRoleFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [readFilter, setReadFilter] = useState<ReadFilter>('all');
   const navigate = useNavigate();
 
   const eras = useMemo(() => ['All', ...Array.from(new Set(cricketers.map(c => c.era))).sort()], []);
@@ -34,8 +38,8 @@ export default function CricketGrid() {
       const q = searchQuery.toLowerCase();
       result = result.filter(c => c.name.toLowerCase().includes(q) || c.nickname.toLowerCase().includes(q) || c.nationality.toLowerCase().includes(q) || c.role.toLowerCase().includes(q));
     }
-    return result;
-  }, [eraFilter, roleFilter, searchQuery]);
+    return filterByReadStatus(result, 'cricketer', readFilter);
+  }, [eraFilter, roleFilter, searchQuery, readFilter]);
 
   const displayed = filtered.slice(0, visibleCount);
 
@@ -48,8 +52,8 @@ export default function CricketGrid() {
     return () => ctx.revert();
   }, [displayed]);
 
-  const reset = () => { setEraFilter('All'); setRoleFilter('All'); setSearchQuery(''); setVisibleCount(8); };
-  const hasActive = eraFilter !== 'All' || roleFilter !== 'All' || searchQuery;
+  const reset = () => { setEraFilter('All'); setRoleFilter('All'); setSearchQuery(''); setReadFilter('all'); setVisibleCount(8); };
+  const hasActive = eraFilter !== 'All' || roleFilter !== 'All' || searchQuery || readFilter !== 'all';
 
   return (
     <section ref={sectionRef} id="cricket" style={{ position: 'relative', zIndex: 2, background: '#f1f1ee', padding: 'clamp(80px, 10vw, 140px) clamp(20px, 4vw, 40px)', borderTop: '1px solid #e5e5e0' }}>
@@ -82,6 +86,13 @@ export default function CricketGrid() {
           {eras.map(era => <button key={era} onClick={() => { setEraFilter(era); setVisibleCount(24); }} style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 500, padding: '8px 16px', borderRadius: 99, border: '1px solid', borderColor: eraFilter === era ? '#282b2f' : '#e5e5e0', background: eraFilter === era ? '#282b2f' : 'transparent', color: eraFilter === era ? '#f1f1ee' : '#968671', cursor: 'pointer', transition: 'all 0.2s' }}>{era}</button>)}
         </div>
 
+        <ReadStatusFilter
+          category="cricketer"
+          totalCount={cricketers.length}
+          value={readFilter}
+          onChange={value => { setReadFilter(value); setVisibleCount(24); }}
+        />
+
         <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginBottom: 24, textAlign: 'center' }}>Showing {displayed.length} of {filtered.length} cricketers</div>
 
         {/* Grid */}
@@ -95,6 +106,7 @@ export default function CricketGrid() {
                   ) : (
                     <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: "'Instrument Serif', serif", fontSize: 48 }}>{getInitials(cricketer.name)}</div>
                   )}
+                  <ReadBadge id={cricketer.id} category="cricketer" />
                   <div style={{ position: 'absolute', top: 12, right: 12, background: 'rgba(40,43,47,0.85)', backdropFilter: 'blur(4px)', color: '#f1f1ee', fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, padding: '4px 10px', borderRadius: 99, letterSpacing: 0.5 }}>{cricketer.role}</div>
                   {/* Action buttons */}
                   <div style={{ position: 'absolute', bottom: 12, right: 12, display: 'flex', gap: 6, zIndex: 2 }}>

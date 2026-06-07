@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import BookmarkButton from './BookmarkButton';
 import CompareToggleButton from './CompareToggleButton';
+import ReadBadge from './ReadBadge';
 import { getGradient, SECTION_GRADIENT_COLORS, getInitials } from '../utils/visual';
 
 type ProfileCategory = 'leader' | 'trader' | 'athlete' | 'cricketer' | 'scientist';
@@ -55,6 +56,8 @@ export default function ProfileCard({
             {getInitials(name)}
           </div>
         )}
+
+        <ReadBadge id={id} category={category} />
 
         <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/55 to-transparent" />
 

@@ -4,6 +4,7 @@ import { cricketers, cricketerBioData } from '../data';
 import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, Globe, Quote, Award, Target } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
+import ReadToggleButton from '../components/ReadToggleButton';
 import CompareToggleButton from '../components/CompareToggleButton';
 import ShareButton from '../components/ShareButton';
 import PrintButton from '../components/PrintButton';
@@ -13,6 +14,7 @@ import AudioNarration from '../components/AudioNarration';
 import MarkdownText from '../components/MarkdownText';
 
 import { getGradient, TRADER_GRADIENT_COLORS } from '../utils/visual';
+import { markAsRead } from '../utils/readProfiles';
 
 export default function CricketPage() {
   const { id } = useParams<{ id: string }>();
@@ -34,7 +36,10 @@ export default function CricketPage() {
 
   const fullBioText = bio?.bio || '';
   const readingTime = getReadingTime(fullBioText);
-  useEffect(() => { window.scrollTo(0, 0); }, [id]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (cricketer && bio) markAsRead(cricketerId, 'cricketer');
+  }, [id, cricketerId, cricketer, bio]);
 
   useEffect(() => {
     if (contentRef.current) {
@@ -87,6 +92,7 @@ export default function CricketPage() {
           {/* Action buttons */}
           <div style={{ display: 'flex', gap: 12, marginBottom: 24, flexWrap: 'wrap' }}>
             <BookmarkButton id={cricketer.id} category="cricketer" name={cricketer.name} nickname={cricketer.nickname} size={20} />
+            <ReadToggleButton id={cricketer.id} category="cricketer" />
             <CompareToggleButton item={{ id: cricketer.id, name: cricketer.name, nickname: cricketer.nickname, category: 'cricketer', field: cricketer.role, nationality: cricketer.nationality, born: cricketer.born, era: cricketer.era, image: cricketer.image }} />
             <ShareButton url={`https://3drrx75zxkbas.kimi.page/cricketer/${cricketer.id}`} title={cricketer.name} quote={cricketerBioData[cricketer.id]?.quotes?.[0]} />
             <PrintButton />

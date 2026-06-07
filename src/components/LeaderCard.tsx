@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { bioData } from '../data';
 import BookmarkButton from './BookmarkButton';
 import CompareToggleButton from './CompareToggleButton';
+import ReadBadge from './ReadBadge';
 import { getGradient, SECTION_GRADIENT_COLORS, getInitials } from '../utils/visual';
 import type { Leader } from '../data/leaders';
 
@@ -32,6 +33,8 @@ export default function LeaderCard({ leader, getNationality }: LeaderCardProps) 
             {getInitials(leader.name)}
           </div>
         )}
+
+        <ReadBadge id={leader.id} category="leader" />
 
         {/* Nationality badge */}
         {nationality && (

@@ -4,6 +4,7 @@ import { athletes, athleteBioData } from '../data';
 import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, DollarSign, Trophy, Globe, Quote, Award, Medal } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
+import ReadToggleButton from '../components/ReadToggleButton';
 import CompareToggleButton from '../components/CompareToggleButton';
 import ShareButton from '../components/ShareButton';
 import PrintButton from '../components/PrintButton';
@@ -16,6 +17,7 @@ import QuoteCards from '../components/QuoteCards';
 import ActionableSteps from '../components/ActionableSteps';
 import MarkdownText from '../components/MarkdownText';
 import { getGradient, SCIENTIST_GRADIENT_COLORS } from '../utils/visual';
+import { markAsRead } from '../utils/readProfiles';
 
 export default function SportsPersonPage() {
   const { id } = useParams<{ id: string }>();
@@ -28,7 +30,10 @@ export default function SportsPersonPage() {
 
   const readingTime = bio ? getReadingTime(bio.bio) : 1;
   const fullBioText = bio?.bio || '';
-  useEffect(() => { window.scrollTo(0, 0); }, [id]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (athlete && bio) markAsRead(athleteId, 'athlete');
+  }, [id, athleteId, athlete, bio]);
 
   useEffect(() => {
     if (contentRef.current) {
@@ -82,6 +87,7 @@ export default function SportsPersonPage() {
           {/* Action buttons */}
           <div style={{ display: 'flex', gap: 12, marginBottom: 24, flexWrap: 'wrap' }}>
             <BookmarkButton id={athlete.id} category="athlete" name={athlete.name} nickname={athlete.nickname} size={20} />
+            <ReadToggleButton id={athlete.id} category="athlete" />
             <CompareToggleButton item={{ id: athlete.id, name: athlete.name, nickname: athlete.nickname, category: 'athlete', field: athlete.sport, nationality: athlete.nationality, born: athlete.born, era: athlete.era, image: athlete.image }} />
             <ShareButton url={`https://3drrx75zxkbas.kimi.page/athlete/${athlete.id}`} title={athlete.name} quote={athleteBioData[athlete.id]?.quotes?.[0]} />
             <PrintButton />

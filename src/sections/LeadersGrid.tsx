@@ -5,7 +5,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { leaders, bioData } from '../data';
 import { Search, X, Globe, Building2, Layers, Zap } from 'lucide-react';
 import LeaderCard from '../components/LeaderCard';
+import ReadStatusFilter from '../components/ReadStatusFilter';
 import { getCategoryStyle } from '../utils/categoryStyles';
+import { filterByReadStatus, type ReadFilter } from '../utils/readProfiles';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,6 +23,7 @@ export default function LeadersGrid() {
   const [companyFilter, setCompanyFilter] = useState('All');
   const [fieldFilter, setFieldFilter] = useState('All');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [readFilter, setReadFilter] = useState<ReadFilter>('all');
 
   const eras = ['All', ...new Set(leaders.map(l => l.era))];
 
@@ -111,8 +114,8 @@ export default function LeadersGrid() {
       });
     }
 
-    return result;
-  }, [filter, searchQuery, nationalityFilter, companyFilter, fieldFilter]);
+    return filterByReadStatus(result, 'leader', readFilter);
+  }, [filter, searchQuery, nationalityFilter, companyFilter, fieldFilter, readFilter]);
 
   const displayedLeaders = filteredLeaders.slice(0, visibleCount);
 
@@ -152,10 +155,11 @@ export default function LeadersGrid() {
     setNationalityFilter('All');
     setCompanyFilter('All');
     setFieldFilter('All');
+    setReadFilter('all');
     setVisibleCount(8);
   };
 
-  const hasActiveFilters = filter !== 'All' || searchQuery || nationalityFilter !== 'All' || companyFilter !== 'All' || fieldFilter !== 'All';
+  const hasActiveFilters = filter !== 'All' || searchQuery || nationalityFilter !== 'All' || companyFilter !== 'All' || fieldFilter !== 'All' || readFilter !== 'all';
 
   // Nationality display map helper
   const getNationality = (leaderId: string) => {
@@ -605,6 +609,13 @@ export default function LeadersGrid() {
             </button>
           ))}
         </div>
+
+        <ReadStatusFilter
+          category="leader"
+          totalCount={leaders.length}
+          value={readFilter}
+          onChange={value => { setReadFilter(value); setVisibleCount(24); }}
+        />
 
         {/* Results Count */}
         <div

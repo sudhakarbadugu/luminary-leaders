@@ -5,6 +5,8 @@ import { athletes, athleteBioData } from '../data';
 import { Search, X, Trophy } from 'lucide-react';
 import { getCategoryStyle } from '../utils/categoryStyles';
 import ProfileCard from '../components/ProfileCard';
+import ReadStatusFilter from '../components/ReadStatusFilter';
+import { filterByReadStatus, type ReadFilter } from '../utils/readProfiles';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,6 +17,7 @@ export default function SportsGrid() {
   const [eraFilter, setEraFilter] = useState('All');
   const [sportFilter, setSportFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [readFilter, setReadFilter] = useState<ReadFilter>('all');
 
   const eras = ['All', ...new Set(athletes.map(a => a.era))];
   const sports = useMemo(() => {
@@ -30,8 +33,8 @@ export default function SportsGrid() {
       const q = searchQuery.toLowerCase();
       result = result.filter(a => a.name.toLowerCase().includes(q) || a.nickname.toLowerCase().includes(q) || a.sport.toLowerCase().includes(q));
     }
-    return result;
-  }, [eraFilter, sportFilter, searchQuery]);
+    return filterByReadStatus(result, 'athlete', readFilter);
+  }, [eraFilter, sportFilter, searchQuery, readFilter]);
 
   const displayed = filtered.slice(0, visibleCount);
 
@@ -44,8 +47,8 @@ export default function SportsGrid() {
     return () => ctx.revert();
   }, [displayed]);
 
-  const reset = () => { setEraFilter('All'); setSportFilter('All'); setSearchQuery(''); setVisibleCount(8); };
-  const hasActive = eraFilter !== 'All' || sportFilter !== 'All' || searchQuery;
+  const reset = () => { setEraFilter('All'); setSportFilter('All'); setSearchQuery(''); setReadFilter('all'); setVisibleCount(8); };
+  const hasActive = eraFilter !== 'All' || sportFilter !== 'All' || searchQuery || readFilter !== 'all';
 
   return (
     <section ref={sectionRef} id="sports" style={{ position: 'relative', zIndex: 2, background: '#f1f1ee', padding: 'clamp(80px, 10vw, 140px) clamp(20px, 4vw, 40px)', borderTop: '1px solid #e5e5e0' }}>
@@ -77,6 +80,13 @@ export default function SportsGrid() {
         <div style={{ display: 'flex', gap: 8, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 48 }}>
           {eras.map(era => <button key={era} onClick={() => { setEraFilter(era); setVisibleCount(24); }} style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 500, padding: '8px 16px', borderRadius: 99, border: '1px solid', borderColor: eraFilter === era ? '#282b2f' : '#e5e5e0', background: eraFilter === era ? '#282b2f' : 'transparent', color: eraFilter === era ? '#f1f1ee' : '#968671', cursor: 'pointer', transition: 'all 0.2s' }}>{era}</button>)}
         </div>
+
+        <ReadStatusFilter
+          category="athlete"
+          totalCount={athletes.length}
+          value={readFilter}
+          onChange={value => { setReadFilter(value); setVisibleCount(24); }}
+        />
 
         <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginBottom: 24, textAlign: 'center' }}>Showing {displayed.length} of {filtered.length} athletes</div>
 

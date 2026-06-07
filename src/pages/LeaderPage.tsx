@@ -4,6 +4,7 @@ import { bioData, leaders } from '../data';
 import { jsonLoader } from '../data';
 import { ArrowLeft, Calendar, Clock, MapPin, Quote, Users } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
+import ReadToggleButton from '../components/ReadToggleButton';
 import CompareToggleButton from '../components/CompareToggleButton';
 import ShareButton from '../components/ShareButton';
 import PrintButton from '../components/PrintButton';
@@ -16,6 +17,7 @@ import ActionableSteps from '../components/ActionableSteps';
 import ReadingProgress from '../components/ReadingProgress';
 import MarkdownText from '../components/MarkdownText';
 import { getInitials, getGradient, SECTION_GRADIENT_COLORS } from '../utils/visual';
+import { markAsRead } from '../utils/readProfiles';
 
 
 
@@ -34,7 +36,8 @@ export default function LeaderPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [id]);
+    if (bio && leader) markAsRead(leaderId, 'leader');
+  }, [id, leaderId, bio, leader]);
 
   if (!bio || !leader) {
     return (
@@ -134,6 +137,7 @@ export default function LeaderPage() {
           {/* Action buttons */}
               <div style={{ display: 'flex', gap: 12, marginBottom: 24, flexWrap: 'wrap' }}>
                 <BookmarkButton id={leader.id} category="leader" name={leader.name} nickname={leader.role} size={20} />
+                <ReadToggleButton id={leader.id} category="leader" />
                 <CompareToggleButton item={{ id: leader.id, name: leader.name, nickname: leader.role, category: 'leader', field: leader.role, nationality: bio.nationality || '', born: bio.born, era: bio.era, image: leader.image }} />
                 <ShareButton url={`https://3drrx75zxkbas.kimi.page/leader/${leader.id}`} title={leader.name} quote={bio.quotes?.[0]} />
                 <PrintButton />

@@ -41,6 +41,7 @@ export default function PrivacyPolicy() {
             <li><strong>Bookmarks</strong> — profiles you choose to save are stored locally on your device only</li>
             <li><strong>Comparison selections</strong> — your chosen comparison profiles are stored locally</li>
             <li><strong>Dark mode preference</strong> — your theme choice is remembered across visits</li>
+            <li><strong>Reading history</strong> — which profiles you have opened are stored locally so you can track your progress</li>
           </ul>
           <p>This data never leaves your browser. We do not have access to it, cannot read it, and it is not transmitted to any server. Clearing your browser data will remove these preferences.</p>
         </Section>

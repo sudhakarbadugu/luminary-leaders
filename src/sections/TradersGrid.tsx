@@ -6,7 +6,10 @@ import { traders, traderBioData } from '../data';
 import { Search, X, TrendingUp, Layers } from 'lucide-react';
 import BookmarkButton from '../components/BookmarkButton';
 import CompareToggleButton from '../components/CompareToggleButton';
+import ReadBadge from '../components/ReadBadge';
+import ReadStatusFilter from '../components/ReadStatusFilter';
 import { getCategoryStyle } from '../utils/categoryStyles';
+import { filterByReadStatus, type ReadFilter } from '../utils/readProfiles';
 import { getInitials, getGradient, SECTION_GRADIENT_COLORS } from '../utils/visual';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -22,6 +25,7 @@ export default function TradersGrid() {
   const [marketFilter, setMarketFilter] = useState('All');
   const [strategyFilter, setStrategyFilter] = useState('All');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [readFilter, setReadFilter] = useState<ReadFilter>('all');
   const navigate = useNavigate();
 
   const eras = ['All', ...new Set(traders.map(t => t.era))];
@@ -46,8 +50,8 @@ export default function TradersGrid() {
     }
     if (marketFilter !== 'All') result = result.filter(t => t.markets.includes(marketFilter));
     if (strategyFilter !== 'All') result = result.filter(t => t.strategy === strategyFilter);
-    return result;
-  }, [eraFilter, searchQuery, marketFilter, strategyFilter]);
+    return filterByReadStatus(result, 'trader', readFilter);
+  }, [eraFilter, searchQuery, marketFilter, strategyFilter, readFilter]);
 
   const displayed = filteredTraders.slice(0, visibleCount);
 
@@ -60,8 +64,8 @@ export default function TradersGrid() {
     return () => ctx.revert();
   }, [displayed]);
 
-  const resetFilters = () => { setEraFilter('All'); setSearchQuery(''); setMarketFilter('All'); setStrategyFilter('All'); setVisibleCount(8); };
-  const hasActiveFilters = eraFilter !== 'All' || searchQuery || marketFilter !== 'All' || strategyFilter !== 'All';
+  const resetFilters = () => { setEraFilter('All'); setSearchQuery(''); setMarketFilter('All'); setStrategyFilter('All'); setReadFilter('all'); setVisibleCount(8); };
+  const hasActiveFilters = eraFilter !== 'All' || searchQuery || marketFilter !== 'All' || strategyFilter !== 'All' || readFilter !== 'all';
 
   return (
     <section ref={sectionRef} id="traders" style={{ position: 'relative', zIndex: 2, background: '#f1f1ee', padding: 'clamp(80px, 10vw, 140px) clamp(20px, 4vw, 40px)', borderTop: '1px solid #e5e5e0' }}>
@@ -120,6 +124,13 @@ export default function TradersGrid() {
           {eras.map(era => <button key={era} onClick={() => { setEraFilter(era); setVisibleCount(24); }} style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, fontWeight: 500, padding: '8px 16px', borderRadius: 99, border: '1px solid', borderColor: eraFilter === era ? '#282b2f' : '#e5e5e0', background: eraFilter === era ? '#282b2f' : 'transparent', color: eraFilter === era ? '#f1f1ee' : '#968671', cursor: 'pointer', transition: 'all 0.2s' }}>{era}</button>)}
         </div>
 
+        <ReadStatusFilter
+          category="trader"
+          totalCount={traders.length}
+          value={readFilter}
+          onChange={value => { setReadFilter(value); setVisibleCount(24); }}
+        />
+
         <div style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: '#968671', marginBottom: 24, textAlign: 'center' }}>Showing {displayed.length} of {filteredTraders.length} traders</div>
 
         {/* Grid */}
@@ -133,6 +144,7 @@ export default function TradersGrid() {
                   ) : (
                     <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: "'Instrument Serif', serif", fontSize: 48 }}>{getInitials(trader.name)}</div>
                   )}
+                  <ReadBadge id={trader.id} category="trader" />
                   <div style={{ position: 'absolute', top: 12, right: 12, background: 'rgba(40,43,47,0.85)', backdropFilter: 'blur(4px)', color: '#f1f1ee', fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 500, padding: '4px 10px', borderRadius: 99, letterSpacing: 0.5 }}>{trader.nationality}</div>
                   {/* Action buttons */}
                   <div style={{ position: 'absolute', bottom: 12, right: 12, display: 'flex', gap: 6, zIndex: 2 }}>
